@@ -6,6 +6,8 @@ import careerTrackData from "../data/career_track.json";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
+const SHOW_CANDIDATE_NAMES = false; // Set this to false to hide real names
+
 const levelOrder = [
   "Entry Level",
   "Mid Level",
@@ -37,7 +39,10 @@ const CareerProgressionGanttChart = () => {
 
   React.useEffect(() => {
     const processedData = Object.entries(careerTrackData).map(
-      ([name, career]) => {
+      ([name, career], index) => {
+        const displayName = SHOW_CANDIDATE_NAMES
+          ? name
+          : `Candidate ${index + 1}`;
         const levels = career.map((job) => ({
           level: job.level,
           start: parseInt(job.dates.split("-")[0]),
@@ -47,7 +52,7 @@ const CareerProgressionGanttChart = () => {
           role: job.role,
           company: job.company,
         }));
-        return { name, levels };
+        return { name: displayName, levels };
       }
     );
     setChartData(processedData);
