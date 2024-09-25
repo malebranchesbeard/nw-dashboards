@@ -1,0 +1,999 @@
+{
+  "Adam Wietrzyski": [
+    {
+      "level": "Entry Level",
+      "role": "Quality Engineer",
+      "company": "Delphi Automotive",
+      "years": 3.7,
+      "dates": "1999-2003",
+      "remit": "Quality assurance for automotive parts"
+    },
+    {
+      "level": "Mid Level",
+      "role": "Supplier Quality Engineer",
+      "company": "Delphi Automotive",
+      "years": 3.7,
+      "dates": "2003-2007",
+      "remit": "Supplier quality management"
+    },
+    {
+      "level": "Senior",
+      "role": "Supplier Quality Manager",
+      "company": "Dell",
+      "years": 2.3,
+      "dates": "2007-2009",
+      "remit": "Manage supplier quality for Europe"
+    },
+    {
+      "level": "Senior",
+      "role": "Customer Operations Manager",
+      "company": "Dell",
+      "years": 1.3,
+      "dates": "2009-2011",
+      "remit": "Manage customer operations for EMEA"
+    },
+    {
+      "level": "Director",
+      "role": "Quality Director",
+      "company": "Mahle",
+      "years": 3.8,
+      "dates": "2011-2015",
+      "remit": "Quality management for multiple plants"
+    },
+    {
+      "level": "Director",
+      "role": "Quality & Risk Director",
+      "company": "GKN Driveline",
+      "years": 2.4,
+      "dates": "2015-2017",
+      "remit": "Quality and risk management"
+    },
+    {
+      "level": "Director",
+      "role": "Quality Director",
+      "company": "Valeo",
+      "years": 3.4,
+      "dates": "2017-2020",
+      "remit": "Quality management for product line"
+    },
+    {
+      "level": "Executive",
+      "role": "Global Quality Director",
+      "company": "IST AG",
+      "years": 1.5,
+      "dates": "2023-Present",
+      "remit": "Global quality management"
+    }
+  ],
+
+  "Carl Kendall": [
+    {
+      "level": "Mid Level",
+      "role": "Quality Manager",
+      "company": "Mann+Hummel",
+      "years": 9.8,
+      "dates": "2001-2011",
+      "remit": "Quality management for automotive parts"
+    },
+    {
+      "level": "Senior",
+      "role": "Global Quality Manager",
+      "company": "Flextronics",
+      "years": 1.4,
+      "dates": "2011-2012",
+      "remit": "Global quality management"
+    },
+    {
+      "level": "Director",
+      "role": "Quality Director",
+      "company": "Alstom",
+      "years": 1,
+      "dates": "2013-2014",
+      "remit": "Quality management for nuclear division"
+    },
+    {
+      "level": "Director",
+      "role": "Project Execution Director",
+      "company": "Alstom",
+      "years": 1.4,
+      "dates": "2014-2015",
+      "remit": "Project management for new facility"
+    },
+    {
+      "level": "Senior Manager",
+      "role": "New Project Manager",
+      "company": "GE Power",
+      "years": 2.9,
+      "dates": "2015-2018",
+      "remit": "Management of new projects"
+    },
+    {
+      "level": "Director",
+      "role": "Supplier Quality Leader",
+      "company": "GE Power",
+      "years": 0.8,
+      "dates": "2018-2019",
+      "remit": "Supplier quality management for Europe"
+    },
+    {
+      "level": "Executive",
+      "role": "Global Quality Leader",
+      "company": "GE Power",
+      "years": 5.3,
+      "dates": "2019-Present",
+      "remit": "Global quality leadership"
+    }
+  ],
+
+  "Cédric Brieussel": [
+    {
+      "level": "Entry Level",
+      "role": "Process Engineer",
+      "company": "Micronas",
+      "years": 0.8,
+      "dates": "1997-1997",
+      "remit": "Process engineering"
+    },
+    {
+      "level": "Mid Level",
+      "role": "Process Engineer",
+      "company": "Micro Crystal",
+      "years": 6.6,
+      "dates": "1998-2004",
+      "remit": "Process and safety engineering"
+    },
+    {
+      "level": "Senior",
+      "role": "Production Manager",
+      "company": "Oscilloquartz",
+      "years": 2.4,
+      "dates": "2004-2007",
+      "remit": "Production management"
+    },
+    {
+      "level": "Senior",
+      "role": "Quality Engineer",
+      "company": "Saia Burgess",
+      "years": 2.3,
+      "dates": "2007-2009",
+      "remit": "Quality engineering"
+    },
+    {
+      "level": "Manager",
+      "role": "Quality Manager",
+      "company": "Kunststoff Schwanden",
+      "years": 0.7,
+      "dates": "2009-2010",
+      "remit": "Quality management"
+    },
+    {
+      "level": "Manager",
+      "role": "Quality Manager",
+      "company": "Zehnder Group",
+      "years": 2.7,
+      "dates": "2011-2013",
+      "remit": "Quality management"
+    },
+    {
+      "level": "Manager",
+      "role": "Quality Manager",
+      "company": "Pratt & Whitney",
+      "years": 6,
+      "dates": "2013-2019",
+      "remit": "Quality management"
+    },
+    {
+      "level": "Executive",
+      "role": "Global Head of Quality",
+      "company": "Oerlikon",
+      "years": 4.9,
+      "dates": "2019-Present",
+      "remit": "Global quality leadership"
+    }
+  ],
+
+  "Cuong C.": [
+    {
+      "level": "Entry Level",
+      "role": "Process Engineer",
+      "company": "Micronas",
+      "years": 0.8,
+      "dates": "1997-1997",
+      "remit": "Process engineering"
+    },
+    {
+      "level": "Mid Level",
+      "role": "Process Engineer",
+      "company": "Micro Crystal",
+      "years": 6.6,
+      "dates": "1998-2004",
+      "remit": "Process and safety engineering"
+    },
+    {
+      "level": "Senior",
+      "role": "Production Manager",
+      "company": "Oscilloquartz",
+      "years": 2.4,
+      "dates": "2004-2007",
+      "remit": "Multi-plant production management"
+    },
+    {
+      "level": "Senior",
+      "role": "Quality Engineer",
+      "company": "Saia Burgess",
+      "years": 2.3,
+      "dates": "2007-2009",
+      "remit": "Quality engineering and customer service"
+    },
+    {
+      "level": "Manager",
+      "role": "QHSE Manager",
+      "company": "Losinger Marazzi",
+      "years": 5.9,
+      "dates": "2013-2019",
+      "remit": "Quality, health, safety, environment management"
+    },
+    {
+      "level": "Senior Manager",
+      "role": "QRSSE Manager",
+      "company": "RUAG",
+      "years": 2.7,
+      "dates": "2019-2022",
+      "remit": "Quality, risk, security, safety, environment management"
+    },
+    {
+      "level": "Senior Manager",
+      "role": "Quality Security & HSE Manager",
+      "company": "Thales",
+      "years": 1.9,
+      "dates": "2022-2024",
+      "remit": "Quality, security, health, safety, environment management"
+    },
+    {
+      "level": "Executive",
+      "role": "Global Quality Manager",
+      "company": "HARTING",
+      "years": 0.8,
+      "dates": "2023-Present",
+      "remit": "Global quality management for projects"
+    }
+  ],
+
+  "Hamilton P.": [
+    {
+      "level": "Entry Level",
+      "role": "Quality Engineer",
+      "company": "Mercedes Vito",
+      "years": 2,
+      "dates": "1997-1999",
+      "remit": "Quality engineering"
+    },
+    {
+      "level": "Mid Level",
+      "role": "Buy Part Engineer",
+      "company": "Volkswagen",
+      "years": 3,
+      "dates": "2003-2006",
+      "remit": "Supplier quality engineering"
+    },
+    {
+      "level": "Senior",
+      "role": "Plant Change Manager",
+      "company": "Webasto",
+      "years": 2.4,
+      "dates": "2006-2009",
+      "remit": "Change management"
+    },
+    {
+      "level": "Senior",
+      "role": "Quality Assurance",
+      "company": "Volkswagen",
+      "years": 0.7,
+      "dates": "2009-2010",
+      "remit": "Quality assurance"
+    },
+    {
+      "level": "Manager",
+      "role": "Customer Quality Manager",
+      "company": "Johnson Electric",
+      "years": 3.7,
+      "dates": "2010-2013",
+      "remit": "Customer quality management"
+    },
+    {
+      "level": "Senior Manager",
+      "role": "Quality & Reliability Europe",
+      "company": "Johnson Electric",
+      "years": 6.2,
+      "dates": "2015-2021",
+      "remit": "Quality management for Europe"
+    },
+    {
+      "level": "Executive",
+      "role": "Head of Quality Europe & Americas",
+      "company": "Johnson Electric",
+      "years": 3.6,
+      "dates": "2021-Present",
+      "remit": "Quality leadership for Europe and Americas"
+    }
+  ],
+
+  "Jérémie Le Bourhis": [
+    {
+      "level": "Entry Level",
+      "role": "Production Manager",
+      "company": "Renault",
+      "years": 2.9,
+      "dates": "2003-2005",
+      "remit": "Production management"
+    },
+    {
+      "level": "Mid Level",
+      "role": "Suppliers Quality Project Manager",
+      "company": "Renault",
+      "years": 3,
+      "dates": "2005-2008",
+      "remit": "Supplier quality management"
+    },
+    {
+      "level": "Senior",
+      "role": "Suppliers Quality Corporate Manager",
+      "company": "Renault",
+      "years": 3.8,
+      "dates": "2008-2012",
+      "remit": "Corporate supplier quality management"
+    },
+    {
+      "level": "Senior",
+      "role": "Industrial Projects Manager",
+      "company": "Renault",
+      "years": 2.3,
+      "dates": "2012-2014",
+      "remit": "Industrial project management"
+    },
+    {
+      "level": "Senior",
+      "role": "Body Shop Process Project Manager",
+      "company": "Renault",
+      "years": 3.2,
+      "dates": "2014-2018",
+      "remit": "Process project management"
+    },
+    {
+      "level": "Director",
+      "role": "Product Line Quality Director",
+      "company": "Valeo",
+      "years": 3.4,
+      "dates": "2020-2023",
+      "remit": "Quality management for product line"
+    },
+    {
+      "level": "Executive",
+      "role": "Corporate Project Quality Manager",
+      "company": "LEM",
+      "years": 1.1,
+      "dates": "2023-Present",
+      "remit": "Corporate project quality management"
+    }
+  ],
+
+  "Justyna Potega": [
+    {
+      "level": "Entry Level",
+      "role": "Quality Engineer",
+      "company": "TE Connectivity",
+      "years": 3.9,
+      "dates": "2005-2009",
+      "remit": "Quality engineering"
+    },
+    {
+      "level": "Mid Level",
+      "role": "Quality System Engineer",
+      "company": "Schindler",
+      "years": 1.7,
+      "dates": "2009-2010",
+      "remit": "Quality systems engineering"
+    },
+    {
+      "level": "Manager",
+      "role": "Quality Manager",
+      "company": "RUAG Space",
+      "years": 2.8,
+      "dates": "2011-2013",
+      "remit": "Quality management for space projects"
+    },
+    {
+      "level": "Manager",
+      "role": "Quality Manager",
+      "company": "Pratt & Whitney",
+      "years": 6,
+      "dates": "2013-2019",
+      "remit": "Quality management"
+    },
+    {
+      "level": "Executive",
+      "role": "Global Head of Quality",
+      "company": "Oerlikon",
+      "years": 4.9,
+      "dates": "2019-Present",
+      "remit": "Global quality leadership"
+    }
+  ],
+
+  "Ludovic Schramm": [
+    {
+      "level": "Entry Level",
+      "role": "Quality Engineer",
+      "company": "Faurecia",
+      "years": 1.5,
+      "dates": "1996-1998",
+      "remit": "Quality assurance for automotive parts"
+    },
+    {
+      "level": "Mid Level",
+      "role": "Plant Quality Manager",
+      "company": "Faurecia",
+      "years": 3,
+      "dates": "1998-2001",
+      "remit": "Quality management for manufacturing plant"
+    },
+    {
+      "level": "Senior",
+      "role": "Division Quality Director",
+      "company": "Valeo",
+      "years": 4.5,
+      "dates": "2002-2007",
+      "remit": "Quality management for division"
+    },
+    {
+      "level": "Director",
+      "role": "Product Group Quality Director",
+      "company": "Valeo",
+      "years": 1.7,
+      "dates": "2010-2011",
+      "remit": "Quality management for product group"
+    },
+    {
+      "level": "Executive",
+      "role": "Quality & Reliability Director Europe",
+      "company": "Johnson Electric",
+      "years": 3.3,
+      "dates": "2011-2014",
+      "remit": "Quality management for European operations"
+    },
+    {
+      "level": "Executive",
+      "role": "Head of Quality Europe & Americas",
+      "company": "Johnson Electric",
+      "years": 3.6,
+      "dates": "2021-Present",
+      "remit": "Quality management for Europe and Americas"
+    }
+  ],
+  "Luiz Benacchio": [
+    {
+      "level": "Mid Level",
+      "role": "Quality Manager",
+      "company": "Alstom Power",
+      "years": 2.3,
+      "dates": "2009-2011",
+      "remit": "Quality management for hydro business"
+    },
+    {
+      "level": "Director",
+      "role": "Regional Director of Operations",
+      "company": "Alstom Power",
+      "years": 1.8,
+      "dates": "2011-2013",
+      "remit": "Operations management for hydro unit"
+    },
+    {
+      "level": "Director",
+      "role": "Factory & Unit Managing Director",
+      "company": "Alstom Power",
+      "years": 0.9,
+      "dates": "2013-2014",
+      "remit": "Full P&L responsibility for factory"
+    },
+    {
+      "level": "Director",
+      "role": "Quality Director",
+      "company": "GE Power & Water",
+      "years": 2.3,
+      "dates": "2014-2016",
+      "remit": "Quality management for steam power systems"
+    },
+    {
+      "level": "Executive",
+      "role": "EMEA Quality Director",
+      "company": "EnerSys",
+      "years": 3.3,
+      "dates": "2019-2022",
+      "remit": "Quality management for EMEA region"
+    },
+    {
+      "level": "Executive",
+      "role": "EMEA & APAC and Global Advanced Quality Senior Director",
+      "company": "EnerSys",
+      "years": 1.8,
+      "dates": "2022-2024",
+      "remit": "Quality management for EMEA, APAC and global advanced quality"
+    },
+    {
+      "level": "Executive",
+      "role": "EMEA & APAC and Global Supplier Quality Senior Director",
+      "company": "EnerSys",
+      "years": 0.8,
+      "dates": "2024-Present",
+      "remit": "Quality management for EMEA, APAC and global supplier quality"
+    }
+  ],
+  "Markus Genal-Engels": [
+    {
+      "level": "Entry Level",
+      "role": "Business Consultant",
+      "company": "Siemens",
+      "years": 4,
+      "dates": "2005-2009",
+      "remit": "Business consulting"
+    },
+    {
+      "level": "Mid Level",
+      "role": "Process Improvement Manager",
+      "company": "Alstom Power",
+      "years": 1.5,
+      "dates": "2009-2010",
+      "remit": "Process improvement"
+    },
+    {
+      "level": "Senior",
+      "role": "Director Learning & Continuous Improvement",
+      "company": "Alstom Power",
+      "years": 1.7,
+      "dates": "2011-2013",
+      "remit": "Learning and continuous improvement"
+    },
+    {
+      "level": "Director",
+      "role": "Director Global Quality Management",
+      "company": "Alstom Power",
+      "years": 2.5,
+      "dates": "2013-2015",
+      "remit": "Global quality management"
+    },
+    {
+      "level": "Director",
+      "role": "Head of Global Quality Management Office",
+      "company": "Bombardier Transportation",
+      "years": 2.5,
+      "dates": "2017-2020",
+      "remit": "Global quality management"
+    },
+    {
+      "level": "Executive",
+      "role": "Global Head of Quality Product Line Services",
+      "company": "Alstom",
+      "years": 3.7,
+      "dates": "2021-Present",
+      "remit": "Global quality management for product line services"
+    }
+  ],
+  "Paul-Cristian Ionas": [
+    {
+      "level": "Entry Level",
+      "role": "Quality Engineer",
+      "company": "Hella",
+      "years": 3.3,
+      "dates": "2007-2011",
+      "remit": "Quality assurance for automotive parts"
+    },
+    {
+      "level": "Mid Level",
+      "role": "Group Coordinator",
+      "company": "Hella",
+      "years": 2,
+      "dates": "2011-2012",
+      "remit": "Quality coordination"
+    },
+    {
+      "level": "Senior",
+      "role": "Quality Manager Kaufteile",
+      "company": "Hella",
+      "years": 2,
+      "dates": "2015-2017",
+      "remit": "Quality management for purchased parts"
+    },
+    {
+      "level": "Senior",
+      "role": "Quality Manager Production",
+      "company": "Siemens",
+      "years": 3.3,
+      "dates": "2017-2020",
+      "remit": "Quality management for production"
+    },
+    {
+      "level": "Director",
+      "role": "Global Head Quality Management",
+      "company": "Siemens",
+      "years": 2,
+      "dates": "2020-2022",
+      "remit": "Global quality management for segment"
+    },
+    {
+      "level": "Director",
+      "role": "Head of Global Quality",
+      "company": "Siemens",
+      "years": 2.5,
+      "dates": "2022-Present",
+      "remit": "Global quality management for segment"
+    }
+  ],
+  "Piotr Naryński": [
+    {
+      "level": "Entry Level",
+      "role": "Ingenieur of Quality",
+      "company": "Mercedes Vito",
+      "years": 2,
+      "dates": "1997-1999",
+      "remit": "Quality engineering for automotive"
+    },
+    {
+      "level": "Mid Level",
+      "role": "Senior Quality Manager",
+      "company": "Ronal Polska",
+      "years": 14.7,
+      "dates": "2002-2017",
+      "remit": "Quality management for wheel manufacturing"
+    },
+    {
+      "level": "Senior",
+      "role": "Senior Manager Group Quality",
+      "company": "RONAL GROUP",
+      "years": 1.4,
+      "dates": "2017-2018",
+      "remit": "Group quality management"
+    },
+    {
+      "level": "Director",
+      "role": "Head of Group Quality",
+      "company": "RONAL GROUP",
+      "years": 6,
+      "dates": "2018-Present",
+      "remit": "Global quality management for group"
+    }
+  ],
+  "Rafal Dawidowicz": [
+    {
+      "level": "Entry Level",
+      "role": "Product Coordinator",
+      "company": "EDAG",
+      "years": 3,
+      "dates": "1996-1999",
+      "remit": "Product coordination for automotive"
+    },
+    {
+      "level": "Mid Level",
+      "role": "Quality Manager",
+      "company": "Trelleborg",
+      "years": 5,
+      "dates": "2000-2005",
+      "remit": "Quality management for manufacturing"
+    },
+    {
+      "level": "Senior",
+      "role": "Quality & Process Manager",
+      "company": "Trelleborg",
+      "years": 11,
+      "dates": "2005-2016",
+      "remit": "Quality and process management"
+    },
+    {
+      "level": "Director",
+      "role": "Quality Manager",
+      "company": "Boryszew S.A.",
+      "years": 7,
+      "dates": "2016-2023",
+      "remit": "Quality management for automotive plant"
+    },
+    {
+      "level": "Director",
+      "role": "Head of Quality Management",
+      "company": "Kunststoff Schwanden AG",
+      "years": 1.4,
+      "dates": "2023-Present",
+      "remit": "Quality management for manufacturing"
+    }
+  ],
+  "Sarbari Roy": [
+    {
+      "level": "Entry Level",
+      "role": "Director QA & Regulatory Affairs",
+      "company": "BioInvent International AB",
+      "years": 7,
+      "dates": "1996-2003",
+      "remit": "Quality assurance and regulatory affairs"
+    },
+    {
+      "level": "Mid Level",
+      "role": "Director QA, PAR&D Supersite",
+      "company": "AstraZeneca",
+      "years": 3,
+      "dates": "2003-2006",
+      "remit": "Quality assurance for pharmaceutical development"
+    },
+    {
+      "level": "Senior",
+      "role": "Director QA, Capability & Systems",
+      "company": "AstraZeneca",
+      "years": 5,
+      "dates": "2006-2011",
+      "remit": "Quality assurance capability and systems"
+    },
+    {
+      "level": "Director",
+      "role": "Global Head Audit, GMP, Group Compliance & Audit",
+      "company": "Novartis",
+      "years": 2.8,
+      "dates": "2016-2019",
+      "remit": "Global audit and compliance"
+    },
+    {
+      "level": "Executive",
+      "role": "Head Global External Quality",
+      "company": "Seagen",
+      "years": 5,
+      "dates": "2019-Present",
+      "remit": "Global external quality management"
+    }
+  ],
+  "Saverio Baldini": [
+    {
+      "level": "Entry Level",
+      "role": "Quality Engineer",
+      "company": "UmbraGroup",
+      "years": 2,
+      "dates": "1998-2000",
+      "remit": "Quality engineering for manufacturing"
+    },
+    {
+      "level": "Mid Level",
+      "role": "Plant Quality Manager",
+      "company": "UmbraGroup",
+      "years": 3,
+      "dates": "2000-2003",
+      "remit": "Quality management for manufacturing plant"
+    },
+    {
+      "level": "Senior",
+      "role": "Supplier Quality Project Manager",
+      "company": "Renault",
+      "years": 3,
+      "dates": "2005-2008",
+      "remit": "Supplier quality management"
+    },
+    {
+      "level": "Director",
+      "role": "Group Quality & Continuous Improvement Senior Manager",
+      "company": "Indesit Company",
+      "years": 1.7,
+      "dates": "2013-2015",
+      "remit": "Group quality and continuous improvement"
+    },
+    {
+      "level": "Director",
+      "role": "EMEA Quality & Continuous Improvement Senior Manager",
+      "company": "Whirlpool Corporation",
+      "years": 1.6,
+      "dates": "2015-2016",
+      "remit": "EMEA quality and continuous improvement"
+    },
+    {
+      "level": "Director",
+      "role": "Head of Coffee Machine Quality",
+      "company": "Nestlé Nespresso SA",
+      "years": 4,
+      "dates": "2018-2021",
+      "remit": "Quality management for coffee machines"
+    },
+    {
+      "level": "Director",
+      "role": "Head of Quality Management & Methods",
+      "company": "Bosch Power Tools",
+      "years": 1.7,
+      "dates": "2023-Present",
+      "remit": "Quality management for power tools accessories"
+    }
+  ],
+  "Serge Romming": [
+    {
+      "level": "Entry Level",
+      "role": "Quality Assurance",
+      "company": "3M",
+      "years": 2,
+      "dates": "1994-1996",
+      "remit": "Quality assurance for manufacturing"
+    },
+    {
+      "level": "Mid Level",
+      "role": "Quality System Engineer",
+      "company": "3M",
+      "years": 2,
+      "dates": "1996-1998",
+      "remit": "Quality system engineering"
+    },
+    {
+      "level": "Senior",
+      "role": "Purchasing & Quality Plant Manager",
+      "company": "3M",
+      "years": 3.8,
+      "dates": "1998-2001",
+      "remit": "Plant-level quality and purchasing management"
+    },
+    {
+      "level": "Senior",
+      "role": "Supplier Quality Engineer",
+      "company": "Continental",
+      "years": 5.7,
+      "dates": "2003-2009",
+      "remit": "Supplier quality management"
+    },
+    {
+      "level": "Director",
+      "role": "Global Quality Category Manager",
+      "company": "Continental",
+      "years": 5.7,
+      "dates": "2006-2012",
+      "remit": "Global quality management for product category"
+    },
+    {
+      "level": "Director",
+      "role": "Senior Manager Supplier Quality Europe",
+      "company": "Johnson Electric",
+      "years": 2.2,
+      "dates": "2015-2017",
+      "remit": "Supplier quality management for Europe"
+    },
+    {
+      "level": "Executive",
+      "role": "Head of Quality Europe & Americas",
+      "company": "Johnson Electric",
+      "years": 3.6,
+      "dates": "2021-Present",
+      "remit": "Quality management for Europe and Americas regions"
+    }
+  ],
+  "Thomas May": [
+    {
+      "level": "Entry Level",
+      "role": "Quality Engineer",
+      "company": "Keiper GmbH & Co KG",
+      "years": 6.3,
+      "dates": "2000-2006",
+      "remit": "Quality engineering for automotive seating"
+    },
+    {
+      "level": "Mid Level",
+      "role": "Manager Quality Management",
+      "company": "Keiper GmbH & Co KG",
+      "years": 3.8,
+      "dates": "2007-2010",
+      "remit": "Quality management"
+    },
+    {
+      "level": "Senior",
+      "role": "Manager Quality Projects",
+      "company": "RONAL AG",
+      "years": 0.8,
+      "dates": "2010-2011",
+      "remit": "Quality project management"
+    },
+    {
+      "level": "Director",
+      "role": "Head of Corporate Quality",
+      "company": "RONAL AG",
+      "years": 13.8,
+      "dates": "2011-Present",
+      "remit": "Corporate quality management"
+    }
+  ],
+  "Thorsten Bauer": [
+    {
+      "level": "Entry Level",
+      "role": "Industrial Mechanic",
+      "company": "Siemens",
+      "years": 0.3,
+      "dates": "2002-2002",
+      "remit": "Industrial mechanics"
+    },
+    {
+      "level": "Mid Level",
+      "role": "Project Engineer",
+      "company": "Siemens",
+      "years": 6.3,
+      "dates": "2004-2010",
+      "remit": "Project engineering"
+    },
+    {
+      "level": "Senior",
+      "role": "Lead Electrical Engineer",
+      "company": "Siemens",
+      "years": 1.4,
+      "dates": "2011-2012",
+      "remit": "Electrical engineering leadership"
+    },
+    {
+      "level": "Senior",
+      "role": "Supplier Quality Manager",
+      "company": "Siemens",
+      "years": 2.8,
+      "dates": "2012-2015",
+      "remit": "Supplier quality management"
+    },
+    {
+      "level": "Director",
+      "role": "Global Quality Manager",
+      "company": "Siemens",
+      "years": 5,
+      "dates": "2015-2020",
+      "remit": "Global quality management"
+    },
+    {
+      "level": "Director",
+      "role": "Head Supplier Quality Management",
+      "company": "Siemens",
+      "years": 4.9,
+      "dates": "2019-Present",
+      "remit": "Global supplier quality management"
+    }
+  ],
+  "Veronika K.": [
+    {
+      "level": "Entry Level",
+      "role": "Quality control technician",
+      "company": "Plasta, AB",
+      "years": 1,
+      "dates": "2003-2004",
+      "remit": "Quality control for manufacturing"
+    },
+    {
+      "level": "Mid Level",
+      "role": "Technologist / Operational excellence",
+      "company": "UAB NEO GROUP",
+      "years": 3.9,
+      "dates": "2006-2010",
+      "remit": "Process improvement and operational excellence"
+    },
+    {
+      "level": "Senior",
+      "role": "Quality Manager",
+      "company": "UltraVision CLPL",
+      "years": 1,
+      "dates": "2012-2013",
+      "remit": "Quality management for medical devices"
+    },
+    {
+      "level": "Senior",
+      "role": "Quality Manager",
+      "company": "Laminar Medica Limited",
+      "years": 1.8,
+      "dates": "2014-2016",
+      "remit": "Quality management for medical packaging"
+    },
+    {
+      "level": "Senior",
+      "role": "Sr QA Engineer QMS",
+      "company": "Philip Morris International",
+      "years": 1.4,
+      "dates": "2018-2020",
+      "remit": "Quality management system engineering"
+    },
+    {
+      "level": "Director",
+      "role": "Manager CMC Services",
+      "company": "Philip Morris International",
+      "years": 4.6,
+      "dates": "2020-Present",
+      "remit": "Chemistry, Manufacturing and Controls services management"
+    }
+  ]
+}
