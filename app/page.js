@@ -2,6 +2,11 @@ import Link from "next/link";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
+export const metadata = {
+  title: "NW Dashboards",
+  description: "Workspace for dashboards, tests and tools in development.",
+};
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200 p-8">
