@@ -1,0 +1,362 @@
+{
+    "Category 1": {
+      "Operational Quality Roles": {
+        "1A": {
+          "Entry-Level Quality Technicians": {
+            "Definition": "Roles that involve performing basic quality control checks and tests under close supervision. Responsibilities are routine, and tasks are well-defined.",
+            "Key Factors": {
+              "Experience": "Minimal; often entry-level positions.",
+              "Responsibilities": "Conducting inspections, following testing procedures, documenting results.",
+              "Decision-Making": "Limited to identifying non-conformities and reporting them.",
+              "Impact": "Ensures immediate quality standards are met; direct but limited influence.",
+              "Communication": "Primarily within the team; reports issues to supervisors."
+            },
+            "Examples": {
+              "Quality Technician": "Performs measurements and tests on products.",
+              "Inspection Operator": "Checks products for defects during manufacturing.",
+              "Laboratory Assistant": "Supports testing and data collection activities."
+            }
+          }
+        },
+        "1B": {
+          "Quality Assurance Assistants": {
+            "Definition": "Individuals who support quality assurance activities by collecting and analyzing data, assisting in audits, and maintaining quality records.",
+            "Key Factors": {
+              "Experience": "Some prior experience in quality tasks.",
+              "Responsibilities": "Assisting with internal audits, updating quality documentation, supporting compliance efforts.",
+              "Decision-Making": "Follows established protocols; may suggest minor improvements.",
+              "Impact": "Contributes to maintaining the Quality Management System (QMS).",
+              "Communication": "Interacts with various departments; reports to quality professionals."
+            },
+            "Examples": {
+              "Quality Assurance (QA) Officer": "Supports QMS implementation.",
+              "Document Control Specialist": "Manages quality documentation.",
+              "Compliance Assistant": "Helps ensure adherence to standards."
+            }
+          }
+        },
+        "1C": {
+          "Experienced Quality Control Specialists": {
+            "Definition": "Skilled professionals performing complex inspections and tests, capable of troubleshooting issues, and suggesting process improvements.",
+            "Key Factors": {
+              "Experience": "Several years in quality control roles.",
+              "Responsibilities": "Advanced testing, root cause analysis, mentoring junior staff.",
+              "Decision-Making": "Makes decisions within testing and inspection scope.",
+              "Impact": "Enhances product quality and reduces defects.",
+              "Communication": "Coordinates with production teams; provides feedback to supervisors."
+            },
+            "Examples": {
+              "Senior Quality Technician": "Leads testing protocols.",
+              "Quality Inspector": "Conducts detailed inspections and recommends actions.",
+              "Calibration Specialist": "Ensures measurement equipment accuracy."
+            }
+          }
+        },
+        "1D": {
+          "Lead Quality Operators": {
+            "Definition": "Individuals who lead small teams in quality operations, coordinating tasks, and providing guidance while still performing hands-on activities.",
+            "Key Factors": {
+              "Experience": "Significant experience with demonstrated leadership abilities.",
+              "Responsibilities": "Leading quality teams, scheduling inspections, training staff.",
+              "Decision-Making": "Decisions affecting team operations and immediate quality outcomes.",
+              "Impact": "Directly influences team efficiency and product quality.",
+              "Communication": "Leads team meetings; liaises with management."
+            },
+            "Examples": {
+              "Quality Team Leader": "Manages a team of quality technicians.",
+              "Shift Quality Supervisor": "Oversees quality activities during a shift.",
+              "Lead Auditor (Operational Level)": "Coordinates internal audits."
+            }
+          }
+        }
+      }
+    },
+    "Category 2": {
+      "Professional Quality Roles": {
+        "2A": {
+          "Entry-Level Quality Engineers": {
+            "Definition": "Professionals starting in quality engineering, applying quality principles under guidance to support projects and process improvements.",
+            "Key Factors": {
+              "Experience": "Minimal; starting their professional careers.",
+              "Responsibilities": "Assisting in quality planning, conducting basic analysis, supporting senior engineers.",
+              "Decision-Making": "Limited; works under supervision.",
+              "Impact": "Supports project quality components.",
+              "Communication": "Within project teams; may assist in reporting."
+            },
+            "Examples": {
+              "Quality Engineer": "Supports quality assurance activities.",
+              "Supplier Quality Engineer (Junior)": "Assists in supplier assessments.",
+              "Process Quality Engineer (Junior)": "Aids in process improvement initiatives."
+            }
+          }
+        },
+        "2B": {
+          "Mid-Level Quality Professionals": {
+            "Definition": "Individuals working independently on quality projects, may manage small projects or specific quality aspects of larger projects.",
+            "Key Factors": {
+              "Experience": "Several years in quality roles.",
+              "Responsibilities": "Implementing quality plans, managing quality issues, conducting root cause analysis.",
+              "Decision-Making": "Decisions within project or process scope.",
+              "Impact": "Influences quality outcomes and compliance.",
+              "Communication": "Collaborates with cross-functional teams; interacts with suppliers or customers."
+            },
+            "Examples": {
+              "Supplier Quality Engineer": "Manages supplier quality activities.",
+              "Process Quality Engineer": "Leads process improvement projects.",
+              "Quality Assurance Specialist": "Ensures adherence to quality standards."
+            }
+          }
+        },
+        "2C": {
+          "Senior Quality Professionals": {
+            "Definition": "Recognized experts leading significant quality projects, mentoring others, and providing substantial contributions to quality management practices.",
+            "Key Factors": {
+              "Experience": "Extensive experience in quality management.",
+              "Responsibilities": "Leading major quality initiatives, advising on quality strategies, mentoring junior staff.",
+              "Decision-Making": "High-level decisions within quality projects; advisory role.",
+              "Impact": "Influences departmental quality strategies and improvements.",
+              "Communication": "Leads cross-functional teams; key contact for quality issues."
+            },
+            "Examples": {
+              "Senior Quality Engineer": "Oversees complex quality projects.",
+              "Lead Auditor (Senior Level)": "Conducts and leads comprehensive audits.",
+              "Quality Improvement Manager": "Drives continuous improvement initiatives."
+            }
+          }
+        },
+        "2D": {
+          "Principal Quality Experts": {
+            "Definition": "Top experts who develop new quality methodologies, influence industry practices, and lead global quality initiatives.",
+            "Key Factors": {
+              "Experience": "Extensive, with recognized authority in the field.",
+              "Responsibilities": "Setting quality strategies, leading global projects, representing the organization in industry forums.",
+              "Decision-Making": "Strategic decisions impacting organizational quality direction.",
+              "Impact": "Shapes organizational and industry quality standards.",
+              "Communication": "Represents the organization externally; collaborates with top management."
+            },
+            "Examples": {
+              "Global Quality Manager in Projects": "Manages quality across global projects.",
+              "Principal Quality Consultant": "Advises on quality strategies at the highest level.",
+              "Global Head of Quality Standards": "Develops and implements global quality standards."
+            }
+          }
+        }
+      }
+    },
+    "Category 3": {
+      "Supervisory Quality Roles": {
+        "3A": {
+          "First-Line Quality Supervisors": {
+            "Definition": "Supervises a small quality team focused on daily quality operations. Responsibilities include task assignments and immediate problem-solving.",
+            "Key Factors": {
+              "Experience": "Adequate experience with leadership exposure.",
+              "Responsibilities": "Managing day-to-day quality activities, coaching team members.",
+              "Decision-Making": "Operational decisions affecting team performance.",
+              "Impact": "Influences team efficiency and adherence to quality standards.",
+              "Communication": "Guides team; reports to higher management."
+            },
+            "Examples": {
+              "Quality Supervisor": "Oversees quality technicians and inspectors.",
+              "Quality Control Lead": "Manages daily quality control operations.",
+              "Customer Quality Supervisor": "Handles customer-related quality issues."
+            }
+          }
+        },
+        "3B": {
+          "Mid-Level Quality Supervisors": {
+            "Definition": "Manages multiple quality teams or a larger team; involved in planning and implementing departmental quality goals.",
+            "Key Factors": {
+              "Experience": "Significant supervisory experience.",
+              "Responsibilities": "Setting team objectives, managing resources, participating in hiring decisions.",
+              "Decision-Making": "Tactical decisions impacting quality performance.",
+              "Impact": "Affects departmental quality outcomes and compliance.",
+              "Communication": "Coordinates between teams; communicates with department heads."
+            },
+            "Examples": {
+              "Quality Assurance Supervisor": "Manages QA teams across shifts.",
+              "Supplier Quality Manager": "Oversees supplier quality engineers and activities.",
+              "Quality Lab Manager": "Manages laboratory operations and staff."
+            }
+          }
+        },
+        "3C": {
+          "Senior Quality Supervisors": {
+            "Definition": "Oversees large quality teams or multiple departments; provides strategic input and ensures alignment with organizational quality objectives.",
+            "Key Factors": {
+              "Experience": "Extensive supervisory experience.",
+              "Responsibilities": "Strategic planning, budgeting for quality departments, implementing organizational quality initiatives.",
+              "Decision-Making": "High-level operational decisions within quality.",
+              "Impact": "Influences quality policies and long-term departmental plans.",
+              "Communication": "Liaison between quality staff and senior management."
+            },
+            "Examples": {
+              "Senior Quality Manager": "Manages quality across multiple plants or divisions.",
+              "Regional Quality Supervisor": "Oversees quality activities in multiple regions.",
+              "Quality Systems Manager": "Manages QMS implementation across departments."
+            }
+          }
+        },
+        "3D": {
+          "Lead Quality Supervisors": {
+            "Definition": "Sets supervisory policies for quality departments, mentors other supervisors, and bridges the gap between management and operational quality staff.",
+            "Key Factors": {
+              "Experience": "Extensive with a track record of leadership.",
+              "Responsibilities": "Developing quality supervisory practices, leading change initiatives, standardizing procedures.",
+              "Decision-Making": "Strategic within quality supervision scope.",
+              "Impact": "Shapes supervisory practices and influences organizational quality culture.",
+              "Communication": "Collaborates with senior management; addresses cross-departmental quality concerns."
+            },
+            "Examples": {
+              "Head of Quality Supervision": "Standardizes supervisory methods in quality.",
+              "Quality Programs Leader": "Oversees large-scale quality programs and initiatives.",
+              "Quality Training Manager": "Develops training for quality supervisors and staff."
+            }
+          }
+        }
+      }
+    },
+    "Category 4": {
+      "Managerial Quality Roles": {
+        "4A": {
+          "Quality Managers": {
+            "Definition": "Manages the quality department or function; responsible for implementing quality strategies, managing staff, and achieving quality goals.",
+            "Key Factors": {
+              "Experience": "Significant experience in quality management roles.",
+              "Responsibilities": "Overseeing quality operations, ensuring compliance, leading audits.",
+              "Decision-Making": "Department-level decisions; policy implementation.",
+              "Impact": "Directly affects product and process quality.",
+              "Communication": "Reports to senior management; communicates with cross-functional teams."
+            },
+            "Examples": {
+              "Quality Manager": "Manages quality activities within a plant.",
+              "Customer Quality Manager (Automotive)": "Focuses on automotive customer satisfaction.",
+              "Supplier Quality Manager": "Oversees supplier quality for the organization."
+            }
+          }
+        },
+        "4B": {
+          "Senior Quality Managers": {
+            "Definition": "Oversees multiple quality departments or significant quality functions; develops strategies and contributes to organizational planning.",
+            "Key Factors": {
+              "Experience": "Extensive experience with leadership in quality.",
+              "Responsibilities": "Developing quality strategies, managing multiple teams, driving continuous improvement.",
+              "Decision-Making": "Strategic decisions impacting multiple areas.",
+              "Impact": "Influences organizational quality practices and performance.",
+              "Communication": "Collaborates with executives; manages department leaders."
+            },
+            "Examples": {
+              "Senior Quality Security & HSE Manager": "Manages quality, security, health, and safety functions.",
+              "Quality & Risk Director": "Oversees quality and risk management strategies.",
+              "Head of Quality - Voice of the Customer": "Acts as the primary liaison for major customers."
+            }
+          }
+        },
+        "4C": {
+          "Quality Directors": {
+            "Definition": "Manages the overall quality function at a divisional or organizational level; responsible for strategic direction, budgeting, and achieving long-term quality objectives.",
+            "Key Factors": {
+              "Experience": "Extensive with demonstrated strategic leadership.",
+              "Responsibilities": "Setting quality vision, managing large teams, ensuring global compliance.",
+              "Decision-Making": "High-level strategic decisions with significant impact.",
+              "Impact": "Shapes company-wide quality standards and practices.",
+              "Communication": "Reports to top executives; interfaces with key stakeholders."
+            },
+            "Examples": {
+              "Quality Director - Dyrektor Jakości": "Leads quality department and strategy.",
+              "Global Quality Director": "Oversees quality management globally.",
+              "Director of Quality & Continuous Improvement": "Drives quality and improvement initiatives."
+            }
+          }
+        },
+        "4D": {
+          "Senior Quality Directors": {
+            "Definition": "Influences corporate strategy through quality leadership; oversees multiple divisions and integral in decisions affecting the entire organization.",
+            "Key Factors": {
+              "Experience": "Extensive executive-level experience in quality.",
+              "Responsibilities": "Aligning quality strategy with corporate goals, leading transformative quality initiatives.",
+              "Decision-Making": "Executive-level decisions impacting the organization.",
+              "Impact": "Drives organizational success and reputation through quality excellence.",
+              "Communication": "Collaborates closely with executive teams and boards."
+            },
+            "Examples": {
+              "Global Head of Quality": "Leads quality across all business units.",
+              "Senior Director of Quality Operations": "Manages quality operations globally.",
+              "Head of Quality & Risk Management": "Oversees quality and risk at the corporate level."
+            }
+          }
+        }
+      }
+    },
+    "Category 5": {
+      "Executive Quality Roles": {
+        "5A": {
+          "Vice Presidents of Quality": {
+            "Definition": "Sets strategic direction for the organization's quality function; responsible for major quality initiatives and compliance across all operations.",
+            "Key Factors": {
+              "Experience": "Extensive with proven executive leadership in quality.",
+              "Responsibilities": "Developing and implementing quality strategies, leading global quality teams, ensuring organizational compliance.",
+              "Decision-Making": "Executive decisions with broad impact on quality.",
+              "Impact": "Drives quality performance and organizational excellence.",
+              "Communication": "Interacts with board members; represents the company externally on quality matters."
+            },
+            "Examples": {
+              "Vice President of Quality Assurance": "Oversees all quality assurance activities.",
+              "Global Head, Quality & Continuous Improvement": "Leads global quality and improvement strategies.",
+              "Head of Global Quality": "Responsible for global quality management."
+            }
+          }
+        },
+        "5B": {
+          "Senior Vice Presidents of Quality": {
+            "Definition": "Key executives overseeing multiple quality functions; instrumental in shaping company policies, culture, and strategic quality direction.",
+            "Key Factors": {
+              "Experience": "Extensive with significant executive tenure in quality.",
+              "Responsibilities": "Aligning quality initiatives with corporate strategy, managing large global teams, influencing industry standards.",
+              "Decision-Making": "High-stakes decisions affecting the company's quality and reputation.",
+              "Impact": "Major influence on company performance and market positioning.",
+              "Communication": "Regular interaction with the CEO, board, and major stakeholders."
+            },
+            "Examples": {
+              "Senior Vice President of Global Quality": "Drives global quality initiatives.",
+              "SVP Quality and Compliance": "Oversees quality and compliance at the highest level.",
+              "Global Head of Quality & Management Systems": "Manages global quality systems and standards."
+            }
+          }
+        },
+        "5C": {
+          "Chief Quality Officers (CQO)": {
+            "Definition": "Holds ultimate decision-making authority in quality; responsible for overall quality strategy, culture, and execution across the organization.",
+            "Key Factors": {
+              "Experience": "Extensive with exceptional track record in quality leadership.",
+              "Responsibilities": "Setting the quality vision, ensuring integration of quality into all business aspects, representing quality at the executive level.",
+              "Decision-Making": "Organization-wide decisions impacting quality.",
+              "Impact": "Directly affects overall performance and strategic direction through quality excellence.",
+              "Communication": "Engages with the board, investors, and external stakeholders."
+            },
+            "Examples": {
+              "Chief Quality Officer (CQO)": "Leads quality strategy and integration.",
+              "Executive Director of Quality": "Oversees quality at the executive level.",
+              "Chief Compliance and Quality Officer": "Manages compliance and quality together."
+            }
+          }
+        },
+        "5D": {
+          "CEO/President with Quality Emphasis": {
+            "Definition": "The highest-ranking executive who, in addition to overall leadership, places significant emphasis on quality as a core organizational value.",
+            "Key Factors": {
+              "Experience": "Extensive executive leadership with a focus on quality.",
+              "Responsibilities": "Setting the organization's vision and culture with quality at the forefront, making final decisions on strategic quality initiatives.",
+              "Decision-Making": "Final authority on all organizational decisions, including quality.",
+              "Impact": "Determines the organization's future and commitment to quality excellence.",
+              "Communication": "Represents the organization at the highest levels, emphasizing quality."
+            },
+            "Examples": {
+              "CEO with Quality Background": "Leads the organization with a strong focus on quality.",
+              "President who Champions Quality Initiatives": "Drives quality as a key differentiator."
+            }
+          }
+        }
+      }
+    }
+  }
+  

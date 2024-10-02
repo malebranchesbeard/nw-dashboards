@@ -2,11 +2,16 @@
 
 import React from "react";
 import { BarChart, XAxis, YAxis, Tooltip, Customized } from "recharts";
+import AverageTracks from "../../components/AverageTracks";
 import careerTrackData from "../data/career_track.json";
 import { Button } from "@/components/ui/button";
+import RolesDiagram from "../../components/RolesDiagram";
+import LevelBreakdown from "../../components/LevelBreakdown";
 import Link from "next/link";
+import { useState } from "react";
+import { Switch } from "@/components/ui/switch";
 
-const SHOW_CANDIDATE_NAMES = false; // Set this to false to hide real names
+const SHOW_CANDIDATE_NAMES = true; // Set this to false to hide real names
 
 const levelOrder = [
   "Entry Level",
@@ -35,7 +40,7 @@ const colorMap = Object.fromEntries(
 const CareerProgressionGanttChart = () => {
   const [chartData, setChartData] = React.useState([]);
   const [xAxisDomain, setXAxisDomain] = React.useState([1990, 2025]);
-  const [chartWidth, setChartWidth] = React.useState(1000);
+  const [chartWidth, setChartWidth] = React.useState(0);
 
   React.useEffect(() => {
     const processedData = Object.entries(careerTrackData).map(
@@ -66,8 +71,11 @@ const CareerProgressionGanttChart = () => {
     setXAxisDomain([minYear, maxYear]); // Remove the +1 from maxYear
 
     const updateWidth = () => {
-      const newWidth = Math.max(1000, window.innerWidth - 40);
-      setChartWidth(newWidth);
+      const container = document.querySelector(".container");
+      if (container) {
+        const newWidth = container.clientWidth - 32; // Subtract padding (16px on each side)
+        setChartWidth(newWidth);
+      }
     };
 
     updateWidth();
@@ -110,7 +118,7 @@ const CareerProgressionGanttChart = () => {
     );
   };
 
-  const LegendKey = () => (
+  const LegendKey = ({ chartWidth }) => (
     <div
       className="flex flex-wrap justify-center mt-4 gap-4" // Added gap-4 for spacing
       style={{ width: chartWidth }}
@@ -128,7 +136,7 @@ const CareerProgressionGanttChart = () => {
   );
 
   return (
-    <div className="w-full p-4">
+    <div className="w-full p-0">
       <BarChart
         width={chartWidth}
         height={600} // Increase the height to accommodate all names
@@ -167,21 +175,39 @@ const CareerProgressionGanttChart = () => {
         />
         <Customized component={CustomizedBars} />
       </BarChart>
-      <LegendKey />
+      <LegendKey chartWidth={chartWidth} />
     </div>
   );
 };
 
 export default function CareerChartPage() {
+  const [showChart, setShowChart] = useState(true);
+
   return (
     <div className="container min-h-screen bg-white p-4">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-2xl font-bold">Career Progression Gantt Chart</h2>
+        <h2 className="text-2xl font-bold">Career Progression Visualization</h2>
         <Button asChild variant="default">
           <Link href="/">Home</Link>
         </Button>
       </div>
-      <CareerProgressionGanttChart />
+      <div className="flex items-center justify-end space-x-2 mb-4">
+        <span>Gantt Chart</span>
+        <Switch
+          checked={!showChart}
+          onCheckedChange={() => setShowChart(!showChart)}
+        />
+        <span>Roles Diagram</span>
+      </div>
+      {showChart ? (
+        <>
+          <CareerProgressionGanttChart />
+          <AverageTracks data={careerTrackData} />
+          <LevelBreakdown data={careerTrackData} />
+        </>
+      ) : (
+        <RolesDiagram />
+      )}
     </div>
   );
 }
