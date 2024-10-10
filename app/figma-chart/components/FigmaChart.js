@@ -14,11 +14,10 @@ export default function FigmaChart() {
   }
 
   return (
-    <div className="flex-grow flex flex-col h-full">
+    <div className="w-full h-full">
       <iframe
-        className="flex-grow"
+        className="w-full h-full"
         style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
-        width="100%"
         src="https://embed.figma.com/design/NR7WyVbxi7B9VIInOyphcc/Database-Diagram-Builder-(Community)?node-id=126-257&embed-host=share"
         allowFullScreen
       />
