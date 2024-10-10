@@ -1,0 +1,1024 @@
+[
+  {
+    "name": "C\u00e9dric Brieussel",
+    "summary": "With 30 years of extensive experience in the mechanical industry (including automotive and aeronautics) across various departments, I have good knowledge and skills related to the manufacturing of mechanical products. My approach is holistic, allowing me to understand the end-to-end processes seamlessly. My last experiences are related to Quality Control, but my expertises span a wide range of activities: Lean Manufacturing, Process Engineering, Supply Chain Management, Manufacturing. Throughout my career, I have demonstrated effective leadership by successfully managing teams. My management style is characterized by a focus on empowerment and involvement, where I prioritize the growth and engagement of my teammates in a collaborative and stable work environment,",
+    "notes": "Good track and leadership but a bit short on Quality (12/15). Strong Process focus though. Busch Group is at 2B and 8000 FTEs. He is head of Vacuum Solutions which is main BU (sometimes used interchangeably in their own website). Other 2 BUs seem like acquisitions. 19 plants, present in 45 countries.",
+    "experience": [
+      {
+        "company": "Busch Vacuum Solutions",
+        "title": "Global Quality Manager",
+        "duration": "October 2018 - Present (6 years)",
+        "location": "Suisse",
+        "description": "Head of Quality for Busch Manufacturing Companies (Germany, Switzerland, Czechia, UK, USA, Korea, India, China). Supplier, internal and customer Quality. Global Process Owner et Process Expert for QM Module in SAP S/4 HANA. Norms and regulations expert.",
+        "seniority_level": "Category 4: 4C - Quality Directors",
+        "justification": "As a Global Quality Manager overseeing multiple countries, this role aligns with the strategic responsibilities and impact of a Quality Director."
+      },
+      {
+        "company": "Busch Vacuum Solutions",
+        "title": "SAP Project Manager",
+        "duration": "January 2019 - July 2020 (1 year 7 months)",
+        "location": "Suisse",
+        "description": "Project Manager for the implementation of SAP S/4HANA - Move from Infor LN to SAP for all main modules. Management of a team of 10 Key-Users. Common project with the Busch German factory.",
+        "seniority_level": "Category 2: 2C - Senior Quality Professionals",
+        "justification": "While not strictly a quality role, managing a major ERP implementation project requires senior-level expertise and impacts quality processes."
+      },
+      {
+        "company": "Busch Vacuum Solutions",
+        "title": "Quality and Safety Manager",
+        "duration": "April 2012 - September 2018 (6 years 6 months)",
+        "location": "Suisse",
+        "description": "Head of Quality and Safety for the Busch factory located in Switzerland (450 employees) - Management of 14 team members - Included Supplier Quality, Internal Quality, Customer Quality, Safety, Gauge calibration.",
+        "seniority_level": "Category 4: 4A - Quality Managers",
+        "justification": "This role involves managing the quality department for a large factory, aligning with the responsibilities of a Quality Manager."
+      },
+      {
+        "company": "Busch Vacuum Solutions",
+        "title": "ERP Project manager (Infor LN)",
+        "duration": "January 2011 - March 2012 (1 year 3 months)",
+        "location": "Suisse",
+        "description": "Project Manager - Implementation of Infor LN (Legacy system: Baan 4) - Management of a team of 8 Key-Users - Management of external consultants.",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Busch Vacuum Solutions",
+        "title": "Production Manager",
+        "duration": "April 2007 - December 2010 (3 years 9 months)",
+        "location": "Suisse",
+        "description": "Management of a autonomous workshop manufacturing vacuum systems - Included the Manufacturing processes (assembly, painting, testing, packaging) and the management of the Supply chain (procurement, warehousing, planning, dispatching) - Team of 20 employees.",
+        "seniority_level": "Category 3: 3B - Mid-Level Quality Supervisors",
+        "justification": "While not a direct quality role, production management at this level involves significant quality oversight and aligns with mid-level supervisory responsibilities."
+      },
+      {
+        "company": "Aircelle",
+        "title": "Production Control Manager",
+        "duration": "September 2003 - March 2007 (3 years 7 months)",
+        "location": "Le Havre, Normandie, France",
+        "description": "Management of the Production Control - Procurement, Planning, Warehousing, Bill of Materials. Management of 5 teamleaders (30 team members).",
+        "seniority_level": "Category 3: 3B - Mid-Level Quality Supervisors",
+        "justification": "Managing production control involves quality aspects and aligns with mid-level supervisory responsibilities in a quality-adjacent field."
+      },
+      {
+        "company": "Valeo",
+        "title": "Logistics Manager",
+        "duration": "January 1999 - August 2003 (4 years 8 months)",
+        "location": "Amiens, Hauts-de-France, France",
+        "description": "Supply Chain Management for the Heavy Truck plant (250 employees) - Procurement, Warehousing, Planning, Customer order management, Dispatching. Management of a team of 13 persons.",
+        "seniority_level": "Category 3: 3B - Mid-Level Quality Supervisors",
+        "justification": "Supply chain management has significant quality implications and aligns with mid-level supervisory responsibilities."
+      },
+      {
+        "company": "Valeo",
+        "title": "Production Manager",
+        "duration": "January 1998 - December 1999 (2 years)",
+        "location": "",
+        "description": "Management of a APU (Autonomous Production Unit) - 50 workers, 5 production lines - Machining, Assembly, Stamping, Quenching.",
+        "seniority_level": "Category 3: 3B - Mid-Level Quality Supervisors",
+        "justification": "Managing an Autonomous Production Unit involves quality oversight and aligns with mid-level supervisory responsibilities."
+      },
+      {
+        "company": "Valeo",
+        "title": "Process Engineering Manager",
+        "duration": "June 1995 - December 1997 (2 years 7 months)",
+        "location": "Amiens, Hauts-de-France, France",
+        "description": "Design and implementation of Manufacturing processes and equipments. Machining of casting parts, quenching, stamping, assembly. Investment of new production lines and special automated machines.",
+        "seniority_level": "Category 2: 2C - Senior Quality Professionals",
+        "justification": "Process engineering management strongly impacts product quality and aligns with senior professional responsibilities in quality-adjacent fields."
+      },
+      {
+        "company": "Valeo",
+        "title": "Lean Expert - Process engineer",
+        "duration": "November 1993 - May 1995 (1 year 7 months)",
+        "location": "Amiens, Hauts-de-France, France",
+        "description": "Implementation of Lean methods (5S, SMED, TPM, Kan-Ban, One-Piece-Flow, ...) - Process engineer for one product line.",
+        "seniority_level": "Category 2: 2B - Mid-Level Quality Professionals",
+        "justification": "Implementing Lean methods and process engineering are closely related to quality improvement, aligning with mid-level professional responsibilities."
+      }
+    ]
+  },
+  {
+    "name": "Cemal Yilmaz",
+    "summary": "Ich bin Cemal Yilmaz, Head of Global Quality Management. Seit drei Jahren bin ich verantwortlich f\u00fcr das globale Qualit\u00e4tsmanagement, Arbeitssicherheit und Umweltmanagement. Ich habe einen Diplom-Abschluss als Elektroingenieur FH, NDS in Qualit\u00e4tsmanagement, und eine Ausbildung als Lean Experte. Mein Ziel ist es, die Kundenzufriedenheit und die Stimme des Kunden zu verbessern, indem ich die Produktqualit\u00e4t, die Prozessqualit\u00e4t und die Qualit\u00e4tskultur kontinuierlich optimiere. Ich habe Erfahrung und bin Lead Auditor in der Nuklearen Qualit\u00e4tssicherung nach ASME NQA-1, 10CFR50 App.B, 10CFR21 und bin sehr versiert mit den Anforderungen der ISO9001, ISO14001 und ISO45001. Ich wende Lean Six Sigma Methoden und Werkzeuge an, um die Ursachen von Fehlern zu analysieren und Qualit\u00e4tsverbesserungsprojekte zu leiten. Ich arbeite eng mit internen und externen Partnern zusammen, um die Qualit\u00e4tsstandards und die Kundenerwartungen zu erf\u00fcllen. Ich bin den operativen T\u00e4tigkeiten wie auch mit strategischem Qualit\u00e4tsmanagement sehr vertraut.",
+    "notes": "V-ZUG - Swiss, 600M revenue. Kitchen appliances so higher tier. Customer focus exp. Will have to ask if this is compensated by exp at Schneider. Schneider - WW might mean Water and Wastewater Gutor - Power supply systems",
+    "experience": [
+      {
+        "company": "V-ZUG AG",
+        "title": "Head of Global Quality Management",
+        "duration": "Januar 2021 - Present (3 Jahre 9 Monate)",
+        "location": "Zug, Schweiz",
+        "description": "Verantwortlich f\u00fcr das globale Qualit\u00e4tsmanagement, Arbeitssicherheit und Umweltmanagement. Produktentstehungsprozess-Qualit\u00e4t, Feldfehler Analyse und Qualit\u00e4tsverbesserungsprojekte in der Serie Entwicklung. Reduktion der Nonconformity Cost.",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Pensionskasse der Schneider Electric-Gesellschaften Schweiz",
+        "title": "Stiftungsratsmitglied Arbeitgeber",
+        "duration": "Januar 2019 - Januar 2021 (2 Jahre 1 Monat)",
+        "location": "Horgen, Kanton Z\u00fcrich, Schweiz",
+        "description": "",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Schneider Electric",
+        "title": "Customer Satisfaction & Quality Director",
+        "duration": "Juli 2018 - Januar 2021 (2 Jahre 7 Monate)",
+        "location": "Wettingen, Kanton Aargau, Schweiz",
+        "description": "",
+        "seniority_level": "Category 4: 4B - Senior Quality Managers",
+        "justification": "The role of Customer Satisfaction & Quality Director suggests oversight of multiple quality functions and contribution to organizational planning, fitting the Senior Quality Manager category."
+      },
+      {
+        "company": "Schneider Electric",
+        "title": "Quality & Environmental Manager WW",
+        "duration": "September 2010 - Juni 2018 (7 Jahre 10 Monate)",
+        "location": "Wettingen, Kanton Aargau, Schweiz",
+        "description": "",
+        "seniority_level": "Category 4: 4A - Quality Managers",
+        "justification": "As a worldwide Quality & Environmental Manager, this role involves managing quality operations and ensuring compliance across a significant scope, aligning with the Quality Manager category."
+      },
+      {
+        "company": "Gutor",
+        "title": "Lean Manufacturing Manager",
+        "duration": "April 2009 - August 2010 (1 Jahr 5 Monate)",
+        "location": "Wettingen, Aargau, Schweiz",
+        "description": "\u25aa Verantwortlich f\u00fcr die Optimierung der Produktion und des Materialflusses \u25aa Zust\u00e4ndig f\u00fcr die F\u00fchrung, Realisierung und Kosten des Schneider Production Systems (SPS) Projektes \u25aa Einf\u00fchrung von Lean Tools wie Little Train, 5S und Optimierung des gesamten Produktionsprozesses",
+        "seniority_level": "Category 3: 3B - Mid-Level Quality Supervisors",
+        "justification": "While focused on lean manufacturing, this role involves managing resources and implementing quality-related initiatives, similar to mid-level quality supervisory roles."
+      },
+      {
+        "company": "Gutor",
+        "title": "Projektingenieur",
+        "duration": "Januar 2008 - M\u00e4rz 2009 (1 Jahr 3 Monate)",
+        "location": "Wettingen, Aargau, Schweiz",
+        "description": "\u25aa Projektierung von unterbrechungsfreien Stromversorgungs-Systemen (USV) \u25aa Verantwortung f\u00fcr die Ausf\u00fchrung und das Controlling der internationalen Projekte \u25aa Sicherstellung der terminlichen, qualitativen und finanziellen Projektziele \u25aa Intensive Kontaktpflege zur internationalen Kundschaft und zu den Partnern",
+        "seniority_level": "Category 2: 2B - Mid-Level Quality Professionals",
+        "justification": "As a project engineer working on UPS systems, this role likely involved quality assurance aspects similar to mid-level quality professionals, though not exclusively focused on quality."
+      },
+      {
+        "company": "G\u00f6rlitz Schweiz AG",
+        "title": "Projekt Manager",
+        "duration": "Januar 2005 - Dezember 2007 (3 Jahre)",
+        "location": "",
+        "description": "\u25aa Projektrealisierung bei den Energieversorgungsunternehmen \u25aa Projektierung von Z\u00e4hlerfernauslesesoftware und Energiedatenmanagement-Software \u25aa Schulung und Abnahme des Projektes \u25aa Spezifikationen f\u00fcr die Entwicklungsabteilung sowie Schnittstellendefinitionen \u25aa Ansprechpartner f\u00fcr alle Kunden. \u25aa Weitere Aufgabe ist der Vertrieb der Hardware, die Parametrierung und die kundenspezifische Anpassung der Ger\u00e4te",
+        "seniority_level": "",
+        "justification": ""
+      }
+    ]
+  },
+  {
+    "name": "Cuong C.",
+    "summary": "I am a accomplished professional with 30 years of experience in industries ranging from chemistry, construction, semiconductors, and electronics to defense industries. I hold extensive certifications in quality management, enterprise risk management and business continuity, with a focus on operational excellence and team leadership across multi-cultural environments.",
+    "notes": "Harting makes connectors, cables and PCBs, even 3D PCBs so on the higher tech side. 6000 FTEs, 1B, 14 prod plants. Thales has Paris HQ. 18B\u20ac Electrical systems mfer. Hi tech, more assembly than low tier. Seems he was QA Manager for CH + HSE for all group",
+    "experience": [
+      {
+        "company": "HARTING Technology Group",
+        "title": "Global Quality Manager in Projects",
+        "duration": "December 2023 - Present (10 months)",
+        "location": "Bienne, Berne, Suisse",
+        "description": "",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Thales Simulation & Training AG",
+        "title": "Senior Quality Security & HSE Manager",
+        "duration": "May 2022 - March 2024 (1 year 11 months)",
+        "location": "Bern, Switzerland",
+        "description": "\u2022 Quality Assurance\n- Ensure all required certificates for the BUs\n- Coordinate and drive the quality initiatives with others quality managers in Europe\n- Responsible for defining and maintaining quality objectives and measures\n- Prepare audits planning and is responsible for its compliance\n- Support for Compliance Initiatives\n- Deploy new Thales' processes across the company and train all employees\n\u2022 Health - Safety & Environment Officer at group level (CH, F, D, UAE, MY, AUS)\n- Ensure a good HSE level and that HSE goals are met\n- Coordinate and drive the HSE initiatives with local HSE managers abroad\n- Develop and implement HSE concept at BU level, perform key risks analysis for all CH sites\n- Build up first-aid and emergency organization\n- Implement a HSE compliance tool\n\u2022 Security Officer\n- Ensure the compliance of Security Protocol and Personal Security\n- Secured Access Management for employees\n- Assess physical security of major sites in CH\n- Manage sensitive's cases with authorities\n\u2022 Enterprise Risks Management\n- Implement and drive the ERM initiatives\n- Coordinate & drive ERM initiatives with other risk managers in D-F-UAE\n- Collect & assess all risks at company levels\n- Ensure Business Continuity by implementing mitigation measures\n\u2022 Merge & Acquisition and Integration\n- Coordinate, harmonize the information for QRSSE & TC streams between F-CH-D-UAE\n- Manage data in Virtual Data Rooms\n- Identify key QRSSE topics and ensure that they will be properly integrated in Thales\n- Identify gaps, implement improvement actions\n\u2022 Trade Compliance Officer at SECO & FDFA\n- Coordinate TC activities between TC specialists and internal stakeholders for new bids\n- Ensure Trade Compliance of the BUs and deploy TC directives group-wide\n- Implement new / (adapted) group-wide TC requirements\n- Ensuring effective handling of BU specific TC risks\n- Contribute to the integration of the company into Thales SA and Thalesgroup",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "RUAG Simulation & Training",
+        "title": "Senior QRSSE Manager & Trade Compliance Officer",
+        "duration": "October 2019 - May 2022 (2 years 8 months)",
+        "location": "Bern, Switzerland",
+        "description": "See the position of Thales Simulation & Training\n(Thales bought Ruag Simulation & Training in Mai 2022)",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Losinger Marazzi SA",
+        "title": "QHSE & CSR System Manager (Headquarter, 7 Sites)",
+        "duration": "November 2013 - September 2019 (5 years 11 months)",
+        "location": "Bern, Switzerland",
+        "description": "\u2022 Drive the transition to last version of QHSE & CSR Standards (company wide)\n\u2022 Ensure the all requirements and that key initiatives are aligned with company strategy\n\u2022 Implement new management system software with customer oriented approach\n\u2022 Organize & conduct suppliers audits & internal audits, root cause analysis\n\u2022 Projects: Harmonize a security concept, management of dangerous goods",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Zehndergroup PGR",
+        "title": "Quality - Safety - Environment Manager",
+        "duration": "February 2011 - October 2013 (2 years 9 months)",
+        "location": "Aarau, Switzerland",
+        "description": "\u2022 Drive staff to achieve company goals. Build up strong and motivated team\n\u2022 Liaise with Sales and plan, release, follow up manufacturing orders\n\u2022 Plan production ramp-up in optics and electronics departments\n\u2022 Manage the technology & equipment transfer to our plant in Malaysia",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Saia Burgess Controls",
+        "title": "Quality & Engineering Manager",
+        "duration": "March 2007 - June 2009 (2 years 4 months)",
+        "location": "",
+        "description": "\u2022 Quality & Production Engineering\n- Responsible for all quality issues of the plant\n- Develop and improve products and production processes including analyze rootcauses of defects, record statistics\n- Simplify quality documents system. Perform audits intern & suppliers\n- Manage introduction of new products\n\u2022 Customer Services\n- Handle all quality issues addressed by key customers\n- Create statistics of returned products and failures. Introduce corrective actions\n\u2022 Lean Manufacturing\n- Take part to the implementation of Lean Manufacturing in the production floor\n- Realize values stream mapping, optimization of processes & material flow, waste elimination & reduction, visual management, one-piece-flow, set-up Kanban, improve material supply\n- Convert \u00abstraight production line\u00bb to \u00abU-shaped production line\u00bb",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Oscilloquartz SA",
+        "title": "Multi-Plants Production Manager",
+        "duration": "October 2004 - February 2007 (2 years 5 months)",
+        "location": "Neuch\u00e2tel, Switzerland",
+        "description": "\u2022 Drive staff to achieve company goals. Build up strong and motivated team\n\u2022 Liaise with Sales and plan, release, follow up manufacturing orders\n\u2022 Plan production ramp-up in optics and electronics departments\n\u2022 Manage the technology & equipment transfer to our plant in Malaysia",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Micro Crystal",
+        "title": "Process Engineer - Chemistry Manager - Health & Safety Manager",
+        "duration": "March 1998 - September 2004 (6 years 7 months)",
+        "location": "Solothurn, Switzerland",
+        "description": "Process Engineer (02.1998 \u2013 09.2004)\n- Develop new photolithography process by electrophoresis for fabrication of quartz resonators\n- Design, test and qualify new products and equipment, transfer into production\n- Manage analysis (physical, chemical, mechanical ...) with external partners\n\u2022 Chemistry Manager, Health- & Safety Manager (2000 \u2013 2004)\n- Manage warehouses (10 tones) of chemical products, organization of all delivery activities\n- Search, qualify new subcontractor for chemical wastes treatment\n- Purchase chemical products (budget 400 kCHF/year)\n- Manage transports of dangerous products according to ADR",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Micronas",
+        "title": "Process Engineer",
+        "duration": "March 1997 - December 1997 (10 months)",
+        "location": "",
+        "description": "\u2022 Develop dry-etch process for fabrication of SAW-filters\n\u2022 Optimization of existing processes. Qualify new equipment, transfer into production",
+        "seniority_level": "",
+        "justification": ""
+      }
+    ]
+  },
+  {
+    "name": "J\u00e9r\u00e9mie Le Bourhis",
+    "summary": "Multicultural manager, focused on results, within a car manufacturer and an automotive supplier:\n\u25cf Multidisciplinary experiences, within quality and operational positions,\n\u25cf The management of international suppliers quality networks,\n\u25cf Management of technological disruptions,\n\u25cf The zero defect's expectation within the automotive industry mindset,\n\u25cf The management of regulatory constraints with their local specificities.",
+    "notes": "LEM only manufactures in Switzerland, 1800FTEs across 18 countries. Electrical measurement tech. Multiple plants would be a step up for him. Higher tier mfing exp. 16 yrs quality: -but 12 in Supplier Quality Strong process exp. at Renault",
+    "experience": [
+      {
+        "company": "LEM",
+        "title": "Corporate Project Quality Manager",
+        "duration": "septembre 2023 - Present (1 an 1 mois)",
+        "location": "Gen\u00e8ve, Suisse",
+        "description": "Manage the Project Quality teams worldwide, as a group function:\n\u2022 Ensure, mainly in project development phase, that products are designed and manufactured according to the international standards, customer's requirements, and LEM's internal rules,\n\u2022 Maintain & reinforce LEM quality culture with target of developing and manufacturing safer and more reliable products,\n\u2022 Ensure integrity and respect of LEM's development framework, according to IPD (Integrated Product Development),\n\u2022 Monitor and manage KPIs and ensure reporting and corrective actions wherever needed.\nHierarchically linked to the Quality VP",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Valeo",
+        "title": "Product Line Quality Director",
+        "duration": "avril 2020 - ao\u00fbt 2023 (3 ans 5 mois)",
+        "location": "Gen\u00e8ve et p\u00e9riph\u00e9rie",
+        "description": "Manage the Quality network for the Switch and Smart Controls (ISC) Product Line to achieve Customers Satisfaction for Quality:\n\u2022 Organize, recruit the VALEO Site Quality teams and Projects Quality teams within the perimeter according to the objectives set by the Product Group and assess their performance,\n\u2022 Monitor and Control the conformity on Development and Production processes,\n\u2022 Deploy the Quality culture and develop the Quality Improvement Plan and tools to achieve the quality objectives and physical indicators,\n\u2022 Lead the Customer interface for Quality matters (Quality in development, in production and after sales).\nHierarchically linked to the Product Line VP and functionally linked to the Product Group Quality Director.",
+        "seniority_level": "Category 4: 4C - Quality Directors",
+        "justification": "This role involves managing the overall quality function at a divisional level, setting strategic direction, and achieving long-term quality objectives across multiple sites and projects."
+      },
+      {
+        "company": "Valeo",
+        "title": "Product Groups SQA Director",
+        "duration": "janvier 2018 - avril 2020 (2 ans 4 mois)",
+        "location": "R\u00e9gion de Cr\u00e9teil, France",
+        "description": "Lead the global SQA network for the Intuitive Control (CIC) and Connected Cars (CCC) Product Groups to ensure the quality of the components in project and mass-production:\n\u2022 Structure, recruit managers and commodity engineers by regions according to the objectives set by the Group SQA and assess their performance,\n\u2022 Validate in partnership with the Purchasing function, suppliers within the panel committee,\n\u2022 Ensure compliance with the quality standards of the Group SQA, including the strict application of the Supplier Quality Manual (SQM) and the AQP.pp deliverables.\nHierarchically linked to the Product Groups Quality Directors, the Business Group Purchasing VP and functionally linked to the Group SQA Director.",
+        "seniority_level": "Category 4: 4B - Senior Quality Managers",
+        "justification": "Leading a global SQA network across multiple product groups indicates a senior managerial role with strategic responsibilities, but not quite at the director level of the entire quality function."
+      },
+      {
+        "company": "Groupe Renault",
+        "title": "Body Shop Process Project Manager",
+        "duration": "d\u00e9cembre 2014 - janvier 2018 (3 ans 2 mois)",
+        "location": "Guyancourt",
+        "description": "Manage a team of Industrial Functional Pilots and functionally all employees contributing to the industrial system:\n\u2022 Set up, organise and manage the body shop project team and overall system, this is done to ensure definition of processes, supply and tryout of industrial systems for compliance of QCTHR and industrial performance objectives.\n\u2022 Co-manage relations with the interface body shop (product and process) and the Production Department of the production site.\nHierarchically linked to the Project Development General Manager and functionally linked to the Industrial Project Director",
+        "seniority_level": "Category 3: 3C - Senior Quality Supervisors",
+        "justification": "While not strictly a quality role, this position involves overseeing large teams and providing strategic input for industrial processes, which is comparable to a senior quality supervisor role in terms of responsibility and impact."
+      },
+      {
+        "company": "Groupe Renault",
+        "title": "Industrial Projects Manager",
+        "duration": "septembre 2012 - d\u00e9cembre 2014 (2 ans 4 mois)",
+        "location": "Villiers-Saint-Fr\u00e9d\u00e9ric",
+        "description": "Coordinate all the industrial tasks required to start LCV vehicles on two assembly plants in order to achieve the objectives of the project:\n\u2022 Involved in the design of the industrial plant's framework and coordinated all activities necessary for the industrialization of LCV vehicles in two plants (including planning, robustness of product / process for each milestone).\n\u2022 Fulfill the industrial performance QCTHR (as stated in the joint contract between Engineering and Manufacturing as well as in the Monozukuri performance).\n\u2022 Represent the voice of manufacturing during the project.\nHierarchically linked to the Director of Industrial Projects and functionally linked to the Chief Vehicle Engineer.",
+        "seniority_level": "Category 3: 3B - Mid-Level Quality Supervisors",
+        "justification": "This role, while not directly in quality, involves coordinating activities that impact product quality. The level of responsibility is similar to a mid-level quality supervisor managing multiple teams or aspects of quality."
+      },
+      {
+        "company": "Groupe Renault",
+        "title": "Suppliers Quality Corporate Manager",
+        "duration": "d\u00e9cembre 2008 - septembre 2012 (3 ans 10 mois)",
+        "location": "Guyancourt",
+        "description": "Ensure the optimization of the modes of operation and of the organization of French and international Suppliers' Quality Assurance Dept. :\n\u2022 Ensure the development and relevant implementation of audit benchmarks for evaluating suppliers,\n\u2022 Pilot the project to mutualize the resources of all SQA Dpt.,\n\u2022 Coordinate with purchasing and engineering Dept., common approaches for suppliers (in particular the quality assurance process (ANPQP) for the development of suppliers' parts).",
+        "seniority_level": "Category 4: 4A - Quality Managers",
+        "justification": "This position involves managing the supplier quality function at a corporate level, implementing strategies, and achieving quality goals, which aligns with the responsibilities of a Quality Manager."
+      },
+      {
+        "company": "Groupe Renault",
+        "title": "Suppliers Quality Project Manager",
+        "duration": "d\u00e9cembre 2005 - d\u00e9cembre 2008 (3 ans 1 mois)",
+        "location": "Sandouville",
+        "description": "Manage a team of Suppliers' Quality Engineers based on the objectives of the Laguna Coup\u00e9 project:\n\u2022 Create and manage the budget of the team (staff, running costs, trainings),\n\u2022 Check the convergence for the validation of the quality assurance (ANPQP) of incoming parts for the vehicle in coherence with project milestones,\n\u2022 Ensure and lead the implementation of progress action plans for all scopes of Suppliers' Quality Engineers.",
+        "seniority_level": "Category 3: 3B - Mid-Level Quality Supervisors",
+        "justification": "Managing a team of Suppliers' Quality Engineers and overseeing quality assurance for a specific project aligns with the responsibilities of a mid-level quality supervisor."
+      },
+      {
+        "company": "Groupe Renault",
+        "title": "Production Manager",
+        "duration": "f\u00e9vrier 2003 - d\u00e9cembre 2005 (2 ans 11 mois)",
+        "location": "Sandouville",
+        "description": "Lead an Elementary Work Unit and then a manufacturing workshop, in order to achieve the objectives (Quality, Cost, Deadlines, Human Resources and Environment):\n\u2022 Guarantee operational standards and improvements of the mass production workshop,\n\u2022 Get involved upstream of new projects (product-process) and of their implementation,\n\u2022 Pilot the skills' improvement of co-workers by coaching, training and on-site support.",
+        "seniority_level": "Category 3: 3A - First-Line Quality Supervisors",
+        "justification": "While this is a production role, it involves managing quality aspects in a manufacturing setting. The responsibilities are similar to those of a first-line quality supervisor in terms of overseeing daily operations and immediate problem-solving."
+      }
+    ]
+  },
+  {
+    "name": "Ludovic SCHRAMM",
+    "summary": "- 27 years cross industrial experience in sectors Telecom / Automotive / Industrial Hi-Tech\n- Direct responsibility for Quality, Purchasing, Supplier Quality, Supplier Development\u2026\n- Experience building strategic visions, plans for bottom line results\n- Engineering educational background\n- Training for people curriculum development\n- Collaborating with cross departments R&D, Ops, SCM, Q, Marketing, Sales, PM\u2026\n- Ability to build comprehensive TQM system\n- Leadership strengthened from auditor certified status for ISO, TS 16949, VDA, FIEV\n- Game changer - Continuous Improvement contribution\n- Customer New Business allocation",
+    "notes": "Strong Supplier Quality focus, but also Supplier Development. 10+ yrs QA nevertheless. \"-Silos breaker - enhance cross country & cross department teamwork\" \"-Customer interface for escalation (Renault, PSA, BMW, VW) \"",
+    "experience": [
+      {
+        "company": "Hitachi Energy",
+        "title": "Global Product Group Quality Leader",
+        "duration": "June 2022 - Present (2 years 4 months)",
+        "location": "Geneva, Switzerland",
+        "description": "",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "ABB",
+        "title": "Head of Supplier Quality & Supplier Development Division Motors & Generators",
+        "duration": "May 2017 - October 2021 (4 years 6 months)",
+        "location": "R\u00e9gion de Lausanne, Suisse",
+        "description": "-Leadership to build the Global Supplier Quality & Supplier Development organization for division Motors & Generators\n-Responsible for Global Supplier Relationship Management (Americas, Europe, Asia)\n-Mentoring ABB Global Company Strategy for Supply Chain Management & Supplier Quality\n-Designed & implemented Operational KPIs to drive better performance\n-Silos breaker - enhance cross country & cross department teamwork\n-Strategic supplier portfolio / sourcing\n-Driving, Leading from Supplier Selection, Project Management, Release Qualification, Continuous improvement, Escalation, Supplier Development programs, Customer Satisfaction\u2026\n-Supporting New Business for Automotive (Electrical Cars)",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Johnson Electric",
+        "title": "Senior Manager Supplier Quality Europe",
+        "duration": "February 2015 - March 2017 (2 years 2 months)",
+        "location": "Murten Area, Switzerland",
+        "description": "-Direct management +50 employees (SQ&SD engineers)\n-Defining SCM / SD strategy for Europe / 10 plants\n-Launch new organization\n-Responsible for Supplier Development according automotive standards for Electro Mechanics, Electric & Electronics' applications\n-Defined process, procedures for SCM / SQ Org.\n-Business Development with Tier 1 Customers\n-SQ&SD Team development",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Johnson Controls",
+        "title": "Global Quality Category Manager",
+        "duration": "April 2012 - February 2015 (2 years 11 months)",
+        "location": "Cergy - Saint Christophe (France)",
+        "description": "-Build the global SQ Org for category plastics - portfolio + 90 Million Parts/year\n-Leading cross cultural team (America, Asia, Europe / 11 plants)\n-Project Management, process audits, Run @ Rate, APQP, PPAP, 8D\n-Definition of category requirements and standards\n-Leading supplier continuous improvement\n-Nonconformance cost recovery",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Continental",
+        "title": "Global Quality Commodity Manager",
+        "duration": "September 2006 - April 2012 (5 years 8 months)",
+        "location": "Rambouillet (78) - France",
+        "description": "-Worldwide Quality Category Manager for Car Electronics CD, DVD, HDD\n-Category strategy / Negotiation frame contracts - Portfolio 170M\u20ac\n-Cross country team management Asia, Europe, America\n-Suppliers Assessment, Sourcing, Project management\n-Process, Component & Capacity release of the manufacturing operations\n-Leading continuous improvement and supplier development\n-Customer interface for escalation (Renault, PSA, BMW, VW)\n-Non-Conformance costs negotiation/recovery, crisis management",
+        "seniority_level": "Category 4: 4A - Quality Managers",
+        "justification": "This position involves managing quality for a specific category globally, aligning with the responsibilities and impact of a Quality Manager."
+      },
+      {
+        "company": "Continental",
+        "title": "Supply Chain - Supplier Quality Management SIEMENS VDO (acquired by CONTINENTAL)",
+        "duration": "August 2003 - September 2006 (3 years 2 months)",
+        "location": "Rambouillet (78) France",
+        "description": "-Responsible for mechanical parts & interior plastic decorative\n-Process auditor\n-Capacity assessment Run@ Rate\n-Project APQPs from supplier selection to Component release (FMEA, Control Plan\u2026)\n-Defined global process + Qualification procedure for plastic decorative parts",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Faurecia",
+        "title": "Purchasing Manager",
+        "duration": "January 2003 - July 2003 (7 months)",
+        "location": "Beaulieu",
+        "description": "- Plant Purchasing Leader for Business Unit car escape gas line\n- Supplier panel portfolio 70 M\u20ac\n- Price negotiation\n- Strategic supplier sourcing / Stainless steel",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "3M",
+        "title": "Purchasing & Quality Plant Manager",
+        "duration": "April 1998 - December 2001 (3 years 9 months)",
+        "location": "",
+        "description": "Build / Optimize the plant organization\n-Direct manager departments Quality and Purchasing (11 emp.)\n-Customer Contact window, technical Interface between R&D Europe & Mexican factory",
+        "seniority_level": "Category 3: 3C - Senior Quality Supervisors",
+        "justification": "This role involves overseeing both purchasing and quality departments at a plant level, aligning with the responsibilities of a Senior Quality Supervisor."
+      },
+      {
+        "company": "3M",
+        "title": "Quality System Engineer",
+        "duration": "March 1996 - March 1998 (2 years 1 month)",
+        "location": "Cluses (74) France",
+        "description": "-Control Plan definition according to customers specifications\n-Defined Working instruction / Jigs, gauges design for assy lines\n-ISO auditor and quality inspector trainer\n-Certification ISO 9001 system successfully passed",
+        "seniority_level": "Category 2: 2B - Mid-Level Quality Professionals",
+        "justification": "This position involves implementing quality systems and conducting audits, which fits the profile of a Mid-Level Quality Professional."
+      },
+      {
+        "company": "3M",
+        "title": "Quality Assurance",
+        "duration": "April 1994 - March 1996 (2 years)",
+        "location": "Cluses",
+        "description": "Control Plan definition according to TELECOM specifications\n- Auditor ISO 9000\n- Carry out Working instruction of the assembly lines\n- Internal Auditor and plant quality inspector Trainer",
+        "seniority_level": "Category 2: 2A - Entry-Level Quality Engineers",
+        "justification": "This early career position in quality assurance aligns with the responsibilities and experience level of an Entry-Level Quality Engineer."
+      }
+    ]
+  },
+  {
+    "name": "Markus Genal-Engels",
+    "summary": "",
+    "notes": "Alstom sits at 18B revenue. Product Lines: -Rolling Stock -Services -Signalling -Systems Services had 4B\u20ac revenue FY23/24. Services does not seem to involve much manufacturing but it's also not just maintenance\u2014they also do efficiency retrofits, install Hydrogen engines... so at least assembly. Lots of c-level experience, prob too senior.",
+    "experience": [
+      {
+        "company": "Alstom",
+        "title": "Global Head of Quality Product Line Services at Alstom",
+        "duration": "February 2021 - Present (3 years 8 months)",
+        "location": "",
+        "description": "",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Alstom",
+        "title": "Head of Quality Austria",
+        "duration": "July 2021 - December 2021 (6 months)",
+        "location": "",
+        "description": "",
+        "seniority_level": "Category 4: 4A Quality Managers",
+        "justification": "Managing quality for a specific country suggests departmental leadership, aligning with the Quality Manager role."
+      },
+      {
+        "company": "Bombardier Transportation",
+        "title": "Global Head Supplier Quality, Quality Management System & Governance",
+        "duration": "April 2020 - January 2021 (10 months)",
+        "location": "Zurich, Switzerland",
+        "description": "",
+        "seniority_level": "Category 4: 4B Senior Quality Managers",
+        "justification": "This global role overseeing multiple quality functions indicates a senior position with strategic influence across the organization."
+      },
+      {
+        "company": "Bombardier Transportation",
+        "title": "Head of Global Quality Management Office",
+        "duration": "October 2017 - March 2020 (2 years 6 months)",
+        "location": "Z\u00fcrich Area, Switzerland",
+        "description": "",
+        "seniority_level": "Category 4: 4B Senior Quality Managers",
+        "justification": "Leading a global quality management office suggests a senior role with significant strategic responsibilities."
+      },
+      {
+        "company": "GE Power Services",
+        "title": "Supplier Quality Leader",
+        "duration": "May 2016 - September 2017 (1 year 5 months)",
+        "location": "Baden, Switzerland",
+        "description": "",
+        "seniority_level": "Category 3: 3B Mid-Level Quality Supervisors",
+        "justification": "While a leadership role, it focuses on supplier quality, which is typically a mid-level supervisory position in large organizations."
+      },
+      {
+        "company": "GE Power Services",
+        "title": "Operational Excellence Leader",
+        "duration": "January 2016 - April 2016 (4 months)",
+        "location": "Baden/Switzerland",
+        "description": "Acquisition of Alstom Power by GE Power",
+        "seniority_level": "Category 3: 3B Mid-Level Quality Supervisors",
+        "justification": "Operational Excellence is closely related to quality, and this leadership role suggests mid-level supervisory responsibilities."
+      },
+      {
+        "company": "Alstom Power",
+        "title": "Director Global Quality Management",
+        "duration": "July 2013 - December 2015 (2 years 6 months)",
+        "location": "Z\u00fcrich Area, Switzerland",
+        "description": "",
+        "seniority_level": "Category 4: 4C Quality Directors",
+        "justification": "The title of Director and global scope indicate a high-level strategic role in quality management."
+      },
+      {
+        "company": "Alstom Power",
+        "title": "Director Learning & Continuous Improvement",
+        "duration": "November 2011 - June 2013 (1 year 8 months)",
+        "location": "Baden, Switzerland",
+        "description": "",
+        "seniority_level": "Category 4: 4B Senior Quality Managers",
+        "justification": "While not directly a quality title, continuous improvement is closely related to quality, and the Director level suggests senior management responsibilities."
+      },
+      {
+        "company": "Alstom Power",
+        "title": "Head Quality Control & Quality Improvement",
+        "duration": "October 2010 - November 2011 (1 year 2 months)",
+        "location": "Stuttgart Area, Germany",
+        "description": "",
+        "seniority_level": "Category 3: 3C Senior Quality Supervisors",
+        "justification": "This role involves overseeing quality control and improvement, indicating senior supervisory responsibilities in quality."
+      },
+      {
+        "company": "Alstom Power",
+        "title": "Process Improvement Manager",
+        "duration": "March 2009 - September 2010 (1 year 7 months)",
+        "location": "Stuttgart Area, Germany",
+        "description": "",
+        "seniority_level": "Category 2: 2C Senior Quality Professionals",
+        "justification": "Process improvement is closely related to quality, and this managerial role suggests senior professional responsibilities."
+      },
+      {
+        "company": "Siemens",
+        "title": "Business Consultant/Senior Business Consultant/Program Manager PM@Siemens/LoA Admin",
+        "duration": "March 2005 - February 2009 (4 years)",
+        "location": "Beijing, China",
+        "description": "",
+        "seniority_level": "Category 2: 2B Mid-Level Quality Professionals",
+        "justification": "While not explicitly a quality role, these positions involve project management and business improvement, which often intersect with quality practices."
+      },
+      {
+        "company": "Siemens",
+        "title": "Internship",
+        "duration": "November 2004 - March 2005 (5 months)",
+        "location": "Beijing, China",
+        "description": "",
+        "seniority_level": "Category 1: 1A Entry-Level Quality Technicians",
+        "justification": "As an internship, this would be an entry-level position, potentially involving basic quality-related tasks."
+      },
+      {
+        "company": "Siemens",
+        "title": "Graduate Student",
+        "duration": "April 2004 - November 2004 (8 months)",
+        "location": "Konstanz Area, Germany",
+        "description": "",
+        "seniority_level": "Category 1: 1A Entry-Level Quality Technicians",
+        "justification": "A graduate student position is typically entry-level, possibly involving basic quality-related tasks or learning."
+      },
+      {
+        "company": "Siemens Medical Solutions China",
+        "title": "Assistant Mananager to CFO & Business Commercial Manager",
+        "duration": "April 2005 - November 2006 (1 year 8 months)",
+        "location": "Beijing City, China",
+        "description": "",
+        "seniority_level": "Category 2: 2A Entry-Level Quality Engineers",
+        "justification": "While not a direct quality role, this position likely involved some quality-related tasks in a business context, at an entry professional level."
+      }
+    ]
+  },
+  {
+    "name": "Piotr Nary\u0144ski",
+    "summary": "Experienced Head Of Quality Assurance with a demonstrated history of working in the automotive industry. Skilled in Quality Management, Kaizen, MES, Business Development, and Human Resources. Strong quality assurance professional with a Master of Business Administration (M.B.A.) Executive focused in Six Sigma based on study in Ronal Polska from Uniwersytet Ekonomiczny we Wroc\u0142awiu (daw. Akademia Ekonomiczna im. Oskara Langego we Wroc\u0142awiu. Many years of experience in production problem solving has also allowed me to develop skills in problem solving in quality and production areas. Participation in many projects such as building a new production plant in Poland from the ground up to produce the first wheel; Start-up of a new production plant in Mexico; Implementation of a product serialization project; Continuous improvement of production areas to meet all OEM customer requirements; Leading quality managers and production directors to reduce the scrap and rework rate; Looking for new innovations to automate processes; Selecting suppliers through proper selection to maintain quality for the manufactured product while reducing costs. Daily activities include support of production plants in the areas of quality and production with infrastructure. Monitoring of results and improvements and sharing of best practice between production sites.",
+    "notes": "Ronal 6500 FTEs 1.3B\u20ac 29 production plants overall. 2 greenfields Poland and Mexico. Size of Wheels product line? Largest",
+    "experience": [
+      {
+        "company": "RONAL GROUP",
+        "title": "Head of Group Quality",
+        "duration": "September 2018 - Present (6 years 1 month)",
+        "location": "H\u00e4rkingen, Kanton Solothurn, Schweiz",
+        "description": "Daily activities include support of production plants in the areas of quality and production with infrastructure. Continuous improvement of standardisation in both the system and production areas. Monitoring of results and improvements and sharing of best practice between production sites.",
+        "seniority_level": "Category 4: 4C - Quality Directors",
+        "justification": "As Head of Group Quality, this role involves managing the overall quality function at an organizational level, responsible for strategic direction and achieving long-term quality objectives across multiple production sites."
+      },
+      {
+        "company": "RONAL GROUP",
+        "title": "Senior Manager Group Quality",
+        "duration": "April 2017 - August 2018 (1 year 5 months)",
+        "location": "Switzerland, H\u00e4rkingen",
+        "description": "Performing tasks assigned by the Quality Director. Support quality managers in the group by customer services. Project Manager by implementing solutions for improvement quality of produced product.",
+        "seniority_level": "Category 4: 4B - Senior Quality Managers",
+        "justification": "This position involves overseeing significant quality functions, developing strategies, and contributing to organizational planning by supporting quality managers across the group and managing improvement projects."
+      },
+      {
+        "company": "Ronal Polska Sp. z o.o.",
+        "title": "Senior Quality Manager",
+        "duration": "September 2002 - April 2017 (14 years 8 months)",
+        "location": "Wa\u0142brzych",
+        "description": "Responsible for the quality department (Incoming Inspection, X-Ray, Heat Treatment, Flow Forming, SPC, laboratory for surface tests and destructive-fatigue tests, outgoing inspection) and supporting production areas in solving production problems while maintaining KPIs.",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "THE BALMORAL HOTEL EDINBURGH LIMITED",
+        "title": "Deputy Manager",
+        "duration": "October 1999 - October 2001 (2 years 1 month)",
+        "location": "Edinburgh Scotland",
+        "description": "",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Mercedes Vito",
+        "title": "Ingenieur of Quality",
+        "duration": "September 1997 - September 1999 (2 years 1 month)",
+        "location": "Jelcz-Laskowice",
+        "description": "",
+        "seniority_level": "",
+        "justification": ""
+      }
+    ]
+  },
+  {
+    "name": "Adam Wietrzy\u0144ski",
+    "summary": ">18 years experience in automotive by biggest Tier 1 players (Delphi Automotive, Mahle, GKN Driveline, Valeo & Forvia - Faurecia). Senior Manager positions for past 13 years in Automotive and Machining industry (Quality Manager/Director, Quality & Risk Director) with interactions and management with cross functional (Customers, Operations, Suppliers, R&D, Process, Warranty, Quality, HR, Finance), international teams, and multi-sites management experience. Team Leader on Quality Task Force to solve Quality Issues, both internal and with OEM Customers. 3,5 years experience in global leading consumer electronics provider - Dell Computers. Supplier Quality Manager for over 6 years (auditing various production processes at suppliers, developing suppliers, supporting suppliers in production transfer processes). Deep knowledge of the Automotive Quality Core Tools. Collaborating on different cross-functional levels with big OEM\u2019s (Toyota, BMW, Daimler - Mercedes Benz, Porsche, Audi, VW, Skoda, Seat, Volvo, JLR, MAN, Scania, Renault, PSA, TPCA, Honda, GM, Opel, FCA). As Voice of the Customer, high engagement was the key to being successful. Proven KPI\u2019s improvements: Customer PPM\u2019s, # of Complaints, gaining Customer Quality Award. On Quality & Supplier Quality functions, strong influence and management of cross-functional teams - giving directions in remote environment not only into direct reports. Project member for 2 greenfield projects: Dell Computer (1,800 employees) and GKN Driveline (1,100 employees). Lean Six Sigma Green Belt certified (2007), Lean Six Sigma Black Belt (2024).",
+    "notes": "Automotive suppliers, IATF 16949, but Tier 1 suppliers\u2014more assembly, focus on final car parts less mfg. No specific data on IST employees (113 on LI) and revenue but in 2023 he was Head of Quality for a single Forvia plant with 130M T/O in Germany. Project member for 2 greenfield projects. Cross-functional teams.",
+    "experience": [
+      {
+        "company": "Innovative Sensor Technology IST AG (Endress & Hauser Group)",
+        "title": "",
+        "duration": "April 2023 - Present (1 year 6 months)",
+        "location": "Ebnat-Kappel, St Gallen, Switzerland",
+        "description": "Innovative Sensor Technology IST AG, a company of the global Endress + Hauser Group (16,000 employees), is a leading supplier of physical, chemical, and biological sensors. Responsibilities include overall responsibility for maintaining and further development of the Quality and Environment Management System of the whole IST Group. Organization and implementation of the audits by Certification company, customer, system, process and product audits. Organization of internal audits, evaluation, and initiation of improvement measures and projects together with different areas. Regular training courses on quality management and advice on QM issues.",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Forvia",
+        "title": "",
+        "duration": "July 2021 - March 2023 (1 year 9 months)",
+        "location": "Boeblingen, Badenia-Wirtembergia, Niemcy",
+        "description": "With 266 industrial sites, 39 R&D centers, and about 150,000 employees in 35 countries, Faurecia is a top ten global automotive supplier. Faurecia\u2019s mission is to develop technologies for Sustainable Mobility and to create personalized experiences for the Cockpit of the Future. Plant turnover in 2021 budgeted around 130 million euros. Responsibilities include reporting to the Plant Director and Operations Head of Quality Europe, acting as Voice of the Customer for Daimler Account, technical and disciplinary management of the quality department, lean activities (5S, Gemba Walk), complaint management, APQP and P-FMEA management, PDCA analyses, and cross-departmental initiatives for quality improvement and cost reduction.",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Wiesheu Bakingovens",
+        "title": "",
+        "duration": "September 2019 - June 2021 (1 year 10 months)",
+        "location": "Rejon Stuttgart, Niemcy",
+        "description": "Wiesheu stands for innovative products and solutions for professional oven users at the point of sale, underlining excellent customer service. Wiesheu GmbH is the operative management company with an additional production site in Bitterfeld-Wolfen, alongside sales and service companies in Poland, France, and the USA. The Wiesheu Group had a 2020 turnover of 125 million euros. Responsibilities include reporting to the CEO, technical and disciplinary management of the quality department, lean activities (5S, Gemba Walk), and anchoring quality awareness with the primary goal of reducing quality costs. Other duties involve developing the Wiesheu quality strategy, implementing quality concepts, ISO certifications, and planning internal/external audits.",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Valeo Wiper Systems Germany",
+        "title": "",
+        "duration": "August 2017 - August 2019 (2 years 1 month)",
+        "location": "Rejon Stuttgart, Niemcy",
+        "description": "Production of wiper systems, motors for windshield wipers, and front-end modules. 900 employees in Bietigheim-Bissingen and 1,200 employees across three locations. Responsibilities included managing a quality team of 35 employees, implementing and further developing the QM system in close cooperation with the Valeo Quality Network, ensuring customer quality standards, operational introduction of new QM standards, and risk identification and management.",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "GKN Driveline",
+        "title": "",
+        "duration": "March 2015 - July 2017 (2 years 5 months)",
+        "location": "Powiat ole\u015bnicki, Poland",
+        "description": "Member of the board with responsibilities for managing a team of 35 employees across different quality-related departments. Managed customer complaints, led the APQP process, coordinated 5S workshops, and participated in a greenfield project to open a new plant. Turnover of approximately 350 million euros.",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "MAHLE",
+        "title": "",
+        "duration": "March 2011 - February 2015 (4 years)",
+        "location": "Powiat krotoszy\u0144ski, Poland",
+        "description": "Managed quality for cylinder liners, valves, and valve guides with a team of 40 employees. Responsibilities included managing customer complaints, leading APQP processes, overseeing corrective actions post-audit, and supporting production with daily quality challenges. Collaboration with German headquarters on strategic projects.",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Dell",
+        "title": "EMEA Customer Operations Manager",
+        "duration": "November 2009 - January 2011 (1 year 3 months)",
+        "location": "Warszawa, Poland",
+        "description": "Managed relationships with retailers and logistic partners, ensuring customer satisfaction from order receipt to product delivery. Key activities included supply chain management and handling product launches.",
+        "seniority_level": "Category 2: 2C - Senior Quality Professionals",
+        "justification": "While not strictly a quality role, this position involved managing customer satisfaction and supply chain, which are closely related to quality management."
+      },
+      {
+        "company": "Dell",
+        "title": "Supplier Quality Engineer Supply Chain Europe",
+        "duration": "July 2007 - October 2009 (2 years 4 months)",
+        "location": "\u0141\u00f3d\u017a, Poland",
+        "description": "Managed supplier quality for product lines of laptops, desktops, and servers. Conducted supplier audits and led Six Sigma projects, achieving Green Belt certification.",
+        "seniority_level": "Category 2: 2B - Mid-Level Quality Professionals",
+        "justification": "Managed supplier quality for multiple product lines and conducted supplier audits, indicating a mid-level professional role."
+      },
+      {
+        "company": "Delphi",
+        "title": "Supplier Quality Engineer",
+        "duration": "December 2003 - July 2007 (3 years 8 months)",
+        "location": "Powiat ostrowski, Poland",
+        "description": "Managed supplier quality for heat exchangers and HVAC modules. Oversaw supplier audits and handled corrective actions. Key clients included VW, Porsche, Opel.",
+        "seniority_level": "Category 2: 2B - Mid-Level Quality Professionals",
+        "justification": "Managed supplier quality for specific products and conducted supplier audits, typical of a mid-level quality professional role."
+      },
+      {
+        "company": "Delphi",
+        "title": "Manufacturing Engineer",
+        "duration": "December 1999 - November 2003 (4 years)",
+        "location": "Powiat ostrowski, Poland",
+        "description": "Developed instructions for production lines and designed packaging for HVAC projects with clients such as VW and Porsche. Supported sales teams in customer negotiations.",
+        "seniority_level": "Category 1: 1C - Experienced Quality Control Specialists",
+        "justification": "While not a direct quality role, this position involved developing production instructions and supporting quality-related activities, similar to an experienced quality control specialist."
+      }
+    ]
+  },
+  {
+    "name": "Hamilton P.",
+    "summary": "Experienced in the implementation and sustainability of product Quality, production Quality, and Quality Management Systems, successfully targeting customer satisfaction in all aspects of production, supply chain, and launching of new products. Skilled in the Automotive Industry cluster, recognizing and exercising the value of collaboration to improve Quality between the OEM and Suppliers (Tier1 and Tier2), under respect of international and specific automotive norms and standards. A mentor capable of taking decisions with self-assertion, autonomy, and proactive use of Quality management techniques and tools for problem-solving and process improvement. Green-Field experienced, deploying to corporations international standard procedures, defining and establishing should-be conditions for new sites, and launching products without stopping any customer's production line. Certified Licensed Third-party Lead auditor for international standards: IATF 16949:2016, ISO 45001:2018, ISO 14001:2015, and ISO 9001:2015. Certified ISO/IEC 27001 Information Security Officer & ISMS Auditor with knowledge of TISAX for readiness assessments. Certified VDA 6.3:2023 Process Auditor (1st/2nd Party).",
+    "notes": "Strong v. relevant Quality track (including Change Mgmt and Auditing) until 2017. Johnson, VW, auto suppliers. Surprising turn in last position that tracks well with his previous so he might have changed course away from us.",
+    "experience": [
+      {
+        "company": "thyssenkrupp Presta AG",
+        "title": "",
+        "duration": "October 2022 - Present (2 years)",
+        "location": "Liechtenstein",
+        "description": "Responsible for corporate internal Information Security and TISAX Audits, external 2nd Party VDA 6.3 Process Audits, and IATF internal corporate audits. thyssenkrupp Presta AG has approximately 10,900 employees worldwide across 24 plants and development facilities. The company develops steering systems for over 30 million vehicles per year and is focused on trends like autonomous driving and powertrain electrification.",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "SQS - Swiss Association for Quality and Management Systems",
+        "title": "",
+        "duration": "November 2017 - September 2022 (4 years 11 months)",
+        "location": "Bern Area, Switzerland",
+        "description": "Conducted national and international audits ensuring compliance with ISO 9001:2015, ISO 14001:2015, ISO 45001:2018, and IATF 16949 standards. Tasks included initial certification, surveillance, and re-certification audits under ISO 17021-1:2015 and IAF regulations.",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Johnson Electric",
+        "title": "Quality & Reliability Europe \u2013 EU Manufacturing Footprint Dev.",
+        "duration": "September 2013 - October 2017 (4 years 2 months)",
+        "location": "Murten, Switzerland",
+        "description": "Led the quality assurance development for new European manufacturing sites, including budget planning, resource allocation, and production readiness. Successfully obtained ISO management certifications for new sites.",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Johnson Electric",
+        "title": "Customer Quality Manager - Automotive",
+        "duration": "February 2010 - September 2013 (3 years 8 months)",
+        "location": "Murten, Switzerland",
+        "description": "Ensured customer satisfaction by coordinating quality assurance measures between Johnson Electric and its customers, handling complaints, and executing audits for continuous improvement programs.",
+        "seniority_level": "Category 4: 4A - Quality Managers",
+        "justification": "Managed customer quality in the automotive sector, coordinating between the company and customers, typical of a quality manager role."
+      },
+      {
+        "company": "Volkswagen Individual GmbH",
+        "title": "",
+        "duration": "June 2009 - January 2010 (8 months)",
+        "location": "Wolfsburg, Germany",
+        "description": "Key contact for all quality matters between VW-Individual in Wolfsburg and VW Autoeuropa in Portugal for the Scirocco R project. Coordinated the introduction of specific content into serial production and validated engineering changes before SOP.",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Webasto AG - Fahrzeugtechnik Convertible",
+        "title": "",
+        "duration": "September 2006 - January 2009 (2 years 5 months)",
+        "location": "Stockdorf, Germany",
+        "description": "Coordinated technical changes for the 5-segmented Hard Top Cabrio Roof for the Volkswagen EOS. Responsibilities included feasibility studies, cost optimization, and release of changes in the production process.",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Volkswagen Autoeuropa - VW",
+        "title": "",
+        "duration": "2003 - 2006 (3 years)",
+        "location": "Palmela, Portugal",
+        "description": "Responsible for ensuring supplier production readiness and quality standards for the 5-segmented Hard Top Cabrio Roof on the VW EOS project. Managed supplier audits, process validation, and part submission.",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "MAGNA STEYR Fahrzeugtechnik AG & Co KG",
+        "title": "",
+        "duration": "2002 - 2003 (1 year)",
+        "location": "Graz, Austria",
+        "description": "Coordinated interior product development and technical changes for the BMW X3 pre-series vehicles. Worked closely with engineering and purchasing teams to ensure launch readiness.",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "SEAT, S.A.",
+        "title": "",
+        "duration": "2000 - 2001 (1 year)",
+        "location": "Martorell, Spain",
+        "description": "Key contact between SEAT R&D in Spain and VW Autoeuropa in Portugal, responsible for coordinating the introduction of specific facelift content for the SEAT Alhambra into serial production.",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "EDAG",
+        "title": "",
+        "duration": "1996 - 1999 (3 years)",
+        "location": "Fulda, Germany",
+        "description": "Coordinated product development for interior components, including dashboards, HVAC, and seats, for the VW Sharan, SEAT Alhambra, and FORD Galaxy pre-series vehicles.",
+        "seniority_level": "",
+        "justification": ""
+      }
+    ]
+  },
+  {
+    "name": "Justyna Pot\u0119ga",
+    "summary": "",
+    "notes": "Oerlikon makes Surface Solutions and Polymer Processing Solutions. It has a global footprint of more than 12,600 employees at 207 locations in 38 countries and generated sales of CHF 2.7 billion in 2023. Most of experience in higher tier suppliers, some aerospace, some low tier electronics (TE Connectivity) + Oerlikon (low tier).",
+    "experience": [
+      {
+        "company": "Oerlikon",
+        "title": "",
+        "duration": "November 2019 - Present (4 years 11 months)",
+        "location": "",
+        "description": "",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Pratt & Whitney",
+        "title": "",
+        "duration": "October 2013 - October 2019 (6 years 1 month)",
+        "location": "Metropolregion Luzern",
+        "description": "",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "RUAG Space",
+        "title": "",
+        "duration": "January 2011 - September 2013 (2 years 9 months)",
+        "location": "",
+        "description": "Projects: Bepi Colombo, Ariane 5 payload, Atlas payload",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Schindler Aufz\u00fcge AG (Schweiz)",
+        "title": "",
+        "duration": "May 2009 - December 2010 (1 year 8 months)",
+        "location": "",
+        "description": "",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "TE Connectivity",
+        "title": "Quality Engineer",
+        "duration": "July 2007 - April 2009 (1 year 10 months)",
+        "location": "Frankfurt/Rhein-Main",
+        "description": "",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "TE Connectivity",
+        "title": "Quality Engineer",
+        "duration": "June 2005 - June 2007 (2 years 1 month)",
+        "location": "Metropolregion Warschau",
+        "description": "",
+        "seniority_level": "",
+        "justification": ""
+      }
+    ]
+  },
+  {
+    "name": "Luiz Benacchio",
+    "summary": "Dynamic senior leader in plant management, manufacturing, and operations. Overall 27 years of professional experience (8 years in South America, 12 years in Europe and 7 years in Asia), including short term assignments in Mexico, Romania, and China. MBA-educated with a sound foundation in business principles and senior leadership. Outstanding history of success in performance and operations management. Dedicated to optimizing manufacturing and engineering operations via lean principles. Well-versed in multinational and global management principles. Proven champion of cultural transformation, focused on quality assurance and operations. Demonstrated track record of elevating service delivery standards and customer satisfaction. Adept at uniting multinational teams behind corporate vision and empowering success. Renowned for identifying and pursuing lucrative new business opportunities.",
+    "notes": "ENERSYS EMEA - FR 800, UK 500, CZ 140, PL 850 so around 2300 FTEs. ENERSYS APAC - AUS 75, INDO - 40, CHINA - 500. 9 plants overall. Around 2900 FTEs total so good size match. Enersys 3.6B$. No regional breakdown. Energy systems, from low to high tier. IATF 16949. Customer focus, cross-functional.",
+    "experience": [
+      {
+        "company": "EnerSys",
+        "title": "EMEA & APAC and Global Supplier Quality Senior Director",
+        "duration": "January 2024 - Present (9 months)",
+        "location": "Zug, Switzerland",
+        "description": "Responsible for defining and implementing global supplier quality strategy, with a focus on strategic suppliers in Asia.",
+        "seniority_level": "Category 4: 4B Senior Quality Managers",
+        "justification": "Responsible for global supplier quality strategy, indicating a senior role with significant influence across multiple regions."
+      },
+      {
+        "company": "EnerSys",
+        "title": "EMEA & APAC and Global Advanced Quality Senior Director",
+        "duration": "April 2022 - January 2024 (1 year 10 months)",
+        "location": "Zurich, Switzerland",
+        "description": "Added responsibility for APAC region and New Product Development (APQP). Achieved IATF 16949 certification in two factories in France and UK, and improved customer quality KPIs, reducing warranty costs by 50% and supplier rejection rate by 70%.",
+        "seniority_level": "Category 4: 4B Senior Quality Managers",
+        "justification": "Expanded responsibilities across regions and new product development, with significant improvements in quality KPIs."
+      },
+      {
+        "company": "EnerSys",
+        "title": "EMEA & Global Quality Operations Senior Director",
+        "duration": "December 2019 - April 2022 (2 years 5 months)",
+        "location": "Z\u00fcrich Area, Switzerland",
+        "description": "Expanded scope to include 3 factories in the USA and initiated IATF16949 certification for automotive customers in France.",
+        "seniority_level": "Category 4: 4B Senior Quality Managers",
+        "justification": "Oversaw quality operations across multiple regions, including expansion to USA factories."
+      },
+      {
+        "company": "EnerSys",
+        "title": "EMEA Senior Quality Director",
+        "duration": "February 2019 - December 2019 (11 months)",
+        "location": "R\u00e9gion de Z\u00fcrich, Suisse",
+        "description": "Promoted to Senior Director, implemented ISO/TS 22163 certification and established new quality assurance processes across regional factories.",
+        "seniority_level": "Category 4: 4C Quality Directors",
+        "justification": "Promotion to Senior Director with responsibility for implementing certifications and processes across regional factories."
+      },
+      {
+        "company": "EnerSys",
+        "title": "EMEA Quality Director",
+        "duration": "September 2018 - January 2019 (5 months)",
+        "location": "Z\u00fcrich Area, Switzerland",
+        "description": "Managed quality functions for EMEA region, with a team of 80+ people across multiple European countries. Reorganized the quality function and initiated ISO TS 22163 certification.",
+        "seniority_level": "Category 4: 4A Quality Managers",
+        "justification": "Managed quality functions for an entire region with a large team across multiple countries."
+      },
+      {
+        "company": "Provence Consulting & Trading SAS",
+        "title": "",
+        "duration": "October 2016 - August 2018 (1 year 11 months)",
+        "location": "Marseille Area, France",
+        "description": "",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "GE Power & Water",
+        "title": "",
+        "duration": "July 2014 - September 2016 (2 years 3 months)",
+        "location": "Noida Area, India",
+        "description": "Managed a team of 30 professionals, deployed automotive-quality methodologies, achieved certification of Integrated Management System (ISO 9001, 14001, 18001), and improved supplier quality performance.",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Alstom Power",
+        "title": "Factory & Unit Managing Director",
+        "duration": "September 2013 - July 2014 (11 months)",
+        "location": "Surabaya, Indonesia",
+        "description": "Managed full P&L of 40M Euros annual revenue and 600 employees. Implemented Toyota Lean processes and improved factory safety, achieving zero lost-time accidents.",
+        "seniority_level": "Category 5: 5A Vice Presidents of Quality",
+        "justification": "While not explicitly a quality role, the position involves managing entire factory operations including quality aspects at an executive level."
+      },
+      {
+        "company": "Alstom Power",
+        "title": "Regional Director of Operations",
+        "duration": "November 2011 - August 2013 (1 year 10 months)",
+        "location": "",
+        "description": "Led a 1,400-personnel unit, implemented lean manufacturing, and won 3 consecutive Frost & Sullivan awards for lean manufacturing excellence.",
+        "seniority_level": "Category 5: 5A Vice Presidents of Quality",
+        "justification": "Led a large unit and implemented lean manufacturing, indicating high-level operational responsibility including quality."
+      },
+      {
+        "company": "Alstom Power",
+        "title": "Regional Director of Quality",
+        "duration": "September 2009 - November 2011 (2 years 3 months)",
+        "location": "",
+        "description": "Led a 100-person quality team, improved quality performance to become the best Hydro unit for two consecutive years.",
+        "seniority_level": "Category 4: 4C Quality Directors",
+        "justification": "Led a large quality team across a region and achieved significant quality improvements."
+      },
+      {
+        "company": "Faurecia",
+        "title": "",
+        "duration": "August 2007 - August 2009 (2 years 1 month)",
+        "location": "",
+        "description": "Transformed a 37-member quality team, implemented FMEA using TDC software, and facilitated a corporate move to a new plant.",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "AKWEL",
+        "title": "Corporate Quality Coordinator",
+        "duration": "January 2005 - August 2007 (2 years 8 months)",
+        "location": "",
+        "description": "Directed global quality audits and interventions, liaising with international quality managers. Maintained a 100% record in customer-approved quality audits.",
+        "seniority_level": "Category 4: 4B Senior Quality Managers",
+        "justification": "Directed global quality audits and liaised with international quality managers, indicating a senior role."
+      },
+      {
+        "company": "AKWEL",
+        "title": "Quality Manager",
+        "duration": "June 2001 - December 2004 (3 years 7 months)",
+        "location": "Sao Paulo - Brazil",
+        "description": "",
+        "seniority_level": "Category 4: 4A Quality Managers",
+        "justification": "Title explicitly states Quality Manager role."
+      },
+      {
+        "company": "Ingersoll Rand",
+        "title": "",
+        "duration": "April 2000 - May 2001 (1 year 2 months)",
+        "location": "",
+        "description": "",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Valeo Engine and Electrical Systems",
+        "title": "",
+        "duration": "September 1997 - April 2000 (2 years 8 months)",
+        "location": "",
+        "description": "",
+        "seniority_level": "",
+        "justification": ""
+      },
+      {
+        "company": "Continental",
+        "title": "",
+        "duration": "July 1995 - August 1997 (2 years 2 months)",
+        "location": "",
+        "description": "",
+        "seniority_level": "",
+        "justification": ""
+      }
+    ]
+  }
+]

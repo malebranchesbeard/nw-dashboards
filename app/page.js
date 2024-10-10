@@ -24,6 +24,12 @@ export default function Home() {
             <Button asChild variant="default" className="w-full">
               <Link href="/scorecards">Head of Global Quality Scorecard</Link>
             </Button>
+            <Button asChild variant="default" className="w-full">
+              <Link href="/role-evaluator">Role Evaluator</Link>
+            </Button>
+            <Button asChild variant="default" className="w-full">
+              <Link href="/figma-chart">Process Maps</Link>
+            </Button>
           </div>
         </CardContent>
       </Card>

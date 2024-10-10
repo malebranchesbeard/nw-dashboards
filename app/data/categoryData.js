@@ -148,7 +148,7 @@ export const categoryData = [
       },
       {
         label: "5D",
-        name: "CEO/President with Quality Emphasis",
+        name: "CEO/President with Quality Background",
         description:
           "The highest-ranking executive who, in addition to overall leadership, places significant emphasis on quality as a core organizational value. They have extensive executive leadership with a focus on quality, set the organization's vision and culture with quality at the forefront, make final decisions on strategic quality initiatives, and determine the organization's future and commitment to quality excellence.",
       },
