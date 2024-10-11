@@ -1,0 +1,88 @@
+{
+  "transitions": [
+    {
+      "name": "IC → Team Lead",
+      "from": "1C",
+      "to": "2A",
+      "explanation": "Professionals move from roles where they are individual contributors with significant expertise to positions where they supervise others and manage teams."
+    },
+    {
+      "name": "Operational → Strategic Focus",
+      "from": "2A",
+      "to": "3A",
+      "explanation": "Transitioning from managing day-to-day operations to developing strategies that shape departmental or organizational quality practices."
+    },
+    {
+      "name": "Specialist → Generalist",
+      "from": "2B",
+      "to": "2C",
+      "explanation": "Moving from specialized roles focusing on specific areas to roles requiring broad knowledge across multiple quality functions."
+    },
+    {
+      "name": "Single Function → Cross-Functional Responsibility",
+      "from": "2A",
+      "to": "3A",
+      "explanation": "Taking on roles that require coordination across different departments, enhancing collaboration and integration of quality initiatives."
+    },
+    {
+      "name": "Department Mgr. → Plant Mgr.",
+      "from": "3A",
+      "to": "3B",
+      "explanation": "Transition from managing a specific department's quality functions to overseeing quality across an entire plant, involving broader responsibilities and larger teams."
+    },
+    {
+      "name": "Single Plant → Multi-Plant",
+      "from": "3B",
+      "to": "3C",
+      "explanation": "Expanding scope to oversee quality operations across multiple plants or locations, requiring coordination and standardization across sites."
+    },
+    {
+      "name": "Local Scope → Global Scope",
+      "from": "3B",
+      "to": "4A",
+      "explanation": "Expanding from regional responsibilities to global oversight, managing international teams, and aligning global quality strategies."
+    },
+    {
+      "name": "Internal Focus → External Representation",
+      "from": "3B",
+      "to": "4A",
+      "explanation": "Shifting to roles that involve representing the organization externally, engaging with customers, suppliers, and industry bodies."
+    },
+    {
+      "name": "  → Reporting to C-Suite",
+      "from": "3C",
+      "to": "4A",
+      "explanation": "Moving into roles where one reports directly to top executives (e.g., CEO, COO), influencing organizational strategy at the highest levels."
+    },
+    {
+      "name": "Quality Leadership Expansion",
+      "from": "4A",
+      "to": "4B",
+      "explanation": "Taking on broader leadership responsibilities, overseeing multiple quality divisions or business units to integrate quality strategies across the organization."
+    },
+    {
+      "name": "Strategic Focus Enhancement",
+      "from": "4A",
+      "to": "4B",
+      "explanation": "Shifting focus from global quality operations to integrating quality strategies with overall business objectives and corporate strategy."
+    },
+    {
+      "name": "Executive Leadership Advancement",
+      "from": "4B",
+      "to": "4C",
+      "explanation": "Advancing to the highest executive role in quality, taking full responsibility for the organization's quality strategy and its alignment with overall business objectives."
+    },
+    {
+      "name": "Complete Strategic Integration",
+      "from": "4B",
+      "to": "4C",
+      "explanation": "Integrating quality into all aspects of the business, ensuring that quality standards drive strategic decisions and organizational culture."
+    },
+    {
+      "name": "Budgetary Authority Increase",
+      "from": "1B",
+      "to": "4C",
+      "explanation": "With each upward transition, professionals typically gain greater control over budgets, reflecting increased trust and responsibility."
+    }
+  ]
+}
