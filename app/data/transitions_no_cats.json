@@ -3,106 +3,76 @@
     {
       "code": "T1",
       "name": "IC → Team Lead",
-      "from": "1C",
-      "to": "2A",
       "explanation": "Professionals move from roles where they are individual contributors with significant expertise to positions where they supervise others and manage teams."
     },
     {
       "code": "T2",
       "name": "Operational → Strategic Focus",
-      "from": "2A",
-      "to": "3A",
       "explanation": "Transitioning from managing day-to-day operations to developing strategies that shape departmental or organizational quality practices."
     },
     {
       "code": "T3",
       "name": "Specialist → Generalist",
-      "from": "2B",
-      "to": "2C",
       "explanation": "Moving from specialized roles focusing on specific areas to roles requiring broad knowledge across multiple quality functions."
     },
     {
       "code": "T4",
       "name": "Single Function → Cross-Functional Responsibility",
-      "from": "2A",
-      "to": "3A",
       "explanation": "Taking on roles that require coordination across different departments, enhancing collaboration and integration of quality initiatives."
     },
     {
       "code": "T5",
       "name": "Department Mgr. → Plant Mgr.",
-      "from": "3A",
-      "to": "3B",
       "explanation": "Transition from managing a specific department's quality functions to overseeing quality across an entire plant, involving broader responsibilities and larger teams."
     },
     {
       "code": "T6",
       "name": "Single Plant → Multi-Plant",
-      "from": "3B",
-      "to": "3C",
       "explanation": "Expanding scope to oversee quality operations across multiple plants or locations, requiring coordination and standardization across sites."
     },
     {
       "code": "T7",
       "name": "Local Scope → Regional Scope",
-      "from": "3B",
-      "to": "4A",
       "explanation": "Expanding responsibilities from managing quality within a single plant or facility (local scope) to overseeing quality operations across multiple plants or facilities within a region (regional scope). This involves greater complexity in coordination and standardization across sites."
     },
     {
       "code": "T8",
       "name": "Regional Scope → Global Scope",
-      "from": "3B",
-      "to": "4B",
       "explanation": "Moving from regional responsibilities to global oversight, managing international teams, aligning global quality strategies, and ensuring compliance with international standards."
     },
     {
       "code": "T9",
       "name": "Internal Focus → External Representation",
-      "from": "3B",
-      "to": "4A",
       "explanation": "Shifting to roles that involve representing the organization externally, engaging with customers, suppliers, and industry bodies."
     },
     {
       "code": "T10",
       "name": "  → Reporting to C-Suite",
-      "from": "3C",
-      "to": "4A",
       "explanation": "Moving into roles where one reports directly to top executives (e.g., CEO, COO), influencing organizational strategy at the highest levels."
     },
     {
       "code": "T11",
       "name": "Quality Leadership Expansion",
-      "from": "4A",
-      "to": "4B",
       "explanation": "Taking on broader leadership responsibilities, overseeing multiple quality divisions or business units to integrate quality strategies across the organization."
     },
     {
       "code": "T12",
       "name": "Strategic Focus Enhancement",
-      "from": "4A",
-      "to": "4B",
       "explanation": "Shifting focus from global quality operations to integrating quality strategies with overall business objectives and corporate strategy."
     },
     {
       "code": "T13",
       "name": "Executive Leadership Advancement",
-      "from": "4B",
-      "to": "4C",
       "explanation": "Advancing to the highest executive role in quality, taking full responsibility for the organization's quality strategy and its alignment with overall business objectives."
     },
     {
       "code": "T14",
       "name": "Complete Strategic Integration",
-      "from": "4B",
-      "to": "4C",
       "explanation": "Integrating quality into all aspects of the business, ensuring that quality standards drive strategic decisions and organizational culture."
     },
     {
       "code": "T15",
       "name": "Budgetary Authority Increase",
-      "from": "1B",
-      "to": "4C",
       "explanation": "With each upward transition, professionals typically gain greater control over budgets, reflecting increased trust and responsibility."
     }
   ]

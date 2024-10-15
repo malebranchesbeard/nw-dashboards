@@ -7,10 +7,10 @@ import transitionsData from "../../data/transitions.json";
 
 // Update this constant to include gradient colors for each category
 const colorGradient = [
-  { top: "rgba(254, 240, 217, 0.4)", bottom: "rgba(254, 240, 217, 0.837)" },
-  { top: "rgba(252, 141, 89, 0.2)", bottom: "rgba(252, 141, 89, 0.6)" },
-  { top: "rgba(227, 74, 51, 0.2)", bottom: "rgba(227, 74, 51, 0.6)" },
-  { top: "rgba(122, 1, 119, 0.2)", bottom: "rgba(122, 1, 119, 0.6)" },
+  { top: "rgba(254, 240, 217, 0.6)", bottom: "rgba(254, 240, 217, 0.837)" },
+  { top: "rgba(252, 141, 89, 0.4)", bottom: "rgba(252, 141, 89, 0.6)" },
+  { top: "rgba(227, 74, 51, 0.4)", bottom: "rgba(227, 74, 51, 0.6)" },
+  { top: "rgba(122, 1, 119, 0.4)", bottom: "rgba(122, 1, 119, 0.6)" },
 ];
 
 // Add this JSON object for title overrides
@@ -22,7 +22,7 @@ const subcategoryTitleOverrides = {
   "Mid-Level Quality Supervisors": "Mid-Level",
   "Senior Quality Supervisors": "Senior",
   "Quality Managers": "Managers",
-  "Senior Quality Managers": "Sr. Managers",
+  "Senior Quality Managers": "Sr. Mgmt",
   "Quality Directors": "Directors",
   "Global Quality Leaders": "Global",
   "Executive Directors of Quality": "Executive",
@@ -93,24 +93,45 @@ const Timeline = () => {
     return { width: `${width}%`, left: `${left}%` };
   };
 
-  // Update this function to check if a subcategory is included in the hovered transition
-  const isSubcategoryHighlighted = (label) => {
-    if (!hoveredTransition) return false;
-    return (
-      hoveredTransition.from.startsWith(label) ||
-      hoveredTransition.to.startsWith(label)
-    );
+  // Add this array of all possible positions
+  const positions = [
+    "1A",
+    "1B",
+    "1C",
+    "2A",
+    "2B",
+    "2C",
+    "3A",
+    "3B",
+    "3C",
+    "4A",
+    "4B",
+    "4C",
+  ];
+
+  // Update this function to return an object with border classes
+  const getSubcategoryHighlightClasses = (label) => {
+    if (!hoveredTransition)
+      return { opacity: "opacity-100", borderColor: "border-transparent" };
+    const fromIndex = positions.indexOf(hoveredTransition.from);
+    const toIndex = positions.indexOf(hoveredTransition.to);
+    const labelIndex = positions.indexOf(label);
+    const isHighlighted =
+      labelIndex >= Math.min(fromIndex, toIndex) &&
+      labelIndex <= Math.max(fromIndex, toIndex);
+
+    return {
+      opacity: isHighlighted ? "opacity-100" : "opacity-50",
+      borderColor: isHighlighted ? "border-red-800" : "border-transparent",
+    };
   };
 
   return (
-    <Card className="w-full max-w-6xl mx-auto border-none shadow-none bg-transparent">
+    <Card className="w-full mx-auto border-none shadow-none bg-transparent">
       <CardContent className="p-0">
-        <h2 className="text-xl text-center font-semi-bold mb-4">
-          Timeline — Quality Roles
-        </h2>
         <div className="flex flex-col">
           {/* New top-level category row */}
-          <div className="flex justify-between mb-2">
+          <div className="flex justify-between mb-0.5">
             {mainCategories.map((category, index) => (
               <div
                 key={index}
@@ -127,32 +148,36 @@ const Timeline = () => {
 
           {/* Category and subcategory layers */}
           <div className="flex justify-between timeline-container relative">
-            {subcategories.map((subcategory, index) => (
-              <div
-                key={index}
-                className="timeline-subcategory flex flex-col items-center"
-                style={{
-                  flex: "1 0 8.33%",
-                }}
-              >
+            {subcategories.map((subcategory, index) => {
+              const highlightClasses = getSubcategoryHighlightClasses(
+                subcategory.label
+              );
+              return (
                 <div
-                  className="timeline-subcategory-header"
+                  key={index}
+                  className={`timeline-subcategory flex flex-col items-center transition-all duration-300 border-b-2 ${highlightClasses.opacity} ${highlightClasses.borderColor}`}
                   style={{
-                    backgroundColor:
-                      colorGradient[subcategory.categoryIndex]?.bottom ||
-                      "#ccc",
-                    width: "100%",
-                    textAlign: "center",
-                    padding: "0.5rem",
+                    flex: "1 0 8.33%",
                   }}
                 >
-                  <span>{subcategory.label}</span>
+                  <div
+                    className="timeline-subcategory-header flex flex-col items-center justify-center"
+                    style={{
+                      backgroundColor:
+                        colorGradient[subcategory.categoryIndex]?.bottom ||
+                        "#ccc",
+                      width: "100%",
+                      textAlign: "center",
+                      padding: "0.5rem",
+                      minHeight: "4rem", // Add this to ensure consistent height
+                    }}
+                  >
+                    <span className="font-semibold">{subcategory.label}</span>
+                    <span className="text-sm mt-1">{subcategory.name}</span>
+                  </div>
                 </div>
-                <div className="timeline-subcategory-name mt-2">
-                  <span>{subcategory.name}</span>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
           {/* Transitions */}
@@ -189,10 +214,10 @@ const Timeline = () => {
                   onMouseLeave={() => setHoveredTransition(null)}
                 >
                   <div
-                    className={`absolute inset-0 bg-blue-400 rounded transition-opacity duration-300 ${
+                    className={`absolute inset-0 bg-cyan-700 rounded transition-opacity duration-300 ${
                       hoveredTransition === transition
-                        ? "opacity-75"
-                        : "opacity-50"
+                        ? "opacity-50"
+                        : "opacity-30"
                     }`}
                   ></div>
                   <div className="absolute inset-0 flex items-center justify-center text-xs font-medium text-gray-800 truncate px-2">

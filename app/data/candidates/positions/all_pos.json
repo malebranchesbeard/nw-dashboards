@@ -1,0 +1,308 @@
+{
+    "adam-wietrzyński-11389682": {  
+        "summary": ">18 years experience in automotive by biggest Tier 1 players (Delphi Automotive, Mahle, GKN Driveline, Valeo & Forvia - Faurecia)\n> Senior Manager positions for past 13 years in Automotive and Machining industry (Quality Manager/Director, Quality & Risk Director) with interactions and management with cross functional (Customers, Operations, Suppliers, R&D, Process, Warranty, Quality, HR, Finance), international teams,\nand multi-sites management experience\n> Team Leader on Quality Task Force to solve Quality Issues, both internal and with OEM Customers\n> 3,5 years experience in global leading consumer electronics provider - Dell Computers\n> Supplier Quality Manager for over 6 years (auditing various production processes at suppliers, developing suppliers, supporting suppliers in production transfer processes\n> Deep knowledge of the Automotive Quality Core Tools\n> Collaborating on different cross-functional levels with big OEM’s (Toyota, BMW, Daimler - Mercedes Benz, Porsche, Audi, VW, Skoda, Seat, Volvo, JLR, MAN, Scania, Renault, PSA, TPCA, Honda, GM, Opel, FCA)\n> As Voice of the Customer high Engagement was the key to be successful\n> Proven KPI’s improvements: Customer PPM’s, # of Complaints, gaining Customer Quality Award\n> On Quality & Supplier Quality  functions strong influence and management of cross-functional teams - giving directions in remote environment not only into direct reports \n> Project member for 2 greenfield projects: Dell Computer (1,800 employees) and GKN Driveline (1, 100 employees)\n> Lean Six Sigma Green Belt certified (2007), Lean Six Sigma Black Belt (2024)",
+        "positionHistory": [
+            {
+                "title": "Manufacturing Engineer - Technolog",
+                "companyName": "Delphi",
+                "description": "...",
+                "startEndDate": {
+                    "start": {"month": 12, "year": 1999},
+                    "end": {"month": 11, "year": 2003}
+                },
+                "positionCode": "adam-wietrzyński-11389682_P1",
+                "transStartList": [],
+                "transEndList": []
+            },
+            {
+                "title": "Supplier Quality Engineer - Inżynier Jakości Dostawców",
+                "companyName": "Delphi",
+                "description": "...",
+                "startEndDate": {
+                    "start": {"month": 12, "year": 2003},
+                    "end": {"month": 7, "year": 2007}
+                },
+                "positionCode": "adam-wietrzyński-11389682_P2",
+                "transStartList": ["T7", "T9"],
+                "transEndList": []
+            },
+            {
+                "title": "Supplier Quality Engineer Supply Chain Europe - Inżynier Jakości Dostawców - Europa",
+                "companyName": "Dell",
+                "companyLocation": "Łódź, woj. łódzkie, Polska",
+                "description": "...",
+                "startEndDate": {
+                    "start": {"month": 7, "year": 2007},
+                    "end": {"month": 10, "year": 2009}
+                },
+                "positionCode": "adam-wietrzyński-11389682_P3",
+                "transStartList": ["T1", "T4"],
+                "transEndList": ["T7", "T9"]
+            },
+            {
+                "title": "EMEA Customer Operations Operations Manager - Menadżer ds. Kontaktów z Klientami",
+                "companyName": "Dell",
+                "companyLocation": "Warszawa, woj. mazowieckie, Polska",
+                "description": "...",
+                "startEndDate": {
+                    "start": {"month": 11, "year": 2009},
+                    "end": {"month": 1, "year": 2011}
+                },
+                "positionCode": "adam-wietrzyński-11389682_P4",
+                "transStartList": ["T3", "T2"],
+                "transEndList": ["T1", "T4"]
+            },
+            {
+                "title": "Quality Manager - Kierownik Jakości",
+                "companyName": "MAHLE",
+                "companyLocation": "Pow. krotoszyński, woj. wielkopolskie, Polska",
+                "description": "...",
+                "startEndDate": {
+                    "start": {"month": 3, "year": 2011},
+                    "end": {"month": 2, "year": 2015}
+                },
+                "positionCode": "adam-wietrzyński-11389682_P5",
+                "transStartList": ["T4", "T10"],
+                "transEndList": ["T3", "T2"]
+            },
+            {
+                "title": "Quality & Risk Director - Dyrektor Jakości i Zarządzania Ryzykiem",
+                "companyName": "GKN Driveline",
+                "companyLocation": "Pow. oleśnicki, woj. dolnośląskie, Polska · On-site",
+                "description": "...",
+                "startEndDate": {
+                    "start": {"month": 3, "year": 2015},
+                    "end": {"month": 7, "year": 2017}
+                },
+                "positionCode": "adam-wietrzyński-11389682_P6",
+                "transStartList": ["T6"],
+                "transEndList": ["T4", "T10"]
+            },
+            {
+                "title": "Quality Director Valeo Wiper Systems Germany - Dyrektor Jakości",
+                "companyName": "Valeo",
+                "companyLocation": "Rejon Stuttgart, Niemcy · On-site",
+                "description": "...",
+                "startEndDate": {
+                    "start": {"month": 8, "year": 2017},
+                    "end": {"month": 8, "year": 2019}
+                },
+                "positionCode": "adam-wietrzyński-11389682_P7",
+                "transStartList": ["T8", "T10"],
+                "transEndList": ["T6"]
+            },
+            {
+                "title": "Group Quality Director - Dyrektor Jakości",
+                "companyName": "Wiesheu Bakingovens",
+                "companyLocation": "Rejon Stuttgart, Niemcy · On-site",
+                "description": "...",
+                "startEndDate": {
+                    "start": {"month": 9, "year": 2019},
+                    "end": {"month": 6, "year": 2021}
+                },
+                "positionCode": "adam-wietrzyński-11389682_P8",
+                "transStartList": ["T9", "T7"],
+                "transEndList": ["T8", "T10"]
+            },
+            {
+                "title": "Head of Quality - Voice of the Customer Mercedes Benz Forvia Interiors Europe",
+                "companyName": "FORVIA",
+                "companyLocation": "Böblingen, Badenia-Wirtembergia, Niemcy · On-site",
+                "description": "...",
+                "startEndDate": {
+                    "start": {"month": 7, "year": 2021},
+                    "end": {"month": 3, "year": 2023}
+                },
+                "positionCode": "adam-wietrzyński-11389682_P9",
+                "transStartList": ["T8", "T12", "T13"],
+                "transEndList": ["T9", "T7"]
+            },
+            {
+                "title": "Head of Quality - Global Quality Director (IST AG - Endress & Hauser Group)",
+                "companyName": "Innovative Sensor Technology IST AG",
+                "companyLocation": "Ebnat-Kappel, St Gallen, Switzerland · On-site",
+                "description": "...",
+                "startEndDate": {
+                    "start": {"month": 4, "year": 2023},
+                    "end": null
+                },
+                "positionCode": "adam-wietrzyński-11389682_P10",
+                "transStartList": [],
+                "transEndList": ["T8", "T12", "T13"]
+            }
+        ]
+    },
+    "cdtc2010": {
+        "summary": "I am a accomplished professional with 30 years of experience in industries ranging from chemistry, construction, semiconductors, and electronics to defense industries. I hold extensive certifications in quality management, enterprise risk management and business continuity, with a focus on operational excellence and team leadership across multi-cultural environments.",
+        "positionHistory": [
+          {
+            "title": "Process Engineer",
+            "companyName": "Micronas, Ne",
+            "companyLocation": "On-site",
+            "description": "•   Develop dry-etch process for fabrication of SAW-filters\n•   Optimization of existing processes. Qualify new equipment, transfer into production",
+            "startEndDate": {
+              "start": {
+                "month": 3,
+                "year": 1997
+              },
+              "end": {
+                "month": 12,
+                "year": 1997
+              }
+            },
+            "positionCode": "cdtc2010_P1",
+            "transStartList": ["T1"],
+            "transEndList": []
+          },
+          {
+            "title": "Process Engineer - Chemistry Manager - Health & Safety Manager",
+            "companyName": "Micro Crystal Swatchgroup",
+            "companyLocation": "Location Solothurn, Switzerland",
+            "description": "•   Process Engineer (02.1998 – 09.2004)\n-\tDevelop new photolithography process by electrophoresis for fabrication of quartz resonators \n-\tDesign, test and qualify new products and equipment, transfer into production \n-\tManage analysis (physical, chemical, mechanical ...) with external partners\n\n•   Chemistry Manager, Health- & Safety Manager (2000 – 2004)\n-\tManage warehouses (10 tones) of chemical products, organization of all delivery activities \n-\tSearch, qualify new subcontractor for chemical wastes treatment\n-\tPurchase chemical products (budget 400 kCHF/year)\n-\tManage transports of dangerous products according to ADR",
+            "startEndDate": {
+              "start": {
+                "month": 3,
+                "year": 1998
+              },
+              "end": {
+                "month": 9,
+                "year": 2004
+              }
+            },
+            "positionCode": "cdtc2010_P2",
+            "transStartList": [],
+            "transEndList": ["T1"]
+          },
+          {
+            "title": "Multi-Plants Production Manager",
+            "companyName": "Oscilloquartz SA",
+            "companyLocation": "Neuchâtel, Switzerland · On-site",
+            "description": "•   Drive staff to achieve company goals. Build up strong and motivated team\n•   Liaise with Sales and plan, release, follow up manufacturing orders \n•   Plan production ramp-up in optics and electronics departments \n•  Manage the technology & equipment transfer to our plant in Malaysia",
+            "startEndDate": {
+              "start": {
+                "month": 10,
+                "year": 2004
+              },
+              "end": {
+                "month": 2,
+                "year": 2007
+              }
+            },
+            "positionCode": "cdtc2010_P3",
+            "transStartList": ["T5"],
+            "transEndList": []
+          },
+          {
+            "title": "Quality & Engineering Manager",
+            "companyName": "Saia Burgess Controls Fr",
+            "description": "• Quality & Production Engineering\n-\tResponsible for all quality issues of the plant\n-\tDevelop and improve products and production processes including analyze rootcauses of defects,\n        record statistics\n-\tSimplify quality documents system. Perform audits intern & suppliers\n-\tManage introduction of new products\n\n• Customer Services\n-\tHandle all quality issues addressed by key customers\n-\tCreate statistics of returned products and failures. Introduce corrective actions\n\n• Lean Manufacturing\n-\tTake part to the implementation of Lean Manufacturing in the production floor\n-\tRealize values stream mapping, optimization of processes & material flow, waste elimination\n       & reduction, visual management, one-piece-flow, set-up Kanban, improve material supply\n-\tConvert «straight production line» to «U-shaped production line»",
+            "startEndDate": {
+              "start": {
+                "month": 3,
+                "year": 2007
+              },
+              "end": {
+                "month": 6,
+                "year": 2009
+              }
+            },
+            "positionCode": "cdtc2010_P4",
+            "transStartList": ["T3"],
+            "transEndList": ["T5"]
+          },
+          {
+            "title": "Quality - Safety - Environment Manager",
+            "companyName": "Zehndergroup PGR",
+            "companyLocation": "Aarau, Switzerland · On-site",
+            "description": "•   Drive staff to achieve company goals. Build up strong and motivated team\n•   Liaise with Sales and plan, release, follow up manufacturing orders \n•   Plan production ramp-up in optics and electronics departments \n•  Manage the technology & equipment transfer to our plant in Malaysia",
+            "startEndDate": {
+              "start": {
+                "month": 2,
+                "year": 2011
+              },
+              "end": {
+                "month": 10,
+                "year": 2013
+              }
+            },
+            "positionCode": "cdtc2010_P5",
+            "transStartList": ["T2"],
+            "transEndList": ["T3"]
+          },
+          {
+            "title": " QHSE & CSR System Manager (Headquarter, 7 Sites) ",
+            "companyName": "Losinger Marazzi SA",
+            "companyLocation": "Bern, Switzerland · On-site",
+            "description": "•   Drive the transition to last version of QHSE & CSR Standards (company wide)\n•   Ensure the all requirements and that key initiatives are aligned with company strategy\n•  Implement new management system software with customer oriented approach\n•  Organize & conduct suppliers audits & internal audits, root cause analysis\n•  Projects: Harmonize a security concept, management of dangerous goods",
+            "startEndDate": {
+              "start": {
+                "month": 11,
+                "year": 2013
+              },
+              "end": {
+                "month": 9,
+                "year": 2019
+              }
+            },
+            "positionCode": "cdtc2010_P6",
+            "transStartList": ["T6"],
+            "transEndList": ["T2"]
+          },
+          {
+            "title": "Senior QRSSE Manager & Trade Compliance Officer",
+            "companyName": "RUAG Simulation & Training",
+            "companyLocation": "Bern, Switzerland",
+            "description": "See the position of Thales Simulation & Training \n(Thales bought Ruag Simulation & Training in Mai 2022)",
+            "startEndDate": {
+              "start": {
+                "month": 10,
+                "year": 2019
+              },
+              "end": {
+                "month": 5,
+                "year": 2022
+              }
+            },
+            "positionCode": "cdtc2010_P7",
+            "transStartList": [],
+            "transEndList": ["T6"]
+          },
+          {
+            "title": "Senior Quality Security & HSE Manager",
+            "companyName": "Thales Simulation & Training AG",
+            "companyLocation": "Bern, Switzerland · On-site",
+            "description": "•   Quality Assurance\n-\tEnsure all required certificates for the BUs\n-\tCoordinate and drive the quality initiatives with others quality managers in Europe\n-\tResponsible for defining and maintaining quality objectives and measures\n-\tPrepare audits planning and is responsible for its compliance\n-\tSupport for Compliance Initiatives \n-\tDeploy new Thales' processes across the company and train all employees\n\n•    Health - Safety & Environment Officer at group level (CH, F, D, UAE, MY, AUS)\n-\tEnsure a good HSE level and that HSE goals are met\n-\tCoordinate and drive the HSE initiatives with local HSE managers abroad\n-\tDevelop and implement HSE concept at BU level, perform key risks analysis for all CH sites \n-\tBuild up first-aid and emergency organization\n-\tImplement a HSE compliance tool   \n\n•   Security Officer\n-\tEnsure the compliance of Security Protocol and Personal Security  \n-\tSecured Access Management for employees\n-\tAssess physical security of major sites in CH \n-\tManage sensitive's cases with authorities\n\n•   Enterprise Risks Management\n-\tImplement and drive the ERM initiatives\n-\tCoordinate & drive ERM initiatives with other risk managers in D-F-UAE\n-\tCollect & assess all risks at company levels\n-\tEnsure Business Continuity by implementing mitigation measures\n\n•   Merge & Acquisition and Integration\n-\tCoordinate, harmonize the information for QRSSE & TC streams between F-CH-D-UAE\n-\tManage data in Virtual Data Rooms \n-\tIdentify key QRSSE topics and ensure that they will be properly integrated in Thales\n-\tIdentify gaps, implement improvement actions \n\n•   Trade Compliance Officer at SECO & FDFA\n-\tCoordinate TC activities between TC specialists and internal stakeholders for new bids\n-\tEnsure Trade Compliance of the BUs and deploy TC directives group-wide\n-\tImplement new / (adapted) group-wide TC requirements\n-\tEnsuring effective handling of BU specific TC risks \n-\tContribute to the integration of the company into Thales SA and Thalesgroup",
+            "startEndDate": {
+              "start": {
+                "month": 5,
+                "year": 2022
+              },
+              "end": {
+                "month": 3,
+                "year": 2024
+              }
+            },
+            "positionCode": "cdtc2010_P8",
+            "transStartList": ["T8"],
+            "transEndList": []
+          },
+          {
+            "title": "Global Quality Manager in Projects ",
+            "companyName": "HARTING Technology Group",
+            "companyLocation": "Bienne, Berne, Suisse · On-site",
+            "description": "Skills: Anglais · Anglais parlé · Évaluation des risques · Esprit critique",
+            "startEndDate": {
+              "start": {
+                "month": 12,
+                "year": 2023
+              },
+              "end": null
+            },
+            "positionCode": "cdtc2010_P9",
+            "transStartList": ["T12"],
+            "transEndList": ["T8"]
+          }
+        ]
+      }
+      
+}

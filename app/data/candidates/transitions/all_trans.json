@@ -1,0 +1,54 @@
+{
+    "adam-wietrzyński-11389682": [
+      {
+        "positionCode": "adam-wietrzyński-11389682_P1",
+        "transitionStartList": [],
+        "transitionEndList": []
+      },
+      {
+        "positionCode": "adam-wietrzyński-11389682_P2",
+        "transitionStartList": [],
+        "transitionEndList": []
+      },
+      {
+        "positionCode": "adam-wietrzyński-11389682_P3",
+        "transitionStartList": [],
+        "transitionEndList": []
+      },
+      {
+        "positionCode": "adam-wietrzyński-11389682_P4",
+        "transitionStartList": ["T1", "T3", "T4", "T9"],
+        "transitionEndList": []
+      },
+      {
+        "positionCode": "adam-wietrzyński-11389682_P5",
+        "transitionStartList": [],
+        "transitionEndList": ["T1", "T3", "T4"]
+      },
+      {
+        "positionCode": "adam-wietrzyński-11389682_P6",
+        "transitionStartList": ["T2", "T6"],
+        "transitionEndList": []
+      },
+      {
+        "positionCode": "adam-wietrzyński-11389682_P7",
+        "transitionStartList": [],
+        "transitionEndList": []
+      },
+      {
+        "positionCode": "adam-wietrzyński-11389682_P8",
+        "transitionStartList": ["T7", "T10", "T11"],
+        "transitionEndList": ["T6"]
+      },
+      {
+        "positionCode": "adam-wietrzyński-11389682_P9",
+        "transitionStartList": [],
+        "transitionEndList": ["T7"]
+      },
+      {
+        "positionCode": "adam-wietrzyński-11389682_P10",
+        "transitionStartList": ["T8", "T12", "T13", "T14"],
+        "transitionEndList": []
+      }
+    ]
+  }

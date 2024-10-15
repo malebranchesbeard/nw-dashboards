@@ -13,7 +13,13 @@ export default function FigmaChartPage() {
     <main className="flex flex-col h-screen bg-gray-50">
       {/* Header Section */}
       <header className="flex justify-between items-center p-4 bg-white shadow">
-        <h1 className="text-xl font-bold">Seniority Process Map</h1>
+        <h1 className="text-xl font-bold">
+          Seniority Process Map
+          <span className="text-sm text-orange-800 font-semibold">
+            {" "}
+            - Red borders indicate sections currently being worked on
+          </span>
+        </h1>
         <Button asChild variant="default">
           <Link href="/">Home</Link>
         </Button>
