@@ -17,7 +17,7 @@ export default function FigmaChartPage() {
           Seniority Process Map
           <span className="text-sm text-orange-800 font-semibold">
             {" "}
-            - Red borders indicate sections currently being worked on
+            Red borders indicate sections currently being worked on
           </span>
         </h1>
         <Button asChild variant="default">

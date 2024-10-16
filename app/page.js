@@ -77,6 +77,15 @@ export default function Home() {
                   Process Maps
                 </Link>
               </Button>
+              <Button
+                asChild
+                variant="default"
+                className="w-full hover:bg-gray-700 transition-colors"
+              >
+                <Link href="/llm-workflow" className="hover:bg-gray-700">
+                  LLM Workflow
+                </Link>
+              </Button>
             </CardContent>
           </Card>
         </CardContent>
