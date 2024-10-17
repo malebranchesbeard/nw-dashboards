@@ -10,7 +10,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import candidatePositions from "../data/candidates/positions/all_pos.json";
+import candidatePositions from "../data/candidates/positions/all_senior.json";
 import { Badge } from "@/components/ui/badge";
 
 // Import your components here
@@ -42,10 +42,18 @@ export default function LLMWorkflowPage() {
   };
 
   useEffect(() => {
-    const candidateIds = Object.keys(candidatePositions);
-    setCandidates(candidateIds);
-    if (candidateIds.length > 0) {
-      setSelectedCandidate(candidateIds[0]);
+    // Ensure candidatePositions is an object before trying to get its keys
+    if (typeof candidatePositions === "object" && candidatePositions !== null) {
+      const candidateIds = Object.keys(candidatePositions);
+      setCandidates(candidateIds);
+      if (candidateIds.length > 0) {
+        setSelectedCandidate(candidateIds[0]);
+      }
+    } else {
+      console.error(
+        "candidatePositions is not a valid object:",
+        candidatePositions
+      );
     }
   }, []);
 

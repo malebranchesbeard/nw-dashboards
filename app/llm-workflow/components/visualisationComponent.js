@@ -72,17 +72,19 @@ const VisualisationComponent = () => {
     const containerHeight = containerRef.current.clientHeight;
 
     const margin = { top: 20, right: 50, bottom: 30, left: 180 };
-    const width = containerWidth * 1 - margin.left - margin.right;
+    const width = containerWidth - margin.left - margin.right;
 
     // Calculate the number of unique candidates
     const uniqueCandidates = new Set(chartData.data.map((d) => d.candidateId))
       .size;
 
-    // Set the height based on the number of candidates, with each taking up 80px
-    const height = Math.min(
-      containerHeight - margin.top - margin.bottom,
-      uniqueCandidates * 70
-    );
+    // Set the height based on the number of candidates, with each taking up 70px
+    const height = uniqueCandidates * 32;
+
+    // Update the container height
+    containerRef.current.style.height = `${
+      height + margin.top + margin.bottom
+    }px`;
 
     d3.select(svgRef.current).selectAll("*").remove();
 

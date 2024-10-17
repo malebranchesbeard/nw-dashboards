@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useMemo } from "react";
-import candidatePositions from "../../data/candidates/positions/all_pos.json";
+import candidatePositions from "../../data/candidates/positions/all_senior.json";
 import transitionsData from "../../data/transitions_no_cats.json";
 
 const CandidateTransitions = ({ candidateId }) => {

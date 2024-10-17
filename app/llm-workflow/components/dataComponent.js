@@ -1,5 +1,5 @@
 import React from "react";
-import positions from "../../data/candidates/positions/all_pos.json";
+import positions from "../../data/candidates/positions/all_senior.json";
 import seniorityFramework from "../../data/quality_track.json";
 import transitionFramework from "../../data/transitions.json";
 import { Database } from "lucide-react"; // Import the specific icon you want
