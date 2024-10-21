@@ -1,0 +1,113 @@
+[
+    {
+      "questionCode": "1.1",
+      "property": "Degree in Engineering, Quality, or related field (any physical science, engineering, or technical field)",
+      "instructions": "(Bachelor's or unspecified degree: 1 point) (Master's/local equivalent/MBA: 2 points) (PhD or (Master's + MBA): 3 points)"
+    },
+    {
+      "questionCode": "2.1",
+      "property": "15 years of experience in quality management and process improvement",
+      "instructions": "(0-8 years: 0 points) (9-12 years: 1 point) (13+ years: 2 points)"
+    },
+    {
+      "questionCode": "2.2",
+      "property": "Experience in closely related industry to Dätwyler's elastomer components (automotive, plastics, injection molding, aerospace, connectors, electrical, medical devices, etc.)",
+      "instructions": "(No match: 0 points) (Partial match: 1 point) (Strong match: 2 points)"
+    },
+    {
+      "questionCode": "2.3",
+      "property": "Experience in an industry other than automotive, plastics, injection molding, aerospace, connectors, electrical, etc.",
+      "instructions": "(No match: 0 points) (Partial match: 1 point) (Strong match: 2 points)"
+    },
+    {
+      "questionCode": "2.4",
+      "property": "10+ years of leadership experience",
+      "instructions": "(0-4 years: 0 points) (5-7 years: 1 point) (8+ years: 2 points)"
+    },
+    {
+      "questionCode": "2.5",
+      "property": "10+ years of change management experience",
+      "instructions": "(0-4 years: 0 points) (5-7 years: 1 point) (8+ years: 2 points)"
+    },
+    {
+      "questionCode": "3.1",
+      "property": "Experience with global regulatory requirements and quality standards",
+      "instructions": "(No match: 0 points) (Match: 1 point)"
+    },
+    {
+      "questionCode": "3.2",
+      "property": "Experience with Quality Management Systems (QMS)",
+      "instructions": "(No match: 0 points) (Match: 1 point)"
+    },
+    {
+      "questionCode": "3.3",
+      "property": "Process improvement or lean methodologies expertise",
+      "instructions": "(No match: 0 points) (Match: 1 point)"
+    },
+    {
+      "questionCode": "3.4",
+      "property": "Quality by Design (QbD) principles knowledge",
+      "instructions": "(No match: 0 points) (Match: 1 point)"
+    },
+    {
+      "questionCode": "3.5",
+      "property": "Risk management experience",
+      "instructions": "(No match: 0 points) (Match: 1 point)"
+    },
+    {
+      "questionCode": "3.6",
+      "property": "Supplier quality management experience",
+      "instructions": "(No match: 0 points) (Match: 1 point)"
+    },
+    {
+      "questionCode": "3.7",
+      "property": "Audit management experience",
+      "instructions": "(No match: 0 points) (Match: 1 point)"
+    },
+    {
+      "questionCode": "3.8",
+      "property": "Experience with zero defect philosophy",
+      "instructions": "(No match: 0 points) (Match: 1 point)"
+    },
+    {
+      "questionCode": "3.9",
+      "property": "Experience with IATF 16949 or DVA standards",
+      "instructions": "(No match: 0 points) (Match: 1 point)"
+    },
+    {
+      "questionCode": "3.10",
+      "property": "Experience with any of these standards: AC7115E, AS9100D, FSSC 22000, AS9100, ISO17025",
+      "instructions": "(No match: 0 points) (Match: 1 point)"
+    },
+    {
+      "questionCode": "3.11",
+      "property": "Experience in lower tier manufacturer (lower tier manufacturers are focused on materials and parts rather than complex systems assembly)",
+      "instructions": "(No match: 0 points) (Match: 1 point)"
+    },
+    {
+      "questionCode": "4.1",
+      "property": "Evidence of developing and implementing quality and process improvement strategies",
+      "instructions": "(No match: 0 points) (Match: 1 point)"
+    },
+    {
+      "questionCode": "4.2",
+      "property": "Track record of leading and developing high-performing teams",
+      "instructions": "(No match: 0 points) (Match: 1 point)"
+    },
+    {
+      "questionCode": "4.3",
+      "property": "Experience of working in cross-functional teams",
+      "instructions": "(No match: 0 points) (Match: 1 point)"
+    },
+    {
+      "questionCode": "4.4",
+      "property": "Experience of customer-centric approach to quality",
+      "instructions": "(No match: 0 points) (Match: 1 point)"
+    },
+    {
+      "questionCode": "4.5",
+      "property": "Corporate or group level experience",
+      "instructions": "(No match: 0 points) (Match: 1 point)"
+    }
+  ]
+  
