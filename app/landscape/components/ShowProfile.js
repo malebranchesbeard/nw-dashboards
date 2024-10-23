@@ -2,22 +2,30 @@ import React from "react";
 import { Linkedin, Info } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
+const InfoCard = ({ children }) => (
+  <div className="bg-[#4213580e] mt-2 text-[#320d44] p-4 rounded-lg shadow-md flex items-center">
+    <Info className="w-5 h-5 mr-3 flex-shrink-0" />
+    <p className="text-sm text-center w-full">{children}</p>
+  </div>
+);
+
 const ShowProfile = ({ selectedCandidate }) => {
   if (!selectedCandidate) {
     return (
       <Card className="h-full flex flex-col justify-start pt-8">
         <CardContent className="mx-auto max-w-xs">
-          <div className="bg-blue-100 text-blue-800 p-4 rounded-lg shadow-md flex items-center">
-            <Info className="w-5 h-5 mr-3 flex-shrink-0" />
-            <p className="text-sm">
-              Select a candidate to view a position history and a link to their
-              LinkedIn profile.
-            </p>
-          </div>
-          <div className="bg-blue-100 mt-2 text-blue-800 p-4 rounded-lg shadow-md flex items-center">
-            <Info className="w-5 h-5 mr-3 flex-shrink-0" />
-            <p className="text-sm">Scroll down to see more companies.</p>
-          </div>
+          <InfoCard>
+            Select a candidate to view a position history and a link to their
+            LinkedIn profile.
+          </InfoCard>
+          <InfoCard>Scroll down to see more companies.</InfoCard>
+          <InfoCard>
+            Within companies, candidates are ordered by seniority.
+          </InfoCard>
+          <InfoCard>
+            Greyed-out candidates no longer work there, but once held relevant
+            positions.
+          </InfoCard>
         </CardContent>
       </Card>
     );

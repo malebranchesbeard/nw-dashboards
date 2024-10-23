@@ -1,0 +1,559 @@
+{
+  "ABB": [
+    {
+      "publicIdentifier": "markus-kutti-7373bb82",
+      "title": "VP, Head of Strategic Planning and Integration (Quality, Operations & HSE)",
+      "description": "",
+      "seniority": "5A"
+    },
+    {
+      "publicIdentifier": "albertomartin",
+      "title": "Group Vice President, Global Head of Operations Process Control Platform - Process Automation",
+      "description": "\u2022 Responsible to implement and sponsor Health, Safety & Environment (HSE).\n\u2022 Deploy the respective Procurement and Logistics strategy.\n\u2022 Establish effective S&OP processes, accountable for their results.\n\u2022 Effective deployment of ABB and IA Quality strategy. \n\u2022 Ensure effective global E2E value-chain, from Customer to Supplier and from Order to Delivery.\n\u2022 Establish management process which effectively balance installed-capacity with customer-demand.\n\u2022 Drive and ensure compliance and optimize use of Global Operating centers.\n\u2022 Define, align and continuously improve a customer-focused Operations strategy. \n\u2022 Responsible to champion a culture of Lean Six Sigma and Continuous Improvement.\n\u2022 Define and deliver the annual budgets for CapEx and OpEx. \n\u2022 Deliver the targets for Operations: Safety, Quality, Delivery, Inventory, Productivity.",
+      "seniority": "5A"
+    },
+    {
+      "publicIdentifier": "mathias-annen-7b033710",
+      "title": "Head of Supply Chain Engineering & Quality Division Traction",
+      "description": "Leading a cross-functional team of 11 employees in the area of PCBA Component Engineering, PCBA New Product Introduction at our electronics suppliers, PCBA Test Engineering as well as Supplier Quality for all material categories.\nLeading Material Compliance in global Division\nLeading Supplier Quality in global Division",
+      "seniority": "4C"
+    },
+    {
+      "publicIdentifier": "mathieu-giroux-071a4045",
+      "title": "Head of Product Engineering and Quality (PE&Q)",
+      "description": "Leading a department responsible of maintaining all ABB Switzerland Medium Voltage Converter active products. Department responsibilities: advanced customer support, quality and reliability, and product maintenance releases",
+      "seniority": "4B"
+    },
+    {
+      "publicIdentifier": "daniel-sax-9838b57",
+      "title": "Operations Manager Energy Industries Division Switzerland",
+      "description": "",
+      "seniority": "3C"
+    },
+    {
+      "publicIdentifier": "danieledegasperis",
+      "title": "Global Quality and Continuous Improvement Manager",
+      "description": "Head of Quality & CI management with responsibility to set, deploy and lead the Quality strategy for Power Protection business across different countries. ",
+      "seniority": "4B"
+    },
+    {
+      "publicIdentifier": "nikkel",
+      "title": "Global Project Operations Manager & Head of Integrated Project Management",
+      "description": "Responsible for ensuring project execution activities in Automotive Robotics are executed profitably. Work with the entire global value chain of the business to ensure projects are in line with business objectives, quoted appropriately and executed to plan.  Partner with local execution teams and global Global Solution Centers to establish and maintain efficient operations that execute productive customer projects with minimal slippage and financial impact to the business.  Proactively work with project teams to ensure proper identification of risks and potential issues to maintain or enhance profitability.  Responsible to improve the global team competence around project execution to ensure world class capabilities exist and are utilized in Business Line Automotive.",
+      "seniority": "4B"
+    },
+    {
+      "publicIdentifier": "dejan-markovic-127a81237",
+      "title": "Site Quality Manager",
+      "description": "Skills: Lean Six Sigma \u00b7 Analytische F\u00e4higkeiten \u00b7 Kundendienst-Management \u00b7 Advanced Product Quality Planning (APQP) \u00b7 Quality System Compliance",
+      "seniority": "4A"
+    },
+    {
+      "publicIdentifier": "philipp-bott-82823014b",
+      "title": "Head Of Customer Support",
+      "description": "Skills: Probleml\u00f6sung",
+      "seniority": "4A"
+    },
+    {
+      "publicIdentifier": "jonas-wahlstroem-b0a78648",
+      "title": "Chief Technology Officer, Global Product Group Renewables",
+      "description": "",
+      "seniority": "5C"
+    },
+    {
+      "publicIdentifier": "denis-brusacoram-1682a96b",
+      "title": "Production Manager",
+      "description": "Production plant of the ABB Smart Power division.\nResponsible of the UPS Systems production (120 employees divided into Assembly, Test and Delivery departments) and member of the plant management team.\nGlobal responsibility for production performance (OTD, Quality, Efficiency) as well as expansion projects (OPEX, CAPEX, Business Case & Business Plan)\nCoordination of projects at divisional level for the introduction of new products, projects and production concepts and their continuous improvement (5S, Kaizen, Lean).\nDefinition and implementation of coherent organizational structures and coordination of necessary skills.",
+      "seniority": "4A"
+    },
+    {
+      "publicIdentifier": "ingolf-bocksch-63bab1b",
+      "title": "Head of Supply Chain Management IAPI at ABB Switzerland Ltd.",
+      "description": "",
+      "seniority": "4C"
+    },
+    {
+      "publicIdentifier": "christian-divialle-johansson-b489261",
+      "title": "Group Senior Vice-President, Head of Global Operations, ABB Robotics & Discrete Automation",
+      "description": "In charge of all Global Operations, Production & Engineering Delivery Platforms for the ABB Robotics & Discrete Automation Business. Spans from Quality & Continuous Improvement to Demand & Supply Chain Management, Integrated Project Management, Engineering Excellence, Industrial Engineering & Production as well as HSE and Sustainability Affairs across all Business Lines of our Business. ",
+      "seniority": "5B"
+    },
+    {
+      "publicIdentifier": "paivi-palmujoki",
+      "title": "Project Manager",
+      "description": "Responsible to lead global project related to Channel Partner business development. Project is implemented in collaboration with several functions, e.g. product management, operations, R&D, legal.",
+      "seniority": "2C"
+    },
+    {
+      "publicIdentifier": "julietta-samson-4829b318",
+      "title": "Quality and Continuous Improvement Manager",
+      "description": "",
+      "seniority": "4B"
+    },
+    {
+      "publicIdentifier": "caroline-carraro-8a348811",
+      "title": "Business Health, Safety and Environment Manager",
+      "description": "",
+      "seniority": "4A"
+    },
+    {
+      "publicIdentifier": "yoshitgidh",
+      "title": "Quality & Reliability Expert",
+      "description": "- Responsible for Quality & Reliability of Wind Converters (12MW and above).\n- Improve Reliability of components used in Wind Converters.\n- ALT and HALT testing of components, assemblies and power units for lifetime estimation and improvement.\n- Data driven approach for predictive maintenance and field failure analysis.\n- Introduction of Automated Testing & SPC for Converter Testing.\n- Supplier Quality Improvement through continuous quality improvement projects.",
+      "seniority": "2C"
+    },
+    {
+      "publicIdentifier": "florian-fizaine-6421657",
+      "title": "Head of Continuous Improvement",
+      "description": "",
+      "seniority": "4C"
+    },
+    {
+      "publicIdentifier": "marco-danzini-65a0b131",
+      "title": "VP, Global Head of Quality & Continuous Improvement, Process Industries Division",
+      "description": "Leading the Division's Global Quality Performance along with creating and directing the Division/Business Unit implementation of Group wide initiatives and projects in order to improve customer loyalty, profitability, cash efficiency and supporting business growth.",
+      "seniority": "5A"
+    },
+    {
+      "publicIdentifier": "dr-tatiana-oswald-63bb8821",
+      "title": "Master Black Belt, Corporate Legal Entity Management PMO",
+      "description": "-\tRepresentation of the global PMO team in the region and is thus responsible to supervise and support the deployment of the countries step plans, review delays in the schedule and related mitigation plans to enable the deployment on time and on budget.\n-\tFirst point of contact above the country level for all related questions to the group functions TAX and TREASURY and the business lines.\n-\tLiquidation of the legal entities and branches, where ABB decided to exit the business. Supervision of the liquidation process with 3rd parties and the government authorities\n-\tOverall budget and cost center responsible\n-\tResponsible for the budget request approval to the LEM project CIMT\n-\tMaster Black belt in the ABB Internal Consultancy Group (ICG)\n-\tProject Manager for PG carve-out for the region Europa (28 countries)\n-\tExecution of business transformation projects and Top 5 quality issues of ABB\n-\tCoaching of the ABB Black Belts \n-\tL6S and Quality trainings to the executives, including CEO/CFO and Divisional Presidents\n-\tQuality trainings: Cost of poor quality, Customer complaints, Lean Six Sigma\n-\tLean Six Sigma manufacturing site assessments\n-\tMember of the ABB Lean Six Sigma governance board\n",
+      "seniority": "2C"
+    },
+    {
+      "publicIdentifier": "maragni-carlo-b386424b",
+      "title": "Sustainability and Quality Manager",
+      "description": "quality manager",
+      "seniority": "4A"
+    }
+  ],
+  "Schindler": [
+    {
+      "publicIdentifier": "daniel-bisang-752385153",
+      "title": "Head of Codes & Standards",
+      "description": "\u2022\tGlobal lead of the strategy and development of international codes and standards within Schindler for elevators and escalators\n\u2022\tSupporting the implementation of new codes & standards and its updates among different business units\n\u2022\tMember of VSA and delegate for Switzerland as representative to international committees\n\u2022\tMember of CEN TC10 WG1 and ISO TC178 WG4+6 technical committees",
+      "seniority": "2D"
+    },
+    {
+      "publicIdentifier": "markus-wien-9ba12b10",
+      "title": "VP | Head of Quality, Member of Franke\u2019s Global Leadership Team (GLT)",
+      "description": "Skills: Gesch\u00e4ftsprozesse \u00b7 Prozess-Implementierung \u00b7 Stakeholder-Management \u00b7 Konzeptentwicklung \u00b7 Elektrotechnik \u00b7 Analytische F\u00e4higkeiten \u00b7 Coaching \u00b7 Kulturelle Vielfalt \u00b7 Coaching & Mentoring \u00b7 Strategische Planung \u00b7 Kommunikation \u00b7 Training und Weiterbildung \u00b7 Teamf\u00fchrung \u00b7 Kompetenzmanagement \u00b7 Ursachenorientierte Probleml\u00f6sung",
+      "seniority": "5A"
+    },
+    {
+      "publicIdentifier": "carloslatorre",
+      "title": "Vice President and Head Global Safety",
+      "description": "Responsible for Product Safety and Employee Safety at Global level, with overall ownership of safety inspections, methods, risk management for new and existing elevators and escalators in Schindler portfolio to ensure passengers, employees and subcontractors safety. Implementing a new way to work on Safety, based on HOP/Safety II principles on a large organization, with focus on Trust building, Decluttering and Operational Learning.",
+      "seniority": "5A"
+    },
+    {
+      "publicIdentifier": "sergio-guslandi-7219036",
+      "title": "Head of Global Supply Chain Quality",
+      "description": "",
+      "seniority": "5A"
+    },
+    {
+      "publicIdentifier": "nikola-stojic-8390065",
+      "title": "Product Quality Manager",
+      "description": "Elevators & Escalators",
+      "seniority": "4A"
+    },
+    {
+      "publicIdentifier": "urs-puentener-99698660",
+      "title": "Head Global Fulfilment NI/MOD/LP",
+      "description": "Global responsibility for Schindler's fulfilment strategy and business efficiency for all product lines and business areas (New Installation, Modernization and Large Project Business). Heading the global competence center for installation methods, responsible for global installation processes and tools including new technologies. In charge of development and implementation of fulfilment excellence processes worldwide including digital fulfilment solutions. Responsible for definition of global training & certification programs for business relevant Strategic Job Families. Leading Schindler's global fulfilment and Large Project Director community.",
+      "seniority": "4C"
+    },
+    {
+      "publicIdentifier": "constantin-klumpers-6a3928b6",
+      "title": "Program Quality Manager",
+      "description": "- Manage quality activities within new elevator program developments\n- Coaching of program managers and ensuring quality of new elevator programs\n- Development and maintenance of product cycle process (product planning, roadmap, product creation process, product maintenance process, product elimination process)\n-.Performance of internal audits for new product line developments",
+      "seniority": "4A"
+    },
+    {
+      "publicIdentifier": "walter-jury",
+      "title": "Senior Vice President - Head Global Quality",
+      "description": "Devised and executed a new group quality strategy delivering a unified global setup, improved reliability for a new product generation and digitalization of field feedback.",
+      "seniority": "5B"
+    },
+    {
+      "publicIdentifier": "luca-silvanti-9736b25b",
+      "title": "Supply Chain Quality Manager",
+      "description": "Main Tasks:\n\n-\tSupply Chain Quality Manual Plus (SCQM+) Implementation for Green Field Organizations in India, Slovakia, North America and China. \n\n-\tSCQM Implementation and Continuous Improvement Management in all KW\n\n-\tLeader of Supplier Quality Audit & Approval process on group level / Compile yearly supplier audit planning on corporate level, coordinate and review execution of supplier audits in the zones and accomplish audits on strategic group suppliers. Training and authorization of supplier auditors for Schindler globally.\n\n-\tSecure and coordinate required supply chain quality and industrialization deliverables within Schindler Project respectively Product Creation Process \"PCP\".\n\n-\tUpdate the corporate SCQ Scorecard, moderate and host the global Supplier Escalation meetings with all zones.\n\n-\tLeadership, execution and collaboration on different SCQ projects and topics.  \n\n-\tReview efficiency of implemented corrective actions and help to develop future SCQ tools, \ntactics & strategy with his superior and SC stakeholders.\n\n-\tLiaise with supply chain, quality & industrialization in the zones, R&D, Product Line Management and Corporate Purchasing for problem solving and securing supplier quality.\n",
+      "seniority": "4A"
+    },
+    {
+      "publicIdentifier": "frederic-nlabu-4b25a231",
+      "title": "Head Corporate Quality Improvement Projects",
+      "description": "Manage and lead projects on group level and which are related to elevators respectively escalators in order to achieve quality improvement, reduce/avoid claims and generate group savings. Projects have a worldwide scope.",
+      "seniority": "2C"
+    },
+    {
+      "publicIdentifier": "mertaktas",
+      "title": "Product Safety Manager, Global Safety",
+      "description": "Skills: Task Force \u00b7 Recalls \u00b7 Product Life Cycle \u00b7 Key Performance Indicators \u00b7 Strategic Thinking \u00b7 Corrective Actions \u00b7 Problem Solving \u00b7 Analytical Skills \u00b7 Communication",
+      "seniority": "4A"
+    },
+    {
+      "publicIdentifier": "daniel-barros-98885419",
+      "title": "VP Field Quality and Excellence - Europe South, Middle East and Africa",
+      "description": "",
+      "seniority": "5A"
+    },
+    {
+      "publicIdentifier": "francoisnastasi",
+      "title": "ISO & Integrated Management System",
+      "description": "",
+      "seniority": "2C"
+    },
+    {
+      "publicIdentifier": "guilhermepocinho",
+      "title": "ISO & Management System Professional",
+      "description": "",
+      "seniority": "2B"
+    }
+  ],
+  "Geberit": [
+    {
+      "publicIdentifier": "christian-st\u00e4hli-b1748287",
+      "title": "Head Quality Planning Geberit Group",
+      "description": "",
+      "seniority": "4C"
+    },
+    {
+      "publicIdentifier": "j\u00f6rg-ralf-schneider-7656b4162",
+      "title": "Head Product Compliance Geberit Group",
+      "description": "Ermittlung von Product-Compliance-Verpflichtungen, Product-Compliance-Schulungen in der Organisation, Personalf\u00fchrung, Beratung zu produktrechtlichen Themen; Erfolgreiche Einf\u00fchrung der SCIP-Notifizierungen gem\u00e4ss WFD in der ECHA-Datenbank; Sicherstellung der Konformit\u00e4t von Bauprodukten, Elektroger\u00e4ten und Funkanlagen sowie Maschinen gem\u00e4ss EU-Richtlinien und Verordnungen; Sicherstellung der Erf\u00fcllung der erweiterten Herstellerverantwortungen",
+      "seniority": "4B"
+    },
+    {
+      "publicIdentifier": "fabian-britschgi-b14743271",
+      "title": "Quality Assurance, Environment, Health and Safety Manager,",
+      "description": "Skills: Mehrere Sprachen \u00b7 Deutsch \u00b7 Audits \u00b7 Fertigungstechnik \u00b7 Lieferantenbewertung \u00b7 Management von Fertigungsprozessen \u00b7 ISO \u00b7 Lieferantemanagement \u00b7 Qualit\u00e4tskontrolle \u00b7 Probleml\u00f6sung \u00b7 Qualit\u00e4tsaudit \u00b7 Qualit\u00e4tsmanagementsystem \u00b7 Englisch \u00b7 Qualit\u00e4tssicherungstests \u00b7 Liebe zum Detail \u00b7 Lieferantenentwicklung \u00b7 Lieferantenaudits \u00b7 Qualit\u00e4tssicherung \u00b7 Lieferantenqualit\u00e4t \u00b7 Produktqualit\u00e4t \u00b7 Qualit\u00e4tssicherungsabl\u00e4ufe \u00b7 Microsoft Office \u00b7 Kritisches Denken",
+      "seniority": "4A"
+    },
+    {
+      "publicIdentifier": "fernando-soto-1a069b26",
+      "title": "Corporate Environment, Health and Safety Manager",
+      "description": "- Promoting and strengthening awareness and improving performance in the field of occupational health and safety (OHS) on a global level - with an accident-free company as the goal\n- Monitoring the effectiveness of the OHS policy and implementing optimization projects with the production plants and logistics in order to achieve the strategic goals in the OHS area\n- Maintenance and further development of the integrated management system (section ISO 45001) and ensuring the implementation of the group-wide safety system (including groupwide safety standards, guidelines and training)\n- Leading the global safety team, building an international OHS community and supporting the production plants by promoting and accompanying best practice approaches in the field of OHS\n- Responsibility for the SAP EHS modules for incident management and hazardous substance management\n- Responsibility for the rollout of a global solution for EHS Legal Compliance\n- Preparation of an OHS quarterly report as well as a comprehensive annual report\n- Management of various projects as part of the sustainability strategy and support of the team at the annual global EHS meeting as well as the annual sustainability reporting\n- Health and Safety Manager for a local company part of the Group.",
+      "seniority": "4A"
+    }
+  ],
+  "VAT": [
+    {
+      "publicIdentifier": "bernd-haas-3b001a173",
+      "title": "Head of Supplier Development & Quality global",
+      "description": "",
+      "seniority": "4C"
+    },
+    {
+      "publicIdentifier": "j\u00f6rg-holth\u00f6fer-b67a66138",
+      "title": "Personal goal pursuit",
+      "description": "",
+      "seniority": ""
+    },
+    {
+      "publicIdentifier": "goran-maglajcevic",
+      "title": "Business Process Manager",
+      "description": "\u2022 Optimise and improve the overall efficiency and effectiveness of business processes. \n\u2022 Collaborate with stakeholders to understand business requirements and align process changes with strategic objectives.\n\u2022 Conduct process analysis and evaluation and design optimised processes, implement them and monitor their performance.\n\u2022 Ensure clearly documented processes through documentation in BPMN tool\n\u2022 Promote a culture of continuous improvement and implement best practices and industry standards\n\u2022 Ensuring that all process-related documentation is accurate, comprehensive and aligned with the defined processes\n\u2022 Train the organisation to effectively use the process management system consisting of the BPMN tool and the document management system.",
+      "seniority": "4A"
+    },
+    {
+      "publicIdentifier": "remo-wenger-38302b51",
+      "title": "Leiter Qualit\u00e4tssicherung Vulcanized Plates (Leader QA Vulcanized Plates)",
+      "description": "VAT ist der weltweit f\u00fchrende Entwickler und Produzent von einsatzkritischen Hochvakuuml\u00f6sungen, die f\u00fcr die Herstellung von Halbleitern, Displays und anderen Ger\u00e4ten ben\u00f6tigt werden, um das neue digitale Zeitalter zu erm\u00f6glichen.\n\n\u2022\tLeitung des QA Vulcanized Plates Teams von Total 5 Mitarbeitern (Complaint & CMM)\n\u2022\tEntwicklung und Umsetzung neuer Qualit\u00e4tsmethoden & Strategien im Vulkanisierbereich\n\u2022\tLeitung von kritischen Projekten betreffend Prozess- und Qualit\u00e4tsverbesserungen\n\u2022\tDefinition, Aufbau und Durchf\u00fchrung von internen Q-Schulungen\n\u2022\tCoaching der 8D-Teams\n\u2022\tKoordination von internen und externen Audits\n\u2022\t\u00dcberwachung und Weiterentwicklung von VAT's kontinuierlichem Verbesserungsprozess (KVP)\n\u2022\tWeiterentwicklung und Steuerung von VAT\u2018s Prozess Management System (PMS)",
+      "seniority": "4A"
+    },
+    {
+      "publicIdentifier": "markus-leppek-166266100",
+      "title": "Head of Process and Quality Management",
+      "description": "In my job role I am taking the overall quality responsibility in the organization by leading a team of 3 people. This includes the genral quality topics Quality Management (qualification and requalification of the ISO 9001 // ISO 16949 // ISO 14001 systems), Product Quality (APQP, PPAP, Control Plan, product lifecycle management, 8D problem solving), Process Quality (PFMEA, capability studies, process CIP) and Quality Assurance (quality measurements according control plan QA & shopfloor). Addionally I am representing the environmental officer in the organization.",
+      "seniority": "4A"
+    },
+    {
+      "publicIdentifier": "miranda-secco-46ab349",
+      "title": "Safety Officer",
+      "description": "",
+      "seniority": "2B"
+    },
+    {
+      "publicIdentifier": "romanrauper",
+      "title": "Owner / C-Level Interim Manager",
+      "description": "<< Tackling real challenges   --   We help companies becoming better >>\n\nAs a C-Level interim management service provider, we actively tackle vacancies and complex, business critical projects. We assume management responsibility even in stormy times.\n\n1) Interim Management     << managing projects & people is our strength >>\n2) Business Consulting       << enabling your bright future is our passion >>\n3) Training & Coaching      << successful companies work with successful people >>\n\nContact: info@industrie-consulting.com\nWebsite: http://www.industrie-consulting.com",
+      "seniority": "5D"
+    }
+  ],
+  "SFS": [
+    {
+      "publicIdentifier": "robert-manetsch-026b50b1",
+      "title": "Project leader quality environment and safety, Division Automotive ",
+      "description": "",
+      "seniority": "3B"
+    },
+    {
+      "publicIdentifier": "matteo-di-cataldo-946a936b",
+      "title": "Leiter Qualit\u00e4t & Operations",
+      "description": "Skills: Microsoft Access \u00b7 KVP \u00b7 Failure Mode and Effects Analysis (FMEA) \u00b7 Microsoft Office \u00b7 Qualit\u00e4tsmanagement \u00b7 Vertriebsaktivit\u00e4ten \u00b7 5S \u00b7 ACPD \u00b7 Kommunikation \u00b7 Interdisziplin\u00e4re Zusammenarbeit \u00b7 Analytische F\u00e4higkeiten \u00b7 Italienisch \u00b7 F\u00dcHRUNG \u00b7 Projektmanagement \u00b7 Customer-Relationship-Management (CRM) \u00b7 ISO \u00b7 SAP ERP \u00b7 5M \u00b7 Audits \u00b7 Probleml\u00f6sung \u00b7 SPC \u00b7 PPAP \u00b7 Ver\u00e4nderungsmanagement \u00b7 Unternehmensplanung",
+      "seniority": "4A"
+    }
+  ],
+  "Stadler": [
+    {
+      "publicIdentifier": "henry-kulla",
+      "title": "Head of Sustainability",
+      "description": "- Leading corporate team of five, while providing functional leadership to the global ESG/EHS community.\n- Creating compliance programs for the key regulations CSRD, LKSG, CBAM, EU Taxonomy\n- Creating the annual sustainability report\n- Formulating a net-zero carbon emissions Science Based Target and executing its associated roadmap\n- Assist Bid Management by interpreting and implementing customers' sustainability requirements",
+      "seniority": "4B"
+    },
+    {
+      "publicIdentifier": "jan-frotscher-045408230",
+      "title": "Head of RAMS / Quality / V&V / IT Security and Homologation",
+      "description": "",
+      "seniority": "4B"
+    },
+    {
+      "publicIdentifier": "roman-reinbott-3160b1183",
+      "title": "Quality Manager und Audit Manager Business Area Ground",
+      "description": "",
+      "seniority": "4A"
+    },
+    {
+      "publicIdentifier": "fredi-schl\u00e4pfer-a08a2a111",
+      "title": "Projekt Quality Manager",
+      "description": "Skills: Qualit\u00e4tsmanagementsystem \u00b7 Fehler-Ursachen-Analyse \u00b7 Gesch\u00e4ftsprozessmanagement \u00b7 Teamwork \u00b7 Qualit\u00e4tsmanagement \u00b7 Qualit\u00e4tskontrolle \u00b7 Qualit\u00e4tsaudit \u00b7 8D-Probleml\u00f6sungen \u00b7 Lieferantenaudits \u00b7 Analytische Kompetenz \u00b7 Qualit\u00e4tssicherung",
+      "seniority": "2B"
+    },
+    {
+      "publicIdentifier": "cindy-gosteli",
+      "title": "Sustainability and Quality Manager Division Signalling",
+      "description": "Acts as a liaison between the global Sustainability Team and the division on sustainability issues.\nCollaborate with the global ESG team on the implementation of the global sustainability strategy, goals, and concepts.\nProvide Environment Social Governance (ESG) metrics.\nIdentification and implementation of improvement measures for division ESG issues\nEnsure implementation of global ESG requirements at the division level\nLead the Integrated Management System (Quality, Environmental, Occupational Health, and Safety) for Signalling Switzerland.\nAuditing: Internal, projects, and Suppliers. \nOther Management System activities",
+      "seniority": "4A"
+    },
+    {
+      "publicIdentifier": "aloisstarlinger",
+      "title": "Member of the Management Board, Head of Vehicle Authorization, Structural Analysis and Testing",
+      "description": "",
+      "seniority": "5A"
+    },
+    {
+      "publicIdentifier": "roland-reichlin-5927141",
+      "title": "Leiter Prozesse und Systeme",
+      "description": "Skills: Projektplanung \u00b7 Gesch\u00e4ftsprozessautomatisierung \u00b7 IT-Management \u00b7 Digitalisierung \u00b7 Projektmanagement \u00b7 Datenmanagement \u00b7 Kontinuierliche Prozessverbesserung \u00b7 Digitale Transformation \u00b7 Strategisches IT-Management \u00b7 Stammdaten \u00b7 Gestaltung von Gesch\u00e4ftsprozessen \u00b7 Systemarchitektur \u00b7 Gesch\u00e4ftsprozessoptimierung \u00b7 Gesch\u00e4ftsprozesse \u00b7 Prozessoptimierung",
+      "seniority": "4A"
+    }
+  ],
+  "Landis + Gyr": [
+    {
+      "publicIdentifier": "bruno-benedetti-ba6aa89",
+      "title": "Head of Global Process Excellence",
+      "description": "Generate value from data and systems in SCM and Operations\n- Standardize systems and corresponding processes in PLM, ERP, MES\n- Establish global and local Master Data Managers to foster scalability, security and quality of data\n- Best practice sharing and harmonization across 10 production sites\n- Leading directly >5 and indirectly >50 employees",
+      "seniority": "4C"
+    },
+    {
+      "publicIdentifier": "ross-marcenko-0708a7128",
+      "title": "Head of Business Unit Electricity ICG",
+      "description": "",
+      "seniority": "4C"
+    },
+    {
+      "publicIdentifier": "cecilia-silva-wagner",
+      "title": "Head of Environment, Social & Governance (ESG) | Sustainability",
+      "description": "\u2022 Responsible for the development and implementation of the company's global ESG strategy, covering a range of aspects including decarbonisation (science-based targets: SBTs), sustainable supply chain, circularity, community engagement and human rights. \n\u2022 Experience in ESG strategy materiality assessments, governance process, reporting and disclosures and implementation.\n\u2022 Promote employee awareness and education on key ESG topics.",
+      "seniority": "4C"
+    }
+  ],
+  "Interrol": [
+    {
+      "publicIdentifier": "piercarlobalducci",
+      "title": "Head of Maintenance and Production Engineering",
+      "description": "Managing all activities involving maintenance of machines and molds (preventive, breakdown and improvement tasks).\nLeading a team of 7 people on a daily basis to guarantee full productivity for Operations.\n\nThe main responsibilities are:\n- Cover the industrialization process for machineries to be installed on the shopfloor, from specs requirement, through FAT and SAT and first sampling\n- Coordinate both machine and mold maintenance to minimize breakdowns and downtime, improving productivity\n- Actively define budget for maintenance project and activities, and respect the agreed plan\n- Promote continuous improvement activities throughout the department and proactively help other departments to implement successful solutions",
+      "seniority": "4A"
+    }
+  ],
+  "Burckhardt": [
+    {
+      "publicIdentifier": "rene-guthauser-7a9a425",
+      "title": "VP, Quality / E&OHS / FM",
+      "description": "",
+      "seniority": "5A"
+    },
+    {
+      "publicIdentifier": "martin-bonadio-863123182",
+      "title": "Process Manager Global Quality Control",
+      "description": "",
+      "seniority": "4A"
+    },
+    {
+      "publicIdentifier": "gianluca-luchetti-b01b5722",
+      "title": "Quality Assurance Expert",
+      "description": "",
+      "seniority": "2C"
+    },
+    {
+      "publicIdentifier": "lorenz-bauer-ba2ab4114",
+      "title": "Global Head Logistics & Production, Mitglied Kader",
+      "description": "",
+      "seniority": "4C"
+    },
+    {
+      "publicIdentifier": "basil-sailer-332949103",
+      "title": "Project Manager / Improvement Engineer",
+      "description": "- Responsible for overall risk management, quality, time, cost control of assigned projects including planning, expediting and progress reporting\n- Main responsible person for execution of projects related to the Technical Support Center tasks: rebuilds and/or repairs of supplies for the Compressor Systems on sea, at the yard, land-based or still in production\n- Internal organization of execution of tasks including all related documentation\n- Updating the relevant systems such as SAP / CRM\n- Project team coordination, assignment of tasks to all parties mentioned above ensuring completeness of project execution, optimization of manhours spent and quality of deliverables\n- Defining internal reporting rhythm and procedure with PEs and other functions\n- Reporting about progress of projects at steering committee meetings\n- Ensuring efficient project handling in conformity with customer requirements\n- Generation of documents contractually specified for delivery\n- Employing and monitoring allocated resources and cost-planning for current projects",
+      "seniority": "2B"
+    }
+  ],
+  "Dormakaba": [
+    {
+      "publicIdentifier": "florian-fruhmann-58485888",
+      "title": "Head of Quality Assurance Hardware & Firmware",
+      "description": "Schliesstechnik",
+      "seniority": "4A"
+    },
+    {
+      "publicIdentifier": "cedomir-krndija-329612124",
+      "title": "Head of QM & EHS AS EMEA, CH",
+      "description": "Development and implementation of a integrated Management system:\nISO 9001   - Quality\nISO 14001 - Environment\nISO 45001 - Occupational Health & Safety\n\nResponsible for:\nQM - Quality Management\nQC - Quality Control\nQA - Quality Assurance\nLEAN Management \n\nFokused on:\nProcess design \nProcess optimization \nProcess standardization",
+      "seniority": "4B"
+    },
+    {
+      "publicIdentifier": "sabinelaister",
+      "title": "Global Lead Technical Documentation",
+      "description": "Skills: Leadership \u00b7 Strategic Planning \u00b7 Content Strategy \u00b7 Agile Methodologies \u00b7 Budgeting \u00b7 Team Leadership \u00b7 Negotiation \u00b7 Jira",
+      "seniority": "2C"
+    },
+    {
+      "publicIdentifier": "bj\u00f6rn-kemmelmeier-emba-42ab8017",
+      "title": "Director Verification & Validation Positioning Products",
+      "description": "Skills: Budgetmanagement \u00b7 Englisch",
+      "seniority": "4C"
+    },
+    {
+      "publicIdentifier": "mahua-mukherjee-9a9b6846",
+      "title": "Senior Test Manager",
+      "description": "Skills: System Testing \u00b7 Software Testing \u00b7 Regression Testing",
+      "seniority": "4A"
+    },
+    {
+      "publicIdentifier": "sven-m\u00fcller-9a170b100",
+      "title": "Team Lead Test Automation",
+      "description": "",
+      "seniority": "1D"
+    }
+  ],
+  "Bossard": [
+    {
+      "publicIdentifier": "roger-bachmann-2b91171b",
+      "title": "Head of Group Quality Management",
+      "description": "",
+      "seniority": "4C"
+    }
+  ],
+  "LEM": [
+    {
+      "publicIdentifier": "fatsa-redouane",
+      "title": "Head Of Quality",
+      "description": "Head Of Quality\n- Quality Management System\n- Production Quality\n- Project Quality\n- Metrology, Material Laboratory\n- Continuous Improvement, Problem Solving\n- Material Compliance, Product Safety\n\n. Responsible for general and strategic Quality Management with direct reporting line to the Executive Board: defining strategic operational goals to exceed customer expectations for Production Quality, Project Quality, Customer Quality, System Quality, Metrology-Laboratory, in alignment with COT Q. Mgr. (Liebherr COmponent Technologies).\n. Ensuring implementation and certification of state-of-the-art Quality Management Systems in accordance with ISO 9001,\u00a0EN 9100, customer requirements and internal guidelines and policies, regulations.\n. Leading culture change in the company for Quality Mindset: deployment of Continuous Improvement Projects called Quality Initiatives \u2013 workshops, events, \u2026 deployed slogan \u201cLiebherr Machines Bulle \u2013 Passion for Swiss Quality\u201d.\n. Enacting systematic Quality Assurance process focusing on risk prevention to ensure high quality of products and processes (FMEA, AUDITS, firewalls, QOS, QRQC, 8D, 5 Why, Lessons Learned process).\n. Driving effective improvement process with systematic problem solving (RT5, Shainin projects) to enhance the quality and performance of products and processes.\n. Managing the overall budget and investment planning for Quality department in cooperation with the Executive Board, Finance and other internal partners.\n. In charge of people management including personnel planning, performance management, talent management and defining measures for successful succession planning.",
+      "seniority": "4B"
+    },
+    {
+      "publicIdentifier": "jeremie-le-bourhis",
+      "title": "Group Project Quality Manager",
+      "description": "Manage the Project Quality teams worldwide, as a group function:\n\u2022 Ensure, mainly in project development phase, that products are designed and manufactured according to the international standards, customer\u2019s requirements, and LEM\u2019s internal rules,\n\u2022 Maintain & reinforce LEM quality culture with target of developing and manufacturing safer and more\nreliable products,\n\u2022 Ensure integrity and respect of LEM\u2019s development framework, according to IPD (Integrated Product\nDevelopment),\n\u2022 Monitor and manage KPIs and ensure reporting and corrective actions wherever needed.\n\nHierarchically linked to the Quality VP",
+      "seniority": "4A"
+    },
+    {
+      "publicIdentifier": "quentin-piat-b817379",
+      "title": "Global Head of Sustainability",
+      "description": "",
+      "seniority": "5A"
+    },
+    {
+      "publicIdentifier": "saloua-mejri",
+      "title": "Quality & HSE Director",
+      "description": "Skills: Environment, Health, and Safety (EHS)",
+      "seniority": "4C"
+    },
+    {
+      "publicIdentifier": "davidbarbagallo",
+      "title": "Senior project Manager - Supplier Quality Engineering",
+      "description": "Project Management - Quality  (Oxford's Contractor)\nMember in Supplier Workstream integration for Wright Medical (WM) acquisition:\n\u2022\tOversee the integration project for Wright Medical (WM) sites out of US\n\u2022\tEnsure the deployment of the purchasing control process;\n\u2022\tUnify and support WM stakeholders throughout the integration project; \n\u2022\tManage supplier quality engineers (up to 5 people in transverse);\n\u2022\tOversee the execution of the audit program and the implementation of supplier quality and change control agreements;\n\u2022\tIdentify and mitigate gaps and integration risks;\n\u2022\tImplement supplier improvement quality plans;\n\u2022\tProvide reporting to Merge & Acquisition and Sustaining team members.\n\tSucc\u00e8s :\n\tWright Medical stakeholders' adherence to the integration project.\n\tReducing gaps and securing the integration project.",
+      "seniority": "4A"
+    },
+    {
+      "publicIdentifier": "yoann-raphoz-803ba197",
+      "title": "Environment, Health and Safety Manager",
+      "description": "D\u00e9veloppement et mise en \u0153uvre de la politique HSE.\nD\u00e9ployer les politiques et programmes HSE pour garantir un environnement de travail s\u00fbr et conforme aux r\u00e9glementations en vigueur aussi bien au niveau Sant\u00e9, S\u00e9curit\u00e9 qu'au niveau Environnemental.",
+      "seniority": "4A"
+    },
+    {
+      "publicIdentifier": "nicola-antolino-9219991bb",
+      "title": "Production Quality Manager",
+      "description": "- Management of Continous improvement projects (Six Sigma methodology)\n- Management of the product Quality\n- Supplier Quality management. \n- Supplier and internal process audits",
+      "seniority": "4A"
+    },
+    {
+      "publicIdentifier": "olivier-chavanon-33294114",
+      "title": "Quality Manager",
+      "description": "Guarantee the quality of Integrated Circuit Sensors from feasibility study to production ramp-up, production quality monitoring and customers return management.\n- Lead quality in R&D stage (D-FMEA, project phases review, qualification) and pre-production phases \n- Manage customer returns\n- Participate to supplier selection and perform suppliers audits",
+      "seniority": "4A"
+    },
+    {
+      "publicIdentifier": "aileen-san-jose",
+      "title": "Manager Test and Product Engineering ICS",
+      "description": "Skills: Communication \u00b7 Management \u00b7 Cross-functional Team Leadership \u00b7 Allocations \u00b7 Team Management \u00b7 Analytical Skills \u00b7 Test Engineering \u00b7 Product Engineering",
+      "seniority": "4A"
+    },
+    {
+      "publicIdentifier": "vanessa-petit-7317bb",
+      "title": "Quality Systems Engineer",
+      "description": "Pilot the Mercury International Quality Management Systems (QMS) and associated continual improvement to ensure Mercury International compliance with applicable international standards (EN9100 certification), military and civil airworthiness regulations (PART-145 and PART-21G approval), customers and Mercury requirements.\n\n- Airworthiness :\n\u2022\tObtain/Maintain airworthiness approvals (EASA) for Mercury approved production and maintenance organizations\n\u2022\tPrepare and maintain airworthiness related procedures and documentation, including the procedures related the Aviation Safety Management Systems (SMS)\n\u2022\tRespond to corrective actions issues by applicable airworthiness authorities and/or customers\n\u2022\tPrimary quality focal point of all matters relating to airworthiness\n\u2022\tPrepare and manage airworthiness approvals surveillance audits\n\u2022\tPrepare and provide initial and continuation training, including Human Factors (HF) and Safety Management Systems (SMS) trainings as required to maintain airworthiness approvals.\n\n- QMS :\n\u2022\tPrepare and manage EN/AS9100 recertification and surveillance audits for Mercury International\n\u2022\tPrepare and maintain quality management system documentation to ensure compliance to EN/AS9100 recertification for Mercury International\n\u2022\tPrepare and provide training on the quality management system and related topics (FOD, ESD, HF, etc.\u2026)\n\u2022\tVerify compliance with customer requirements and airworthiness regulations\n\u2022\tPlan and perform audit internal and external system, product and supplier audits as required (including recording audit data, preparing audit reports, etc.)\n\u2022\tMonitor, measure and analyze leading QMS KPI\u2019s\n\u2022\tImplement actions necessary to achieve planned results and continual improvement of value streams and key processes\n\u2022\tEnsuring QMS tool administration, support and trainings\n\u2022\tProvide support and assistance to customers and to authorities on aviation safety and quality related matters in collaboration with other internal departments",
+      "seniority": "2C"
+    }
+  ],
+  "Forbo": [
+    {
+      "publicIdentifier": "domenicocarotenuto",
+      "title": "Quality & Innovation Manager",
+      "description": "Mission: to conduct and manage research projects developing products and processes for Flooring Systems giving to the organisation and to the customers knowledge-based support.",
+      "seniority": "4A"
+    },
+    {
+      "publicIdentifier": "thomas-herbertshagen-0185002a",
+      "title": "Head of Global Ceramic Testing and Analytics",
+      "description": "As the Head of Global Ceramic Testing and Analytics at Straumann Group, I lead a dynamic team responsible for delivering cutting-edge testing and analytical services. With a focus on maintaining a consistent, relevant, and state-of-the-art service offering, I oversee the department's organizational and functional aspects. My role involves strategic alignment with Straumann Group objectives, ensuring technological advancements, fostering a culture of diversity and inclusion, and spearheading initiatives to continuously enhance service quality. I am dedicated to developing and empowering my team to meet current and future demands in the ever-evolving landscape of metal testing and analytics. Together, we are driving innovation, excellence, and global impact in the field",
+      "seniority": "5A"
+    },
+    {
+      "publicIdentifier": "urs-zihlmann-20622062",
+      "title": "Product Manager Textile",
+      "description": "Skills: MS Project \u00b7 Gesch\u00e4ftsentwicklung \u00b7 Fertigungstechnik \u00b7 Fertigung \u00b7 Technical Presentations \u00b7 Product Lifecycle Management \u00b7 Marktplanung \u00b7 Technical Documentation \u00b7 Marktforschung \u00b7 Technical Textiles \u00b7 Project Management \u00b7 Unternehmensstrategie \u00b7 Market Analysis \u00b7 Business-Analyse \u00b7 Projektabwicklung \u00b7 Leadership \u00b7 Textile Industry \u00b7 Sales Presentations \u00b7 Produktmanagement \u00b7 Microsoft Office \u00b7 Management \u00b7 Microsoft Excel \u00b7 Kontinuierliche Verbesserung \u00b7 Technical Product Training \u00b7 Pr\u00e4sentationsfertigkeiten \u00b7 Product Launch \u00b7 Project Planning \u00b7 Technical Support \u00b7 Strategische Planung \u00b7 Projektumsetzung \u00b7 Analytische F\u00e4higkeiten \u00b7 Management von Fertigungsprozessen \u00b7 Marketing \u00b7 Produktlebenszyklus",
+      "seniority": "2B"
+    }
+  ],
+  "B\u00fchler": [
+    {
+      "publicIdentifier": "michael-mueller-639343bb",
+      "title": "Department Manager Complaints & Quality VN",
+      "description": "- Responsible for quality & process related topics in the Business Area Value Nutrition\n- Internal Auditor ISO19011:2018 \n- Quality Management Representative ISO9001:2015\n\n- Managing a Team of Complaint Officers 2nd and 3rd Level Support\n- CAQ 8D Reporting, CIP",
+      "seniority": "4A"
+    }
+  ],
+  "RUAG Space": [
+    {
+      "publicIdentifier": "nicolasbrockmann",
+      "title": "Supplier Quality Manager",
+      "description": "\u2022 Develop the processes for advanced supplier quality management \n\u2022 Collaboration with Procurement and Commodity Management\n\u2022 Develop the competencies within the Product Units for robust treatment of supplier non-conformance\n\u2022 Support Supplier Quality Review Meetings\n\u2022 Support the Supplier Audit Process \n\u2022 Support the Supplier Qualification Process\n\u2022 Participate actively to the development and the implementation of the supplier quality plan\n\u2022 Lead the Supplier Process and Product (Re-)Qualification for new product introduction\n\u2022 Shall ensure Supplier CAPA are monitored and closed according to defined targets\n\u2022 Ensure BG Supplier Critical to Quality (CTQ) documentation is to highest standards\n\u2022 Review BG purchase orders and accompanying documentation (sampling inspections, e.g. in the frame of supplier audit preparation)\n\u2022 Support PA\u2019s in RCA at Suppliers on major NCs\n\u2022 Maintain general supplier action plans in conjunction with procurement\n\u2022 Ensure a systematic means of collecting, analyzing, and distributing compiled metrics/information in order to improve Supply Chain Quality\n\u2022 Support Q-Handbook, QMS and other Ext. Audits as required",
+      "seniority": "3B"
+    }
+  ],
+  "CSL Vifor": [
+    {
+      "publicIdentifier": "stefanherbert1",
+      "title": "Head of Technical Development",
+      "description": "",
+      "seniority": "4C"
+    }
+  ],
+  "Valtronic": [],
+  "Filtrox": [],
+  "Straumann": []
+}

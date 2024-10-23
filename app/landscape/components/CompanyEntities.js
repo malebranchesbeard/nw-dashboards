@@ -2,9 +2,39 @@ import React from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import outputData from "../data/output.json";
 import companyData from "../data/companyData.json";
+import seniorityData from "../data/seniorityData.json";
 import { useState } from "react";
 
 //takes a single json of scrapin jsons grouped by company
+
+const colorGradient = {
+  "#FDCC8A": 1,
+  "#e6a384": 2,
+  "#ca3737": 3,
+  "#891c87": 4,
+  "#49006A": 5,
+};
+
+const seniorityColorClasses = {
+  "#FDCC8A": "hover:bg-seniority-1",
+  "#e6a384": "hover:bg-seniority-2",
+  "#ca3737": "hover:bg-seniority-3",
+  "#891c87": "hover:bg-seniority-4",
+  "#49006A": "hover:bg-seniority-5",
+};
+
+const hexToRgb = (hex) => {
+  // Remove the hash if it's there
+  hex = hex.replace(/^#/, "");
+
+  // Parse the hex values
+  const bigint = parseInt(hex, 16);
+  const r = (bigint >> 16) & 255;
+  const g = (bigint >> 8) & 255;
+  const b = bigint & 255;
+
+  return `${r}, ${g}, ${b}`;
+};
 
 const CompanyEntities = ({ onCandidateSelect }) => {
   const normalizeString = (str) => {
@@ -38,24 +68,67 @@ const CompanyEntities = ({ onCandidateSelect }) => {
     return { currentEmployees, otherCandidates };
   };
 
-  const CandidateCard = ({ candidate, isCurrent }) => (
-    <Card
-      className={`p-0 w-full cursor-pointer hover:bg-red-50 ${
-        isCurrent
-          ? "border-red-700 border-opacity-20 shadow-md shadow-gray-200"
-          : "border-gray-200 shadow-sm"
-      }`}
-      onClick={() => onCandidateSelect(candidate)}
-    >
-      <CardContent className="py-2 px-2">
-        <p
-          className={`text-sm ${isCurrent ? "text-gray-900" : "text-gray-600"}`}
+  const getSeniorityColor = (candidate, companyName) => {
+    const seniorityInfo = seniorityData[companyName]?.find(
+      (s) => s.publicIdentifier === candidate.person.publicIdentifier
+    );
+    if (seniorityInfo && seniorityInfo.seniority) {
+      const seniorityLevel = parseInt(seniorityInfo.seniority[0]);
+      const colorEntry = Object.entries(colorGradient).find(
+        ([_, level]) => level === seniorityLevel
+      );
+      return colorEntry ? colorEntry[0] : "#FFFFFF";
+    }
+    return "#FFFFFF";
+  };
+
+  const isCurrentEmployee = (candidate, companyName) => {
+    const latestPosition = candidate.person.positions.positionHistory[0];
+    return (
+      latestPosition && isCompanyMatch(latestPosition.companyName, companyName)
+    );
+  };
+
+  const CandidateCard = ({ candidate, companyName }) => {
+    const isCurrent = isCurrentEmployee(candidate, companyName);
+    const seniorityColor = getSeniorityColor(candidate, companyName);
+
+    return (
+      <Card
+        className="p-0 w-full cursor-pointer hover:bg-[#4213581d]"
+        style={{
+          borderColor: `rgba(${hexToRgb(seniorityColor)}, 0.6)`,
+          borderWidth: "0.25px",
+          borderStyle: "solid",
+          boxShadow: isCurrent
+            ? "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)"
+            : "none",
+        }}
+        onClick={() => onCandidateSelect(candidate)}
+      >
+        <CardContent
+          className={`py-2 px-2 relative ${
+            seniorityColorClasses[seniorityColor] || ""
+          }`}
         >
-          {candidate.person.positions.positionHistory[0].title}
-        </p>
-      </CardContent>
-    </Card>
-  );
+          <div
+            className={`absolute top-1 left-1 w-3 h-3 rounded-full`}
+            style={{
+              backgroundColor: seniorityColor,
+              opacity: isCurrent ? 1 : 0.5,
+            }}
+          ></div>
+          <p
+            className={`text-sm ${
+              isCurrent ? "text-gray-900" : "text-gray-400 hover:text-gray-900"
+            } pl-4`}
+          >
+            {candidate.person.positions.positionHistory[0].title}
+          </p>
+        </CardContent>
+      </Card>
+    );
+  };
 
   const CompanyInfoCard = ({ company }) => {
     const matchedCompany = companyData.companies.find((c) =>
@@ -65,9 +138,9 @@ const CompanyEntities = ({ onCandidateSelect }) => {
     if (!matchedCompany) return null;
 
     return (
-      <Card className="mb-2 bg-red-800 bg-opacity-15 border border-red-200 shadow-md">
+      <Card className="mb-2 bg-[#4213580e] border border-[#42135860] shadow-md">
         <CardContent className="py-1 px-1">
-          <p className="font-semibold text-red-900 px-1 py-1 rounded-xl">
+          <p className="font-semibold text-[#320d44] px-1 py-1 rounded-xl">
             •{matchedCompany.name}
           </p>
           <p className="text-sm pl-2">{matchedCompany.description}</p>
@@ -90,31 +163,50 @@ const CompanyEntities = ({ onCandidateSelect }) => {
     );
   };
 
+  const sortCandidates = (candidates, companyName) => {
+    return candidates.sort((a, b) => {
+      const aIsCurrent = isCurrentEmployee(a, companyName);
+      const bIsCurrent = isCurrentEmployee(b, companyName);
+
+      if (aIsCurrent !== bIsCurrent) {
+        return aIsCurrent ? -1 : 1;
+      }
+
+      const aSeniority = getSeniorityLevel(a, companyName);
+      const bSeniority = getSeniorityLevel(b, companyName);
+
+      return bSeniority - aSeniority;
+    });
+  };
+
+  const getSeniorityLevel = (candidate, companyName) => {
+    const seniorityInfo = seniorityData[companyName]?.find(
+      (s) => s.publicIdentifier === candidate.person.publicIdentifier
+    );
+    return seniorityInfo && seniorityInfo.seniority
+      ? parseInt(seniorityInfo.seniority[0])
+      : 0;
+  };
+
   return (
     <div className="p-4 columns-1 md:columns-2 lg:columns-2 gap-6 space-y-6">
       {Object.entries(outputData).map(([company, candidates]) => {
-        const { currentEmployees, otherCandidates } = filterCandidates(
-          candidates,
-          company
-        );
-
+        const sortedCandidates = sortCandidates(candidates, company);
         return (
           <div key={company} className="break-inside-avoid">
             <Card className="mb-0 border-0 pt-1 px-0 shadow-md">
-              <CardContent className="px-1 pb-1">
+              <CardContent className="px-0 pb-0">
                 <CompanyInfoCard company={company} />
-                <div className="columns-2 gap-2 space-y-2">
-                  {currentEmployees.map((candidate, index) => (
+                <div className="columns-2 gap-2 space-y-2 px-1 pb-1">
+                  {sortedCandidates.map((candidate, index) => (
                     <div
-                      key={`current-${index}`}
+                      key={`candidate-${index}`}
                       className="break-inside-avoid"
                     >
-                      <CandidateCard candidate={candidate} isCurrent={true} />
-                    </div>
-                  ))}
-                  {otherCandidates.map((candidate, index) => (
-                    <div key={`other-${index}`} className="break-inside-avoid">
-                      <CandidateCard candidate={candidate} isCurrent={false} />
+                      <CandidateCard
+                        candidate={candidate}
+                        companyName={company}
+                      />
                     </div>
                   ))}
                 </div>
