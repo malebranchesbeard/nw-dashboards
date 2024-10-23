@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import AlertButton from "@/components/AlertButton";
 
 export const metadata = {
   title: "NW Dashboards",
@@ -40,15 +41,12 @@ export default function Home() {
                   Seniority Levels
                 </Link>
               </Button>
-              <Button
-                asChild
-                variant="default"
-                className="w-full hover:bg-gray-700 transition-colors"
-              >
-                <Link href="/scorecards" className="hover:bg-gray-700">
-                  Head of Global Quality Scorecard
-                </Link>
-              </Button>
+              <AlertButton href="/scorecards" initialActive={true}>
+                Head of Global Quality Scorecard
+              </AlertButton>
+              <AlertButton href="/landscape" initialActive={true}>
+                Competitor Landscape
+              </AlertButton>
             </CardContent>
           </Card>
 

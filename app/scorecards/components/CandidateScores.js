@@ -12,12 +12,19 @@ import { Linkedin } from "lucide-react";
 import candidateData from "../data/updated_SSOT_candidates.json";
 import hoqQuestions from "../data/hoq_questions.json";
 import pubidToNameData from "../data/pubid_to_name.json";
+import { interpolateColor } from "../utils/colorUtils";
 
-const getColorForScore = (score, maxScore) => {
-  const ratio = score / maxScore;
-  const colors = ["#f7d09e", "#f89b70", "#E34A33", "#7A0177", "#49006A"];
-  const index = Math.min(Math.floor(ratio * 5), 4);
-  return colors[index];
+const colorGradient = ["#49006A", "#7A0177", "#E34A33", "#f89b70", "#f7d09e"];
+
+const getColorForRank = (rank, totalCandidates, maxScore, minScore) => {
+  const levelSize = Math.ceil(totalCandidates / 4);
+  const level = Math.floor((rank - 1) / levelSize);
+  const normalizedPosition = ((rank - 1) % levelSize) / levelSize;
+
+  const startColor = colorGradient[level];
+  const endColor = colorGradient[level + 1] || colorGradient[level];
+
+  return interpolateColor(startColor, endColor, normalizedPosition);
 };
 
 export async function getStaticProps() {
@@ -79,7 +86,7 @@ const CandidateScores = () => {
   }, []);
 
   const chartData = useMemo(() => {
-    return candidates
+    const data = candidates
       .map(([publicIdentifier, data]) => ({
         name: pubidToName[publicIdentifier] || publicIdentifier,
         totalScore: Object.entries(data.scores)
@@ -87,6 +94,14 @@ const CandidateScores = () => {
           .reduce((sum, [_, score]) => sum + score, 0),
       }))
       .sort((a, b) => b.totalScore - a.totalScore);
+
+    const maxScore = data[0].totalScore;
+    const minScore = data[data.length - 1].totalScore;
+
+    return data.map((item, index) => ({
+      ...item,
+      fill: getColorForRank(index + 1, data.length, maxScore, minScore),
+    }));
   }, [candidates, pubidToName]);
 
   const sortedCandidates = useMemo(() => {
@@ -153,11 +168,11 @@ const CandidateScores = () => {
                 ({ publicIdentifier, data, totalScore }) => (
                   <div
                     key={publicIdentifier}
-                    className="border border-gray-100 p-3 mb-1 rounded-lg"
+                    className="border border-gray-100 shadow-md p-3 mb-1 rounded-lg"
                   >
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex items-center space-x-2">
-                        <h2 className="text-base font-semibold px-3 py-1 border border-gray-100 rounded-full shadow">
+                        <h2 className="text-base font-semibold px-3 py-1 border border-gray-100 rounded-lg shadow">
                           {pubidToName[publicIdentifier] || publicIdentifier}
                         </h2>
                         <div className="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full">
@@ -204,8 +219,8 @@ const CandidateScores = () => {
                                     key={index}
                                     className={`w-3 h-3 rounded-full ${
                                       index < score
-                                        ? "bg-[#3781b7]"
-                                        : "border border-[#3781b7]"
+                                        ? "bg-[#57329cba]"
+                                        : "border border-[#57329cba]"
                                     }`}
                                   ></div>
                                 ))}
@@ -242,7 +257,7 @@ const CandidateScores = () => {
                     interval={0}
                   />
                   <Tooltip />
-                  <Bar dataKey="totalScore" fill="#8884d8" />
+                  <Bar dataKey="totalScore" />
                 </BarChart>
               </ResponsiveContainer>
             </div>
