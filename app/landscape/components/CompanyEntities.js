@@ -138,13 +138,13 @@ const CompanyEntities = ({ onCandidateSelect }) => {
     if (!matchedCompany) return null;
 
     return (
-      <Card className="mb-2 bg-[#4213580e] border border-[#42135860] shadow-md">
-        <CardContent className="py-1 px-1">
-          <p className="font-semibold text-[#320d44] px-1 py-1 rounded-xl">
-            •{matchedCompany.name}
-          </p>
-          <p className="text-sm pl-2">{matchedCompany.description}</p>
-          <div className="grid pl-2 grid-cols-2 gap-2 mt-2 text-xs">
+      <div className="mb-2">
+        <p className="font-semibold px-2 py-1 m-0 bg-[#2b3a80] text-white w-full rounded-t-md">
+          • {matchedCompany.name}
+        </p>
+        <div className="p-2 bg-[#4213580e]">
+          <p className="text-sm">{matchedCompany.description}</p>
+          <div className="grid grid-cols-2 gap-2 mt-2 text-xs">
             <p>
               <span className="font-semibold">Employees:</span>{" "}
               {matchedCompany.employees.toLocaleString()}
@@ -158,8 +158,8 @@ const CompanyEntities = ({ onCandidateSelect }) => {
               {matchedCompany.manufacturingPlants}
             </p>
           </div>
-        </CardContent>
-      </Card>
+        </div>
+      </div>
     );
   };
 
@@ -194,8 +194,8 @@ const CompanyEntities = ({ onCandidateSelect }) => {
         const sortedCandidates = sortCandidates(candidates, company);
         return (
           <div key={company} className="break-inside-avoid">
-            <Card className="mb-0 border-0 pt-1 px-0 shadow-md">
-              <CardContent className="px-0 pb-0">
+            <Card className="overflow-hidden shadow-md border border-[#42135860]">
+              <CardContent className="p-0">
                 <CompanyInfoCard company={company} />
                 <div className="columns-2 gap-2 space-y-2 px-1 pb-1">
                   {sortedCandidates.map((candidate, index) => (
