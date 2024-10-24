@@ -139,6 +139,118 @@
         "employees": 9000,
         "revenue": "2.32B CHF",
         "manufacturingPlants": 9
-      }
-    ]
-  }
+      },
+      {
+        "name": "Autoneum Holding AG",
+        "description": "Internationally active Swiss automotive supplier specializing in vehicle acoustic and thermal insulation.",
+        "employees": 16600,
+        "revenue": "1.8B CHF",
+        "manufacturingPlants": 67,
+        "industries": ["Automotive", "Acoustic Management", "Thermal Management"]
+    },
+    {
+        "name": "Rinspeed Inc.",
+        "description": "Swiss concept car manufacturer known for innovative and futuristic vehicle designs.",
+        "employees": 20,
+        "revenue": "5M CHF",
+        "manufacturingPlants": 1,
+        "industries": ["Automotive Design", "Concept Cars", "Mobility Solutions"]
+    },
+    {
+        "name": "Ronal AG",
+        "description": "Manufacturer of wheels for cars and commercial vehicles, with a focus on OEM and aftermarket sectors.",
+        "employees": 8000,
+        "revenue": "1B CHF",
+        "manufacturingPlants": 13,
+        "industries": ["Automotive", "Wheel Manufacturing", "OEM", "Aftermarket"]
+    },
+    {
+        "name": "Ammann Group",
+        "description": "Swiss company specializing in the manufacture of construction equipment and machinery.",
+        "employees": 3500,
+        "revenue": "1.2B USD",
+        "manufacturingPlants": 9,
+        "industries": ["Construction Equipment", "Machinery"]
+    },
+    {
+        "name": "Liebherr Group",
+        "description": "German-Swiss multinational equipment manufacturer known for its wide range of products including construction machinery, aerospace equipment, and refrigerators.",
+        "employees": 49000,
+        "revenue": "13.6B USD",
+        "manufacturingPlants": 140,
+        "industries": ["Construction Equipment", "Mining", "Aerospace", "Refrigeration"]
+    },
+    {
+      "name": "Elco AG",
+      "description": "Swiss stationery and paper company specializing in envelopes, paper products, and direct mail solutions.",
+      "employees": 500,
+      "revenue": "150M CHF",
+      "manufacturingPlants": 3,
+      "industries": ["Stationery", "Paper Products", "Direct Mail"]
+    },
+    {
+      "name": "SIG Group AG",
+      "description": "Swiss multinational corporation and one of the biggest manufacturers in the packaging industry, focusing on aseptic packaging solutions.",
+      "employees": 5500,
+      "revenue": "2.7B EUR",
+      "manufacturingPlants": 45,
+      "industries": ["Packaging", "Food and Beverage", "Aseptic Technology"]
+    },
+    {
+      "name": "Société Anonyme des Plieuses Automatiques Lausanne (SAPAL)",
+      "description": "Swiss company specializing in packaging machinery, particularly for the food and pharmaceutical industries.",
+      "employees": 200,
+      "revenue": "50M CHF",
+      "manufacturingPlants": 1,
+      "industries": ["Packaging Machinery", "Food Industry", "Pharmaceutical Industry"]
+    },
+    {
+      "name": "Tetra Pak",
+      "description": "Swedish-Swiss multinational food packaging and processing company, known for its aseptic packaging technology.",
+      "employees": 25000,
+      "revenue": "11.9B EUR",
+      "manufacturingPlants": 56,
+      "industries": ["Food Packaging", "Food Processing", "Aseptic Technology"]
+    },
+    {
+      "name": "Adval Tech Holding AG",
+      "description": "Swiss company specializing in metal and plastic components and assemblies for various industries.",
+      "employees": 1700,
+      "revenue": "200M CHF",
+      "manufacturingPlants": 18,
+      "industries": ["Automotive", "Consumer Goods", "Medical Technology"]
+    },
+    {
+      "name": "Fischer Söhne AG",
+      "description": "Swiss company known for its precision engineering and manufacturing of components for various industries.",
+      "employees": 300,
+      "revenue": "80M CHF",
+      "manufacturingPlants": 2,
+      "industries": ["Precision Engineering", "Automotive", "Aerospace"]
+    },
+    {
+      "name": "Medisize",
+      "description": "Swiss-based company specializing in the development and manufacturing of medical devices and pharmaceutical packaging.",
+      "employees": 1500,
+      "revenue": "250M EUR",
+      "manufacturingPlants": 10,
+      "industries": ["Medical Devices", "Pharmaceutical Packaging", "Healthcare"]
+    },
+    {
+      "name": "Plaston Group",
+      "description": "Swiss company specializing in plastic injection molding and the production of cases and packaging solutions.",
+      "employees": 400,
+      "revenue": "100M CHF",
+      "manufacturingPlants": 3,
+      "industries": ["Plastic Injection Molding", "Packaging", "Industrial Cases"]
+    },
+    {
+      "name": "Terxo AG",
+      "description": "Swiss company specializing in the development and production of high-precision components for various industries.",
+      "employees": 150,
+      "revenue": "30M CHF",
+      "manufacturingPlants": 1,
+      "industries": ["Precision Engineering", "Automotive", "Electronics"]
+    }
+  ]
+}

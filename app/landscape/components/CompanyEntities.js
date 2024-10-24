@@ -5,8 +5,9 @@ import companyData from "../data/companyData.json";
 import seniorityData from "../data/seniorityData.json";
 import { useState, useEffect } from "react";
 import { SquareCheckBig } from "lucide-react";
+import Masonry from "react-masonry-css";
 
-//takes a single json of scrapin jsons grouped by company
+// Takes a single JSON of scraping JSONs grouped by company
 
 const colorGradient = {
   "#FDCC8A": 1,
@@ -82,42 +83,58 @@ const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
   const isCompanyMatch = (companyA, companyB) => {
     const normalizedA = normalizeString(companyA);
     const normalizedB = normalizeString(companyB);
+
+    // Check if one string contains the other, or if they share a significant portion
+    const minLength = Math.min(normalizedA.length, normalizedB.length);
+    const matchThreshold = Math.min(5, Math.floor(minLength * 0.7)); // At least 5 chars or 70% of the shorter string
+
     return (
-      normalizedA.includes(normalizedB) || normalizedB.includes(normalizedA)
+      normalizedA.includes(normalizedB) ||
+      normalizedB.includes(normalizedA) ||
+      normalizedA.substring(0, matchThreshold) ===
+        normalizedB.substring(0, matchThreshold)
     );
   };
 
-  const filterCandidates = (candidates, companyName) => {
-    const currentEmployees = [];
-    const otherCandidates = [];
-
-    candidates.forEach((candidate) => {
-      const latestPosition = candidate.person.positions.positionHistory[0];
-      if (
-        latestPosition &&
-        isCompanyMatch(latestPosition.companyName, companyName)
-      ) {
-        currentEmployees.push(candidate);
-      } else {
-        otherCandidates.push(candidate);
+  const getCompanySeniorityData = (companyName) => {
+    for (const [key, data] of Object.entries(seniorityData)) {
+      if (isCompanyMatch(key, companyName)) {
+        return data;
       }
-    });
-
-    return { currentEmployees, otherCandidates };
+    }
+    return null;
   };
 
-  const getSeniorityColor = (candidate, companyName) => {
-    const seniorityInfo = seniorityData[companyName]?.find(
-      (s) => s.publicIdentifier === candidate.person.publicIdentifier
-    );
-    if (seniorityInfo && seniorityInfo.seniority) {
-      const seniorityLevel = parseInt(seniorityInfo.seniority[0]);
-      const colorEntry = Object.entries(colorGradient).find(
-        ([_, level]) => level === seniorityLevel
+  const getSeniorityLevel = (candidate, companyName) => {
+    const companySeniorityData = getCompanySeniorityData(companyName);
+    if (companySeniorityData) {
+      const seniorityInfo = companySeniorityData.find(
+        (s) => s.publicIdentifier === candidate.person.publicIdentifier
       );
-      return colorEntry ? colorEntry[0] : "#FFFFFF";
+      if (seniorityInfo) {
+        // Log found seniority info
+        console.log(
+          `Found seniority for ${candidate.person.firstName} ${candidate.person.lastName} at ${companyName}: ${seniorityInfo.seniority}`
+        );
+        return seniorityInfo.seniority;
+      } else {
+        // Log if no seniority info found for candidate
+        console.log(
+          `No seniority info found for ${candidate.person.firstName} ${candidate.person.lastName} at ${companyName}`
+        );
+      }
+    } else {
+      // Log if no seniority data for company
+      console.log(`No seniority data for company ${companyName}`);
     }
-    return "#FFFFFF";
+    return "0A";
+  };
+
+  const compareSeniority = (a, b) => {
+    const aNum = parseInt(a[0]) || 0;
+    const bNum = parseInt(b[0]) || 0;
+    if (aNum !== bNum) return bNum - aNum; // Higher number first
+    return (a[1] || "A").localeCompare(b[1] || "A"); // 'C' before 'B' before 'A'
   };
 
   const isCurrentEmployee = (candidate, companyName) => {
@@ -125,6 +142,18 @@ const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
     return (
       latestPosition && isCompanyMatch(latestPosition.companyName, companyName)
     );
+  };
+
+  const handleCardClick = (candidate) => {
+    if (
+      selectedCandidate &&
+      selectedCandidate.person.publicIdentifier ===
+        candidate.person.publicIdentifier
+    ) {
+      onCandidateSelect(null); // Deselect if clicking the same candidate
+    } else {
+      onCandidateSelect(candidate);
+    }
   };
 
   const CandidateCard = ({ candidate, companyName }) => {
@@ -152,7 +181,7 @@ const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
               ? "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)"
               : "none",
         }}
-        onClick={() => onCandidateSelect(candidate)}
+        onClick={() => handleCardClick(candidate)}
       >
         <CardContent
           className={`py-2 px-2 relative ${
@@ -220,74 +249,165 @@ const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
     );
   };
 
+  const getSeniorityColor = (candidate, companyName) => {
+    const seniority = getSeniorityLevel(candidate, companyName);
+    const seniorityLevel = parseInt(seniority[0]);
+    const colorEntry = Object.entries(colorGradient).find(
+      ([_, level]) => level === seniorityLevel
+    );
+    return colorEntry ? colorEntry[0] : "#FFFFFF";
+  };
+
   const sortCandidates = (candidates, companyName) => {
     return candidates.sort((a, b) => {
-      // First, prioritize starred candidates
-      const aIsStarred = starredCandidates.has(a.person.publicIdentifier);
-      const bIsStarred = starredCandidates.has(b.person.publicIdentifier);
+      const aIsStarred = starredCandidates.has(a.person.publicIdentifier)
+        ? 1
+        : 0;
+      const bIsStarred = starredCandidates.has(b.person.publicIdentifier)
+        ? 1
+        : 0;
 
       if (aIsStarred !== bIsStarred) {
-        return aIsStarred ? -1 : 1;
+        return bIsStarred - aIsStarred; // Starred first
       }
 
-      // If both are starred or both are not starred, use the existing sorting logic
-      const aIsCurrent = isCurrentEmployee(a, companyName);
-      const bIsCurrent = isCurrentEmployee(b, companyName);
+      const aIsNotCurrent = isCurrentEmployee(a, companyName) ? 0 : 1;
+      const bIsNotCurrent = isCurrentEmployee(b, companyName) ? 0 : 1;
 
-      if (aIsCurrent !== bIsCurrent) {
-        return aIsCurrent ? -1 : 1;
+      if (aIsNotCurrent !== bIsNotCurrent) {
+        return aIsNotCurrent - bIsNotCurrent; // Current before not current
       }
 
       const aSeniority = getSeniorityLevel(a, companyName);
       const bSeniority = getSeniorityLevel(b, companyName);
 
-      return compareSeniority(bSeniority, aSeniority);
+      const seniorityComparison = compareSeniority(aSeniority, bSeniority);
+      if (seniorityComparison !== 0) return seniorityComparison;
+
+      // If all else is equal, maintain original order
+      return 0;
     });
   };
 
-  const getSeniorityLevel = (candidate, companyName) => {
-    const seniorityInfo = seniorityData[companyName]?.find(
-      (s) => s.publicIdentifier === candidate.person.publicIdentifier
-    );
-    return seniorityInfo && seniorityInfo.seniority
-      ? seniorityInfo.seniority
-      : "0A";
+  const handleBackgroundClick = (e) => {
+    // Check if the click target is the main container or the space between cards
+    if (
+      e.target === e.currentTarget ||
+      e.target.classList.contains("company-card-container")
+    ) {
+      onCandidateSelect(null);
+    }
   };
 
-  const compareSeniority = (a, b) => {
-    const aNum = parseInt(a[0]) || 0;
-    const bNum = parseInt(b[0]) || 0;
-    if (aNum !== bNum) return aNum - bNum;
-    return (a[1] || "A").localeCompare(b[1] || "A");
+  const findMatchingCandidates = (companyName) => {
+    for (const [key, candidates] of Object.entries(outputData)) {
+      if (isCompanyMatch(key, companyName)) {
+        return candidates;
+      }
+    }
+    return [];
+  };
+
+  // New function to sort companies by candidate count
+  const sortCompaniesByCandidateCount = (companies) => {
+    return companies.sort((a, b) => {
+      const aCandidates = findMatchingCandidates(a.name);
+      const bCandidates = findMatchingCandidates(b.name);
+      return bCandidates.length - aCandidates.length;
+    });
+  };
+
+  // Sort companies before rendering
+  const sortedCompanies = sortCompaniesByCandidateCount(companyData.companies);
+
+  const breakpointColumnsObj = {
+    default: 2,
+    1100: 2,
+    700: 1,
+  };
+
+  const distributeCandidates = (candidates) => {
+    const column1 = [];
+    const column2 = [];
+    candidates.forEach((candidate, index) => {
+      if (index % 2 === 0) {
+        column1.push(candidate);
+      } else {
+        column2.push(candidate);
+      }
+    });
+    return [column1, column2];
   };
 
   return (
-    <div className="p-4 columns-1 md:columns-2 lg:columns-2 gap-6 space-y-6">
-      {Object.entries(outputData).map(([company, candidates]) => {
-        const sortedCandidates = sortCandidates(candidates, company);
-        return (
-          <div key={company} className="break-inside-avoid">
-            <Card className="overflow-hidden shadow-md border border-[#42135860]">
-              <CardContent className="p-0">
-                <CompanyInfoCard company={company} />
-                <div className="columns-2 gap-2 space-y-2 px-1 pb-1">
-                  {sortedCandidates.map((candidate, index) => (
-                    <div
-                      key={`candidate-${index}`}
-                      className="break-inside-avoid"
-                    >
-                      <CandidateCard
-                        candidate={candidate}
-                        companyName={company}
-                      />
+    <div className="p-4" onClick={handleBackgroundClick}>
+      <Masonry
+        breakpointCols={breakpointColumnsObj}
+        className="my-masonry-grid"
+        columnClassName="my-masonry-grid_column"
+      >
+        {sortedCompanies.map((company) => {
+          const candidates = findMatchingCandidates(company.name);
+          const sortedCandidates = sortCandidates(candidates, company.name);
+
+          // Log the company and ordered candidates with their seniority levels
+          console.log(`Company: ${company.name}`);
+          sortedCandidates.forEach((candidate, index) => {
+            const seniority = getSeniorityLevel(candidate, company.name);
+            const isStarred = starredCandidates.has(
+              candidate.person.publicIdentifier
+            )
+              ? "Starred"
+              : "Not Starred";
+            const isCurrent = isCurrentEmployee(candidate, company.name)
+              ? "Current"
+              : "Not Current";
+            console.log(
+              `  ${index + 1}. ${candidate.person.firstName} ${
+                candidate.person.lastName
+              } - Seniority: ${seniority}, ${isStarred}, ${isCurrent}`
+            );
+          });
+
+          const [column1Candidates, column2Candidates] =
+            distributeCandidates(sortedCandidates);
+          return (
+            <div key={company.name} className="mb-4">
+              <Card className="overflow-hidden shadow-md border border-[#42135860]">
+                <CardContent className="p-0">
+                  <CompanyInfoCard company={company.name} />
+                  {sortedCandidates.length > 0 ? (
+                    <div className="flex gap-2 p-1">
+                      <div className="w-1/2 flex flex-col gap-2">
+                        {column1Candidates.map((candidate, index) => (
+                          <CandidateCard
+                            key={`candidate-${index * 2}`}
+                            candidate={candidate}
+                            companyName={company.name}
+                          />
+                        ))}
+                      </div>
+                      <div className="w-1/2 flex flex-col gap-2">
+                        {column2Candidates.map((candidate, index) => (
+                          <CandidateCard
+                            key={`candidate-${index * 2 + 1}`}
+                            candidate={candidate}
+                            companyName={company.name}
+                          />
+                        ))}
+                      </div>
                     </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        );
-      })}
+                  ) : (
+                    <p className="text-sm text-gray-500 p-2">
+                      No candidates found for this company.
+                    </p>
+                  )}
+                </CardContent>
+              </Card>
+            </div>
+          );
+        })}
+      </Masonry>
     </div>
   );
 };
