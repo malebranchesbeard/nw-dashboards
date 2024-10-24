@@ -3,7 +3,8 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import outputData from "../data/output.json";
 import companyData from "../data/companyData.json";
 import seniorityData from "../data/seniorityData.json";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { Star } from "lucide-react";
 
 //takes a single json of scrapin jsons grouped by company
 
@@ -37,6 +38,43 @@ const hexToRgb = (hex) => {
 };
 
 const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
+  const [starredCandidates, setStarredCandidates] = useState(new Set());
+
+  useEffect(() => {
+    fetchStarredCandidates();
+  }, []);
+
+  const fetchStarredCandidates = async () => {
+    const response = await fetch("/api/star");
+    if (response.ok) {
+      const data = await response.json();
+      setStarredCandidates(new Set(data));
+    }
+  };
+
+  const toggleStar = async (publicIdentifier) => {
+    const isCurrentlyStarred = starredCandidates.has(publicIdentifier);
+    const newStarredStatus = !isCurrentlyStarred;
+
+    const response = await fetch("/api/star", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ publicIdentifier, isStarred: newStarredStatus }),
+    });
+
+    if (response.ok) {
+      setStarredCandidates((prev) => {
+        const newSet = new Set(prev);
+        if (newStarredStatus) {
+          newSet.add(publicIdentifier);
+        } else {
+          newSet.delete(publicIdentifier);
+        }
+        return newSet;
+      });
+    }
+  };
+
   const normalizeString = (str) => {
     return str.toLowerCase().replace(/[^a-z0-9]/g, "");
   };
@@ -96,6 +134,7 @@ const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
       selectedCandidate &&
       selectedCandidate.person.publicIdentifier ===
         candidate.person.publicIdentifier;
+    const isStarred = starredCandidates.has(candidate.person.publicIdentifier);
 
     return (
       <Card
@@ -127,10 +166,19 @@ const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
               opacity: isCurrent ? 1 : 0.5,
             }}
           ></div>
+          <Star
+            className={`absolute top-1 right-1 w-4 h-4 cursor-pointer ${
+              isStarred ? "text-blue-400" : "text-gray-300"
+            }`}
+            onClick={(e) => {
+              e.stopPropagation();
+              toggleStar(candidate.person.publicIdentifier);
+            }}
+          />
           <p
             className={`text-sm ${
               isCurrent ? "text-gray-900" : "text-gray-400 hover:text-gray-900"
-            } pl-4`}
+            } pl-4 pr-6`}
           >
             {candidate.person.positions.positionHistory[0].title}
           </p>
@@ -174,6 +222,15 @@ const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
 
   const sortCandidates = (candidates, companyName) => {
     return candidates.sort((a, b) => {
+      // First, prioritize starred candidates
+      const aIsStarred = starredCandidates.has(a.person.publicIdentifier);
+      const bIsStarred = starredCandidates.has(b.person.publicIdentifier);
+
+      if (aIsStarred !== bIsStarred) {
+        return aIsStarred ? -1 : 1;
+      }
+
+      // If both are starred or both are not starred, use the existing sorting logic
       const aIsCurrent = isCurrentEmployee(a, companyName);
       const bIsCurrent = isCurrentEmployee(b, companyName);
 
