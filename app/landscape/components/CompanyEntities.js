@@ -4,7 +4,7 @@ import outputData from "../data/output.json";
 import companyData from "../data/companyData.json";
 import seniorityData from "../data/seniorityData.json";
 import { useState, useEffect } from "react";
-import { Star } from "lucide-react";
+import { SquareCheckBig } from "lucide-react";
 
 //takes a single json of scrapin jsons grouped by company
 
@@ -166,9 +166,9 @@ const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
               opacity: isCurrent ? 1 : 0.5,
             }}
           ></div>
-          <Star
-            className={`absolute top-1 right-1 w-4 h-4 cursor-pointer ${
-              isStarred ? "text-blue-400" : "text-gray-300"
+          <SquareCheckBig
+            className={`absolute top-1 right-1 w-3 h-3 cursor-pointer ${
+              isStarred ? "text-blue-400" : "text-gray-100"
             }`}
             onClick={(e) => {
               e.stopPropagation();
