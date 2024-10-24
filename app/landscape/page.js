@@ -35,7 +35,10 @@ export default function LandscapePage() {
           className="w-[70%] overflow-y-auto pr-4"
           style={{ maxHeight: "calc(100vh - 40px)" }}
         >
-          <CompanyEntities onCandidateSelect={handleCandidateSelect} />
+          <CompanyEntities
+            onCandidateSelect={handleCandidateSelect}
+            selectedCandidate={selectedCandidate}
+          />
         </div>
         <div
           className="w-[30%] overflow-y-auto"

@@ -36,7 +36,7 @@ const hexToRgb = (hex) => {
   return `${r}, ${g}, ${b}`;
 };
 
-const CompanyEntities = ({ onCandidateSelect }) => {
+const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
   const normalizeString = (str) => {
     return str.toLowerCase().replace(/[^a-z0-9]/g, "");
   };
@@ -92,17 +92,26 @@ const CompanyEntities = ({ onCandidateSelect }) => {
   const CandidateCard = ({ candidate, companyName }) => {
     const isCurrent = isCurrentEmployee(candidate, companyName);
     const seniorityColor = getSeniorityColor(candidate, companyName);
+    const isSelected =
+      selectedCandidate &&
+      selectedCandidate.person.publicIdentifier ===
+        candidate.person.publicIdentifier;
 
     return (
       <Card
-        className="p-0 w-full cursor-pointer hover:bg-[#4213581d]"
+        className={`p-0 w-full cursor-pointer ${
+          isSelected ? "bg-blue-50" : "hover:bg-[#4213581d]"
+        }`}
         style={{
-          borderColor: `rgba(${hexToRgb(seniorityColor)}, 0.6)`,
-          borderWidth: "0.25px",
+          borderColor: `rgba(${hexToRgb(seniorityColor)}, ${
+            isSelected ? "1" : "0.6"
+          })`,
+          borderWidth: isSelected ? "1.5px" : "0.25px",
           borderStyle: "solid",
-          boxShadow: isCurrent
-            ? "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)"
-            : "none",
+          boxShadow:
+            isCurrent || isSelected
+              ? "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)"
+              : "none",
         }}
         onClick={() => onCandidateSelect(candidate)}
       >
@@ -175,7 +184,7 @@ const CompanyEntities = ({ onCandidateSelect }) => {
       const aSeniority = getSeniorityLevel(a, companyName);
       const bSeniority = getSeniorityLevel(b, companyName);
 
-      return bSeniority - aSeniority;
+      return compareSeniority(bSeniority, aSeniority);
     });
   };
 
@@ -184,8 +193,15 @@ const CompanyEntities = ({ onCandidateSelect }) => {
       (s) => s.publicIdentifier === candidate.person.publicIdentifier
     );
     return seniorityInfo && seniorityInfo.seniority
-      ? parseInt(seniorityInfo.seniority[0])
-      : 0;
+      ? seniorityInfo.seniority
+      : "0A";
+  };
+
+  const compareSeniority = (a, b) => {
+    const aNum = parseInt(a[0]) || 0;
+    const bNum = parseInt(b[0]) || 0;
+    if (aNum !== bNum) return aNum - bNum;
+    return (a[1] || "A").localeCompare(b[1] || "A");
   };
 
   return (
