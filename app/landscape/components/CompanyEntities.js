@@ -6,6 +6,8 @@ import seniorityData from "../data/seniorityData.json";
 import { useState, useEffect } from "react";
 import { SquareCheckBig } from "lucide-react";
 import Masonry from "react-masonry-css";
+import { Button } from "@/components/ui/button";
+import { Check, CircleCheckBig, Circle } from "lucide-react";
 
 // Takes a single JSON of scraping JSONs grouped by company
 
@@ -40,6 +42,7 @@ const hexToRgb = (hex) => {
 
 const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
   const [starredCandidates, setStarredCandidates] = useState(new Set());
+  const [showOnlyStarred, setShowOnlyStarred] = useState(false);
 
   useEffect(() => {
     fetchStarredCandidates();
@@ -299,9 +302,19 @@ const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
     }
   };
 
+  const toggleShowOnlyStarred = () => {
+    setShowOnlyStarred(!showOnlyStarred);
+  };
+
+  // Modify findMatchingCandidates to filter starred candidates if needed
   const findMatchingCandidates = (companyName) => {
     for (const [key, candidates] of Object.entries(outputData)) {
       if (isCompanyMatch(key, companyName)) {
+        if (showOnlyStarred) {
+          return candidates.filter((candidate) =>
+            starredCandidates.has(candidate.person.publicIdentifier)
+          );
+        }
         return candidates;
       }
     }
@@ -341,6 +354,18 @@ const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
 
   return (
     <div className="p-4" onClick={handleBackgroundClick}>
+      <Button
+        onClick={toggleShowOnlyStarred}
+        className="mb-4 flex items-center text-white gap-2 bg-blue-600 hover:bg-blue-700"
+        variant="outline"
+      >
+        {showOnlyStarred ? (
+          <CircleCheckBig className="w-4 h-4 text-white" />
+        ) : (
+          <Circle className="w-4 h-4 text-white opacity-50 group-hover:opacity-100" />
+        )}
+        <span>Only saved candidates</span>
+      </Button>
       <Masonry
         breakpointCols={breakpointColumnsObj}
         className="my-masonry-grid"
