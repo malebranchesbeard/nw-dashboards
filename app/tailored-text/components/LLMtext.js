@@ -40,8 +40,9 @@ const LLMText = ({ selectedCandidate }) => {
         </p>
 
         <p className="mb-2">
-          Hope you are well. I'm Danny Hiscott, Zurich-based Managing Partner of
-          the Executive Search firm Transearch International www.transearch.com
+          Hope you are well. I&apos;m Danny Hiscott, Zurich-based Managing
+          Partner of the Executive Search firm Transearch International
+          www.transearch.com
         </p>
 
         <p className="mb-2">
@@ -55,15 +56,15 @@ const LLMText = ({ selectedCandidate }) => {
 
         <p className="mb-2">
           What makes the role stand out for me—beyond its considerable scope—is
-          how it signals a fundamental shift in our client's thinking. Quality
-          and process improvement are being elevated from a function to a
-          cornerstone of the organisation. This is a newly created position
+          how it signals a fundamental shift in our client&apos;s thinking.
+          Quality and process improvement are being elevated from a function to
+          a cornerstone of the organisation. This is a newly created position
           reporting directly to the CEO/COO, with the autonomy to shape and
           drive the global quality strategy.
         </p>
 
         <p>
-          I understand you're just two years into your role at{" "}
+          I understand you&apos;re just two years into your role at{" "}
           <span className="font-semibold">{currentCompany}</span>, but if this
           step is one you might be interested in taking, I look forward to
           hearing back from you on LinkedIn or on +41xxx
