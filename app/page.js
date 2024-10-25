@@ -57,6 +57,9 @@ export default function Home() {
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-0 space-y-1">
+              <AlertButton href="/tailored-text" initialActive={true}>
+                Tailored Text
+              </AlertButton>
               <Button
                 asChild
                 variant="default"
