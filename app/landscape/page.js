@@ -28,7 +28,7 @@ export default function LandscapePage() {
       onClick={handleBackgroundClick}
     >
       <div className="flex justify-between items-center pl-1 mb-4 shadow-md shadow-white">
-        <Button asChild className="bg-[#483e68] h-8" variant="default">
+        <Button asChild className="bg-[#1E2A5C] h-8" variant="default">
           <Link href="/">Home</Link>
         </Button>
       </div>

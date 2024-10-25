@@ -323,7 +323,7 @@ const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
   const FilterButton = ({ filterName, label }) => (
     <Button
       onClick={() => toggleFilter(filterName)}
-      className="flex items-center text-white gap-2 bg-[#483e68] hover:text-white hover:bg-[#655e7a]"
+      className="flex items-center text-white gap-2 bg-[#1E2A5C] hover:text-white hover:bg-[#566CC8]"
       variant="outline"
     >
       {activeFilters[filterName] ? (
@@ -388,8 +388,8 @@ const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
         <div className="bg-transparent pb-4 relative">
           {/* Icons and Filter Buttons */}
           <div className="flex justify-between items-center mb-1 px-1">
-            <UserRoundSearch className="w-6 h-6 text-[#402f76]" />
-            <Factory className="w-6 h-6 text-[#402f76]" />
+            <UserRoundSearch className="w-6 h-6 text-[#1E2A5C]" />
+            <Factory className="w-6 h-6 text-[#1E2A5C]" />
           </div>
           <div className="flex justify-between items-center mb-2">
             {/* Filter Buttons */}
