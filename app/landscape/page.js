@@ -6,10 +6,6 @@ import { Button } from "@/components/ui/button";
 import CompanyEntities from "./components/CompanyEntities";
 import ShowProfile from "./components/ShowProfile";
 
-// Add this constant for the gradient colors
-const gradientColors =
-  "rgba(255,255,255,1) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%";
-
 export default function LandscapePage() {
   const [selectedCandidate, setSelectedCandidate] = useState(null);
 
@@ -31,30 +27,20 @@ export default function LandscapePage() {
       className="container min-h-screen bg-white p-4 flex flex-col"
       onClick={handleBackgroundClick}
     >
-      <div className="flex justify-between items-center mb-4 shadow-md shadow-white">
-        <Button asChild className="bg-[#2b3a80] h-8" variant="default">
+      <div className="flex justify-between items-center pl-1 mb-4 shadow-md shadow-white">
+        <Button asChild className="bg-[#483e68] h-8" variant="default">
           <Link href="/">Home</Link>
         </Button>
       </div>
       <div className="flex-grow flex">
         <div
-          className="w-[70%] overflow-hidden pr-4 company-entities-wrapper relative"
+          className="w-[70%] overflow-hidden pr-4 company-entities-wrapper"
           style={{ maxHeight: "calc(100vh - 40px)" }}
         >
-          {/* Add this div for the gradient overlay */}
-          <div
-            className="absolute top-0 left-0 right-0 h-4 pointer-events-none z-10"
-            style={{
-              background: `linear-gradient(to bottom, ${gradientColors})`,
-            }}
-          ></div>
-          {/* Wrap CompanyEntities in a scrollable container */}
-          <div className="overflow-y-auto h-full pt-0">
-            <CompanyEntities
-              onCandidateSelect={handleCandidateSelect}
-              selectedCandidate={selectedCandidate}
-            />
-          </div>
+          <CompanyEntities
+            onCandidateSelect={handleCandidateSelect}
+            selectedCandidate={selectedCandidate}
+          />
         </div>
         <div
           className="w-[30%] overflow-y-auto"

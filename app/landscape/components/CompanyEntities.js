@@ -7,7 +7,13 @@ import { useState, useEffect } from "react";
 import { SquareCheckBig } from "lucide-react";
 import Masonry from "react-masonry-css";
 import { Button } from "@/components/ui/button";
-import { Check, CircleCheckBig, Circle } from "lucide-react";
+import {
+  Check,
+  CircleCheckBig,
+  Circle,
+  UserRoundSearch,
+  Factory,
+} from "lucide-react";
 
 // Takes a single JSON of scraping JSONs grouped by company
 
@@ -42,7 +48,12 @@ const hexToRgb = (hex) => {
 
 const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
   const [starredCandidates, setStarredCandidates] = useState(new Set());
-  const [showOnlyStarred, setShowOnlyStarred] = useState(false);
+  const [activeFilters, setActiveFilters] = useState({
+    onlySaved: false,
+    automotive: true,
+    lifeSciences: true,
+    plastics: true,
+  });
 
   useEffect(() => {
     fetchStarredCandidates();
@@ -302,15 +313,33 @@ const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
     }
   };
 
-  const toggleShowOnlyStarred = () => {
-    setShowOnlyStarred(!showOnlyStarred);
+  const toggleFilter = (filterName) => {
+    setActiveFilters((prev) => ({
+      ...prev,
+      [filterName]: !prev[filterName],
+    }));
   };
+
+  const FilterButton = ({ filterName, label }) => (
+    <Button
+      onClick={() => toggleFilter(filterName)}
+      className="flex items-center text-white gap-2 bg-[#483e68] hover:text-white hover:bg-[#655e7a]"
+      variant="outline"
+    >
+      {activeFilters[filterName] ? (
+        <CircleCheckBig className="w-4 h-4 text-white" />
+      ) : (
+        <Circle className="w-4 h-4 text-white opacity-50 group-hover:opacity-100" />
+      )}
+      <span>{label}</span>
+    </Button>
+  );
 
   // Modify findMatchingCandidates to filter starred candidates if needed
   const findMatchingCandidates = (companyName) => {
     for (const [key, candidates] of Object.entries(outputData)) {
       if (isCompanyMatch(key, companyName)) {
-        if (showOnlyStarred) {
+        if (activeFilters.onlySaved) {
           return candidates.filter((candidate) =>
             starredCandidates.has(candidate.person.publicIdentifier)
           );
@@ -353,86 +382,110 @@ const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
   };
 
   return (
-    <div className="p-4" onClick={handleBackgroundClick}>
-      <Button
-        onClick={toggleShowOnlyStarred}
-        className="mb-4 flex items-center text-white gap-2 bg-blue-600 hover:bg-blue-700"
-        variant="outline"
-      >
-        {showOnlyStarred ? (
-          <CircleCheckBig className="w-4 h-4 text-white" />
-        ) : (
-          <Circle className="w-4 h-4 text-white opacity-50 group-hover:opacity-100" />
-        )}
-        <span>Only saved candidates</span>
-      </Button>
-      <Masonry
-        breakpointCols={breakpointColumnsObj}
-        className="my-masonry-grid"
-        columnClassName="my-masonry-grid_column"
-      >
-        {sortedCompanies.map((company) => {
-          const candidates = findMatchingCandidates(company.name);
-          const sortedCandidates = sortCandidates(candidates, company.name);
-
-          // Log the company and ordered candidates with their seniority levels
-          console.log(`Company: ${company.name}`);
-          sortedCandidates.forEach((candidate, index) => {
-            const seniority = getSeniorityLevel(candidate, company.name);
-            const isStarred = starredCandidates.has(
-              candidate.person.publicIdentifier
-            )
-              ? "Starred"
-              : "Not Starred";
-            const isCurrent = isCurrentEmployee(candidate, company.name)
-              ? "Current"
-              : "Not Current";
-            console.log(
-              `  ${index + 1}. ${candidate.person.firstName} ${
-                candidate.person.lastName
-              } - Seniority: ${seniority}, ${isStarred}, ${isCurrent}`
-            );
-          });
-
-          const [column1Candidates, column2Candidates] =
-            distributeCandidates(sortedCandidates);
-          return (
-            <div key={company.name} className="mb-4">
-              <Card className="overflow-hidden shadow-md border border-[#42135860]">
-                <CardContent className="p-0">
-                  <CompanyInfoCard company={company.name} />
-                  {sortedCandidates.length > 0 ? (
-                    <div className="flex gap-2 p-1">
-                      <div className="w-1/2 flex flex-col gap-2">
-                        {column1Candidates.map((candidate, index) => (
-                          <CandidateCard
-                            key={`candidate-${index * 2}`}
-                            candidate={candidate}
-                            companyName={company.name}
-                          />
-                        ))}
-                      </div>
-                      <div className="w-1/2 flex flex-col gap-2">
-                        {column2Candidates.map((candidate, index) => (
-                          <CandidateCard
-                            key={`candidate-${index * 2 + 1}`}
-                            candidate={candidate}
-                            companyName={company.name}
-                          />
-                        ))}
-                      </div>
-                    </div>
-                  ) : (
-                    <p className="text-sm text-gray-500 p-2">
-                      No candidates found for this company.
-                    </p>
-                  )}
-                </CardContent>
-              </Card>
+    <div className="flex flex-col h-full">
+      {/* Sticky Header */}
+      <div className="sticky top-0 z-10 bg-transparent">
+        <div className="bg-transparent pb-4 relative">
+          {/* Icons and Filter Buttons */}
+          <div className="flex justify-between items-center mb-1 px-1">
+            <UserRoundSearch className="w-6 h-6 text-[#402f76]" />
+            <Factory className="w-6 h-6 text-[#402f76]" />
+          </div>
+          <div className="flex justify-between items-center mb-2">
+            {/* Filter Buttons */}
+            <FilterButton
+              filterName="onlySaved"
+              label="Only saved candidates"
+            />
+            <div className="flex gap-0.5">
+              <FilterButton filterName="automotive" label="Automotive" />
+              <FilterButton filterName="lifeSciences" label="Life Sciences" />
+              <FilterButton filterName="plastics" label="Plastics" />
             </div>
-          );
-        })}
-      </Masonry>
+          </div>
+          {/* Gradient Overlay */}
+          <div
+            className="absolute bottom-0 left-0 right-0 h-4 pointer-events-none z-10"
+            style={{
+              background: `linear-gradient(to bottom, rgba(255,255,255,1), rgba(246, 15, 15, 0))`,
+            }}
+          ></div>
+        </div>
+      </div>
+
+      {/* Scrolling Content Area */}
+      <div
+        className="flex-grow overflow-y-auto"
+        onClick={handleBackgroundClick}
+      >
+        <Masonry
+          breakpointCols={breakpointColumnsObj}
+          className="my-masonry-grid"
+          columnClassName="my-masonry-grid_column"
+        >
+          {sortedCompanies.map((company) => {
+            const candidates = findMatchingCandidates(company.name);
+            const sortedCandidates = sortCandidates(candidates, company.name);
+
+            // Log the company and ordered candidates with their seniority levels
+            console.log(`Company: ${company.name}`);
+            sortedCandidates.forEach((candidate, index) => {
+              const seniority = getSeniorityLevel(candidate, company.name);
+              const isStarred = starredCandidates.has(
+                candidate.person.publicIdentifier
+              )
+                ? "Starred"
+                : "Not Starred";
+              const isCurrent = isCurrentEmployee(candidate, company.name)
+                ? "Current"
+                : "Not Current";
+              console.log(
+                `  ${index + 1}. ${candidate.person.firstName} ${
+                  candidate.person.lastName
+                } - Seniority: ${seniority}, ${isStarred}, ${isCurrent}`
+              );
+            });
+
+            const [column1Candidates, column2Candidates] =
+              distributeCandidates(sortedCandidates);
+            return (
+              <div key={company.name} className="mb-4">
+                <Card className="overflow-hidden shadow-md border border-[#42135860]">
+                  <CardContent className="p-0">
+                    <CompanyInfoCard company={company.name} />
+                    {sortedCandidates.length > 0 ? (
+                      <div className="flex gap-2 p-1">
+                        <div className="w-1/2 flex flex-col gap-2">
+                          {column1Candidates.map((candidate, index) => (
+                            <CandidateCard
+                              key={`candidate-${index * 2}`}
+                              candidate={candidate}
+                              companyName={company.name}
+                            />
+                          ))}
+                        </div>
+                        <div className="w-1/2 flex flex-col gap-2">
+                          {column2Candidates.map((candidate, index) => (
+                            <CandidateCard
+                              key={`candidate-${index * 2 + 1}`}
+                              candidate={candidate}
+                              companyName={company.name}
+                            />
+                          ))}
+                        </div>
+                      </div>
+                    ) : (
+                      <p className="text-sm text-gray-500 p-2">
+                        No candidates found for this company.
+                      </p>
+                    )}
+                  </CardContent>
+                </Card>
+              </div>
+            );
+          })}
+        </Masonry>
+      </div>
     </div>
   );
 };
