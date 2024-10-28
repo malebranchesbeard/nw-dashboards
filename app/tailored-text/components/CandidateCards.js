@@ -4,33 +4,55 @@ import allCandidatesData from "../data/all_candidates_TRUTH.json";
 import groupsData from "../data/groups_truth.json";
 
 const CandidateCards = ({ searchTerm, priorityFilter, onCandidateSelect }) => {
-  // Create a map of LinkedIn URLs to their priority groups
-  const priorityMap = groupsData.reduce((acc, item) => {
-    // Normalize the URL by removing 'https://' if present
-    const normalizedUrl = item.linkedinUrl.replace("https://", "");
-    acc[normalizedUrl] = item.group;
-    return acc;
-  }, {});
+  const [isClient, setIsClient] = React.useState(false);
+  const [candidates, setCandidates] = React.useState([]);
+  const [filteredCandidates, setFilteredCandidates] = React.useState([]);
 
-  // Transform the data structure to match the expected format
-  const allCandidates = Object.entries(allCandidatesData)
-    .filter(([_, data]) => data.success && data.person)
-    .map(([id, data]) => ({
-      person: data.person,
-      // Look up priority based on normalized LinkedIn URL
-      priority:
-        priorityMap[data.person.linkedInUrl.replace("https://", "")] ||
-        "Unknown",
-    }));
+  // Set isClient to true once component mounts
+  React.useEffect(() => {
+    setIsClient(true);
+  }, []);
 
-  const filteredCandidates = allCandidates.filter((candidate) => {
-    const fullName =
-      `${candidate.person.firstName} ${candidate.person.lastName}`.toLowerCase();
-    const matchesSearch = fullName.includes(searchTerm.toLowerCase());
-    const matchesPriority =
-      priorityFilter === "All" || candidate.priority === priorityFilter;
-    return matchesSearch && matchesPriority;
-  });
+  React.useEffect(() => {
+    if (!isClient) return; // Only run on client-side
+
+    const priorityMap = groupsData.reduce((acc, item) => {
+      const normalizedUrl = item.linkedinUrl.replace("https://", "");
+      acc[normalizedUrl] = item.group;
+      return acc;
+    }, {});
+
+    const processedCandidates = Object.entries(allCandidatesData)
+      .filter(([_, data]) => data.success && data.person)
+      .map(([id, data]) => ({
+        person: data.person,
+        priority:
+          priorityMap[data.person.linkedInUrl.replace("https://", "")] ||
+          "Unknown",
+      }));
+
+    setCandidates(processedCandidates);
+  }, [isClient]);
+
+  React.useEffect(() => {
+    if (!isClient) return; // Only run on client-side
+
+    const filtered = candidates.filter((candidate) => {
+      const fullName =
+        `${candidate.person.firstName} ${candidate.person.lastName}`.toLowerCase();
+      const matchesSearch = fullName.includes(searchTerm.toLowerCase());
+      const matchesPriority =
+        priorityFilter === "All" || candidate.priority === priorityFilter;
+      return matchesSearch && matchesPriority;
+    });
+
+    setFilteredCandidates(filtered);
+  }, [isClient, candidates, searchTerm, priorityFilter]);
+
+  // Return empty div during server-side rendering
+  if (!isClient) {
+    return <div className="grid grid-cols-1 gap-2"></div>;
+  }
 
   return (
     <div className="grid grid-cols-1 gap-2">

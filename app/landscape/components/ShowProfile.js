@@ -9,6 +9,11 @@ const InfoCard = ({ children }) => (
   </div>
 );
 
+const formatDate = (date) => {
+  if (!date) return "";
+  return `${date.month}/${date.year}`;
+};
+
 const ShowProfile = ({ selectedCandidate }) => {
   if (!selectedCandidate) {
     return (
@@ -60,6 +65,12 @@ const ShowProfile = ({ selectedCandidate }) => {
               {position.title}
             </p>
             <p className="text-sm text-gray-800 p-1">•{position.companyName}</p>
+            <p className="text-xs text-gray-500 italic">
+              {formatDate(position.startEndDate?.start)} -{" "}
+              {position.startEndDate?.end
+                ? formatDate(position.startEndDate.end)
+                : "Present"}
+            </p>
             <p className="text-sm text-gray-600">{position.description}</p>
           </div>
         ))}

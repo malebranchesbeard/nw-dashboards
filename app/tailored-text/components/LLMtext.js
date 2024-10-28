@@ -11,7 +11,7 @@ import { useToast } from "@/components/ui/use-toast";
 const TextBubble = ({ children }) => (
   <Card className="mb-4 flex-grow">
     <CardContent className="p-4 bg-[#4213580e] text-[#320d44] rounded-lg shadow-md">
-      <p className="text-sm">{children}</p>
+      <div className="text-sm">{children}</div>
     </CardContent>
   </Card>
 );
@@ -85,42 +85,42 @@ Danny Hiscott`;
   return (
     <div className="h-full flex flex-col relative min-h-[600px]">
       <TextBubble>
-        <p className="mb-2">Dear {candidateName || ""},</p>
+        <div className="mb-2">Dear {candidateName || ""}</div>
 
-        <p className="mb-2">
+        <div className="mb-2">
           Hope you are well. I&apos;m Danny Hiscott, Zurich-based Managing
           Partner of the Executive Search firm Transearch International
           www.transearch.com
-        </p>
+        </div>
 
-        <p className="mb-2">
+        <div className="mb-2">
           We are exclusively mandated to recruit a Head of Global Quality and
           Process Improvement for a stock exchange listed Swiss manufacturing
           company with {">"}20 production plants globally and revenues of {">"}
           1bn CHF. Our client manufactures high-precision components for a range
           of industrial applications.
-        </p>
+        </div>
 
-        <p className="mb-2">
+        <div className="mb-2">
           What makes the role stand out for me—beyond its considerable scope—is
           how it signals a fundamental shift in our client&apos;s thinking.
           Quality and process improvement are being elevated from an important
           function to a strategic cornerstone of the organisation. This is a
           newly created position reporting directly to the CEO/COO, with the
           autonomy to shape and drive the global quality strategy.
-        </p>
+        </div>
 
-        <p className="mb-2">
+        <div className="mb-2">
           {tailored_sentence} the scope and timing of this new opportunity could
           be relevant, I would be pleased to hear back from you on LinkedIn, by
           email: danny.hiscott@transearch.com or on +41 44 533 06 10.
-        </p>
+        </div>
 
-        <p className="mb-2">
+        <div className="mb-2">
           Best regards,
           <br />
           Danny Hiscott
-        </p>
+        </div>
       </TextBubble>
       <div className="absolute bottom-0 right-0 w-full flex justify-end space-x-2 p-4 bg-white">
         <Button

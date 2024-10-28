@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -8,6 +8,7 @@ import CandidateCards from "./components/CandidateCards";
 import ShowProfile from "../landscape/components/ShowProfile";
 import LLMText from "./components/LLMtext";
 import { UserRoundSearch, Tag } from "lucide-react";
+import allCandidatesData from "./data/all_candidates_TRUTH.json";
 
 const PRIORITY_COLORS = {
   P1: "#1E2A5C",
@@ -20,6 +21,23 @@ export default function TailoredTextPage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [priorityFilter, setPriorityFilter] = useState("All");
   const [selectedCandidate, setSelectedCandidate] = useState(null);
+
+  // Add this effect to set initial candidate
+  useEffect(() => {
+    // Only run on client-side
+    if (typeof window !== "undefined") {
+      const initialCandidate = Object.entries(allCandidatesData).find(
+        ([_, data]) => data.success && data.person
+      );
+
+      if (initialCandidate) {
+        setSelectedCandidate({
+          person: initialCandidate[1].person,
+          priority: "Unknown", // Or determine from groupsData if needed
+        });
+      }
+    }
+  }, []);
 
   const handleCandidateSelect = (candidate) => {
     setSelectedCandidate(candidate);
