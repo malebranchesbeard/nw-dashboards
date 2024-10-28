@@ -1,8 +1,12 @@
+"use client";
+
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Edit, Copy } from "lucide-react";
 import outputData from "../data/output.json";
+import tailoredSentences from "../data/tailored_sentences.json";
+import { useToast } from "@/components/ui/use-toast";
 
 const TextBubble = ({ children }) => (
   <Card className="mb-4 flex-grow">
@@ -13,31 +17,75 @@ const TextBubble = ({ children }) => (
 );
 
 const LLMText = ({ selectedCandidate }) => {
+  const { toast } = useToast();
   let candidateName = "";
-  let currentCompany = "";
+  let tailored_sentence = "";
 
   // Update the candidate information when selectedCandidate changes
-  if (selectedCandidate) {
-    candidateName = selectedCandidate.person.firstName;
-    currentCompany =
-      selectedCandidate.person.positions.positionHistory[0].companyName.split(
-        " "
-      )[0];
+  if (selectedCandidate && selectedCandidate.person) {
+    candidateName = selectedCandidate.person.firstName || "";
+    const identifier = selectedCandidate.person.publicIdentifier?.toLowerCase();
+
+    // Add more detailed debug logging
+    console.log("Selected Candidate:", {
+      identifier,
+      firstName: selectedCandidate.person.firstName,
+      availableIdentifiers: Object.keys(tailoredSentences),
+      matchFound: identifier ? tailoredSentences[identifier] : "no identifier",
+    });
+
+    // Check if the identifier exists in tailoredSentences
+    if (identifier && tailoredSentences[identifier]) {
+      tailored_sentence = tailoredSentences[identifier].tailored_sentence || "";
+    } else {
+      console.warn(
+        `No matching tailored sentence found for identifier: ${identifier}`
+      );
+    }
   }
-  console.log("Selected Candidate:", selectedCandidate);
+
+  console.log(
+    "Selected Candidate:",
+    selectedCandidate,
+    "tailored_sentence:",
+    tailored_sentence
+  );
+
+  // Move handleCopy inside useCallback to prevent hydration issues
+  const handleCopy = React.useCallback(async () => {
+    const textContent = `Dear ${candidateName},
+
+Hope you are well. I'm Danny Hiscott, Zurich-based Managing Partner of the Executive Search firm Transearch International www.transearch.com
+
+We are exclusively mandated to recruit a Head of Global Quality and Process Improvement for a stock exchange listed Swiss manufacturing company with >20 production plants globally and revenues of >1bn CHF. Our client manufactures high-precision components for a range of industrial applications.
+
+What makes the role stand out for me—beyond its considerable scope—is how it signals a fundamental shift in our client's thinking. Quality and process improvement are being elevated from an important function to a strategic cornerstone of the organisation. This is a newly created position reporting directly to the CEO/COO, with the autonomy to shape and drive the global quality strategy.
+
+${tailored_sentence} the scope and timing of this new opportunity could be relevant, I would be pleased to hear back from you on LinkedIn, by email: danny.hiscott@transearch.com or on +41 44 533 06 10.
+
+Best regards,
+Danny Hiscott`;
+
+    try {
+      await navigator.clipboard.writeText(textContent);
+      toast({
+        description: "✓ Copied to clipboard",
+        duration: 1500,
+        className: "bg-green-50 text-green-800 border-green-200",
+      });
+    } catch (err) {
+      toast({
+        description: "Failed to copy text",
+        variant: "destructive",
+        duration: 1500,
+      });
+    }
+  }, [candidateName, tailored_sentence, toast]);
+
   return (
-    <div className="h-full flex flex-col">
+    <div className="h-full flex flex-col relative min-h-[600px]">
       <TextBubble>
-        <span className="font-semibold">
-          This is the component without the LLM step, so filling in the name and
-          company programatically. Just for testing and so you can see it for
-          now. Will finish Monday.
-        </span>
-      </TextBubble>
-      <TextBubble>
-        <p className="mb-2">
-          Dear <span className="font-semibold">{candidateName},</span>
-        </p>
+        <p className="mb-2">Dear {candidateName || ""},</p>
 
         <p className="mb-2">
           Hope you are well. I&apos;m Danny Hiscott, Zurich-based Managing
@@ -46,31 +94,35 @@ const LLMText = ({ selectedCandidate }) => {
         </p>
 
         <p className="mb-2">
-          We are the sole firm mandated to recruit a Head of Global Quality and
-          Process Improvement for a Swiss manufacturing company with 25
-          production plants worldwide and revenues above 1B CHF, listed since
-          1986. Our client manufactures high-precision components for critical
-          applications in the automotive, aerospace, and life sciences
-          industries.
+          We are exclusively mandated to recruit a Head of Global Quality and
+          Process Improvement for a stock exchange listed Swiss manufacturing
+          company with {">"}20 production plants globally and revenues of {">"}
+          1bn CHF. Our client manufactures high-precision components for a range
+          of industrial applications.
         </p>
 
         <p className="mb-2">
           What makes the role stand out for me—beyond its considerable scope—is
           how it signals a fundamental shift in our client&apos;s thinking.
-          Quality and process improvement are being elevated from a function to
-          a cornerstone of the organisation. This is a newly created position
-          reporting directly to the CEO/COO, with the autonomy to shape and
-          drive the global quality strategy.
+          Quality and process improvement are being elevated from an important
+          function to a strategic cornerstone of the organisation. This is a
+          newly created position reporting directly to the CEO/COO, with the
+          autonomy to shape and drive the global quality strategy.
         </p>
 
-        <p>
-          I understand you&apos;re just two years into your role at{" "}
-          <span className="font-semibold">{currentCompany}</span>, but if this
-          step is one you might be interested in taking, I look forward to
-          hearing back from you on LinkedIn or on +41xxx
+        <p className="mb-2">
+          {tailored_sentence} the scope and timing of this new opportunity could
+          be relevant, I would be pleased to hear back from you on LinkedIn, by
+          email: danny.hiscott@transearch.com or on +41 44 533 06 10.
+        </p>
+
+        <p className="mb-2">
+          Best regards,
+          <br />
+          Danny Hiscott
         </p>
       </TextBubble>
-      <div className="flex justify-end space-x-2 mt-4">
+      <div className="absolute bottom-0 right-0 w-full flex justify-end space-x-2 p-4 bg-white">
         <Button
           className="bg-[#1E2A5C] hover:bg-[#566CC8] text-white"
           variant="outline"
@@ -81,6 +133,7 @@ const LLMText = ({ selectedCandidate }) => {
         <Button
           className="bg-[#1E2A5C] hover:bg-[#566CC8] text-white"
           variant="outline"
+          onClick={handleCopy}
         >
           <Copy className="w-4 h-4 mr-2" />
           Copy

@@ -9,6 +9,13 @@ import ShowProfile from "../landscape/components/ShowProfile";
 import LLMText from "./components/LLMtext";
 import { UserRoundSearch, Tag } from "lucide-react";
 
+const PRIORITY_COLORS = {
+  P1: "#1E2A5C",
+  P2: "#1e2a5cd8",
+  P3: "#1e2a5cbc",
+  All: "#1e2a5c94",
+};
+
 export default function TailoredTextPage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [priorityFilter, setPriorityFilter] = useState("All");
@@ -44,18 +51,17 @@ export default function TailoredTextPage() {
                 />
                 <div className="flex gap-0.5">
                   {["P1", "P2", "P3", "All"].map((priority) => (
-                    <Button
+                    <div
                       key={priority}
                       onClick={() => setPriorityFilter(priority)}
-                      className={`flex items-center text-white gap-2 ${
-                        priorityFilter === priority
-                          ? "bg-[#566CC8]"
-                          : "bg-[#1E2A5C]"
-                      } hover:text-white hover:bg-[#566CC8]`}
-                      variant="outline"
+                      className="cursor-pointer rounded-md px-4 py-2 text-sm text-white transition-colors hover:bg-[#566CC8]"
+                      style={{
+                        backgroundColor:
+                          priorityFilter === priority ? "#566CC8" : "#1E2A5C",
+                      }}
                     >
                       {priority}
-                    </Button>
+                    </div>
                   ))}
                 </div>
               </div>

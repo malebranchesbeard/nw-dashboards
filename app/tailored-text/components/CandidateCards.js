@@ -1,9 +1,27 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import outputData from "../data/output.json";
+import allCandidatesData from "../data/all_candidates_TRUTH.json";
+import groupsData from "../data/groups_truth.json";
 
 const CandidateCards = ({ searchTerm, priorityFilter, onCandidateSelect }) => {
-  const allCandidates = Object.values(outputData).flat();
+  // Create a map of LinkedIn URLs to their priority groups
+  const priorityMap = groupsData.reduce((acc, item) => {
+    // Normalize the URL by removing 'https://' if present
+    const normalizedUrl = item.linkedinUrl.replace("https://", "");
+    acc[normalizedUrl] = item.group;
+    return acc;
+  }, {});
+
+  // Transform the data structure to match the expected format
+  const allCandidates = Object.entries(allCandidatesData)
+    .filter(([_, data]) => data.success && data.person)
+    .map(([id, data]) => ({
+      person: data.person,
+      // Look up priority based on normalized LinkedIn URL
+      priority:
+        priorityMap[data.person.linkedInUrl.replace("https://", "")] ||
+        "Unknown",
+    }));
 
   const filteredCandidates = allCandidates.filter((candidate) => {
     const fullName =
@@ -30,16 +48,18 @@ const CandidateCards = ({ searchTerm, priorityFilter, onCandidateSelect }) => {
                   candidate.priority === "P1"
                     ? "bg-blue-100 text-blue-800"
                     : candidate.priority === "P2"
-                    ? "bg-green-100 text-green-800"
-                    : "bg-yellow-100 text-yellow-800"
+                    ? "bg-blue-100 text-blue-800"
+                    : candidate.priority === "P3"
+                    ? "bg-blue-100 text-blue-800"
+                    : "bg-gray-100 text-gray-800"
                 }`}
               >
                 {candidate.priority}
               </span>
             </div>
             <p className="text-xs text-gray-600 mt-1">
-              {candidate.person.positions.positionHistory[0].title} at{" "}
-              {candidate.person.positions.positionHistory[0].companyName}
+              {candidate.person.positions?.positionHistory[0]?.title} at{" "}
+              {candidate.person.positions?.positionHistory[0]?.companyName}
             </p>
           </CardContent>
         </Card>
