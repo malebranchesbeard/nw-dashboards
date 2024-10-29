@@ -7,6 +7,7 @@ import { Edit, Copy, ChevronLeft, ChevronRight } from "lucide-react";
 import outputData from "../data/output.json";
 import tailoredSentences from "../data/tailored_sentences.json";
 import tailoredSentences2 from "../data/tailored_sentences2.json";
+import tailoredSentences3 from "../data/tailored_sentences3.json";
 import { useToast } from "@/components/ui/use-toast";
 
 const TextBubble = ({ children }) => (
@@ -19,36 +20,40 @@ const TextBubble = ({ children }) => (
 
 const LLMText = ({ selectedCandidate, onCopied }) => {
   const { toast } = useToast();
-  const [version, setVersion] = useState(2);
+  const [version, setVersion] = useState(3);
   let candidateName = "";
   let tailored_sentence = "";
 
-  // Function to check if versions are different
-  const hasMultipleVersions = (identifier) => {
-    if (!identifier) return false;
+  const getNumberOfVersions = (identifier) => {
+    if (!identifier) return 1;
     const v1 = tailoredSentences[identifier]?.tailored_sentence;
     const v2 = tailoredSentences2[identifier]?.tailored_sentence;
-    return v1 && v2 && v1 !== v2;
+    const v3 = tailoredSentences3[identifier]?.tailored_sentence;
+
+    const uniqueVersions = new Set([v1, v2, v3].filter(Boolean));
+    return uniqueVersions.size;
   };
 
-  // Reset version when selectedCandidate changes
   useEffect(() => {
     if (selectedCandidate?.person?.publicIdentifier) {
       const identifier =
         selectedCandidate.person.publicIdentifier.toLowerCase();
-      // Set to version 2 only if multiple versions exist, otherwise version 1
-      setVersion(hasMultipleVersions(identifier) ? 2 : 1);
+      const versions = getNumberOfVersions(identifier);
+      setVersion(versions);
     }
   }, [selectedCandidate]);
 
-  // Update the candidate information when selectedCandidate changes
   if (selectedCandidate && selectedCandidate.person) {
     candidateName = selectedCandidate.person.firstName || "";
     const identifier = selectedCandidate.person.publicIdentifier?.toLowerCase();
 
-    // Choose the correct version of tailored_sentence
     if (identifier) {
-      const sentences = version === 1 ? tailoredSentences : tailoredSentences2;
+      const sentences =
+        version === 1
+          ? tailoredSentences
+          : version === 2
+          ? tailoredSentences2
+          : tailoredSentences3;
       tailored_sentence = sentences[identifier]?.tailored_sentence || "";
     }
   }
@@ -60,7 +65,6 @@ const LLMText = ({ selectedCandidate, onCopied }) => {
     tailored_sentence
   );
 
-  // Move handleCopy inside useCallback to prevent hydration issues
   const handleCopy = React.useCallback(async () => {
     const textContent = `Dear ${candidateName},
 
@@ -78,7 +82,6 @@ Danny Hiscott`;
     try {
       await navigator.clipboard.writeText(textContent);
 
-      // Add API call to mark candidate as copied
       if (selectedCandidate?.person?.publicIdentifier) {
         await fetch("/api/copied", {
           method: "POST",
@@ -91,7 +94,6 @@ Danny Hiscott`;
           }),
         });
 
-        // Call the onCopied callback
         onCopied?.(selectedCandidate.person.publicIdentifier);
       }
 
@@ -118,7 +120,7 @@ Danny Hiscott`;
               variant="ghost"
               size="sm"
               disabled={version === 1}
-              onClick={() => setVersion(1)}
+              onClick={() => setVersion((prev) => prev - 1)}
               className={`h-5 w-5 p-0 rounded-full grid place-items-center ${
                 version === 1
                   ? "text-white bg-[#425397ac]"
@@ -131,26 +133,24 @@ Danny Hiscott`;
               <span>Version</span>{" "}
               <span className="font-semibold">{version}</span> <span>of</span>{" "}
               <span className="font-semibold">
-                {hasMultipleVersions(
+                {getNumberOfVersions(
                   selectedCandidate.person.publicIdentifier?.toLowerCase()
-                )
-                  ? "2"
-                  : "1"}
+                )}
               </span>
             </span>
             <Button
               variant="ghost"
               size="sm"
               disabled={
-                version === 2 ||
-                !hasMultipleVersions(
+                version ===
+                getNumberOfVersions(
                   selectedCandidate.person.publicIdentifier?.toLowerCase()
                 )
               }
-              onClick={() => setVersion(2)}
+              onClick={() => setVersion((prev) => prev + 1)}
               className={`h-5 w-5 p-0 rounded-full grid place-items-center ${
-                version === 2 ||
-                !hasMultipleVersions(
+                version ===
+                getNumberOfVersions(
                   selectedCandidate.person.publicIdentifier?.toLowerCase()
                 )
                   ? "text-white bg-[#425397ac]"
