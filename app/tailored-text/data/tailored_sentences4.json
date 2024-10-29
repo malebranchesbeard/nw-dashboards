@@ -1,0 +1,714 @@
+{
+  "paulionas": {
+    "current_company": "Siemens",
+    "tenure_length": "more than seven years",
+    "tailored_sentence": "While it must be hard to uproot after more than seven years at Siemens, if",
+    "possible_company_names": [
+      "Siemens",
+      "Siemens HQ",
+      "Siemens Infra",
+      "Smart Infrastructure",
+      "Siemens Global"
+    ]
+  },
+  "sarbari-roy-78a65821": {
+    "current_company": "Quality Management",
+    "tenure_length": "less than six months",
+    "tailored_sentence": "I appreciate you're less than six months into your roles at Quality Management, but if",
+    "possible_company_names": [
+      "Quality & Management Consulting",
+      "Quality Management Consulting",
+      "Quality Management",
+      "QMC",
+      "Quality & Management"
+    ]
+  },
+  "jeremie-le-bourhis": {
+    "current_company": "LEM",
+    "tenure_length": "a year and a half",
+    "tailored_sentence": "I appreciate you're a year and a half into your role at LEM, but if",
+    "possible_company_names": [
+      "LEM",
+      "Lem",
+      "LEM Co.",
+      "LEM Group"
+    ]
+  },
+  "veronika-k-86a37720": {
+    "current_company": "Philip Morris",
+    "tenure_length": "eight years",
+    "tailored_sentence": "While it must be hard to uproot after eight years at Philip Morris, if",
+    "possible_company_names": [
+      "Philip Morris International",
+      "Philip Morris",
+      "PM International",
+      "PMI"
+    ]
+  },
+  "ludovic-schramm-8731407": {
+    "current_company": "Hitachi",
+    "tenure_length": "two and a half years",
+    "tailored_sentence": "I appreciate you're two and a half years into your role at Hitachi, but if",
+    "possible_company_names": [
+      "Hitachi Energy",
+      "Hitachi",
+      "Hitachi Eng",
+      "Hitachi E",
+      "HE"
+    ]
+  },
+  "piotr-nary\u0144ski-653b9734": {
+    "current_company": "Ronal",
+    "tenure_length": "more than seven years",
+    "tailored_sentence": "While it must be hard to uproot after more than seven years at Ronal, if",
+    "possible_company_names": [
+      "Ronal",
+      "RONAL GROUP",
+      "Ronal Group",
+      "Ronal Companies",
+      "RONAL"
+    ]
+  },
+  "saverio-baldini-75448a14": {
+    "current_company": "Bosch",
+    "tenure_length": "just under two years",
+    "tailored_sentence": "I appreciate you're just under two years into your role at Bosch, but if",
+    "possible_company_names": [
+      "Bosch Power Tools",
+      "Bosch",
+      "Bosch Tools"
+    ]
+  },
+  "adam-wietrzy\u0144ski-11389682": {
+    "current_company": "IST AG",
+    "tenure_length": "a year and a half",
+    "tailored_sentence": "I appreciate you're a year and a half into your role at IST AG, but if",
+    "possible_company_names": [
+      "Innovative Sensor Technology IST AG",
+      "Innovative Sensor Technology Ist",
+      "IST AG",
+      "Innovative Sensors",
+      "IST"
+    ]
+  },
+  "carl-kendall-13a37b42": {
+    "current_company": "GE Power",
+    "tenure_length": "nine years",
+    "tailored_sentence": "While it must be hard to uproot after nine years at GE Power, if",
+    "possible_company_names": [
+      "GE Power",
+      "Ge Power",
+      "GE",
+      "GEP",
+      "General Electric Power"
+    ]
+  },
+  "thorsten-bauer-1605": {
+    "current_company": "Siemens",
+    "tenure_length": "20 years",
+    "tailored_sentence": "While it must be hard to uproot after 20 years at Siemens, if",
+    "possible_company_names": [
+      "Siemens",
+      "Siemens AG",
+      "Siemens Corp."
+    ]
+  },
+  "cedricbrieussel": {
+    "current_company": "Busch Vacuum",
+    "tenure_length": "more than 17 years",
+    "tailored_sentence": "While it must be hard to uproot after more than 17 years at Busch Vacuum, if",
+    "possible_company_names": [
+      "Busch Vacuum Solutions",
+      "Busch Vacuum",
+      "Busch",
+      "Busch Solutions"
+    ]
+  },
+  "cdtc2010": {
+    "current_company": "Harting",
+    "tenure_length": "less than a year",
+    "tailored_sentence": "I appreciate you're less than a year into your role at Harting, but if",
+    "possible_company_names": [
+      "HARTING Technology Group",
+      "Harting",
+      "Harting Tech",
+      "Harting Group"
+    ]
+  },
+  "rafal-dawidowicz-64289b18": {
+    "current_company": "Kunststoff Schwanden",
+    "tenure_length": "only a year and a half",
+    "tailored_sentence": "I appreciate you're only a year and a half into your role at Kunststoff Schwanden, but if",
+    "possible_company_names": [
+      "Kunststoff Schwanden AG",
+      "Kunststoff Schwanden",
+      "Schwanden",
+      "KS AG",
+      "Kunststoff"
+    ]
+  },
+  "markus-genal-engels-4a5609": {
+    "current_company": "Alstom",
+    "tenure_length": "three years",
+    "tailored_sentence": "While you've built a solid foundation at Alstom over the past three years, if",
+    "possible_company_names": [
+      "Alstom",
+      "Alstom Group",
+      "Alstom Corp",
+      "Alstom Inc.",
+      "Alstom SA"
+    ]
+  },
+  "thomasmay01": {
+    "current_company": "Ronal",
+    "tenure_length": "fourteen years",
+    "tailored_sentence": "While it must be hard to uproot after fourteen years at Ronal, if",
+    "possible_company_names": [
+      "RONAL AG",
+      "Ronal",
+      "Ronal Ltd",
+      "Ronal Incorporated",
+      "Ronal Corp"
+    ]
+  },
+  "cemalyilmaz": {
+    "current_company": "Vzug",
+    "tenure_length": "four years",
+    "tailored_sentence": "While you've built a solid foundation at Vzug over the past four years, if",
+    "possible_company_names": [
+      "V-ZUG AG",
+      "Vzug",
+      "V-ZUG",
+      "VZUG",
+      "V-Zug"
+    ]
+  },
+  "luiz-benacchio": {
+    "current_company": "EnerSys",
+    "tenure_length": "six years",
+    "tailored_sentence": "While you've built a solid foundation at EnerSys over the past six years, if",
+    "possible_company_names": [
+      "EnerSys",
+      "Enersys",
+      "ES",
+      "Ener",
+      "Sys"
+    ]
+  },
+  "justyna-potega-1a2a251a7": {
+    "current_company": "Oerlikon",
+    "tenure_length": "five years",
+    "tailored_sentence": "While you've built a solid foundation at Oerlikon over the past five years, if",
+    "possible_company_names": [
+      "Oerlikon",
+      "Oerlikon Group",
+      "Oerlikon Corp"
+    ]
+  },
+  "hamiltonparise": {
+    "current_company": "Thyssenkrupp Presta",
+    "tenure_length": "barely two years",
+    "tailored_sentence": "I appreciate you're barely two years into your roles at Thyssenkrupp Presta, but if",
+    "possible_company_names": [
+      "thyssenkrupp Presta AG",
+      "Thyssenkrupp Presta",
+      "Thyssenkrupp",
+      "TK Presta"
+    ]
+  },
+  "sergeromming": {
+    "current_company": "Johnson Electric",
+    "tenure_length": "more than thirteen years",
+    "tailored_sentence": "While it must be hard to uproot after more than thirteen years at Johnson Electric, if",
+    "possible_company_names": [
+      "Johnson Electric",
+      "Johnson Elec",
+      "JE",
+      "Johnson E."
+    ]
+  },
+  "mihai-saboslai": {
+    "current_company": "Stabilus",
+    "tenure_length": "six years",
+    "tailored_sentence": "While it must be hard to uproot after six years at Stabilus, if",
+    "possible_company_names": [
+      "Stabilus Romania",
+      "Stabilus",
+      "Stab",
+      "Stabilus Co"
+    ]
+  },
+  "enno-schweinberger-4471207": {
+    "current_company": "Siegfried Holding",
+    "tenure_length": "three years",
+    "tailored_sentence": "While you've built a solid foundation at Siegfried Holding over the past three years, if",
+    "possible_company_names": [
+      "Siegfried Holding AG",
+      "Siegfried",
+      "Siegfried Holding",
+      "Siegfried AG",
+      "Siegfried Group"
+    ]
+  },
+  "cesareguidetti": {
+    "current_company": "Eutron",
+    "tenure_length": "a year and a half",
+    "tailored_sentence": "I appreciate you're a year and a half into your role at Eutron, but if",
+    "possible_company_names": [
+      "Eutron",
+      "EUTRON",
+      "Eut",
+      "E-Tron"
+    ]
+  },
+  "michelberthus": {
+    "current_company": "Boundaryless",
+    "tenure_length": "a year and a half",
+    "tailored_sentence": "I appreciate you're a year and a half into your role at Boundaryless, but if",
+    "possible_company_names": [
+      "Boundaryless Group",
+      "Boundaryless",
+      "Boundless",
+      "Boundary",
+      "B-Less"
+    ]
+  },
+  "florian-zumb\u00fchl-5989207b": {
+    "current_company": "Franke Coffee",
+    "tenure_length": "nine years",
+    "tailored_sentence": "While it must be hard to uproot after nine years at Franke Coffee, if",
+    "possible_company_names": [
+      "Franke Coffee Systems",
+      "Franke Coffee",
+      "Franke",
+      "Franke Systems"
+    ]
+  },
+  "johnkitching": {
+    "current_company": "Ricor",
+    "tenure_length": "a year and a half",
+    "tailored_sentence": "I appreciate you're a year and a half into your role at Ricor, but if",
+    "possible_company_names": [
+      "RICOR Group",
+      "Ricor",
+      "Ricor Group",
+      "RGC",
+      "Ricor Co."
+    ]
+  },
+  "fernando-fondra-64004136": {
+    "current_company": "Gsell",
+    "tenure_length": "four years",
+    "tailored_sentence": "While you've built a solid foundation at Gsell over the past four years, if",
+    "possible_company_names": [
+      "Gsell AG",
+      "Gsell",
+      "Gsell Group",
+      "Gsell Inc.",
+      "Gsell Ltd."
+    ]
+  },
+  "christoph-benzinger-zug": {
+    "current_company": "vVARDIS",
+    "tenure_length": "less than six months",
+    "tailored_sentence": "I appreciate you're less than six months into your role at vVARDIS, but if",
+    "possible_company_names": [
+      "vVARDIS",
+      "Vvardis",
+      "VV",
+      "vV",
+      "V"
+    ]
+  },
+  "adrian-popescu-920bbb228": {
+    "current_company": "Auto",
+    "tenure_length": "two years",
+    "tailored_sentence": "While you've built a solid foundation at Auto over the past two years, if",
+    "possible_company_names": [
+      "Automotive",
+      "Automotive",
+      "Auto",
+      "Auto Co",
+      "The Auto Group"
+    ]
+  },
+  "steffen-standfuss-b635aab": {
+    "current_company": "Roche",
+    "tenure_length": "only a year",
+    "tailored_sentence": "I appreciate you're only a year into your role at Roche, but if",
+    "possible_company_names": [
+      "Roche",
+      "Roche",
+      "Roche Pharma",
+      "Roche Group",
+      "Roche Ltd"
+    ]
+  },
+  "dr-sel\u00e7uk-mentese-a2841172": {
+    "current_company": "Dyconex",
+    "tenure_length": "five years",
+    "tailored_sentence": "While you've built a solid foundation at Dyconex over the past five years, if",
+    "possible_company_names": [
+      "DYCONEX",
+      "Dyconex",
+      "Dyco",
+      "DYC",
+      "Dy-con"
+    ]
+  },
+  "stefan-appel": {
+    "current_company": "Ruffian",
+    "tenure_length": "less than a year",
+    "tailored_sentence": "I appreciate you're less than a year into your role at Ruffian, but if",
+    "possible_company_names": [
+      "Ruffian",
+      "Ruffian LLC",
+      "Ruff",
+      "Ruffian Co."
+    ]
+  },
+  "edgar-arensberg-a73263a0": {
+    "current_company": "Thyssenkrupp Presta",
+    "tenure_length": "almost 16 years",
+    "tailored_sentence": "While it must be hard to uproot after almost 16 years at Thyssenkrupp Presta, if",
+    "possible_company_names": [
+      "thyssenkrupp Presta AG",
+      "Thyssenkrupp Presta",
+      "Thyssenkrupp",
+      "TK Presta",
+      "Presta"
+    ]
+  },
+  "sven-hoelscher-6561769a": {
+    "current_company": "Yanfeng",
+    "tenure_length": "nine years",
+    "tailored_sentence": "While it must be hard to uproot after nine years at Yanfeng, if",
+    "possible_company_names": [
+      "Yanfeng",
+      "Yan",
+      "YF",
+      "Yanfeng Automotive",
+      "Yanfeng Interiors"
+    ]
+  },
+  "sam-bollen-b40053b": {
+    "current_company": "Dura Automotive",
+    "tenure_length": "more than eight years",
+    "tailored_sentence": "While it must be hard to uproot after more than eight years at Dura Automotive, if",
+    "possible_company_names": [
+      "Dura Automotive",
+      "Dura",
+      "Dura Auto",
+      "Dura Systems",
+      "Dura Automotive Systems LLC"
+    ]
+  },
+  "roman-lenk-153ba814": {
+    "current_company": "Schindler",
+    "tenure_length": "five years",
+    "tailored_sentence": "While you've built a solid foundation at Schindler over the past five years, if",
+    "possible_company_names": [
+      "Schindler Aufz\u00fcge AG (Schweiz)",
+      "Schindler Aufz\u00fcge AG",
+      "Schindler Aufz\u00fcge Ag Schweiz",
+      "Schindler",
+      "Schindler Schweiz"
+    ]
+  },
+  "erick-machado-silva-250976": {
+    "current_company": "Agratas",
+    "tenure_length": "less than a year",
+    "tailored_sentence": "I appreciate you're less than a year into your role at Agratas, but if",
+    "possible_company_names": [
+      "Agratas",
+      "Agratas Inc.",
+      "Agra",
+      "Agratas Co."
+    ]
+  },
+  "katrin-papenfuss-ba046487": {
+    "current_company": "Mannhummel",
+    "tenure_length": "only a year",
+    "tailored_sentence": "I appreciate you're only a year into your role at Mannhummel, but if",
+    "possible_company_names": [
+      "MANN+HUMMEL",
+      "Mannhummel",
+      "M+H",
+      "Mann Hummel",
+      "M&H"
+    ]
+  },
+  "bj\u00f6rn-sv\u00e4rd-4844906": {
+    "current_company": "Autoliv",
+    "tenure_length": "more than fourteen years",
+    "tailored_sentence": "While it must be hard to uproot after more than fourteen years at Autoliv, if",
+    "possible_company_names": [
+      "Autoliv",
+      "AutoLiv",
+      "ALiv",
+      "AUTOLIV"
+    ]
+  },
+  "pisino": {
+    "current_company": "Metalor",
+    "tenure_length": "16 years",
+    "tailored_sentence": "While it must be hard to uproot after 16 years at Metalor, if",
+    "possible_company_names": [
+      "Metalor",
+      "Metalor Tech",
+      "Metalor Technologies",
+      "Metalor Technologies SA",
+      "Metalor Technologies Sa"
+    ]
+  },
+  "mansourhamade": {
+    "current_company": "Kone",
+    "tenure_length": "more than nine years",
+    "tailored_sentence": "While it must be hard to uproot after more than nine years at Kone, if",
+    "possible_company_names": [
+      "KONE",
+      "Kone",
+      "Kon",
+      "K-ONE",
+      "K"
+    ]
+  },
+  "adrian-menczel-b7667b118": {
+    "current_company": "GWF",
+    "tenure_length": "six years",
+    "tailored_sentence": "While you've built a solid foundation at GWF over the past six years, if",
+    "possible_company_names": [
+      "GWF MessSysteme AG",
+      "Gwf Messsysteme",
+      "GWF",
+      "GWF Messsysteme",
+      "Messsysteme"
+    ]
+  },
+  "michal-sala\u010d-a6441670": {
+    "current_company": "Wabtec",
+    "tenure_length": "almost two years",
+    "tailored_sentence": "I appreciate you're almost two years into your roles at Wabtec, but if",
+    "possible_company_names": [
+      "Wabtec Corporation",
+      "Wabtec",
+      "Wabtec Corp",
+      "Wab",
+      "Wabtec Co"
+    ]
+  },
+  "marc-k\u00fchne-708330112": {
+    "current_company": "Landqart",
+    "tenure_length": "four years",
+    "tailored_sentence": "While you've built a solid foundation at Landqart over the past four years, if",
+    "possible_company_names": [
+      "Landqart AG",
+      "Landqart",
+      "LQ",
+      "Land",
+      "Landq"
+    ]
+  },
+  "ronny-kuehlmorgen-7b8a8460": {
+    "current_company": "Thyssenkrupp Presta",
+    "tenure_length": "more than 16 years",
+    "tailored_sentence": "While it must be hard to uproot after more than 16 years at Thyssenkrupp Presta, if",
+    "possible_company_names": [
+      "thyssenkrupp Presta AG",
+      "Thyssenkrupp Presta",
+      "TKP",
+      "Thyssenkrupp",
+      "Presta"
+    ]
+  },
+  "s\u00e9bastien-capodanno-38962424": {
+    "current_company": "Ammeraal",
+    "tenure_length": "five years",
+    "tailored_sentence": "While you've built a solid foundation at Ammeraal over the past five years, if",
+    "possible_company_names": [
+      "Ammeraal Beltech",
+      "Ammeraal Beltech",
+      "Ammeraal",
+      "Beltech",
+      "AB"
+    ]
+  },
+  "jan-baracka-2a456529": {
+    "current_company": "Sensirion Automotive",
+    "tenure_length": "less than six months",
+    "tailored_sentence": "I appreciate you're less than six months into your role at Sensirion Automotive, but if",
+    "possible_company_names": [
+      "Sensirion Automotive Solutions",
+      "Sensirion Automotive",
+      "Sensirion Auto",
+      "Sensirion",
+      "SAS"
+    ]
+  },
+  "guilherme-bueno-28440333": {
+    "current_company": "Thyssenkrupp Presta",
+    "tenure_length": "eight years",
+    "tailored_sentence": "While it must be hard to uproot after eight years at Thyssenkrupp Presta, if",
+    "possible_company_names": [
+      "thyssenkrupp Presta AG",
+      "Thyssenkrupp Presta",
+      "TK Presta",
+      "Thyssen Presta",
+      "Presta AG"
+    ]
+  },
+  "oliver-m-jung-qm": {
+    "current_company": "Kiepe Electric",
+    "tenure_length": "three years",
+    "tailored_sentence": "While you've built a solid foundation at Kiepe Electric over the past three years, if",
+    "possible_company_names": [
+      "Kiepe Electric GmbH",
+      "Kiepe Electric",
+      "Kiepe",
+      "Kiepe Elec",
+      "KE"
+    ]
+  },
+  "giuseppe-lorusso-5ba38826": {
+    "current_company": "Bristol-Myers",
+    "tenure_length": "five years",
+    "tailored_sentence": "While you've built a solid foundation at Bristol-Myers over the past five years, if",
+    "possible_company_names": [
+      "Bristol-Myers",
+      "Bristolmyers Squibb",
+      "Bristolmyers",
+      "BMS",
+      "Bristol-Myers Squibb",
+      "BMS Squibb"
+    ]
+  },
+  "florian-w\u00e4chter-aa343547": {
+    "current_company": "Trafag",
+    "tenure_length": "two and a half years",
+    "tailored_sentence": "While you've built a solid foundation at Trafag over the past two and a half years, if",
+    "possible_company_names": [
+      "Trafag AG",
+      "Trafag",
+      "Traf",
+      "T-AG"
+    ]
+  },
+  "markus-wien-9ba12b10": {
+    "current_company": "Franke",
+    "tenure_length": "a year and a half",
+    "tailored_sentence": "I appreciate you're a year and a half into your role at Franke, but if",
+    "possible_company_names": [
+      "Franke Group",
+      "Franke",
+      "Franke Co.",
+      "Franke Ltd.",
+      "Franke Intl."
+    ]
+  },
+  "nikhil-chadha-": {
+    "current_company": "Eqt",
+    "tenure_length": "less than six months",
+    "tailored_sentence": "I appreciate you're less than six months into your role at Eqt, but if",
+    "possible_company_names": [
+      "EQT Group",
+      "Eqt",
+      "EQT",
+      "EQT Group",
+      "EQT Co."
+    ]
+  },
+  "ronny-kraft-324817ab": {
+    "current_company": "Birr Machines",
+    "tenure_length": "less than six months",
+    "tailored_sentence": "I appreciate you're less than six months into your role at Birr Machines, but if",
+    "possible_company_names": [
+      "Birr Machines AG",
+      "Birr Machines",
+      "Birr",
+      "BM"
+    ]
+  },
+  "david-gurtner-07b306120": {
+    "current_company": "ATS-Tanner",
+    "tenure_length": "just over two years",
+    "tailored_sentence": "I appreciate you're just over two years into your roles at ATS-Tanner, but if",
+    "possible_company_names": [
+      "ATS-Tanner Banding Systems AG",
+      "Atstanner Banding",
+      "ATS-Tanner",
+      "Tanner Banding",
+      "Tanner"
+    ]
+  },
+  "s\u00e9bastien-genet-9a842a70": {
+    "current_company": "R. Morand",
+    "tenure_length": "less than six months",
+    "tailored_sentence": "I appreciate you're less than six months into your role at R. Morand, but if",
+    "possible_company_names": [
+      "R. Morand et Fils S.A.",
+      "R Morand Et Fils Sa",
+      "R. Morand",
+      "Morand",
+      "Morand Fils"
+    ]
+  },
+  "ivan-spolaore-1672b4159": {
+    "current_company": "Forteq",
+    "tenure_length": "two years",
+    "tailored_sentence": "While you've built a solid foundation at Forteq over the past two years, if",
+    "possible_company_names": [
+      "forteq group",
+      "Forteq",
+      "FQ",
+      "Forteq Group",
+      "forteq"
+    ]
+  },
+  "richard-van-ewijk": {
+    "current_company": "Ichnos",
+    "tenure_length": "five years",
+    "tailored_sentence": "While you've built a solid foundation at Ichnos over the past five years, if",
+    "possible_company_names": [
+      "Ichnos Sciences",
+      "Ichnos",
+      "Ichnos Sci",
+      "Ichnos Labs",
+      "Ichnos Rx"
+    ]
+  },
+  "melanie-cuschieri-53b483b": {
+    "current_company": "J&J",
+    "tenure_length": "almost twelve years",
+    "tailored_sentence": "While it must be hard to uproot after almost twelve years at J&J, if",
+    "possible_company_names": [
+      "Johnson & Johnson",
+      "Johnson Johnson",
+      "J&J",
+      "Johnson and Johnson",
+      "J and J"
+    ]
+  },
+  "cengiz-yesilbas": {
+    "current_company": "NSK",
+    "tenure_length": "six years",
+    "tailored_sentence": "While you've built a solid foundation at NSK over the past six years, if",
+    "possible_company_names": [
+      "NSK Europe",
+      "Nsk",
+      "NSK",
+      "NSK Group",
+      "NSK Corp"
+    ]
+  },
+  "domingo-gonzalez-8440b910": {
+    "current_company": "Benteler",
+    "tenure_length": "six years",
+    "tailored_sentence": "While you've built a solid foundation at Benteler over the past six years, if",
+    "possible_company_names": [
+      "BENTELER Group",
+      "Benteler",
+      "Ben Group",
+      "Benteler Group"
+    ]
+  }
+}

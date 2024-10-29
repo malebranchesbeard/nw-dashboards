@@ -4,14 +4,14 @@ import React, { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Edit, Copy, ChevronLeft, ChevronRight } from "lucide-react";
-import outputData from "../data/output.json";
 import tailoredSentences from "../data/tailored_sentences.json";
 import tailoredSentences2 from "../data/tailored_sentences2.json";
 import tailoredSentences3 from "../data/tailored_sentences3.json";
+import tailoredSentences4 from "../data/tailored_sentences4.json";
 import { useToast } from "@/components/ui/use-toast";
 
 const TextBubble = ({ children }) => (
-  <Card className="mb-16 flex-grow shadow-none border-none">
+  <Card className="mb-16 flex-grow shadow-none border-none pt-0 mt-0">
     <CardContent className="border border-gray-100 shadow-md p-4 bg-[#4213580e] text-[#320d44] rounded-lg">
       <div className="text-sm">{children}</div>
     </CardContent>
@@ -21,6 +21,7 @@ const TextBubble = ({ children }) => (
 const LLMText = ({ selectedCandidate, onCopied }) => {
   const { toast } = useToast();
   const [version, setVersion] = useState(3);
+  const [selectedCompanyName, setSelectedCompanyName] = useState(null);
   let candidateName = "";
   let tailored_sentence = "";
 
@@ -29,6 +30,12 @@ const LLMText = ({ selectedCandidate, onCopied }) => {
     const v1 = tailoredSentences[identifier]?.tailored_sentence;
     const v2 = tailoredSentences2[identifier]?.tailored_sentence;
     const v3 = tailoredSentences3[identifier]?.tailored_sentence;
+    const v4 = tailoredSentences4[identifier]?.tailored_sentence;
+
+    if (v4) {
+      const uniqueVersions = new Set([v1, v2, v3].filter(Boolean));
+      return uniqueVersions.size + 1;
+    }
 
     const uniqueVersions = new Set([v1, v2, v3].filter(Boolean));
     return uniqueVersions.size;
@@ -40,30 +47,86 @@ const LLMText = ({ selectedCandidate, onCopied }) => {
         selectedCandidate.person.publicIdentifier.toLowerCase();
       const versions = getNumberOfVersions(identifier);
       setVersion(versions);
+      setSelectedCompanyName(null);
     }
   }, [selectedCandidate]);
+
+  useEffect(() => {
+    setSelectedCompanyName(null);
+  }, [version]);
 
   if (selectedCandidate && selectedCandidate.person) {
     candidateName = selectedCandidate.person.firstName || "";
     const identifier = selectedCandidate.person.publicIdentifier?.toLowerCase();
 
     if (identifier) {
-      const sentences =
-        version === 1
-          ? tailoredSentences
-          : version === 2
-          ? tailoredSentences2
-          : tailoredSentences3;
-      tailored_sentence = sentences[identifier]?.tailored_sentence || "";
+      const maxVersions = getNumberOfVersions(identifier);
+
+      if (version === maxVersions) {
+        // Use company name functionality for the highest version
+        const data = tailoredSentences4[identifier];
+        const companyName = selectedCompanyName || data?.current_company;
+        tailored_sentence =
+          data?.tailored_sentence?.replace(
+            data?.current_company,
+            companyName
+          ) || "";
+      } else {
+        const sentences =
+          version === 1
+            ? tailoredSentences
+            : version === 2
+            ? tailoredSentences2
+            : tailoredSentences3;
+        tailored_sentence = sentences[identifier]?.tailored_sentence || "";
+      }
     }
   }
 
-  console.log(
-    "Selected Candidate:",
-    selectedCandidate,
-    "tailored_sentence:",
-    tailored_sentence
-  );
+  const renderCompanyOptions = () => {
+    if (!selectedCandidate?.person?.publicIdentifier) return null;
+
+    const identifier = selectedCandidate.person.publicIdentifier.toLowerCase();
+    const maxVersions = getNumberOfVersions(identifier);
+
+    // Show company options if we're on the highest version available
+    if (version !== maxVersions) return null;
+
+    const companyNames =
+      tailoredSentences4[identifier]?.possible_company_names || [];
+    const defaultCompany = tailoredSentences4[identifier]?.current_company;
+
+    // Sort by length and take first 4
+    const shortestNames = [...companyNames]
+      .sort((a, b) => a.length - b.length)
+      .slice(0, 4);
+
+    return (
+      <div className="flex flex-nowrap gap-0.5 mb-1 overflow-x-auto relative border border-gray-100 rounded-lg bg-[#42135808]">
+        {shortestNames.map((name) => (
+          <Button
+            key={name}
+            variant={
+              selectedCompanyName === name ||
+              (!selectedCompanyName && name === defaultCompany)
+                ? "default"
+                : "outline"
+            }
+            onClick={() => setSelectedCompanyName(name)}
+            size="sm"
+            className={`text-xs whitespace-nowrap py-1 h-7 ${
+              selectedCompanyName === name ||
+              (!selectedCompanyName && name === defaultCompany)
+                ? "bg-[#1E2A5C] hover:bg-[#566CC8] text-white"
+                : "hover:bg-[#4213580e]"
+            }`}
+          >
+            {name}
+          </Button>
+        ))}
+      </div>
+    );
+  };
 
   const handleCopy = React.useCallback(async () => {
     const textContent = `Dear ${candidateName},
@@ -114,52 +177,55 @@ Danny Hiscott`;
   return (
     <div className="h-full flex flex-col relative min-h-[600px] border border-gray-100 p-1 rounded-lg">
       {selectedCandidate && selectedCandidate.person && (
-        <div className="flex items-center justify-end mb-2">
-          <div className="inline-flex items-center gap-2 bg-white rounded-full px-3 py-1.5 shadow-md border border-gray-100">
-            <Button
-              variant="ghost"
-              size="sm"
-              disabled={version === 1}
-              onClick={() => setVersion((prev) => prev - 1)}
-              className={`h-5 w-5 p-0 rounded-full grid place-items-center ${
-                version === 1
-                  ? "text-white bg-[#425397ac]"
-                  : "hover:bg-[#566CC8] bg-[#1E2A5C] text-white"
-              }`}
-            >
-              <ChevronLeft className="h-3.5 w-3.5" />
-            </Button>
-            <span className="text-sm text-gray-600">
-              <span>Version</span>{" "}
-              <span className="font-semibold">{version}</span> <span>of</span>{" "}
-              <span className="font-semibold">
-                {getNumberOfVersions(
-                  selectedCandidate.person.publicIdentifier?.toLowerCase()
-                )}
+        <div className="space-y-2 mb-2">
+          <div className="flex items-center justify-end">
+            <div className="inline-flex items-center gap-2 bg-white rounded-full px-3 py-1.5 shadow-md border border-gray-100">
+              <Button
+                variant="ghost"
+                size="sm"
+                disabled={version === 1}
+                onClick={() => setVersion((prev) => prev - 1)}
+                className={`h-5 w-5 p-0 rounded-full grid place-items-center ${
+                  version === 1
+                    ? "text-white bg-[#425397ac]"
+                    : "hover:bg-[#566CC8] bg-[#1E2A5C] text-white"
+                }`}
+              >
+                <ChevronLeft className="h-3.5 w-3.5" />
+              </Button>
+              <span className="text-sm text-gray-600">
+                <span>Version</span>{" "}
+                <span className="font-semibold">{version}</span> <span>of</span>{" "}
+                <span className="font-semibold">
+                  {getNumberOfVersions(
+                    selectedCandidate.person.publicIdentifier?.toLowerCase()
+                  )}
+                </span>
               </span>
-            </span>
-            <Button
-              variant="ghost"
-              size="sm"
-              disabled={
-                version ===
-                getNumberOfVersions(
-                  selectedCandidate.person.publicIdentifier?.toLowerCase()
-                )
-              }
-              onClick={() => setVersion((prev) => prev + 1)}
-              className={`h-5 w-5 p-0 rounded-full grid place-items-center ${
-                version ===
-                getNumberOfVersions(
-                  selectedCandidate.person.publicIdentifier?.toLowerCase()
-                )
-                  ? "text-white bg-[#425397ac]"
-                  : "hover:bg-[#566CC8] bg-[#1E2A5C] text-white"
-              }`}
-            >
-              <ChevronRight className="h-3.5 w-3.5" />
-            </Button>
+              <Button
+                variant="ghost"
+                size="sm"
+                disabled={
+                  version ===
+                  getNumberOfVersions(
+                    selectedCandidate.person.publicIdentifier?.toLowerCase()
+                  )
+                }
+                onClick={() => setVersion((prev) => prev + 1)}
+                className={`h-5 w-5 p-0 rounded-full grid place-items-center ${
+                  version ===
+                  getNumberOfVersions(
+                    selectedCandidate.person.publicIdentifier?.toLowerCase()
+                  )
+                    ? "text-white bg-[#425397ac]"
+                    : "hover:bg-[#566CC8] bg-[#1E2A5C] text-white"
+                }`}
+              >
+                <ChevronRight className="h-3.5 w-3.5" />
+              </Button>
+            </div>
           </div>
+          {renderCompanyOptions()}
         </div>
       )}
       <TextBubble>
