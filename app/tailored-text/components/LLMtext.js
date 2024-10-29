@@ -120,8 +120,8 @@ Danny Hiscott`;
         </div>
 
         <div className="mb-2">
-          What makes the role stand out for me—beyond its considerable scope—is
-          how it signals a fundamental shift in our client&apos;s thinking.
+          What makes the role stand out for me — beyond its considerable scope —
+          is how it signals a fundamental shift in our client&apos;s thinking.
           Quality and process improvement are being elevated from an important
           function to a strategic cornerstone of the organisation. This is a
           newly created position reporting directly to the CEO/COO, with the
