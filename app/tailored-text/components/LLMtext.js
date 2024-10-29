@@ -1,16 +1,17 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Edit, Copy } from "lucide-react";
+import { Edit, Copy, ChevronLeft, ChevronRight } from "lucide-react";
 import outputData from "../data/output.json";
 import tailoredSentences from "../data/tailored_sentences.json";
+import tailoredSentences2 from "../data/tailored_sentences2.json";
 import { useToast } from "@/components/ui/use-toast";
 
 const TextBubble = ({ children }) => (
-  <Card className="mb-4 flex-grow">
-    <CardContent className="p-4 bg-[#4213580e] text-[#320d44] rounded-lg shadow-md">
+  <Card className="mb-16 flex-grow shadow-none border-none">
+    <CardContent className="border border-gray-100 shadow-md p-4 bg-[#4213580e] text-[#320d44] rounded-lg">
       <div className="text-sm">{children}</div>
     </CardContent>
   </Card>
@@ -18,29 +19,37 @@ const TextBubble = ({ children }) => (
 
 const LLMText = ({ selectedCandidate, onCopied }) => {
   const { toast } = useToast();
+  const [version, setVersion] = useState(2);
   let candidateName = "";
   let tailored_sentence = "";
+
+  // Function to check if versions are different
+  const hasMultipleVersions = (identifier) => {
+    if (!identifier) return false;
+    const v1 = tailoredSentences[identifier]?.tailored_sentence;
+    const v2 = tailoredSentences2[identifier]?.tailored_sentence;
+    return v1 && v2 && v1 !== v2;
+  };
+
+  // Reset version when selectedCandidate changes
+  useEffect(() => {
+    if (selectedCandidate?.person?.publicIdentifier) {
+      const identifier =
+        selectedCandidate.person.publicIdentifier.toLowerCase();
+      // Set to version 2 only if multiple versions exist, otherwise version 1
+      setVersion(hasMultipleVersions(identifier) ? 2 : 1);
+    }
+  }, [selectedCandidate]);
 
   // Update the candidate information when selectedCandidate changes
   if (selectedCandidate && selectedCandidate.person) {
     candidateName = selectedCandidate.person.firstName || "";
     const identifier = selectedCandidate.person.publicIdentifier?.toLowerCase();
 
-    // Add more detailed debug logging
-    console.log("Selected Candidate:", {
-      identifier,
-      firstName: selectedCandidate.person.firstName,
-      availableIdentifiers: Object.keys(tailoredSentences),
-      matchFound: identifier ? tailoredSentences[identifier] : "no identifier",
-    });
-
-    // Check if the identifier exists in tailoredSentences
-    if (identifier && tailoredSentences[identifier]) {
-      tailored_sentence = tailoredSentences[identifier].tailored_sentence || "";
-    } else {
-      console.warn(
-        `No matching tailored sentence found for identifier: ${identifier}`
-      );
+    // Choose the correct version of tailored_sentence
+    if (identifier) {
+      const sentences = version === 1 ? tailoredSentences : tailoredSentences2;
+      tailored_sentence = sentences[identifier]?.tailored_sentence || "";
     }
   }
 
@@ -101,7 +110,58 @@ Danny Hiscott`;
   }, [candidateName, tailored_sentence, toast, selectedCandidate, onCopied]);
 
   return (
-    <div className="h-full flex flex-col relative min-h-[600px]">
+    <div className="h-full flex flex-col relative min-h-[600px] border border-gray-100 p-1 rounded-lg">
+      {selectedCandidate && selectedCandidate.person && (
+        <div className="flex items-center justify-end mb-2">
+          <div className="inline-flex items-center gap-2 bg-white rounded-full px-3 py-1.5 shadow-md border border-gray-100">
+            <Button
+              variant="ghost"
+              size="sm"
+              disabled={version === 1}
+              onClick={() => setVersion(1)}
+              className={`h-5 w-5 p-0 rounded-full grid place-items-center ${
+                version === 1
+                  ? "text-white bg-[#425397ac]"
+                  : "hover:bg-[#566CC8] bg-[#1E2A5C] text-white"
+              }`}
+            >
+              <ChevronLeft className="h-3.5 w-3.5" />
+            </Button>
+            <span className="text-sm text-gray-600">
+              <span>Version</span>{" "}
+              <span className="font-semibold">{version}</span> <span>of</span>{" "}
+              <span className="font-semibold">
+                {hasMultipleVersions(
+                  selectedCandidate.person.publicIdentifier?.toLowerCase()
+                )
+                  ? "2"
+                  : "1"}
+              </span>
+            </span>
+            <Button
+              variant="ghost"
+              size="sm"
+              disabled={
+                version === 2 ||
+                !hasMultipleVersions(
+                  selectedCandidate.person.publicIdentifier?.toLowerCase()
+                )
+              }
+              onClick={() => setVersion(2)}
+              className={`h-5 w-5 p-0 rounded-full grid place-items-center ${
+                version === 2 ||
+                !hasMultipleVersions(
+                  selectedCandidate.person.publicIdentifier?.toLowerCase()
+                )
+                  ? "text-white bg-[#425397ac]"
+                  : "hover:bg-[#566CC8] bg-[#1E2A5C] text-white"
+              }`}
+            >
+              <ChevronRight className="h-3.5 w-3.5" />
+            </Button>
+          </div>
+        </div>
+      )}
       <TextBubble>
         <div className="mb-2">Dear {candidateName || ""},</div>
 
@@ -141,7 +201,7 @@ Danny Hiscott`;
           Danny Hiscott
         </div>
       </TextBubble>
-      <div className="absolute bottom-0 right-0 w-full flex justify-end space-x-2 p-4 bg-white">
+      <div className="absolute bottom-0 right-0 w-full flex justify-end space-x-1 pr-1 pb-1">
         <Button
           className="bg-[#1E2A5C] hover:bg-[#566CC8] text-white"
           variant="outline"
