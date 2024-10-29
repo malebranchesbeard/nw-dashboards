@@ -21,6 +21,7 @@ export default function TailoredTextPage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [priorityFilter, setPriorityFilter] = useState("All");
   const [selectedCandidate, setSelectedCandidate] = useState(null);
+  const [copiedCandidates, setCopiedCandidates] = useState(new Set());
 
   // Add this effect to set initial candidate
   useEffect(() => {
@@ -39,8 +40,39 @@ export default function TailoredTextPage() {
     }
   }, []);
 
+  // Add this effect to fetch copied candidates on load
+  useEffect(() => {
+    const fetchCopiedCandidates = async () => {
+      try {
+        const response = await fetch("/api/copied");
+        const data = await response.json();
+        setCopiedCandidates(new Set(data));
+      } catch (error) {
+        console.error("Error fetching copied candidates:", error);
+      }
+    };
+    fetchCopiedCandidates();
+  }, []);
+
   const handleCandidateSelect = (candidate) => {
     setSelectedCandidate(candidate);
+  };
+
+  // Add this handler to pass to LLMText
+  const handleCopied = async (publicIdentifier) => {
+    setCopiedCandidates((prev) => new Set([...prev, publicIdentifier]));
+  };
+
+  const handleCopiedChange = async (publicIdentifier, isCopied) => {
+    if (isCopied) {
+      setCopiedCandidates((prev) => new Set([...prev, publicIdentifier]));
+    } else {
+      setCopiedCandidates((prev) => {
+        const newSet = new Set(prev);
+        newSet.delete(publicIdentifier);
+        return newSet;
+      });
+    }
   };
 
   return (
@@ -90,6 +122,9 @@ export default function TailoredTextPage() {
               searchTerm={searchTerm}
               priorityFilter={priorityFilter}
               onCandidateSelect={handleCandidateSelect}
+              copiedCandidates={copiedCandidates}
+              onCopiedChange={handleCopiedChange}
+              selectedCandidate={selectedCandidate}
             />
           </div>
         </div>
@@ -101,7 +136,10 @@ export default function TailoredTextPage() {
 
         {/* Third Column */}
         <div className="w-1/3 pl-2 overflow-hidden">
-          <LLMText selectedCandidate={selectedCandidate} />
+          <LLMText
+            selectedCandidate={selectedCandidate}
+            onCopied={handleCopied}
+          />
         </div>
       </div>
     </div>

@@ -16,7 +16,7 @@ const TextBubble = ({ children }) => (
   </Card>
 );
 
-const LLMText = ({ selectedCandidate }) => {
+const LLMText = ({ selectedCandidate, onCopied }) => {
   const { toast } = useToast();
   let candidateName = "";
   let tailored_sentence = "";
@@ -68,6 +68,24 @@ Danny Hiscott`;
 
     try {
       await navigator.clipboard.writeText(textContent);
+
+      // Add API call to mark candidate as copied
+      if (selectedCandidate?.person?.publicIdentifier) {
+        await fetch("/api/copied", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            publicIdentifier: selectedCandidate.person.publicIdentifier,
+            isCopied: true,
+          }),
+        });
+
+        // Call the onCopied callback
+        onCopied?.(selectedCandidate.person.publicIdentifier);
+      }
+
       toast({
         description: "✓ Copied to clipboard",
         duration: 1500,
@@ -80,15 +98,15 @@ Danny Hiscott`;
         duration: 1500,
       });
     }
-  }, [candidateName, tailored_sentence, toast]);
+  }, [candidateName, tailored_sentence, toast, selectedCandidate, onCopied]);
 
   return (
     <div className="h-full flex flex-col relative min-h-[600px]">
       <TextBubble>
-        <div className="mb-2">Dear {candidateName || ""}</div>
+        <div className="mb-2">Dear {candidateName || ""},</div>
 
         <div className="mb-2">
-          Hope you are well. I&apos;m Danny Hiscott, Zurich-based Managing
+          I hope you are well. I&apos;m Danny Hiscott, Zurich-based Managing
           Partner of the Executive Search firm Transearch International
           www.transearch.com
         </div>
@@ -118,6 +136,7 @@ Danny Hiscott`;
 
         <div className="mb-2">
           Best regards,
+          <br />
           <br />
           Danny Hiscott
         </div>

@@ -41,9 +41,15 @@ export default function Home() {
                   Seniority Levels
                 </Link>
               </Button>
-              <AlertButton href="/scorecards" initialActive={true}>
-                Head of Global Quality Scorecard
-              </AlertButton>
+              <Button
+                asChild
+                variant="default"
+                className="w-full hover:bg-gray-700 transition-colors"
+              >
+                <Link href="/roles-diagram" className="hover:bg-gray-700">
+                  Head of Global Quality Scorecard
+                </Link>
+              </Button>
               <AlertButton href="/landscape" initialActive={true}>
                 Competitor Landscape
               </AlertButton>
