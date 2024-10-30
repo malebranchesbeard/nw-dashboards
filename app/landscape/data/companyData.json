@@ -1,184 +1,204 @@
 {
-    "companies": [
-      {
-        "name": "ABB Ltd",
-        "description": "Global technology company specializing in electrification and automation",
-        "employees": 107900,
-        "revenue": "32.2B USD",
-        "manufacturingPlants": 300
-      },
-      {
-        "name": "Schindler Group",
-        "description": "Manufacturer of elevators, escalators, and moving walkways",
-        "employees": 69000,
-        "revenue": "11.3B CHF",
-        "manufacturingPlants": 7
-      },
-      {
-        "name": "Geberit AG",
-        "description": "European leader in sanitary products and bathroom ceramics",
-        "employees": 12000,
-        "revenue": "3.4B CHF",
-        "manufacturingPlants": 29
-      },
-      {
-        "name": "dormakaba Holding AG",
-        "description": "Provider of access and security solutions",
-        "employees": 15000,
-        "revenue": "2.5B CHF",
-        "manufacturingPlants": 40
-      },
-      {
-        "name": "VAT Group AG",
-        "description": "World's leading manufacturer of high-end vacuum valves",
-        "employees": 2500,
-        "revenue": "901 M CHF",
-        "manufacturingPlants": 3
-      },
-      {
-        "name": "LEM Holding SA",
-        "description": "Global leader in electrical measurement for industry and automotive applications",
-        "employees": 1500,
-        "revenue": "373M CHF",
-        "manufacturingPlants": 5
-      },
-      {
-        "name": "Bossard Holding AG",
-        "description": "Global distributor of fasteners and related engineering services",
-        "employees": 2700,
-        "revenue": "995M CHF",
-        "manufacturingPlants": 3
-      },
-      {
-        "name": "SFS Group AG",
-        "description": "Manufacturer of precision components and mechanical fastening systems",
-        "employees": 10000,
-        "revenue": "2.7B CHF",
-        "manufacturingPlants": 80
-      },
-      {
-        "name": "Bucher Industries AG",
-        "description": "Manufacturer of specialized agricultural machinery and municipal vehicles",
-        "employees": 13000,
-        "revenue": "3.6B CHF",
-        "manufacturingPlants": 40
-      },
-      {
-        "name": "Landis+Gyr Group AG",
-        "description": "Global leader in integrated energy management solutions",
-        "employees": 6500,
-        "revenue": "1.5B USD",
-        "manufacturingPlants": 30
-      },
-      {
-        "name": "Forbo Holding AG",
-        "description": "Global leader in flooring systems and movement systems",
-        "employees": 5500,
-        "revenue": "1.3B CHF",
-        "manufacturingPlants": 25
-      },
-      {
-        "name": "Interroll Holding AG",
-        "description": "Global provider of material handling solutions",
-        "employees": 2300,
-        "revenue": "640.1M CHF",
-        "manufacturingPlants": 13
-      },
-      {
-        "name": "Stadler Rail AG",
-        "description": "Manufacturer of railway rolling stock, including trains, trams, and locomotives",
-        "employees": 13900,
-        "revenue": "3.61B CHF",
-        "manufacturingPlants": 13
-      },
-      {
-        "name": "Burckhardt Compression Holding AG",
-        "description": "Global market leader for reciprocating compressor systems",
-        "employees": 2700,
-        "revenue": "650.7M CHF",
-        "manufacturingPlants": 5
-      },
-      {
-        "name": "Bühler Group",
-        "description": "Technology company specializing in food processing, advanced materials, and die-casting solutions",
-        "employees": 12800,
-        "revenue": "3.3B CHF",
-        "manufacturingPlants": 30
-      },
-      {
-        "name": "Beyond Gravity (formerly RUAG Space)",
-        "description": "Supplier of products for the space industry, including satellite and launcher structures",
-        "employees": 1600,
-        "revenue": "339M CHF",
-        "manufacturingPlants": 12
-      },
-      {
-        "name": "CSL Vifor",
-        "description": "Biopharmaceutical company specializing in iron deficiency, nephrology, and cardio-renal therapies",
-        "employees": 2500,
-        "revenue": "2.7B CHF",
-        "manufacturingPlants": 3
-      },
-      {
-        "name": "Valtronic",
-        "description": "Contract manufacturer of miniaturized electronic products for medical devices",
-        "employees": 400,
-        "revenue": "100M CHF",
-        "manufacturingPlants": 3
-      },
-      {
-        "name": "Filtrox AG",
-        "description": "Manufacturer of depth filters and filtration systems for the beverage, chemical, and pharmaceutical industries",
-        "employees": 350,
-        "revenue": "80M CHF",
-        "manufacturingPlants": 5
-      },
-      {
-        "name": "Straumann Holding AG",
-        "description": "Global leader in implant, restorative, and regenerative dentistry",
-        "employees": 9000,
-        "revenue": "2.32B CHF",
-        "manufacturingPlants": 9
-      },
-      {
-        "name": "Autoneum Holding AG",
-        "description": "Internationally active Swiss automotive supplier specializing in vehicle acoustic and thermal insulation.",
-        "employees": 16600,
-        "revenue": "1.8B CHF",
-        "manufacturingPlants": 67,
-        "industries": ["Automotive", "Acoustic Management", "Thermal Management"]
+  "companies": [
+    {
+      "name": "ABB Ltd",
+      "description": "Global technology company specializing in electrification and automation",
+      "employees": 107900,
+      "revenue": "32.2B USD",
+      "manufacturingPlants": 300,
+      "industries": ["Industrial Machinery and Equipment", "Electronics and Electrical Components"]
     },
     {
-        "name": "Rinspeed Inc.",
-        "description": "Swiss concept car manufacturer known for innovative and futuristic vehicle designs.",
-        "employees": 20,
-        "revenue": "5M CHF",
-        "manufacturingPlants": 1,
-        "industries": ["Automotive Design", "Concept Cars", "Mobility Solutions"]
+      "name": "Schindler Group",
+      "description": "Manufacturer of elevators, escalators, and moving walkways",
+      "employees": 69000,
+      "revenue": "11.3B CHF",
+      "manufacturingPlants": 7,
+      "industries": ["Industrial Machinery and Equipment", "Materials, Construction Products, and Packaging"]
     },
     {
-        "name": "Ronal AG",
-        "description": "Manufacturer of wheels for cars and commercial vehicles, with a focus on OEM and aftermarket sectors.",
-        "employees": 8000,
-        "revenue": "1B CHF",
-        "manufacturingPlants": 13,
-        "industries": ["Automotive", "Wheel Manufacturing", "OEM", "Aftermarket"]
+      "name": "Geberit AG",
+      "description": "European leader in sanitary products and bathroom ceramics",
+      "employees": 12000,
+      "revenue": "3.4B CHF",
+      "manufacturingPlants": 29,
+      "industries": ["Materials, Construction Products, and Packaging"]
     },
     {
-        "name": "Ammann Group",
-        "description": "Swiss company specializing in the manufacture of construction equipment and machinery.",
-        "employees": 3500,
-        "revenue": "1.2B USD",
-        "manufacturingPlants": 9,
-        "industries": ["Construction Equipment", "Machinery"]
+      "name": "dormakaba Holding AG",
+      "description": "Provider of access and security solutions",
+      "employees": 15000,
+      "revenue": "2.5B CHF",
+      "manufacturingPlants": 40,
+      "industries": ["Electronics and Electrical Components", "Materials, Construction Products, and Packaging"]
     },
     {
-        "name": "Liebherr Group",
-        "description": "German-Swiss multinational equipment manufacturer known for its wide range of products including construction machinery, aerospace equipment, and refrigerators.",
-        "employees": 49000,
-        "revenue": "13.6B USD",
-        "manufacturingPlants": 140,
-        "industries": ["Construction Equipment", "Mining", "Aerospace", "Refrigeration"]
+      "name": "VAT Group AG",
+      "description": "World's leading manufacturer of high-end vacuum valves",
+      "employees": 2500,
+      "revenue": "901 M CHF",
+      "manufacturingPlants": 3,
+      "industries": ["Industrial Machinery and Equipment"]
+    },
+    {
+      "name": "LEM Holding SA",
+      "description": "Global leader in electrical measurement for industry and automotive applications",
+      "employees": 1500,
+      "revenue": "373M CHF",
+      "manufacturingPlants": 5,
+      "industries": ["Electronics and Electrical Components"]
+    },
+    {
+      "name": "Bossard Holding AG",
+      "description": "Global distributor of fasteners and related engineering services",
+      "employees": 2700,
+      "revenue": "995M CHF",
+      "manufacturingPlants": 3,
+      "industries": ["Industrial Machinery and Equipment"]
+    },
+    {
+      "name": "SFS Group AG",
+      "description": "Manufacturer of precision components and mechanical fastening systems",
+      "employees": 10000,
+      "revenue": "2.7B CHF",
+      "manufacturingPlants": 80,
+      "industries": ["Industrial Machinery and Equipment"]
+    },
+    {
+      "name": "Bucher Industries AG",
+      "description": "Manufacturer of specialized agricultural machinery and municipal vehicles",
+      "employees": 13000,
+      "revenue": "3.6B CHF",
+      "manufacturingPlants": 40,
+      "industries": ["Industrial Machinery and Equipment"]
+    },
+    {
+      "name": "Landis+Gyr Group AG",
+      "description": "Global leader in integrated energy management solutions",
+      "employees": 6500,
+      "revenue": "1.5B USD",
+      "manufacturingPlants": 30,
+      "industries": ["Electronics and Electrical Components"]
+    },
+    {
+      "name": "Forbo Holding AG",
+      "description": "Global leader in flooring systems and movement systems",
+      "employees": 5500,
+      "revenue": "1.3B CHF",
+      "manufacturingPlants": 25,
+      "industries": ["Materials, Construction Products, and Packaging"]
+    },
+    {
+      "name": "Interroll Holding AG",
+      "description": "Global provider of material handling solutions",
+      "employees": 2300,
+      "revenue": "640.1M CHF",
+      "manufacturingPlants": 13,
+      "industries": ["Industrial Machinery and Equipment"]
+    },
+    {
+      "name": "Stadler Rail AG",
+      "description": "Manufacturer of railway rolling stock, including trains, trams, and locomotives",
+      "employees": 13900,
+      "revenue": "3.61B CHF",
+      "manufacturingPlants": 13,
+      "industries": ["Automotive, Transportation, and Aerospace"]
+    },
+    {
+      "name": "Burckhardt Compression Holding AG",
+      "description": "Global market leader for reciprocating compressor systems",
+      "employees": 2700,
+      "revenue": "650.7M CHF",
+      "manufacturingPlants": 5,
+      "industries": ["Industrial Machinery and Equipment"]
+    },
+    {
+      "name": "Bühler Group",
+      "description": "Technology company specializing in food processing, advanced materials, and die-casting solutions",
+      "employees": 12800,
+      "revenue": "3.3B CHF",
+      "manufacturingPlants": 30,
+      "industries": ["Industrial Machinery and Equipment"]
+    },
+    {
+      "name": "Beyond Gravity (formerly RUAG Space)",
+      "description": "Supplier of products for the space industry, including satellite and launcher structures",
+      "employees": 1600,
+      "revenue": "339M CHF",
+      "manufacturingPlants": 12,
+      "industries": ["Automotive, Transportation, and Aerospace"]
+    },
+    {
+      "name": "CSL Vifor",
+      "description": "Biopharmaceutical company specializing in iron deficiency, nephrology, and cardio-renal therapies",
+      "employees": 2500,
+      "revenue": "2.7B CHF",
+      "manufacturingPlants": 3,
+      "industries": ["Medical Devices and Healthcare"]
+    },
+    {
+      "name": "Valtronic",
+      "description": "Contract manufacturer of miniaturized electronic products for medical devices",
+      "employees": 400,
+      "revenue": "100M CHF",
+      "manufacturingPlants": 3,
+      "industries": ["Medical Devices and Healthcare"]
+    },
+    {
+      "name": "Filtrox AG",
+      "description": "Manufacturer of depth filters and filtration systems for the beverage, chemical, and pharmaceutical industries",
+      "employees": 350,
+      "revenue": "80M CHF",
+      "manufacturingPlants": 5,
+      "industries": ["Industrial Machinery and Equipment", "Materials, Construction Products, and Packaging"]
+    },
+    {
+      "name": "Straumann Holding AG",
+      "description": "Global leader in implant, restorative, and regenerative dentistry",
+      "employees": 9000,
+      "revenue": "2.32B CHF",
+      "manufacturingPlants": 9,
+      "industries": ["Medical Devices and Healthcare"]
+    },
+    {
+      "name": "Autoneum Holding AG",
+      "description": "Internationally active Swiss automotive supplier specializing in vehicle acoustic and thermal insulation.",
+      "employees": 16600,
+      "revenue": "1.8B CHF",
+      "manufacturingPlants": 67,
+      "industries": ["Automotive, Transportation, and Aerospace"]
+    },
+    {
+      "name": "Rinspeed Inc.",
+      "description": "Swiss concept car manufacturer known for innovative and futuristic vehicle designs.",
+      "employees": 20,
+      "revenue": "5M CHF",
+      "manufacturingPlants": 1,
+      "industries": ["Automotive, Transportation, and Aerospace"]
+    },
+    {
+      "name": "Ronal AG",
+      "description": "Manufacturer of wheels for cars and commercial vehicles, with a focus on OEM and aftermarket sectors.",
+      "employees": 8000,
+      "revenue": "1B CHF",
+      "manufacturingPlants": 13,
+      "industries": ["Automotive, Transportation, and Aerospace"]
+    },
+    {
+      "name": "Ammann Group",
+      "description": "Swiss company specializing in the manufacture of construction equipment and machinery.",
+      "employees": 3500,
+      "revenue": "1.2B USD",
+      "manufacturingPlants": 9,
+      "industries": ["Industrial Machinery and Equipment"]
+    },
+    {
+      "name": "Liebherr Group",
+      "description": "German-Swiss multinational equipment manufacturer known for its wide range of products including construction machinery, aerospace equipment, and refrigerators.",
+      "employees": 49000,
+      "revenue": "13.6B USD",
+      "manufacturingPlants": 140,
+      "industries": ["Industrial Machinery and Equipment", "Automotive, Transportation, and Aerospace"]
     },
     {
       "name": "Elco AG",
@@ -186,7 +206,7 @@
       "employees": 500,
       "revenue": "150M CHF",
       "manufacturingPlants": 3,
-      "industries": ["Stationery", "Paper Products", "Direct Mail"]
+      "industries": ["Materials, Construction Products, and Packaging"]
     },
     {
       "name": "SIG Group AG",
@@ -194,7 +214,7 @@
       "employees": 5500,
       "revenue": "2.7B EUR",
       "manufacturingPlants": 45,
-      "industries": ["Packaging", "Food and Beverage", "Aseptic Technology"]
+      "industries": ["Materials, Construction Products, and Packaging"]
     },
     {
       "name": "Société Anonyme des Plieuses Automatiques Lausanne (SAPAL)",
@@ -202,7 +222,7 @@
       "employees": 200,
       "revenue": "50M CHF",
       "manufacturingPlants": 1,
-      "industries": ["Packaging Machinery", "Food Industry", "Pharmaceutical Industry"]
+      "industries": ["Industrial Machinery and Equipment"]
     },
     {
       "name": "Tetra Pak",
@@ -210,7 +230,7 @@
       "employees": 25000,
       "revenue": "11.9B EUR",
       "manufacturingPlants": 56,
-      "industries": ["Food Packaging", "Food Processing", "Aseptic Technology"]
+      "industries": ["Materials, Construction Products, and Packaging"]
     },
     {
       "name": "Adval Tech Holding AG",
@@ -218,7 +238,7 @@
       "employees": 1700,
       "revenue": "200M CHF",
       "manufacturingPlants": 18,
-      "industries": ["Automotive", "Consumer Goods", "Medical Technology"]
+      "industries": ["Industrial Machinery and Equipment"]
     },
     {
       "name": "Fischer Söhne AG",
@@ -226,7 +246,7 @@
       "employees": 300,
       "revenue": "80M CHF",
       "manufacturingPlants": 2,
-      "industries": ["Precision Engineering", "Automotive", "Aerospace"]
+      "industries": ["Industrial Machinery and Equipment"]
     },
     {
       "name": "Medisize",
@@ -234,7 +254,7 @@
       "employees": 1500,
       "revenue": "250M EUR",
       "manufacturingPlants": 10,
-      "industries": ["Medical Devices", "Pharmaceutical Packaging", "Healthcare"]
+      "industries": ["Medical Devices and Healthcare"]
     },
     {
       "name": "Plaston Group",
@@ -242,7 +262,7 @@
       "employees": 400,
       "revenue": "100M CHF",
       "manufacturingPlants": 3,
-      "industries": ["Plastic Injection Molding", "Packaging", "Industrial Cases"]
+      "industries": ["Materials, Construction Products, and Packaging"]
     },
     {
       "name": "Terxo AG",
@@ -250,7 +270,7 @@
       "employees": 150,
       "revenue": "30M CHF",
       "manufacturingPlants": 1,
-      "industries": ["Precision Engineering", "Automotive", "Electronics"]
+      "industries": ["Industrial Machinery and Equipment"]
     }
   ]
 }

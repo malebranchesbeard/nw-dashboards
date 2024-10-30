@@ -25,6 +25,14 @@ const colorGradient = {
   "#49006A": 5,
 };
 
+const industryCategories = {
+  "Industrial Machinery and Equipment": "Machinery",
+  "Electronics and Electrical Components": "Electronics",
+  "Materials, Construction Products, and Packaging": "Materials",
+  "Automotive, Transportation, and Aerospace": "Automotive",
+  "Medical Devices and Healthcare": "Healthcare",
+};
+
 const seniorityColorClasses = {
   "#FDCC8A": "hover:bg-seniority-1",
   "#e6a384": "hover:bg-seniority-2",
@@ -50,9 +58,11 @@ const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
   const [starredCandidates, setStarredCandidates] = useState(new Set());
   const [activeFilters, setActiveFilters] = useState({
     onlySaved: false,
-    automotive: true,
-    lifeSciences: true,
-    plastics: true,
+    Machinery: true,
+    Electronics: true,
+    Materials: true,
+    Automotive: true,
+    Healthcare: true,
   });
 
   useEffect(() => {
@@ -323,13 +333,13 @@ const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
   const FilterButton = ({ filterName, label }) => (
     <Button
       onClick={() => toggleFilter(filterName)}
-      className="flex items-center text-white gap-2 bg-[#1E2A5C] hover:text-white hover:bg-[#566CC8]"
+      className="flex items-center text-white gap-1 bg-[#1E2A5C] text-sm hover:text-white hover:bg-[#566CC8] px-2 py-1 h-8"
       variant="outline"
     >
       {activeFilters[filterName] ? (
-        <CircleCheckBig className="w-4 h-4 text-white" />
+        <CircleCheckBig className="w-3 h-3 text-white" />
       ) : (
-        <Circle className="w-4 h-4 text-white opacity-50 group-hover:opacity-100" />
+        <Circle className="w-3 h-3 text-white opacity-50 group-hover:opacity-100" />
       )}
       <span>{label}</span>
     </Button>
@@ -350,9 +360,18 @@ const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
     return [];
   };
 
-  // New function to sort companies by candidate count
+  // Add function to check if company matches active filters
+  const companyMatchesFilters = (company) => {
+    if (!company.industries) return false;
+    return company.industries.some((industry) => {
+      const shortName = industryCategories[industry];
+      return activeFilters[shortName];
+    });
+  };
+
+  // Modify sortCompaniesByCandidateCount to include filter
   const sortCompaniesByCandidateCount = (companies) => {
-    return companies.sort((a, b) => {
+    return companies.filter(companyMatchesFilters).sort((a, b) => {
       const aCandidates = findMatchingCandidates(a.name);
       const bCandidates = findMatchingCandidates(b.name);
       return bCandidates.length - aCandidates.length;
@@ -387,21 +406,22 @@ const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
       <div className="sticky top-0 z-10 bg-transparent">
         <div className="bg-transparent pb-4 relative">
           {/* Icons and Filter Buttons */}
-          <div className="flex justify-between items-center mb-1 px-1">
-            <UserRoundSearch className="w-6 h-6 text-[#1E2A5C]" />
+          <div className="flex justify-between items-center mt-2 mb-2 px-1">
             <Factory className="w-6 h-6 text-[#1E2A5C]" />
+            <UserRoundSearch className="w-6 h-6 text-[#1E2A5C]" />
           </div>
-          <div className="flex justify-between items-center mb-2">
-            {/* Filter Buttons */}
+          <div className="flex justify-between items-center gap-2">
+            <div className="flex gap-0.5">
+              <FilterButton filterName="Machinery" label="Machinery" />
+              <FilterButton filterName="Electronics" label="Electronics" />
+              <FilterButton filterName="Materials" label="Materials" />
+              <FilterButton filterName="Automotive" label="Automotive" />
+              <FilterButton filterName="Healthcare" label="Healthcare" />
+            </div>
             <FilterButton
               filterName="onlySaved"
               label="Only saved candidates"
             />
-            <div className="flex gap-0.5">
-              <FilterButton filterName="automotive" label="Automotive" />
-              <FilterButton filterName="lifeSciences" label="Life Sciences" />
-              <FilterButton filterName="plastics" label="Plastics" />
-            </div>
           </div>
           {/* Gradient Overlay */}
           <div
@@ -415,7 +435,7 @@ const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
 
       {/* Scrolling Content Area */}
       <div
-        className="flex-grow overflow-y-auto"
+        className="flex-grow overflow-y-auto mt-2"
         onClick={handleBackgroundClick}
       >
         <Masonry

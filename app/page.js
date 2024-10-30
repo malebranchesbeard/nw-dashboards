@@ -46,7 +46,7 @@ export default function Home() {
                 variant="default"
                 className="w-full hover:bg-gray-700 transition-colors"
               >
-                <Link href="/roles-diagram" className="hover:bg-gray-700">
+                <Link href="/scorecards" className="hover:bg-gray-700">
                   Head of Global Quality Scorecard
                 </Link>
               </Button>
