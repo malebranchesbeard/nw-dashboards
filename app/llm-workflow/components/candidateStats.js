@@ -20,7 +20,7 @@ const CandidateStats = () => {
   );
 
   return (
-    <div className="mt-8 space-y-4">
+    <div className="mt-6 space-y-4">
       <AverageTracksSection careerStats={careerStats} />
       <LevelBreakdownSection
         levelStats={levelStats}
@@ -31,7 +31,7 @@ const CandidateStats = () => {
 };
 
 const AverageTracksSection = ({ careerStats }) => (
-  <div className="p-4 bg-white rounded-lg shadow">
+  <div className="p-2 bg-white rounded-lg shadow">
     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
       <StatItem
         label="Career Length"
@@ -64,34 +64,40 @@ const AverageTracksSection = ({ careerStats }) => (
 const StatItem = ({ label, avg, min, max }) => (
   <div className="mb-1">
     <div
-      className="block w-full border border-gray-200 px-3 py-1 text-sm font-semibold text-black rounded mb-2"
-      style={{ backgroundColor: "rgba(117, 165, 184, 0.203)" }} // Adjusted opacity for background
+      className="block w-full border border-gray-200 px-3 py-1 text-sm font-semibold text-white rounded mb-2"
+      style={{ backgroundColor: "#2b0663a3" }} // Adjusted opacity for background
     >
       {label}
     </div>
-    <div className="grid grid-cols-3 gap-x-2 gap-y-1">
+    <div className="grid grid-cols-3 gap-x-2 gap-y-1 px-2">
       <span className="text-sm font-semibold text-black">Pool Mean:</span>
-      <span className="text-sm font-semibold text-black">Min:</span>
+      <span className="text-sm font-semibold text-black  px-1">Min:</span>
       <span className="text-sm font-semibold text-black">Max:</span>
-      <span className="text-sm text-black pl-0.5">{avg}</span>
+      <span className="text-sm text-black pl-1">{avg}</span>
       {min && (
-        <span className="text-sm text-black pl-0.5">
+        <span className="text-sm text-black pl-1 ">
           {label.includes("No. of") ? min.value : min.value.toFixed(1)}
           {!label.includes("No. of") && " years"}
         </span>
       )}
       {max && (
-        <span className="text-sm text-black pl-0.5">
+        <span className="text-sm text-black pl-1">
           {label.includes("No. of") ? max.value : max.value.toFixed(1)}
           {!label.includes("No. of") && " years"}
         </span>
       )}
       <span></span>
       {min && min.details && (
-        <span className="text-xs text-gray-600 pl-0.5">{min.details.name}</span>
+        <span className="text-xs text-gray-600 pl-1 ">
+          {candidatePositions[min.details.name]?.firstName}{" "}
+          {candidatePositions[min.details.name]?.lastName}
+        </span>
       )}
       {max && max.details && (
-        <span className="text-xs text-gray-600 pl-0.5">{max.details.name}</span>
+        <span className="text-xs text-gray-600 pl-1">
+          {candidatePositions[max.details.name]?.firstName}{" "}
+          {candidatePositions[max.details.name]?.lastName}
+        </span>
       )}
     </div>
   </div>
@@ -147,12 +153,14 @@ const CategoryColumn = ({ category, levelStats, color }) => {
         <span></span>
         {levelStats.min.details && (
           <span className="text-xs text-gray-600 pl-0.5">
-            {levelStats.min.details.name}
+            {candidatePositions[levelStats.min.details.name]?.firstName}{" "}
+            {candidatePositions[levelStats.min.details.name]?.lastName}
           </span>
         )}
         {levelStats.max.details && (
           <span className="text-xs text-gray-600 pl-0.5">
-            {levelStats.max.details.name}
+            {candidatePositions[levelStats.max.details.name]?.firstName}{" "}
+            {candidatePositions[levelStats.max.details.name]?.lastName}
           </span>
         )}
       </div>
@@ -172,10 +180,10 @@ const getCategoryColor = (categoryNumber) => {
 };
 
 const ShortestDurationsColumn = ({ topThreeShortest }) => (
-  <div className="border border-gray-200 rounded-md p-2 shadow-lg">
+  <div className="border border-gray-200 rounded-md p-2 shadow-lg shadow-[#2b0663a3]">
     <div className="flex items-start w-full px-3 py-1 mb-2">
       <ChevronsUp
-        className="w-6 h-6 mt-1"
+        className="w-10 h-10 mt-1"
         style={{ color: colorMap["Executive"] }}
       />
       <div className="flex flex-col ml-2">
@@ -188,11 +196,15 @@ const ShortestDurationsColumn = ({ topThreeShortest }) => (
       </div>
     </div>
     <div className="mb-4 pl-4">
-      <ul className="text-sm">
+      <ul className="text-sm py-0">
         {topThreeShortest.map((item, index) => (
-          <li key={index}>
-            •<span className="font-semibold">{item.name}</span> —{" "}
-            {item.avgYearsPerLevel.toFixed(1)} years
+          <li className="py-1" key={index}>
+            •
+            <span className="font-semibold">
+              {candidatePositions[item.name]?.firstName}{" "}
+              {candidatePositions[item.name]?.lastName}
+            </span>{" "}
+            — {item.avgYearsPerLevel.toFixed(1)} years
           </li>
         ))}
       </ul>

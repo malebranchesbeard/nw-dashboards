@@ -6,18 +6,18 @@ import candidatePositions from "../../data/candidates/positions/all_senior.json"
 import CandidateStats from "./candidateStats";
 
 const colorPalette = {
-  "1A": "#eed4a4",
-  "1B": "#f4d682",
-  "1C": "#f4c773",
-  "2A": "#e79972",
-  "2B": "#e9835e",
-  "2C": "#e2663d",
-  "3A": "#b03d56",
-  "3B": "#b42a41",
-  "3C": "#931937",
-  "4A": "#8f4f9c",
-  "4B": "#6c1b7e",
-  "4C": "#3c044a",
+  "1A": "#fcfdbf", // Light cream
+  "1B": "#fed5a4", // Light peach
+  "1C": "#fdab8c", // Salmon
+  "2A": "#fb8a7d", // Coral
+  "2B": "#f26b74", // Pink-red
+  "2C": "#e14c65", // Dark pink
+  "3A": "#c72f64", // Magenta
+  "3B": "#ab1c6d", // Purple-magenta
+  "3C": "#8b116c", // Purple
+  "4A": "#660d76", // Deep purple
+  "4B": "#3f075e", // Dark purple
+  "4C": "#200140", // Nearly black purple
 };
 
 const VisualisationComponent = () => {
@@ -31,18 +31,47 @@ const VisualisationComponent = () => {
     const data = [];
 
     candidates.forEach((candidateId) => {
-      const positions = candidatePositions[candidateId].positionHistory;
-      positions.forEach((position) => {
+      const candidate = candidatePositions[candidateId];
+      const candidateName = `${candidate.firstName} ${candidate.lastName}`;
+      const positions = candidate.positionHistory;
+
+      positions.forEach((position, index) => {
         const startDate = new Date(
           position.startEndDate.start.year,
           position.startEndDate.start.month - 1
         );
-        const endDate = position.startEndDate.end
-          ? new Date(
+
+        let endDate;
+        if (position.startEndDate.end) {
+          const nextPosition = positions[index + 1];
+          if (nextPosition) {
+            const nextStartDate = new Date(
+              nextPosition.startEndDate.start.year,
+              nextPosition.startEndDate.start.month - 1
+            );
+            const monthDiff =
+              (nextStartDate.getFullYear() - position.startEndDate.end.year) *
+                12 +
+              (nextStartDate.getMonth() -
+                (position.startEndDate.end.month - 1));
+
+            if (monthDiff <= 1) {
+              endDate = nextStartDate;
+            } else {
+              endDate = new Date(
+                position.startEndDate.end.year,
+                position.startEndDate.end.month - 1
+              );
+            }
+          } else {
+            endDate = new Date(
               position.startEndDate.end.year,
               position.startEndDate.end.month - 1
-            )
-          : currentDate;
+            );
+          }
+        } else {
+          endDate = currentDate;
+        }
 
         if (startDate < earliestDate) {
           earliestDate = startDate;
@@ -52,6 +81,7 @@ const VisualisationComponent = () => {
 
         data.push({
           candidateId,
+          candidateName,
           seniorityCode,
           startDate,
           endDate,
@@ -78,8 +108,8 @@ const VisualisationComponent = () => {
     const uniqueCandidates = new Set(chartData.data.map((d) => d.candidateId))
       .size;
 
-    // Set the height based on the number of candidates, with each taking up 70px
-    const height = uniqueCandidates * 32;
+    // Reduce height per candidate from 32px to 28px
+    const height = uniqueCandidates * 28;
 
     // Update the container height
     containerRef.current.style.height = `${
@@ -106,9 +136,9 @@ const VisualisationComponent = () => {
 
     const y = d3
       .scaleBand()
-      .domain(Array.from(new Set(chartData.data.map((d) => d.candidateId))))
+      .domain(Array.from(new Set(chartData.data.map((d) => d.candidateName))))
       .range([0, height])
-      .padding(0.1); // Increased padding for better separation
+      .padding(0.05); // Reduced padding from 0.1 to 0.05
 
     svg
       .append("g")
@@ -123,7 +153,7 @@ const VisualisationComponent = () => {
       .enter()
       .append("rect")
       .attr("x", (d) => x(d.startDate))
-      .attr("y", (d) => y(d.candidateId))
+      .attr("y", (d) => y(d.candidateName))
       .attr("width", (d) => x(d.endDate) - x(d.startDate))
       .attr("height", y.bandwidth())
       .attr("fill", (d) => colorPalette[d.seniorityCode] || "#cccccc");
@@ -147,7 +177,7 @@ const VisualisationComponent = () => {
         tooltip.transition().duration(200).style("opacity", 0.9);
         tooltip
           .html(
-            `Candidate: ${d.candidateId}<br/>
+            `Name: ${d.candidateName}<br/>
              Seniority: ${d.seniorityCode}<br/>
              Start: ${d.startDate.toDateString()}<br/>
              End: ${d.endDate.toDateString()}`

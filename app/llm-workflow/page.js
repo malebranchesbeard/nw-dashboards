@@ -22,7 +22,7 @@ import CandidateStats from "./components/candidateStats";
 
 export default function LLMWorkflowPage() {
   const [selectedCandidate, setSelectedCandidate] = useState("");
-  const [candidates, setCandidates] = useState([]);
+  const [candidateOptions, setCandidateOptions] = useState([]);
   const [activeComponent, setActiveComponent] = useState("data");
 
   const components = {
@@ -31,7 +31,7 @@ export default function LLMWorkflowPage() {
     seniority: CandidateSeniority,
     visualisation: () => (
       <div className="w-full flex flex-col items-center">
-        <div className="w-full max-w-[1200px] mt-6 mb-12">
+        <div className="w-full max-w-[1200px] mt-6 mb-2">
           <VisualisationComponent />
         </div>
         <div className="w-[80%] max-w-[1200px]">
@@ -42,12 +42,14 @@ export default function LLMWorkflowPage() {
   };
 
   useEffect(() => {
-    // Ensure candidatePositions is an object before trying to get its keys
     if (typeof candidatePositions === "object" && candidatePositions !== null) {
-      const candidateIds = Object.keys(candidatePositions);
-      setCandidates(candidateIds);
-      if (candidateIds.length > 0) {
-        setSelectedCandidate(candidateIds[0]);
+      const options = Object.entries(candidatePositions).map(([id, data]) => ({
+        id,
+        name: `${data.firstName} ${data.lastName}`,
+      }));
+      setCandidateOptions(options);
+      if (options.length > 0) {
+        setSelectedCandidate(options[0].id);
       }
     } else {
       console.error(
@@ -93,9 +95,9 @@ export default function LLMWorkflowPage() {
             <SelectValue placeholder="Select candidate" />
           </SelectTrigger>
           <SelectContent>
-            {candidates.map((candidate) => (
-              <SelectItem key={candidate} value={candidate}>
-                {candidate}
+            {candidateOptions.map((candidate) => (
+              <SelectItem key={candidate.id} value={candidate.id}>
+                {candidate.name}
               </SelectItem>
             ))}
           </SelectContent>
