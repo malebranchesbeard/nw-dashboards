@@ -48,7 +48,7 @@ export default function Home() {
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-0 space-y-1">
-              <Button
+              {/*<Button
                 asChild
                 variant="default"
                 className="w-full hover:bg-gray-700 transition-colors"
@@ -56,7 +56,7 @@ export default function Home() {
                 <Link href="/tailored-text" className="hover:bg-gray-700">
                   Tailored Text
                 </Link>
-              </Button>
+              </Button>*/}
               <Button
                 asChild
                 variant="default"

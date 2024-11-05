@@ -2,7 +2,8 @@ import React from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import outputData from "../data/output.json";
 import companyData from "../data/companyData.json";
-import seniorityData from "../data/seniorityData.json";
+//import seniorityData from "../data/seniorityData.json";
+import seniorityData from "../data/roles_with_seniority.json";
 import { useState, useEffect } from "react";
 import { SquareCheckBig } from "lucide-react";
 import Masonry from "react-masonry-css";
@@ -58,11 +59,12 @@ const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
   const [starredCandidates, setStarredCandidates] = useState(new Set());
   const [activeFilters, setActiveFilters] = useState({
     onlySaved: false,
-    Machinery: true,
-    Electronics: true,
-    Materials: true,
-    Automotive: true,
-    Healthcare: true,
+    ALL: true,
+    Machinery: false,
+    Electronics: false,
+    Materials: false,
+    Automotive: false,
+    Healthcare: false,
   });
 
   useEffect(() => {
@@ -137,19 +139,19 @@ const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
       );
       if (seniorityInfo) {
         // Log found seniority info
-        console.log(
-          `Found seniority for ${candidate.person.firstName} ${candidate.person.lastName} at ${companyName}: ${seniorityInfo.seniority}`
-        );
+        //console.log(
+        //  `Found seniority for ${candidate.person.firstName} ${candidate.person.lastName} at ${companyName}: ${seniorityInfo.seniority}`
+        //);
         return seniorityInfo.seniority;
       } else {
         // Log if no seniority info found for candidate
-        console.log(
-          `No seniority info found for ${candidate.person.firstName} ${candidate.person.lastName} at ${companyName}`
-        );
+        //console.log(
+        //  `No seniority info found for ${candidate.person.firstName} ${candidate.person.lastName} at ${companyName}`
+        //);
       }
     } else {
       // Log if no seniority data for company
-      console.log(`No seniority data for company ${companyName}`);
+      //console.log(`No seniority data for company ${companyName}`);
     }
     return "0A";
   };
@@ -324,16 +326,52 @@ const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
   };
 
   const toggleFilter = (filterName) => {
-    setActiveFilters((prev) => ({
-      ...prev,
-      [filterName]: !prev[filterName],
-    }));
+    console.log("Toggle filter clicked:", filterName);
+    console.log("Current filters:", activeFilters);
+
+    setActiveFilters((prev) => {
+      if (filterName === "onlySaved") {
+        // Toggle only the onlySaved filter, preserve other filters
+        return {
+          ...prev,
+          onlySaved: !prev.onlySaved,
+        };
+      } else if (filterName === "ALL") {
+        // If ALL is clicked, disable all other industry filters and enable ALL
+        return {
+          ...prev,
+          ALL: true,
+          Machinery: false,
+          Electronics: false,
+          Materials: false,
+          Automotive: false,
+          Healthcare: false,
+        };
+      } else {
+        // If another industry filter is clicked, disable ALL and enable only the clicked filter
+        return {
+          ...prev,
+          ALL: false,
+          Machinery: false,
+          Electronics: false,
+          Materials: false,
+          Automotive: false,
+          Healthcare: false,
+          [filterName]: true,
+          onlySaved: prev.onlySaved, // Preserve onlySaved state
+        };
+      }
+    });
   };
 
   const FilterButton = ({ filterName, label }) => (
     <Button
       onClick={() => toggleFilter(filterName)}
-      className="flex items-center text-white gap-1 bg-[#1E2A5C] text-sm hover:text-white hover:bg-[#566CC8] px-2 py-1 h-8"
+      className={`flex items-center text-white gap-1 text-sm hover:bg-[#566CC8] hover:text-white px-2 py-1 h-8 ${
+        activeFilters[filterName]
+          ? "bg-[#374c9f]" // Selected state - lighter than #1E2A5C but darker than #566CC8
+          : "bg-[#1E2A5C]" // Default state
+      }`}
       variant="outline"
     >
       {activeFilters[filterName] ? (
@@ -360,9 +398,10 @@ const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
     return [];
   };
 
-  // Add function to check if company matches active filters
+  // Modify companyMatchesFilters to handle ALL filter
   const companyMatchesFilters = (company) => {
     if (!company.industries) return false;
+    if (activeFilters.ALL) return true;
     return company.industries.some((industry) => {
       const shortName = industryCategories[industry];
       return activeFilters[shortName];
@@ -411,7 +450,8 @@ const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
             <UserRoundSearch className="w-6 h-6 text-[#1E2A5C]" />
           </div>
           <div className="flex justify-between items-center gap-2">
-            <div className="flex gap-0.5">
+            <div className="flex gap-0.25">
+              <FilterButton filterName="ALL" label="All Industries" />
               <FilterButton filterName="Machinery" label="Machinery" />
               <FilterButton filterName="Electronics" label="Electronics" />
               <FilterButton filterName="Materials" label="Materials" />
@@ -447,24 +487,18 @@ const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
             const candidates = findMatchingCandidates(company.name);
             const sortedCandidates = sortCandidates(candidates, company.name);
 
-            // Log the company and ordered candidates with their seniority levels
-            console.log(`Company: ${company.name}`);
-            sortedCandidates.forEach((candidate, index) => {
-              const seniority = getSeniorityLevel(candidate, company.name);
-              const isStarred = starredCandidates.has(
-                candidate.person.publicIdentifier
-              )
-                ? "Starred"
-                : "Not Starred";
-              const isCurrent = isCurrentEmployee(candidate, company.name)
-                ? "Current"
-                : "Not Current";
-              console.log(
-                `  ${index + 1}. ${candidate.person.firstName} ${
-                  candidate.person.lastName
-                } - Seniority: ${seniority}, ${isStarred}, ${isCurrent}`
-              );
-            });
+            // Single consolidated log per company
+            console.log(
+              `Company: ${company.name}`,
+              sortedCandidates.map((candidate) => ({
+                name: `${candidate.person.firstName} ${candidate.person.lastName}`,
+                seniority: getSeniorityLevel(candidate, company.name),
+                isStarred: starredCandidates.has(
+                  candidate.person.publicIdentifier
+                ),
+                isCurrent: isCurrentEmployee(candidate, company.name),
+              }))
+            );
 
             const [column1Candidates, column2Candidates] =
               distributeCandidates(sortedCandidates);
@@ -474,26 +508,31 @@ const CompanyEntities = ({ onCandidateSelect, selectedCandidate }) => {
                   <CardContent className="p-0">
                     <CompanyInfoCard company={company.name} />
                     {sortedCandidates.length > 0 ? (
-                      <div className="flex gap-2 p-1">
-                        <div className="w-1/2 flex flex-col gap-2">
-                          {column1Candidates.map((candidate, index) => (
-                            <CandidateCard
-                              key={`candidate-${index * 2}`}
-                              candidate={candidate}
-                              companyName={company.name}
-                            />
-                          ))}
+                      <>
+                        {console.log(
+                          `Rendering ${sortedCandidates.length} candidates for ${company.name}`
+                        )}
+                        <div className="flex gap-2 p-1">
+                          <div className="w-1/2 flex flex-col gap-2">
+                            {column1Candidates.map((candidate, index) => (
+                              <CandidateCard
+                                key={`candidate-${index * 2}`}
+                                candidate={candidate}
+                                companyName={company.name}
+                              />
+                            ))}
+                          </div>
+                          <div className="w-1/2 flex flex-col gap-2">
+                            {column2Candidates.map((candidate, index) => (
+                              <CandidateCard
+                                key={`candidate-${index * 2 + 1}`}
+                                candidate={candidate}
+                                companyName={company.name}
+                              />
+                            ))}
+                          </div>
                         </div>
-                        <div className="w-1/2 flex flex-col gap-2">
-                          {column2Candidates.map((candidate, index) => (
-                            <CandidateCard
-                              key={`candidate-${index * 2 + 1}`}
-                              candidate={candidate}
-                              companyName={company.name}
-                            />
-                          ))}
-                        </div>
-                      </div>
+                      </>
                     ) : (
                       <p className="text-sm text-gray-500 p-2">
                         No candidates found for this company.

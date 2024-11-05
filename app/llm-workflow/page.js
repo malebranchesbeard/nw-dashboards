@@ -23,7 +23,7 @@ import CandidateStats from "./components/candidateStats";
 export default function LLMWorkflowPage() {
   const [selectedCandidate, setSelectedCandidate] = useState("");
   const [candidateOptions, setCandidateOptions] = useState([]);
-  const [activeComponent, setActiveComponent] = useState("data");
+  const [activeComponent, setActiveComponent] = useState("seniority");
 
   const components = {
     data: DataComponent,

@@ -12,8 +12,7 @@ export default function RolesDiagramPage() {
 
   return (
     <div className="w-screen h-screen max-w-full bg-white p-4 flex flex-col">
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-2xl font-bold">Quality Career Progression</h2>
+      <div className="flex justify-start items-center mb-4">
         <Button asChild variant="default">
           <Link href="/">Home</Link>
         </Button>
