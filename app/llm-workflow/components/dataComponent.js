@@ -2,11 +2,12 @@ import React from "react";
 import positions from "../../data/candidates/positions/all_senior.json";
 import seniorityFramework from "../../data/quality_track.json";
 import transitionFramework from "../../data/transitions.json";
-import { Database } from "lucide-react"; // Import the specific icon you want
-import { Linkedin } from "lucide-react";
+import secondRoundData from "../data/2nd_round_seniority.json";
+import { Database, Linkedin } from "lucide-react";
 
 const DataComponent = ({ candidateId }) => {
-  const candidate = positions[candidateId] || [];
+  const candidate =
+    positions[candidateId] || secondRoundData[candidateId] || [];
   const candidateName =
     candidate.firstName && candidate.lastName
       ? `${candidate.firstName} ${candidate.lastName}`

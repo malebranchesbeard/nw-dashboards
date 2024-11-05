@@ -68,7 +68,7 @@ const RolesDiagram = () => {
     <Card className="w-full max-w-6xl mx-auto border-none shadow-none bg-transparent">
       <CardContent className="p-0">
         <h2 className="text-xl text-center font-semi-bold mb-4">
-          Seniority Level Hierarchy — Quality Roles
+          Quality Roles Seniority Diagram
         </h2>
         <div className="grid grid-cols-4 gap-2 mb-4">
           {categoryData.map((category, index) => (

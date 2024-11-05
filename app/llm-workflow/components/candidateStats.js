@@ -1,6 +1,7 @@
 import React, { useMemo } from "react";
 import { ChevronsUp } from "lucide-react";
 import candidatePositions from "../../data/candidates/positions/all_senior.json";
+import secondRoundSeniority from "../data/2nd_round_seniority.json";
 import levelFramework from "../../data/quality_track.json";
 
 const colorMap = {
@@ -14,23 +15,52 @@ const colorMap = {
 };
 
 const CandidateStats = () => {
-  const { careerStats, levelStats, topThreeShortest } = useMemo(
-    () => calculateStats(candidatePositions),
+  const allCandidates = useMemo(
+    () => ({
+      ...candidatePositions,
+      ...Object.fromEntries(
+        Object.entries(secondRoundSeniority).map(([id, candidate]) => [
+          id,
+          {
+            firstName: candidate.firstName,
+            lastName: candidate.lastName,
+            positionHistory: candidate.positionAndTransitionHistory.map(
+              (position) => ({
+                ...position,
+                startEndDate: position.startEndDate,
+                seniorityLevel:
+                  position.seniorityLevel?.split(":")[0]?.trim() ||
+                  position.seniorityLevel,
+              })
+            ),
+          },
+        ])
+      ),
+    }),
     []
+  );
+
+  const { careerStats, levelStats, topThreeShortest } = useMemo(
+    () => calculateStats(allCandidates),
+    [allCandidates]
   );
 
   return (
     <div className="mt-6 space-y-4">
-      <AverageTracksSection careerStats={careerStats} />
+      <AverageTracksSection
+        careerStats={careerStats}
+        allCandidates={allCandidates}
+      />
       <LevelBreakdownSection
         levelStats={levelStats}
         topThreeShortest={topThreeShortest}
+        allCandidates={allCandidates}
       />
     </div>
   );
 };
 
-const AverageTracksSection = ({ careerStats }) => (
+const AverageTracksSection = ({ careerStats, allCandidates }) => (
   <div className="p-2 bg-white rounded-lg shadow">
     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
       <StatItem
@@ -38,30 +68,34 @@ const AverageTracksSection = ({ careerStats }) => (
         avg={`${careerStats.careerLength.avg.toFixed(1)} years`}
         min={careerStats.careerLength.min}
         max={careerStats.careerLength.max}
+        allCandidates={allCandidates}
       />
       <StatItem
         label="Job Tenure"
         avg={`${careerStats.jobTenure.avg.toFixed(1)} years`}
         min={careerStats.jobTenure.min}
         max={careerStats.jobTenure.max}
+        allCandidates={allCandidates}
       />
       <StatItem
         label="No. of Positions"
         avg={careerStats.positionCount.avg.toFixed(1)}
         min={careerStats.positionCount.min}
         max={careerStats.positionCount.max}
+        allCandidates={allCandidates}
       />
       <StatItem
         label="No. of Companies"
         avg={careerStats.companyCount.avg.toFixed(1)}
         min={careerStats.companyCount.min}
         max={careerStats.companyCount.max}
+        allCandidates={allCandidates}
       />
     </div>
   </div>
 );
 
-const StatItem = ({ label, avg, min, max }) => (
+const StatItem = ({ label, avg, min, max, allCandidates }) => (
   <div className="mb-1">
     <div
       className="block w-full border border-gray-200 px-3 py-1 text-sm font-semibold text-white rounded mb-2"
@@ -89,33 +123,41 @@ const StatItem = ({ label, avg, min, max }) => (
       <span></span>
       {min && min.details && (
         <span className="text-xs text-gray-600 pl-1 ">
-          {candidatePositions[min.details.name]?.firstName}{" "}
-          {candidatePositions[min.details.name]?.lastName}
+          {allCandidates[min.details.name]?.firstName}{" "}
+          {allCandidates[min.details.name]?.lastName}
         </span>
       )}
       {max && max.details && (
         <span className="text-xs text-gray-600 pl-1">
-          {candidatePositions[max.details.name]?.firstName}{" "}
-          {candidatePositions[max.details.name]?.lastName}
+          {allCandidates[max.details.name]?.firstName}{" "}
+          {allCandidates[max.details.name]?.lastName}
         </span>
       )}
     </div>
   </div>
 );
 
-const LevelBreakdownSection = ({ levelStats, topThreeShortest }) => {
+const LevelBreakdownSection = ({
+  levelStats,
+  topThreeShortest,
+  allCandidates,
+}) => {
   const categories = Object.keys(levelFramework);
 
   return (
     <div className="p-2 mt-1 bg-white rounded-lg shadow">
       <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-        <ShortestDurationsColumn topThreeShortest={topThreeShortest} />
+        <ShortestDurationsColumn
+          topThreeShortest={topThreeShortest}
+          allCandidates={allCandidates}
+        />
         {categories.map((category, index) => (
           <CategoryColumn
             key={category}
             category={category}
             levelStats={levelStats[`Category ${index + 1}`]}
             color={getCategoryColor(index + 1)}
+            allCandidates={allCandidates}
           />
         ))}
       </div>
@@ -123,7 +165,7 @@ const LevelBreakdownSection = ({ levelStats, topThreeShortest }) => {
   );
 };
 
-const CategoryColumn = ({ category, levelStats, color }) => {
+const CategoryColumn = ({ category, levelStats, color, allCandidates }) => {
   if (!levelStats) return null;
 
   return (
@@ -153,14 +195,14 @@ const CategoryColumn = ({ category, levelStats, color }) => {
         <span></span>
         {levelStats.min.details && (
           <span className="text-xs text-gray-600 pl-0.5">
-            {candidatePositions[levelStats.min.details.name]?.firstName}{" "}
-            {candidatePositions[levelStats.min.details.name]?.lastName}
+            {allCandidates[levelStats.min.details.name]?.firstName}{" "}
+            {allCandidates[levelStats.min.details.name]?.lastName}
           </span>
         )}
         {levelStats.max.details && (
           <span className="text-xs text-gray-600 pl-0.5">
-            {candidatePositions[levelStats.max.details.name]?.firstName}{" "}
-            {candidatePositions[levelStats.max.details.name]?.lastName}
+            {allCandidates[levelStats.max.details.name]?.firstName}{" "}
+            {allCandidates[levelStats.max.details.name]?.lastName}
           </span>
         )}
       </div>
@@ -179,7 +221,7 @@ const getCategoryColor = (categoryNumber) => {
   return colorScheme[categoryNumber] || "#000000";
 };
 
-const ShortestDurationsColumn = ({ topThreeShortest }) => (
+const ShortestDurationsColumn = ({ topThreeShortest, allCandidates }) => (
   <div className="border border-gray-200 rounded-md p-2 shadow-lg shadow-[#2b0663a3]">
     <div className="flex items-start w-full px-3 py-1 mb-2">
       <ChevronsUp
@@ -188,10 +230,10 @@ const ShortestDurationsColumn = ({ topThreeShortest }) => (
       />
       <div className="flex flex-col ml-2">
         <span className="text-base font-semibold text-black">
-          Fast-moving candidates
+          Rising candidates
         </span>
         <span className="text-xs text-gray-600">
-          (avg. time spent at each seniority level)
+          (Shortest avg. time spent at each seniority level)
         </span>
       </div>
     </div>
@@ -201,8 +243,8 @@ const ShortestDurationsColumn = ({ topThreeShortest }) => (
           <li className="py-1" key={index}>
             •
             <span className="font-semibold">
-              {candidatePositions[item.name]?.firstName}{" "}
-              {candidatePositions[item.name]?.lastName}
+              {allCandidates[item.name]?.firstName}{" "}
+              {allCandidates[item.name]?.lastName}
             </span>{" "}
             — {item.avgYearsPerLevel.toFixed(1)} years
           </li>
@@ -264,6 +306,15 @@ const calculateStats = (data) => {
 
   Object.entries(data).forEach(([candidateId, candidate]) => {
     const positions = candidate.positionHistory;
+
+    // Skip candidates with no valid positions or N/A seniority
+    if (
+      !positions?.length ||
+      positions.every((p) => p.seniorityLevel === "N/A")
+    ) {
+      return;
+    }
+
     const careerLength = calculateCareerLength(positions);
     const uniqueCompanies = new Set(positions.map((p) => p.companyName)).size;
 
@@ -273,27 +324,37 @@ const calculateStats = (data) => {
 
     candidateLevelTotals[candidateId] = {};
 
-    positions.forEach((position) => {
-      const tenure = calculateTenure(position);
-      updateStat(
-        careerStats.jobTenure,
-        tenure,
-        candidateId,
-        position.title,
-        position.companyName
-      );
+    // Calculate average tenure for this candidate
+    let candidateTotalTenure = 0;
+    let candidatePositionCount = 0;
 
+    positions.forEach((position) => {
+      if (position.seniorityLevel === "N/A") return;
+
+      const positionTenure = calculateTenure(position);
+      candidateTotalTenure += positionTenure;
+      candidatePositionCount++;
+
+      // Handle level stats
       const mappedLevel = mapSeniorityToQualityTrackLevel(
         position.seniorityLevel
       );
+      if (!mappedLevel) return;
+
       const category = `Category ${mappedLevel.split(":")[0].charAt(0)}`;
 
       if (!candidateLevelTotals[candidateId][category]) {
         candidateLevelTotals[candidateId][category] = 0;
       }
 
-      candidateLevelTotals[candidateId][category] += tenure;
+      candidateLevelTotals[candidateId][category] += positionTenure;
     });
+
+    // Only update stats if candidate had valid positions
+    if (candidatePositionCount > 0) {
+      const avgTenure = candidateTotalTenure / candidatePositionCount;
+      updateStat(careerStats.jobTenure, avgTenure, candidateId);
+    }
   });
 
   // Calculate averages for career stats
@@ -352,19 +413,18 @@ const updateStat = (stat, value, candidateId, ...additionalDetails) => {
 const calculateCareerLength = (positions) => {
   const startDate = new Date(
     Math.min(
-      ...positions.map(
-        (p) =>
-          new Date(p.startEndDate.start.year, p.startEndDate.start.month - 1)
-      )
+      ...positions.map((p) => {
+        const start = p.startEndDate.start;
+        return new Date(start.year, start.month - 1);
+      })
     )
   );
   const endDate = new Date(
     Math.max(
-      ...positions.map((p) =>
-        p.startEndDate.end
-          ? new Date(p.startEndDate.end.year, p.startEndDate.end.month - 1)
-          : new Date()
-      )
+      ...positions.map((p) => {
+        const end = p.startEndDate.end;
+        return end ? new Date(end.year, end.month - 1) : new Date();
+      })
     )
   );
   return (endDate - startDate) / (1000 * 60 * 60 * 24 * 365.25);
@@ -400,6 +460,22 @@ const calculateTopThreeShortest = (candidateLevelTotals) => {
 
 // Helper function to map seniority levels to quality_track categories
 const mapSeniorityToQualityTrackLevel = (seniorityLevel) => {
+  // Handle both formats - numeric (2A, 3B, etc) and text-based seniority levels
+  if (seniorityLevel?.includes(":")) {
+    return seniorityLevel; // Already in correct format
+  }
+
+  if (seniorityLevel?.match(/^[1-4][A-C]$/)) {
+    const level = seniorityLevel.charAt(0);
+    const mapping = {
+      1: "1: Professional Quality Roles",
+      2: "2: Supervisory Quality Roles",
+      3: "3: Managerial Quality Roles",
+      4: "4: Executive Quality Roles",
+    };
+    return mapping[level];
+  }
+
   const mapping = {
     "Entry Level": "1: Professional Quality Roles",
     "Mid Level": "1: Professional Quality Roles",
@@ -408,8 +484,9 @@ const mapSeniorityToQualityTrackLevel = (seniorityLevel) => {
     "Senior Manager": "3: Managerial Quality Roles",
     Director: "3: Managerial Quality Roles",
     Executive: "4: Executive Quality Roles",
+    "N/A": null,
   };
-  return mapping[seniorityLevel] || seniorityLevel;
+  return mapping[seniorityLevel];
 };
 
 export default CandidateStats;

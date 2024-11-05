@@ -23,24 +23,9 @@ export default function Home() {
               <CardTitle className="text-md font-semibold">Products</CardTitle>
             </CardHeader>
             <CardContent className="pt-0 space-y-1">
-              <Button
-                asChild
-                variant="default"
-                className="w-full hover:bg-gray-700 transition-colors"
-              >
-                <Link href="/career-chart" className="hover:bg-gray-700">
-                  Career Progression Chart
-                </Link>
-              </Button>
-              <Button
-                asChild
-                variant="default"
-                className="w-full hover:bg-gray-700 transition-colors"
-              >
-                <Link href="/roles-diagram" className="hover:bg-gray-700">
-                  Seniority Levels
-                </Link>
-              </Button>
+              <AlertButton href="/roles-diagram" initialActive={true}>
+                Quality Career Progression
+              </AlertButton>
               <Button
                 asChild
                 variant="default"
@@ -63,9 +48,15 @@ export default function Home() {
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-0 space-y-1">
-              <AlertButton href="/tailored-text" initialActive={true}>
-                Tailored Text
-              </AlertButton>
+              <Button
+                asChild
+                variant="default"
+                className="w-full hover:bg-gray-700 transition-colors"
+              >
+                <Link href="/tailored-text" className="hover:bg-gray-700">
+                  Tailored Text
+                </Link>
+              </Button>
               <Button
                 asChild
                 variant="default"
@@ -84,15 +75,10 @@ export default function Home() {
                   Process Maps
                 </Link>
               </Button>
-              <Button
-                asChild
-                variant="default"
-                className="w-full hover:bg-gray-700 transition-colors"
-              >
-                <Link href="/llm-workflow" className="hover:bg-gray-700">
-                  LLM Workflow
-                </Link>
-              </Button>
+
+              <AlertButton href="/llm-workflow" initialActive={true}>
+                LLM Workflow
+              </AlertButton>
             </CardContent>
           </Card>
         </CardContent>
