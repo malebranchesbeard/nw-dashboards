@@ -24,7 +24,7 @@ const TextBubble = ({ children }) => (
 const TextContent = ({ candidateName, tailored_sentence }) => (
   <>
     <div className="mb-2">
-      Dear <span className="bg-indigo-200">{candidateName || ""}</span>
+      Dear <span className="bg-indigo-200">{candidateName || ""},</span>
       {"\n\n"}
     </div>
 
