@@ -48,7 +48,7 @@ const TextContent = ({ candidateName, tailored_sentence }) => (
       how it signals a fundamental shift in our client&apos;s thinking. Quality
       and process improvement are being elevated from an important function to a
       strategic cornerstone of the organisation. This is a newly created
-      position reporting directly to the CEO/COO, with the autonomy to shape and
+      position reporting directly to the COO, with the autonomy to shape and
       drive the global quality strategy.{"\n\n"}
     </div>
 
