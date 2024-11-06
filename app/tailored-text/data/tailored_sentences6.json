@@ -1,0 +1,1031 @@
+{
+  "paulionas": {
+    "current_company": "Siemens",
+    "tenure_length": "seven years",
+    "tailored_sentence": "While it must be hard to uproot after seven years at Siemens, if",
+    "tailored_sentence_variations": [
+      "While it must be hard to uproot after more than seven years at Siemens, if",
+      "While it must be hard to uproot after almost seven years at Siemens, if",
+      "While it must be hard to uproot after just seven years at Siemens, if"
+    ],
+    "possible_company_names": [
+      "Siemens",
+      "Siemens",
+      "Siemens HQ",
+      "Siemens Infrastructure",
+      "Siemens Smart"
+    ]
+  },
+  "sarbari-roy-78a65821": {
+    "current_company": "Quality Management Consulting",
+    "tenure_length": "less than six months",
+    "tailored_sentence": "I appreciate you're less than six months into your roles at Quality Management Consulting, but if",
+    "tailored_sentence_variations": [
+      "I appreciate you're in your first few months into your roles at Quality Management Consulting, but if",
+      "I appreciate you're just a couple of months into your roles at Quality Management Consulting, but if",
+      "I appreciate you're early days into your roles at Quality Management Consulting, but if"
+    ],
+    "possible_company_names": [
+      "Quality & Management Consulting",
+      "Quality Management Consulting",
+      "Quality Consulting",
+      "QM Consulting",
+      "Quality & Management"
+    ]
+  },
+  "jeremie-le-bourhis": {
+    "current_company": "LEM",
+    "tenure_length": "just over a year",
+    "tailored_sentence": "I appreciate you're just over a year into your role at LEM, but if",
+    "tailored_sentence_variations": [
+      "I appreciate you're barely over a year into your role at LEM, but if",
+      "I appreciate you're a little over a year into your role at LEM, but if",
+      "I appreciate you're slightly over a year into your role at LEM, but if"
+    ],
+    "possible_company_names": [
+      "LEM",
+      "Lem",
+      "LEM Co.",
+      "LEM Group",
+      "LEMg"
+    ]
+  },
+  "veronika-k-86a37720": {
+    "current_company": "Philip Morris",
+    "tenure_length": "more than eight years",
+    "tailored_sentence": "While it must be hard to uproot after more than eight years at Philip Morris, if",
+    "tailored_sentence_variations": [
+      "While it must be hard to uproot after eight years at Philip Morris, if",
+      "While it must be hard to uproot after over eight years at Philip Morris, if",
+      "While it must be hard to uproot after almost nine years at Philip Morris, if"
+    ],
+    "possible_company_names": [
+      "Philip Morris International",
+      "Philip Morris",
+      "PMI",
+      "Philip Morris Intl",
+      "PM International"
+    ]
+  },
+  "ludovic-schramm-8731407": {
+    "current_company": "Hitachi",
+    "tenure_length": "barely two and a half years",
+    "tailored_sentence": "I appreciate you're barely two and a half years into your role at Hitachi, but if",
+    "tailored_sentence_variations": [
+      "I appreciate you're a little over two years into your role at Hitachi, but if",
+      "I appreciate you're just about two years into your role at Hitachi, but if",
+      "I appreciate you're not quite three years into your role at Hitachi, but if"
+    ],
+    "possible_company_names": [
+      "Hitachi Energy",
+      "Hitachi",
+      "Hitachi Eng.",
+      "HE",
+      "Hitachi En."
+    ]
+  },
+  "piotr-nary\u0144ski-653b9734": {
+    "current_company": "Ronal",
+    "tenure_length": "more than 22 years",
+    "tailored_sentence": "While it must be hard to uproot after more than 22 years at Ronal, if",
+    "tailored_sentence_variations": [
+      "While it must be hard to uproot after almost 23 years at Ronal, if",
+      "While it must be hard to uproot after 22 years at Ronal, if",
+      "While it must be hard to uproot after over 22 years at Ronal, if"
+    ],
+    "possible_company_names": [
+      "RONAL GROUP",
+      "Ronal",
+      "Ronal Group",
+      "Ronal Co.",
+      "Ronal Corp"
+    ]
+  },
+  "saverio-baldini-75448a14": {
+    "current_company": "Bosch",
+    "tenure_length": "under two years",
+    "tailored_sentence": "I appreciate you're under two years into your role at Bosch, but if",
+    "tailored_sentence_variations": [
+      "I appreciate you're barely two years into your role at Bosch, but if",
+      "I appreciate you're just about two years into your role at Bosch, but if",
+      "I appreciate you're two years into your role at Bosch, but if"
+    ],
+    "possible_company_names": [
+      "Bosch Power Tools",
+      "Bosch",
+      "BPT"
+    ]
+  },
+  "adam-wietrzy\u0144ski-11389682": {
+    "current_company": "IST AG",
+    "tenure_length": "a year and a half",
+    "tailored_sentence": "I appreciate you're a year and a half into your role at IST AG, but if",
+    "tailored_sentence_variations": [
+      "I appreciate you're eighteen months into your role at IST AG, but if",
+      "I appreciate you're a little over a year into your role at IST AG, but if",
+      "I appreciate you're about one and a half years into your role at IST AG, but if"
+    ],
+    "possible_company_names": [
+      "Innovative Sensor Technology IST AG",
+      "Innovative Sensor Technology Ist",
+      "IST AG",
+      "Innovative Sensors",
+      "IST Technology"
+    ]
+  },
+  "carl-kendall-13a37b42": {
+    "current_company": "GE Power",
+    "tenure_length": "nine years",
+    "tailored_sentence": "While it must be hard to uproot after nine years at GE Power, if",
+    "tailored_sentence_variations": [
+      "While it must be hard to uproot after more than eight years at GE Power, if",
+      "While it must be hard to uproot after nearly a decade at GE Power, if",
+      "While it must be hard to uproot after almost ten years at GE Power, if"
+    ],
+    "possible_company_names": [
+      "GE Power",
+      "Ge Power",
+      "GE",
+      "Power",
+      "GEP"
+    ]
+  },
+  "thorsten-bauer-1605": {
+    "current_company": "Siemens",
+    "tenure_length": "more than 20 years",
+    "tailored_sentence": "While it must be hard to uproot after more than 20 years at Siemens, if",
+    "tailored_sentence_variations": [
+      "While it must be hard to uproot after over 20 years at Siemens, if",
+      "While it must be hard to uproot after almost 21 years at Siemens, if",
+      "While it must be hard to uproot after two decades at Siemens, if"
+    ],
+    "possible_company_names": [
+      "Siemens",
+      "Siemens AG",
+      "Siemens Corp",
+      "SAG",
+      "Siemens Group"
+    ]
+  },
+  "cedricbrieussel": {
+    "current_company": "Busch Vacuum",
+    "tenure_length": "more than 17 years",
+    "tailored_sentence": "While it must be hard to uproot after more than 17 years at Busch Vacuum, if",
+    "tailored_sentence_variations": [
+      "While it must be hard to uproot after over 17 years at Busch Vacuum, if",
+      "While it must be hard to uproot after almost 18 years at Busch Vacuum, if",
+      "While it must be hard to uproot after 17 and a half years at Busch Vacuum, if"
+    ],
+    "possible_company_names": [
+      "Busch Vacuum Solutions",
+      "Busch Vacuum",
+      "Busch",
+      "Busch Vacuums",
+      "Busch Ltd"
+    ]
+  },
+  "cdtc2010": {
+    "current_company": "Harting",
+    "tenure_length": "barely a year",
+    "tailored_sentence": "I appreciate you're barely a year into your role at Harting, but if",
+    "tailored_sentence_variations": [
+      "I appreciate you're only a year into your role at Harting, but if",
+      "I appreciate you're just a year into your role at Harting, but if",
+      "I appreciate you're one year into your role at Harting, but if"
+    ],
+    "possible_company_names": [
+      "HARTING Technology Group",
+      "Harting",
+      "HARTING",
+      "HTG",
+      "HARTING Group"
+    ]
+  },
+  "rafal-dawidowicz-64289b18": {
+    "current_company": "Kunststoff Schwanden",
+    "tenure_length": "only a year and a half",
+    "tailored_sentence": "I appreciate you're only a year and a half into your role at Kunststoff Schwanden, but if",
+    "tailored_sentence_variations": [
+      "I appreciate you're barely a year and a half into your role at Kunststoff Schwanden, but if",
+      "I appreciate you're just a year and a half into your role at Kunststoff Schwanden, but if",
+      "I appreciate you're barely over a year into your role at Kunststoff Schwanden, but if"
+    ],
+    "possible_company_names": [
+      "Kunststoff Schwanden AG",
+      "Kunststoff Schwanden",
+      "Kunststoff",
+      "Schwanden",
+      "Kunstoff AG"
+    ]
+  },
+  "markus-genal-engels-4a5609": {
+    "current_company": "Alstom",
+    "tenure_length": "three years",
+    "tailored_sentence": "While you've built a solid foundation at Alstom over the past three years, if",
+    "tailored_sentence_variations": [
+      "While you've built a solid foundation at Alstom about three years, if",
+      "While you've built a solid foundation at Alstom approximately three years, if",
+      "While you've built a solid foundation at Alstom for three years, if"
+    ],
+    "possible_company_names": [
+      "Alstom",
+      "Alstom",
+      "Alst",
+      "Alstom Group",
+      "Als"
+    ]
+  },
+  "thomasmay01": {
+    "current_company": "Ronal",
+    "tenure_length": "more than fourteen years",
+    "tailored_sentence": "While it must be hard to uproot after more than fourteen years at Ronal, if",
+    "tailored_sentence_variations": [
+      "While it must be hard to uproot after fourteen years at Ronal, if",
+      "While it must be hard to uproot after almost fifteen years at Ronal, if",
+      "While it must be hard to uproot after over fourteen years at Ronal, if"
+    ],
+    "possible_company_names": [
+      "RONAL AG",
+      "Ronal",
+      "Ronal Inc.",
+      "Ronal Corp.",
+      "Ronal"
+    ]
+  },
+  "cemalyilmaz": {
+    "current_company": "Vzug",
+    "tenure_length": "three years",
+    "tailored_sentence": "While you've built a solid foundation at Vzug over the past three years, if",
+    "tailored_sentence_variations": [
+      "While you've built a solid foundation at Vzug during these three years, if",
+      "While you've built a solid foundation at Vzug across the last three years, if",
+      "While you've built a solid foundation at Vzug throughout the past three years, if"
+    ],
+    "possible_company_names": [
+      "V-ZUG AG",
+      "Vzug",
+      "V-ZUG",
+      "V Zug",
+      "V-Zug"
+    ]
+  },
+  "luiz-benacchio": {
+    "current_company": "Enersys",
+    "tenure_length": "six years",
+    "tailored_sentence": "While you've built a solid foundation at Enersys over the past six years, if",
+    "tailored_sentence_variations": [
+      "While you've built a solid foundation at Enersys for the last six years, if",
+      "While you've built a solid foundation at Enersys during these six years, if",
+      "While you've built a solid foundation at Enersys within six years, if"
+    ],
+    "possible_company_names": [
+      "EnerSys",
+      "Enersys",
+      "Ener Sys",
+      "ENS",
+      "ES"
+    ]
+  },
+  "justyna-potega-1a2a251a7": {
+    "current_company": "Oerlikon",
+    "tenure_length": "five years",
+    "tailored_sentence": "While you've built a solid foundation at Oerlikon over the past five years, if",
+    "tailored_sentence_variations": [
+      "While you've built a solid foundation at Oerlikon for the past five years, if",
+      "While you've built a solid foundation at Oerlikon through five years, if",
+      "While you've built a solid foundation at Oerlikon during these five years, if"
+    ],
+    "possible_company_names": [
+      "Oerlikon",
+      "Oerlikon Group",
+      "Oerlikon Corp",
+      "Oerlikon AG",
+      "Oerlikon Co"
+    ]
+  },
+  "hamiltonparise": {
+    "current_company": "Thyssenkrupp Presta",
+    "tenure_length": "two years",
+    "tailored_sentence": "While you've built a solid foundation at Thyssenkrupp Presta over the past two years, if",
+    "tailored_sentence_variations": [
+      "While you've built a solid foundation at Thyssenkrupp Presta in the last two years, if",
+      "While you've built a solid foundation at Thyssenkrupp Presta during the past two years, if",
+      "While you've built a solid foundation at Thyssenkrupp Presta for the last two years, if"
+    ],
+    "possible_company_names": [
+      "thyssenkrupp Presta AG",
+      "Thyssenkrupp Presta AG",
+      "Thyssenkrupp Presta",
+      "Thyssenkrupp",
+      "TK Presta",
+      "Presta"
+    ]
+  },
+  "sergeromming": {
+    "current_company": "Johnson Electric",
+    "tenure_length": "more than 13 years",
+    "tailored_sentence": "While it must be hard to uproot after more than 13 years at Johnson Electric, if",
+    "tailored_sentence_variations": [
+      "While it must be hard to uproot after 13 years at Johnson Electric, if",
+      "While it must be hard to uproot after 13 and a half years at Johnson Electric, if",
+      "While it must be hard to uproot after over 13 years at Johnson Electric, if"
+    ],
+    "possible_company_names": [
+      "Johnson Electric",
+      "Johnson Electric",
+      "Johnson Electrical",
+      "J-Electric",
+      "JE"
+    ]
+  },
+  "mihai-saboslai": {
+    "current_company": "Stabilus",
+    "tenure_length": "six years",
+    "tailored_sentence": "While it must be hard to uproot after six years at Stabilus, if",
+    "tailored_sentence_variations": [
+      "While it must be hard to uproot after over six years at Stabilus, if",
+      "While it must be hard to uproot after almost six years at Stabilus, if",
+      "While it must be hard to uproot after nearly six years at Stabilus, if"
+    ],
+    "possible_company_names": [
+      "Stabilus Romania",
+      "Stabilus",
+      "Stabilus RO"
+    ]
+  },
+  "enno-schweinberger-4471207": {
+    "current_company": "Siegfried",
+    "tenure_length": "more than 20 years",
+    "tailored_sentence": "While it must be hard to uproot after more than 20 years at Siegfried, if ",
+    "tailored_sentence_variations": [
+      "While it must be hard to uproot after two decades at Siegfried, if ",
+      "While it must be hard to uproot after almost two decades at Siegfried, if ",
+      "While it must be hard to uproot after well over 15 years at Siegfried, if "
+    ],
+    "possible_company_names": [
+      "Siegfried Holding AG",
+      "Siegfried",
+      "Sieg",
+      "Siegfried AG",
+      "Siegfried Inc."
+    ]
+  },
+  "cesareguidetti": {
+    "current_company": "Eutron",
+    "tenure_length": "a year and a half",
+    "tailored_sentence": "I appreciate you're a year and a half into your role at Eutron, but if",
+    "tailored_sentence_variations": [
+      "I appreciate you're 16 months into your role at Eutron, but if",
+      "I appreciate you're barely a year and a half into your role at Eutron, but if",
+      "I appreciate you're about 18 months into your role at Eutron, but if"
+    ],
+    "possible_company_names": [
+      "EUTRON",
+      "Eutron",
+      "Etron",
+      "EUtron",
+      "E-Tron"
+    ]
+  },
+  "michelberthus": {
+    "current_company": "Boundaryless",
+    "tenure_length": "a year and a half",
+    "tailored_sentence": "I appreciate you're a year and a half into your role at Boundaryless, but if",
+    "tailored_sentence_variations": [
+      "I appreciate you're 17 months into your role at Boundaryless, but if",
+      "I appreciate you're barely a year and a half into your role at Boundaryless, but if",
+      "I appreciate you're only a year and a half into your role at Boundaryless, but if"
+    ],
+    "possible_company_names": [
+      "Boundaryless Group",
+      "Boundaryless",
+      "Boundaryless Co.",
+      "Boundary Group",
+      "BL Group"
+    ]
+  },
+  "florian-zumb\u00fchl-5989207b": {
+    "current_company": "Franke Coffee",
+    "tenure_length": "more than nine years",
+    "tailored_sentence": "While it must be hard to uproot after more than nine years at Franke Coffee, if",
+    "tailored_sentence_variations": [
+      "While it must be hard to uproot after nearly a decade at Franke Coffee, if",
+      "While it must be hard to uproot after nine years at Franke Coffee, if",
+      "While it must be hard to uproot after over nine years at Franke Coffee, if"
+    ],
+    "possible_company_names": [
+      "Franke Coffee Systems",
+      "Franke Coffee",
+      "Franke",
+      "Coffee Systems",
+      "Franke CS"
+    ]
+  },
+  "johnkitching": {
+    "current_company": "Ricor",
+    "tenure_length": "only a year and a half",
+    "tailored_sentence": "I appreciate you're only a year and a half into your role at Ricor, but if",
+    "tailored_sentence_variations": [
+      "I appreciate you're barely a year into your role at Ricor, but if",
+      "I appreciate you're 16 months into your role at Ricor, but if",
+      "I appreciate you're less than two years into your role at Ricor, but if"
+    ],
+    "possible_company_names": [
+      "RICOR Group",
+      "Ricor",
+      "Ricor Group",
+      "The Ricor",
+      "Ricor Co."
+    ]
+  },
+  "fernando-fondra-64004136": {
+    "current_company": "Gsell",
+    "tenure_length": "three years",
+    "tailored_sentence": "While you've built a solid foundation at Gsell over the past three years, if",
+    "tailored_sentence_variations": [
+      "While you've built a solid foundation at Gsell for the past three years, if",
+      "While you've built a solid foundation at Gsell in the last three years, if",
+      "While you've built a solid foundation at Gsell during the past three years, if"
+    ],
+    "possible_company_names": [
+      "Gsell AG",
+      "Gsell",
+      "Gsell Group",
+      "Gsell Ltd",
+      "Gsell Inc"
+    ]
+  },
+  "christoph-benzinger-zug": {
+    "current_company": "Vvardis",
+    "tenure_length": "less than six months",
+    "tailored_sentence": "I appreciate you're less than six months into your role at Vvardis, but if",
+    "tailored_sentence_variations": [
+      "I appreciate you're barely six months into your role at Vvardis, but if",
+      "I appreciate you're just about half a year into your role at Vvardis, but if",
+      "I appreciate you're nearly six months into your role at Vvardis, but if"
+    ],
+    "possible_company_names": [
+      "vVARDIS",
+      "Vvardis",
+      "Vvardis AG",
+      "VVard",
+      "V.V."
+    ]
+  },
+  "adrian-popescu-920bbb228": {
+    "current_company": "Automotive",
+    "tenure_length": "two years",
+    "tailored_sentence": "While you've built a solid foundation at Automotive over the past two years, if",
+    "tailored_sentence_variations": [
+      "While you've built a solid foundation at Automotive over the last two years, if",
+      "While you've built a solid foundation at Automotive during the past two years, if",
+      "While you've established a strong base at Automotive across these two years, if"
+    ],
+    "possible_company_names": [
+      "Automotive",
+      "Auto",
+      "Auto Co.",
+      "The Auto Group",
+      "Car Co."
+    ]
+  },
+  "steffen-standfuss-b635aab": {
+    "current_company": "Roche",
+    "tenure_length": "barely a year",
+    "tailored_sentence": "I appreciate you're barely a year into your role at Roche, but if",
+    "tailored_sentence_variations": [
+      "I appreciate you're just 12 months into your role at Roche, but if",
+      "I appreciate you're simply one year into your role at Roche, but if",
+      "I appreciate you're hardly a full year into your role at Roche, but if"
+    ],
+    "possible_company_names": [
+      "Roche",
+      "Roche",
+      "Roche Co.",
+      "Roche Group",
+      "Roche Holdings"
+    ]
+  },
+  "dr-sel\u00e7uk-mentese-a2841172": {
+    "current_company": "Dyconex",
+    "tenure_length": "five years",
+    "tailored_sentence": "While you've built a solid foundation at Dyconex over the past five years, if",
+    "tailored_sentence_variations": [
+      "While you've built a solid foundation at Dyconex during the last five years, if",
+      "While you've built a solid foundation at Dyconex for five years, if",
+      "While you've built a solid foundation at Dyconex these five years, if"
+    ],
+    "possible_company_names": [
+      "DYCONEX",
+      "Dyconex",
+      "Dyco",
+      "Dyc",
+      "DycoTech"
+    ]
+  },
+  "stefan-appel": {
+    "current_company": "Ruffian",
+    "tenure_length": "less than a year",
+    "tailored_sentence": "I appreciate you're less than a year into your role at Ruffian, but if",
+    "tailored_sentence_variations": [
+      "I appreciate you're just nine months into your role at Ruffian, but if",
+      "I appreciate you're not quite a year into your role at Ruffian, but if",
+      "I appreciate you're barely a year into your role at Ruffian, but if"
+    ],
+    "possible_company_names": [
+      "Ruffian LLC",
+      "Ruffian",
+      "Ruff",
+      "Ruff Co."
+    ]
+  },
+  "edgar-arensberg-a73263a0": {
+    "current_company": "Thyssenkrupp Presta",
+    "tenure_length": "almost 16 years",
+    "tailored_sentence": "While it must be hard to uproot after almost 16 years at Thyssenkrupp Presta, if",
+    "tailored_sentence_variations": [
+      "While it must be hard to uproot after over 15 years at Thyssenkrupp Presta, if",
+      "While it must be hard to uproot after 15 and a half years at Thyssenkrupp Presta, if",
+      "While it must be hard to uproot after more than 15 years at Thyssenkrupp Presta, if"
+    ],
+    "possible_company_names": [
+      "thyssenkrupp Presta AG",
+      "Thyssenkrupp Presta",
+      "TK Presta",
+      "Thyssen Presta",
+      "TKP"
+    ]
+  },
+  "sven-hoelscher-6561769a": {
+    "current_company": "Yanfeng",
+    "tenure_length": "nine years",
+    "tailored_sentence": "While it must be hard to uproot after nine years at Yanfeng, if",
+    "tailored_sentence_variations": [
+      "While it must be hard to uproot after over eight and a half years at Yanfeng, if",
+      "While it must be hard to uproot after almost nine years at Yanfeng, if",
+      "While it must be hard to uproot after more than eight years at Yanfeng, if"
+    ],
+    "possible_company_names": [
+      "Yanfeng",
+      "yanfeng",
+      "YF",
+      "Yanfeng Automotive",
+      "YanFeng"
+    ]
+  },
+  "sam-bollen-b40053b": {
+    "current_company": "Dura Automotive",
+    "tenure_length": "more than eight years",
+    "tailored_sentence": "While it must be hard to uproot after more than eight years at Dura Automotive, if",
+    "tailored_sentence_variations": [
+      "While it must be hard to uproot after almost nine years at Dura Automotive, if",
+      "While it must be hard to uproot after over eight years at Dura Automotive, if",
+      "While it must be hard to uproot after eight years at Dura Automotive, if"
+    ],
+    "possible_company_names": [
+      "Dura Automotive Systems LLC",
+      "Dura Automotive",
+      "Dura",
+      "Dura Automotive Systems",
+      "Dura Systems"
+    ]
+  },
+  "roman-lenk-153ba814": {
+    "current_company": "Schindler",
+    "tenure_length": "four years",
+    "tailored_sentence": "While you've built a solid foundation at Schindler over the past four years, if",
+    "tailored_sentence_variations": [
+      "While you've built a solid foundation at Schindler for four years, if",
+      "While you've built a solid foundation at Schindler these past four years, if",
+      "While you've built a solid foundation at Schindler during the last four years, if"
+    ],
+    "possible_company_names": [
+      "Schindler Aufz\u00fcge AG (Schweiz)",
+      "Schindler Aufz\u00fcge Ag Schweiz",
+      "Schindler",
+      "Schindler Schweiz",
+      "Schindler AG"
+    ]
+  },
+  "erick-machado-silva-250976": {
+    "current_company": "Agratas",
+    "tenure_length": "eight months",
+    "tailored_sentence": "I appreciate you're eight months into your role at Agratas, but if",
+    "tailored_sentence_variations": [
+      "I appreciate you're barely eight months into your role at Agratas, but if",
+      "I appreciate you're not yet a year into your role at Agratas, but if",
+      "I appreciate you're still in the early months of your role at Agratas, but if"
+    ],
+    "possible_company_names": [
+      "Agratas",
+      "Agratas Inc.",
+      "AGR",
+      "Agra",
+      "The Agratas Group"
+    ]
+  },
+  "katrin-papenfuss-ba046487": {
+    "current_company": "Mannhummel",
+    "tenure_length": "barely a year",
+    "tailored_sentence": "I appreciate you're barely a year into your role at Mannhummel, but if",
+    "tailored_sentence_variations": [
+      "I appreciate you're only a year into your role at Mannhummel, but if",
+      "I appreciate you're just a year into your role at Mannhummel, but if",
+      "I appreciate you've been with Mannhummel for only one year, but if"
+    ],
+    "possible_company_names": [
+      "MANN+HUMMEL",
+      "Mannhummel",
+      "M+H",
+      "Mann Hummel"
+    ]
+  },
+  "bj\u00f6rn-sv\u00e4rd-4844906": {
+    "current_company": "Autoliv",
+    "tenure_length": "more than fourteen years",
+    "tailored_sentence": "While it must be hard to uproot after more than fourteen years at Autoliv, if",
+    "tailored_sentence_variations": [
+      "While it must be hard to uproot after fourteen years at Autoliv, if",
+      "While it must be hard to uproot after over fourteen years at Autoliv, if",
+      "While it must be hard to uproot after nearly fifteen years at Autoliv, if"
+    ],
+    "possible_company_names": [
+      "Autoliv",
+      "Autoliv",
+      "Autoliv Inc.",
+      "Autoliv Group",
+      "ALV"
+    ]
+  },
+  "pisino": {
+    "current_company": "Metalor",
+    "tenure_length": "sixteen years",
+    "tailored_sentence": "While it must be hard to uproot after sixteen years at Metalor, if",
+    "tailored_sentence_variations": [
+      "While it must be hard to uproot after more than fifteen years at Metalor, if",
+      "While it must be hard to uproot after over sixteen years at Metalor, if",
+      "While it must be hard to uproot after almost seventeen years at Metalor, if"
+    ],
+    "possible_company_names": [
+      "Metalor Technologies SA",
+      "Metalor Technologies Sa",
+      "Metalor",
+      "Metalor Technologies",
+      "Metalor Tech"
+    ]
+  },
+  "mansourhamade": {
+    "current_company": "Kone",
+    "tenure_length": "more than nine years",
+    "tailored_sentence": "While it must be hard to uproot after more than nine years at Kone, if",
+    "tailored_sentence_variations": [
+      "While it must be hard to uproot after nine years at Kone, if",
+      "While it must be hard to uproot after practically a decade at Kone, if",
+      "While it must be hard to uproot after over nine years at Kone, if"
+    ],
+    "possible_company_names": [
+      "KONE",
+      "Kone",
+      "Kone Corp",
+      "Kone Co"
+    ]
+  },
+  "adrian-menczel-b7667b118": {
+    "current_company": "GWF Messsysteme",
+    "tenure_length": "six years",
+    "tailored_sentence": "While it must be hard to uproot after six years at GWF Messsysteme, if",
+    "tailored_sentence_variations": [
+      "While it must be hard to uproot after 72 months at GWF Messsysteme, if",
+      "While it must be hard to uproot after half a decade at GWF Messsysteme, if",
+      "While it must be hard to uproot after six solid years at GWF Messsysteme, if"
+    ],
+    "possible_company_names": [
+      "GWF MessSysteme AG",
+      "Gwf Messsysteme",
+      "GWF Messsysteme",
+      "GWF Systems",
+      "GWF"
+    ]
+  },
+  "michal-sala\u010d-a6441670": {
+    "current_company": "Wabtec",
+    "tenure_length": "barely two years",
+    "tailored_sentence": "I appreciate you're barely two years into your roles at Wabtec, but if",
+    "tailored_sentence_variations": [
+      "I appreciate you're two years into your roles at Wabtec, but if",
+      "I appreciate you're just shy of two years into your roles at Wabtec, but if",
+      "I appreciate you're just two years into your roles at Wabtec, but if"
+    ],
+    "possible_company_names": [
+      "Wabtec Corporation",
+      "Wabtec",
+      "Wabtec Corp",
+      "Wabtec Co",
+      "Wab Inc"
+    ]
+  },
+  "marc-k\u00fchne-708330112": {
+    "current_company": "Landqart",
+    "tenure_length": "four years",
+    "tailored_sentence": "While you've built a solid foundation at Landqart over the past four years, if",
+    "tailored_sentence_variations": [
+      "While you've built a solid foundation at Landqart over the last four years, if",
+      "While you've built a solid foundation at Landqart during these past four years, if",
+      "While you've built a solid foundation at Landqart for the past four years, if"
+    ],
+    "possible_company_names": [
+      "Landqart AG",
+      "Landqart",
+      "LQ",
+      "LandQ",
+      "Lanquart"
+    ]
+  },
+  "ronny-kuehlmorgen-7b8a8460": {
+    "current_company": "Thyssenkrupp Presta",
+    "tenure_length": "more than 16 years",
+    "tailored_sentence": "While it must be hard to uproot after more than 16 years at Thyssenkrupp Presta, if",
+    "tailored_sentence_variations": [
+      "While it must be hard to uproot after nearly 17 years at Thyssenkrupp Presta, if",
+      "While it must be hard to uproot after 16 and a half years at Thyssenkrupp Presta, if",
+      "While it must be hard to uproot after approaching 17 years at Thyssenkrupp Presta, if"
+    ],
+    "possible_company_names": [
+      "thyssenkrupp Presta AG",
+      "Thyssenkrupp Presta",
+      "Thyssen Presta",
+      "TK Presta",
+      "TKP"
+    ]
+  },
+  "s\u00e9bastien-capodanno-38962424": {
+    "current_company": "Ammeraal",
+    "tenure_length": "five years",
+    "tailored_sentence": "While you've built a solid foundation at Ammeraal over the past five years, if",
+    "tailored_sentence_variations": [
+      "While you've built a solid foundation at Ammeraal for five and a half years, if",
+      "While you've built a solid foundation at Ammeraal for about five years, if",
+      "While you've built a solid foundation at Ammeraal for approximately five years, if"
+    ],
+    "possible_company_names": [
+      "Ammeraal Beltech",
+      "Ammeraal",
+      "Beltech",
+      "AB"
+    ]
+  },
+  "jan-baracka-2a456529": {
+    "current_company": "Sensirion Automotive",
+    "tenure_length": "two years",
+    "tailored_sentence": "While you've built a solid foundation at Sensirion Automotive over the past two years, if",
+    "tailored_sentence_variations": [
+      "While you've built a solid foundation at Sensirion Automotive in two years, if",
+      "While you've built a solid foundation at Sensirion Automotive for two years, if",
+      "While you've built a solid foundation at Sensirion Automotive these two years, if"
+    ],
+    "possible_company_names": [
+      "Sensirion Automotive Solutions",
+      "Sensirion Automotive",
+      "Sensirion Auto",
+      "Sensirion",
+      "Sensirion Auto Solutions"
+    ]
+  },
+  "guilherme-bueno-28440333": {
+    "current_company": "Thyssenkrupp",
+    "tenure_length": "eight years",
+    "tailored_sentence": "While it must be hard to uproot after eight years at Thyssenkrupp, if",
+    "tailored_sentence_variations": [
+      "While it must be hard to uproot after more than eight years at Thyssenkrupp, if",
+      "While it must be hard to uproot after almost eight years at Thyssenkrupp, if",
+      "While it must be hard to uproot after more than seven years at Thyssenkrupp, if"
+    ],
+    "possible_company_names": [
+      "thyssenkrupp Presta AG",
+      "Thyssenkrupp Presta",
+      "Thyssenkrupp",
+      "TK Presta",
+      "Thyssen"
+    ]
+  },
+  "oliver-m-jung-qm": {
+    "current_company": "Kiepe Electric",
+    "tenure_length": "three years",
+    "tailored_sentence": "While you've built a solid foundation at Kiepe Electric over the past three years, if",
+    "tailored_sentence_variations": [
+      "While you've built a solid foundation at Kiepe Electric for the last three years, if",
+      "While you've built a solid foundation at Kiepe Electric these past three years, if",
+      "While you've built a solid foundation at Kiepe Electric during the past three years, if"
+    ],
+    "possible_company_names": [
+      "Kiepe Electric GmbH",
+      "Kiepe Electric",
+      "Kiepe",
+      "KE GmbH",
+      "Kiepe E."
+    ]
+  },
+  "giuseppe-lorusso-5ba38826": {
+    "current_company": "Bristol-Myers",
+    "tenure_length": "five years",
+    "tailored_sentence": "While you've built a solid foundation at Bristol-Myers over the past five years, if",
+    "tailored_sentence_variations": [
+      "While you've built a solid foundation at Bristol-Myers over the last five years, if",
+      "While you've built a solid foundation at Bristol-Myers through the five-year period, if",
+      "While you've built a solid foundation at Bristol-Myers during these five years, if"
+    ],
+    "possible_company_names": [
+      "Bristol-Myers Squibb",
+      "Bristolmyers Squibb",
+      "Bristol-Myers",
+      "BMS",
+      "Myers Squibb"
+    ]
+  },
+  "florian-w\u00e4chter-aa343547": {
+    "current_company": "Trafag",
+    "tenure_length": "two years",
+    "tailored_sentence": "I appreciate you're two years into your role at Trafag, but if",
+    "tailored_sentence_variations": [
+      "I appreciate you're just two years into your role at Trafag, but if",
+      "I appreciate you're about two years into your role at Trafag, but if",
+      "I appreciate you're a couple of years into your role at Trafag, but if"
+    ],
+    "possible_company_names": [
+      "Trafag AG",
+      "Trafag",
+      "TG",
+      "Trafag Co",
+      "Traf"
+    ]
+  },
+  "markus-wien-9ba12b10": {
+    "current_company": "Franke",
+    "tenure_length": "a year and a half",
+    "tailored_sentence": "I appreciate you're a year and a half into your role at Franke, but if",
+    "tailored_sentence_variations": [
+      "I appreciate you're only a year and a half into your role at Franke, but if",
+      "I appreciate you're barely a year and a half into your role at Franke, but if",
+      "I appreciate you're just a year and a half into your role at Franke, but if"
+    ],
+    "possible_company_names": [
+      "Franke Group",
+      "Franke",
+      "Franke Intl",
+      "Franke Co",
+      "Franke Corp"
+    ]
+  },
+  "nikhil-chadha-": {
+    "current_company": "EQT",
+    "tenure_length": "less than six months",
+    "tailored_sentence": "I appreciate you're less than six months into your role at EQT, but if",
+    "tailored_sentence_variations": [
+      "I appreciate you're barely five months into your role at EQT, but if",
+      "I appreciate you're just five months into your role at EQT, but if",
+      "I appreciate you're only five months into your role at EQT, but if"
+    ],
+    "possible_company_names": [
+      "EQT Group",
+      "Eqt",
+      "EQT",
+      "EQT Partners",
+      "EQT Co."
+    ]
+  },
+  "ronny-kraft-324817ab": {
+    "current_company": "Birr Machines",
+    "tenure_length": "less than six months",
+    "tailored_sentence": "I appreciate you're less than six months into your role at Birr Machines, but if",
+    "tailored_sentence_variations": [
+      "I appreciate you're just a few months into your role at Birr Machines, but if",
+      "I appreciate you're in your role at Birr Machines for barely three months, but if",
+      "I appreciate you're only a short time into your role at Birr Machines, but if"
+    ],
+    "possible_company_names": [
+      "Birr Machines AG",
+      "Birr Machines",
+      "Birr Corp",
+      "Birr Co.",
+      "Birr"
+    ]
+  },
+  "david-gurtner-07b306120": {
+    "current_company": "ATS-Tanner",
+    "tenure_length": "barely two years",
+    "tailored_sentence": "I appreciate you're barely two years into your roles at ATS-Tanner, but if",
+    "tailored_sentence_variations": [
+      "I appreciate you're only two years into your roles at ATS-Tanner, but if",
+      "I appreciate you're just two years into your roles at ATS-Tanner, but if",
+      "I appreciate you're two years into your roles at ATS-Tanner, but if"
+    ],
+    "possible_company_names": [
+      "ATS-Tanner Banding Systems AG",
+      "Atstanner Banding",
+      "ATS-Tanner",
+      "Tanner Banding",
+      "ATS"
+    ]
+  },
+  "s\u00e9bastien-genet-9a842a70": {
+    "current_company": "Morand et Fils",
+    "tenure_length": "less than six months",
+    "tailored_sentence": "I appreciate you're less than six months into your role at Morand et Fils, but if",
+    "tailored_sentence_variations": [
+      "I appreciate you're only a few months into your role at Morand et Fils, but if",
+      "I appreciate you're just a couple of months into your role at Morand et Fils, but if",
+      "I appreciate you're barely started in your role at Morand et Fils, but if"
+    ],
+    "possible_company_names": [
+      "R Morand Et Fils Sa",
+      "R. Morand et Fils S.A.",
+      "Morand et Fils",
+      "R. Morand",
+      "Morand"
+    ]
+  },
+  "ivan-spolaore-1672b4159": {
+    "current_company": "Forteq",
+    "tenure_length": "two years",
+    "tailored_sentence": "While you've built a solid foundation at Forteq over the past two years, if",
+    "tailored_sentence_variations": [
+      "While you've built a solid foundation at Forteq over the past two years, if",
+      "While you've built a solid foundation at Forteq for two years, if",
+      "While you've built a solid foundation at Forteq in two years, if"
+    ],
+    "possible_company_names": [
+      "forteq group",
+      "Forteq",
+      "forteq",
+      "Forteq Inc.",
+      "Forteq Group"
+    ]
+  },
+  "richard-van-ewijk": {
+    "current_company": "Ichnos",
+    "tenure_length": "five years",
+    "tailored_sentence": "While you've built a solid foundation at Ichnos over the past five years, if",
+    "tailored_sentence_variations": [
+      "While you've built a solid foundation at Ichnos these past five years, if",
+      "While you've built a solid foundation at Ichnos in the last five years, if",
+      "While you've built a solid foundation at Ichnos for five years, if"
+    ],
+    "possible_company_names": [
+      "Ichnos Sciences",
+      "Ichnos",
+      "Ichnos Sci",
+      "Ichnos S."
+    ]
+  },
+  "melanie-cuschieri-53b483b": {
+    "current_company": "Johnson & Johnson",
+    "tenure_length": "more than eleven years",
+    "tailored_sentence": "While it must be hard to uproot after more than eleven years at Johnson & Johnson, if",
+    "tailored_sentence_variations": [
+      "While it must be hard to uproot after eleven years at Johnson & Johnson, if",
+      "While it must be hard to uproot after a dozen years at Johnson & Johnson, if",
+      "While it must be hard to uproot after nearly twelve years at Johnson & Johnson, if"
+    ],
+    "possible_company_names": [
+      "Johnson & Johnson",
+      "Johnson Johnson",
+      "J&J",
+      "Johnson and Johnson",
+      "J. & J."
+    ]
+  },
+  "cengiz-yesilbas": {
+    "current_company": "Nsk",
+    "tenure_length": "six years",
+    "tailored_sentence": "While it must be hard to uproot after six years at Nsk, if",
+    "tailored_sentence_variations": [
+      "While it must be hard to uproot after six and a half years at Nsk, if",
+      "While it must be hard to uproot after more than six years at Nsk, if",
+      "While it must be hard to uproot after almost seven years at Nsk, if"
+    ],
+    "possible_company_names": [
+      "NSK Europe",
+      "Nsk",
+      "NSK",
+      "Nsk Europe",
+      "NSK Group"
+    ]
+  },
+  "domingo-gonzalez-8440b910": {
+    "current_company": "Benteler",
+    "tenure_length": "six years",
+    "tailored_sentence": "While it must be hard to uproot after six years at Benteler, if",
+    "tailored_sentence_variations": [
+      "While it must be hard to uproot after just six years at Benteler, if",
+      "While it must be hard to uproot after over six years at Benteler, if",
+      "While it must be hard to uproot after barely six years at Benteler, if"
+    ],
+    "possible_company_names": [
+      "BENTELER Group",
+      "Benteler",
+      "Benteler Group",
+      "Benteler Corp.",
+      "Benteler SE"
+    ]
+  }
+}

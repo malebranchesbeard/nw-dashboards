@@ -82,9 +82,9 @@ export default function TailoredTextPage() {
           <Link href="/">Home</Link>
         </Button>
       </div>
-      <div className="flex-grow flex overflow-hidden">
+      <div className="flex-grow flex overflow-hidden gap-1">
         {/* First Column */}
-        <div className="w-1/3 pr-2 flex flex-col overflow-hidden">
+        <div className="w-[32%] pr-2 flex flex-col overflow-hidden">
           <div className="sticky top-0 z-10 bg-white">
             <div className="bg-transparent pb-4 relative">
               <div className="flex justify-between items-center mb-1 px-1">
@@ -130,12 +130,12 @@ export default function TailoredTextPage() {
         </div>
 
         {/* Second Column */}
-        <div className="w-1/3 px-2 overflow-hidden">
+        <div className="w-[32%] px-2 overflow-hidden">
           <ShowProfile selectedCandidate={selectedCandidate} />
         </div>
 
         {/* Third Column */}
-        <div className="w-1/3 pl-2 overflow-hidden">
+        <div className="w-[36%] pl-2 overflow-hidden">
           <LLMText
             selectedCandidate={selectedCandidate}
             onCopied={handleCopied}
